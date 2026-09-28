@@ -1,26 +1,25 @@
-# DreamMV
-
-> Generate. Sleep. Wake up to your music video.
+🌙 DreamMV
+Generate. Sleep. Wake up to your music video.
 
 DreamMV is a fully local AI music video generator.
+Drop an MP3, press Generate, and wake up to a completed MV.
 
-Drop an MP3, press **Generate**, and wake up to a completed MV.
+✦ Features
+🎵 MP3 → Full-length MV
 
-## Features
+🎬 Local AI generation (ComfyUI + Wan2.2)
 
-- 🎵 MP3 → Full-length MV
-- 🎬 Local AI generation (ComfyUI + Wan2.2)
-- 💾 Checkpoint resume
-- 🎭 Character consistency
-- 🚀 One-click workflow
+💾 Checkpoint resume
 
-## Status
+🎭 Character consistency
 
-**Version:** v0.1 (In Development)
+🚀 One-click workflow
 
-## Initialize repository
+✦ Status
+Version: v0.1 (In Development)
 
-```bash
+✦ Initialize repository
+bash
 git init
 git add .
 git commit -m "🌙 Initial commit: DreamMV begins"
