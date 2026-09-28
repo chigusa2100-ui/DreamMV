@@ -1,0 +1,12 @@
+[project]
+name = "dreammv"
+version = "0.1.0"
+description = "Generate. Sleep. Wake up to your music video."
+requires-python = ">=3.12"
+
+dependencies = [
+    "PySide6",
+    "librosa",
+    "soundfile",
+    "requests"
+]
