@@ -17,3 +17,13 @@ Drop an MP3, press **Generate**, and wake up to a completed MV.
 ## Status
 
 **Version:** v0.1 (In Development)
+
+## Initialize repository
+
+```bash
+git init
+git add .
+git commit -m "🌙 Initial commit: DreamMV begins"
+git branch -M main
+git remote add origin https://github.com/chigusa2100-ui/DreamMV.git
+git push -u origin main
