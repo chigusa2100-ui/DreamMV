@@ -8,6 +8,8 @@ from PySide6.QtWidgets import (
 )
 import sys
 
+from src.dreammv.audio import AudioAnalyzer
+
 
 class DreamMV(QWidget):
     def __init__(self):
@@ -24,8 +26,6 @@ class DreamMV(QWidget):
         layout.addWidget(self.button)
 
         self.button.clicked.connect(self.open_file)
-
-    def from src.dreammv.audio import AudioAnalyzer
 
 # ...
 
