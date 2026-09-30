@@ -3,6 +3,15 @@
 All notable changes to DreamMV will be recorded here.
 
 ---
+## [Unreleased]
+### Added
+- MP3選択後にGenerateボタンを有効化
+- `.dreammv`プロジェクトを自動生成
+- プロジェクト内に `project.json` を作成
+- 選択したMP3を `song.mp3` としてプロジェクトへ保存
+- `scenes/` と `output/` ディレクトリを自動生成
+
+---
 
 ## [0.1.2] - 2026-09-29
 
