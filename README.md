@@ -16,7 +16,7 @@ Drop an MP3, press Generate, and wake up to a completed MV.
 🚀 One-click workflow
 
 ✦ Status
-Version: v0.1.1(In Development)
+Version: v0.1.2(In Development)
 
 ✦ Initialize repository
 bash
