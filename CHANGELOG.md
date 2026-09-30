@@ -3,7 +3,8 @@
 All notable changes to DreamMV will be recorded here.
 
 ---
-## [Unreleased]
+## [Unreleased] 2026-09-30
+
 ### Added
 - MP3選択後にGenerateボタンを有効化
 - `.dreammv`プロジェクトを自動生成
