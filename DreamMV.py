@@ -22,16 +22,55 @@ class DreamMV(QWidget):
 
         self.label = QLabel("MP3を選択してください")
         self.button = QPushButton("🎵 MP3を開く")
+        self.project_button = QPushButton("📂 プロジェクトを開く")
         self.generate_button = QPushButton("🎬 Generate")
         self.generate_button.setEnabled(False)
 
         layout = QVBoxLayout(self)
         layout.addWidget(self.label)
         layout.addWidget(self.button)
+        layout.addWidget(self.project_button)
         layout.addWidget(self.generate_button)
 
         self.button.clicked.connect(self.open_file)
+        self.project_button.clicked.connect(self.open_project)
         self.generate_button.clicked.connect(self.generate_project)
+
+    def open_project(self):
+        project_dir = QFileDialog.getExistingDirectory(
+            self,
+            "DreamMVプロジェクトを開く"
+        )
+
+        if not project_dir:
+            return
+
+        project_file = Path(project_dir) / "project.json"
+
+        if not project_file.exists():
+            self.label.setText(
+                "project.json が見つかりません\n\n"
+                f"選択された場所：\n{project_dir}"
+            )
+            return
+
+        try:
+            self.project = json.loads(
+                project_file.read_text(encoding="utf-8")
+            )
+
+            self.label.setText(
+                "プロジェクト読み込み成功！\n\n"
+                f"タイトル：{self.project['title']}\n"
+                f"長さ：{self.project['duration']}\n"
+                f"状態：{self.project['status']}"
+            )
+
+        except Exception as e:
+            self.label.setText(
+                "project.json の読み込みに失敗しました\n\n"
+                f"{e}"
+            )
 
     def open_file(self):
         path, _ = QFileDialog.getOpenFileName(
