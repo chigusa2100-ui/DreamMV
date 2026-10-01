@@ -1,6 +1,20 @@
 # Changelog
 
 All notable changes to DreamMV will be recorded here.
+
+---
+
+## [Unreleased] 2026-10-01
+
+### Added
+- 既存の `.dreammv` プロジェクトを開けるようにした
+- プロジェクト内の `project.json` を読み込めるようにした
+- 読み込んだプロジェクト情報をDreamMV内に保持するようにした
+- 既存プロジェクトに対してGenerateを実行できるようにした
+- Generate時に `output/` へテストファイルを生成できるようにした
+
+---
+
 ## [Unreleased] 2026-10-01
 
 ### Added
