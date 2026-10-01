@@ -59,12 +59,18 @@ class DreamMV(QWidget):
                 project_file.read_text(encoding="utf-8")
             )
 
+            self.selected_path = str(Path(project_dir) / "song.mp3")
+            self.project_dir = Path(project_dir)
+            self.duration = self.project["duration"]
+
             self.label.setText(
                 "プロジェクト読み込み成功！\n\n"
                 f"タイトル：{self.project['title']}\n"
                 f"長さ：{self.project['duration']}\n"
                 f"状態：{self.project['status']}"
             )
+
+            self.generate_button.setEnabled(True)
 
         except Exception as e:
             self.label.setText(
@@ -79,7 +85,6 @@ class DreamMV(QWidget):
             "",
             "Audio (*.mp3)"
         )
-
 
         if path:
             self.selected_path = path
@@ -101,14 +106,19 @@ class DreamMV(QWidget):
 
         source = Path(self.selected_path)
 
-        project_dir = source.parent / f"{source.stem}.dreammv"
+        project_dir = getattr(
+            self,
+            "project_dir",
+            source.parent / f"{source.stem}.dreammv"
+        )
         scenes_dir = project_dir / "scenes"
         output_dir = project_dir / "output"
 
         scenes_dir.mkdir(parents=True, exist_ok=True)
         output_dir.mkdir(parents=True, exist_ok=True)
 
-        shutil.copy2(source, project_dir / "song.mp3")
+        if source != project_dir / "song.mp3":
+            shutil.copy2(source, project_dir / "song.mp3")
 
         project = {
             "title": source.stem,
@@ -121,6 +131,11 @@ class DreamMV(QWidget):
             encoding="utf-8"
         )
 
+        test_file = output_dir / "generate_test.txt"
+        test_file.write_text(
+           "DreamMV Generate Test OK",
+            encoding="utf-8"
+        ) 
         self.label.setText(
             f"プロジェクト作成完了！\n\n{project_dir}"
         )
