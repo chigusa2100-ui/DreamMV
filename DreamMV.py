@@ -58,7 +58,10 @@ class DreamMV(QWidget):
             self.project = json.loads(
                 project_file.read_text(encoding="utf-8")
             )
-
+            # タイトルが "song" に壊れていたら、フォルダ名から復元する
+            if self.project.get("title") == "song":
+                self.project["title"] = Path(project_dir).stem
+            print("読み込んだプロジェクト情報:", self.project)
             self.selected_path = str(Path(project_dir) / "song.mp3")
             self.project_dir = Path(project_dir)
             self.duration = self.project["duration"]
@@ -121,9 +124,9 @@ class DreamMV(QWidget):
             shutil.copy2(source, project_dir / "song.mp3")
 
         project = {
-            "title": source.stem,
-            "duration": self.duration,
-            "status": "created"
+           "title": getattr(self, "project", {}).get("title", source.stem),
+           "duration": self.duration,
+           "status": "created"
         }
 
         (project_dir / "project.json").write_text(
@@ -136,6 +139,19 @@ class DreamMV(QWidget):
            "DreamMV Generate Test OK",
             encoding="utf-8"
         ) 
+
+        job = {
+            "title": project["title"],
+            "status": "queued",
+            "type": "test"
+        }
+
+        job_file = output_dir / "job.json"
+        job_file.write_text(
+            json.dumps(job, ensure_ascii=False, indent=2),
+            encoding="utf-8"
+        )
+
         self.label.setText(
             f"プロジェクト作成完了！\n\n{project_dir}"
         )

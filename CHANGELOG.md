@@ -4,6 +4,30 @@ All notable changes to DreamMV will be recorded here.
 
 ---
 
+[Unreleased] 2026-10-02
+
+Added
+
+既存の .dreammv プロジェクトを開けるようにした
+
+プロジェクト内の project.json を読み込めるようにした
+
+読み込んだプロジェクト情報をDreamMV内に保持するようにした
+
+既存プロジェクトに対してGenerateを実行できるようにした
+
+Generate時に output/ へテストファイルを生成できるようにした
+
+Generate時に output/job.json へ生成ジョブ情報を保存できるようにした
+
+Fixed
+
+既存プロジェクトでGenerateを実行した際、タイトルが song に変わる問題を修正
+
+タイトルが song になっている場合、プロジェクトフォルダ名から復元できるようにした
+
+---
+
 ## [Unreleased] 2026-10-01
 
 ### Added
