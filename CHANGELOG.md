@@ -2,6 +2,22 @@
 
 All notable changes to DreamMV will be recorded here.
 
+[Unreleased] 2026-10-03
+
+Added
+
+job.json の生成ジョブ状態を queued、running、completed へ更新できるようにした
+
+生成ジョブの最終状態をDreamMVの画面に表示できるようにした
+
+ジョブ情報にエラー内容を記録できるようにした
+
+Fixed
+
+テスト処理でエラーが発生した場合、ジョブ状態を failed として保存するようにした
+
+エラー処理後に状態が completed へ上書きされる問題を修正
+
 ---
 
 [Unreleased] 2026-10-02

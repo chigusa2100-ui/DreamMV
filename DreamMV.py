@@ -140,20 +140,64 @@ class DreamMV(QWidget):
             encoding="utf-8"
         ) 
 
+
+
+        job_file = output_dir / "job.json"
+
         job = {
             "title": project["title"],
             "status": "queued",
-            "type": "test"
+            "type": "test",
+            "error": None
         }
 
-        job_file = output_dir / "job.json"
-        job_file.write_text(
-            json.dumps(job, ensure_ascii=False, indent=2),
-            encoding="utf-8"
-        )
+        try:
+            # 生成待ち
+            job_file.write_text(
+                json.dumps(job, ensure_ascii=False, indent=2),
+                encoding="utf-8"
+            )
+
+            # テスト処理開始
+            job["status"] = "running"
+            job_file.write_text(
+                json.dumps(job, ensure_ascii=False, indent=2),
+                encoding="utf-8"
+            )
+
+            # テスト処理（現時点では成功するだけのテスト）
+            test_file = output_dir / "generate_test.txt"
+            test_file.write_text(
+                "DreamMV Generate Test OK",
+                encoding="utf-8"
+            )
+
+            # テスト処理完了
+            job["status"] = "completed"
+
+        except Exception as e:
+            # エラー内容を記録
+            job["status"] = "failed"
+            job["error"] = str(e)
+
+        finally:
+            # 最終状態を保存
+            job_file.write_text(
+                json.dumps(job, ensure_ascii=False, indent=2),
+                encoding="utf-8"
+            )
+
+        status_text = {
+            "queued": "生成待ち",
+            "running": "テスト処理中",
+            "completed": "テスト完了",
+            "failed": "生成失敗"
+        }
 
         self.label.setText(
-            f"プロジェクト作成完了！\n\n{project_dir}"
+            f"プロジェクト：{project['title']}\n"
+            f"状態：{status_text.get(job['status'], job['status'])}\n"
+            f"保存先：{project_dir}"
         )
 
 if __name__ == "__main__":
