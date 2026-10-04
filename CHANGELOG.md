@@ -2,6 +2,22 @@
 
 All notable changes to DreamMV will be recorded here.
 
+[Unreleased] 2026-10-04
+
+Fixed
+
+generate_project() 内の重複したテストファイル作成処理を削除
+
+ジョブ管理開始前に行われていた不要なテストファイル作成を整理
+
+Tested
+
+job.json の最終状態が completed になることを確認
+
+正常終了時に error が null になることを確認
+
+---
+
 [Unreleased] 2026-10-03
 
 Added
