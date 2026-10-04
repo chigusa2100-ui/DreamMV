@@ -134,14 +134,6 @@ class DreamMV(QWidget):
             encoding="utf-8"
         )
 
-        test_file = output_dir / "generate_test.txt"
-        test_file.write_text(
-           "DreamMV Generate Test OK",
-            encoding="utf-8"
-        ) 
-
-
-
         job_file = output_dir / "job.json"
 
         job = {
