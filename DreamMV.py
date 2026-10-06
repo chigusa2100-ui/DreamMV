@@ -103,6 +103,13 @@ class DreamMV(QWidget):
                 f"{path}\n\n長さ：{minutes}:{seconds:02d}"
             )
 
+    def run_test_generation(self, output_dir):
+        test_file = output_dir / "generate_test.txt"
+        test_file.write_text(
+            "DreamMV Generate Test OK",
+            encoding="utf-8"
+        )
+
     def generate_project(self):
         if not self.selected_path:
             return
@@ -158,11 +165,7 @@ class DreamMV(QWidget):
             )
 
             # テスト処理（現時点では成功するだけのテスト）
-            test_file = output_dir / "generate_test.txt"
-            test_file.write_text(
-                "DreamMV Generate Test OK",
-                encoding="utf-8"
-            )
+            self.run_test_generation(output_dir)
 
             # テスト処理完了
             job["status"] = "completed"
