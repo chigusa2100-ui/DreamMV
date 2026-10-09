@@ -12,6 +12,7 @@ import json
 import shutil
 
 from src.dreammv.audio import AudioAnalyzer
+from src.dreammv.planner import StoryPlanner
 
 class DreamMV(QWidget):
     def __init__(self):
@@ -130,11 +131,18 @@ class DreamMV(QWidget):
         if source != project_dir / "song.mp3":
             shutil.copy2(source, project_dir / "song.mp3")
 
+
+        planner = StoryPlanner()
+        plan = planner.create_plan(self.duration)
+
         project = {
-           "title": getattr(self, "project", {}).get("title", source.stem),
-           "duration": self.duration,
-           "status": "created"
+            "title": getattr(self, "project", {}).get("title", source.stem),
+            "duration": self.duration,
+            "status": "created",
+            "scene_count": plan["scene_count"],
+            "scenes": plan["scenes"]
         }
+
 
         (project_dir / "project.json").write_text(
             json.dumps(project, ensure_ascii=False, indent=2),
