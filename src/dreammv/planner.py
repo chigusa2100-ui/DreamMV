@@ -14,11 +14,14 @@ class StoryPlanner:
             start = i * 10
             end = min(start + 10, song_length)
 
+
             scenes.append({
                 "id": i + 1,
                 "start": start,
-                "end": end
-            })
+                "end": end,
+                "prompt": "A cinematic scene"
+        })
+
 
         return {
             "length": song_length,
