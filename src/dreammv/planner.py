@@ -14,14 +14,19 @@ class StoryPlanner:
             start = i * 10
             end = min(start + 10, song_length)
 
+            if i < 3:
+                prompt = "A quiet night sky filled with distant stars, cinematic anime style"
+            elif i < 6:
+                prompt = "A magical journey beneath glowing stars, cinematic anime style"
+            else:
+                prompt = "A radiant star illuminating the horizon, hopeful cinematic anime style"
 
             scenes.append({
                 "id": i + 1,
                 "start": start,
                 "end": end,
-                "prompt": "A cinematic scene"
-        })
-
+                "prompt": prompt
+            })
 
         return {
             "length": song_length,
