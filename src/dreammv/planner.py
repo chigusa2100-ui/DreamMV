@@ -5,6 +5,14 @@ DreamMV Story Planner
 """
 
 class StoryPlanner:
+    def get_prompt(self, scene_index):
+        if scene_index < 3:
+            return "A quiet night sky filled with distant stars, cinematic anime style"
+        elif scene_index < 6:
+            return "A magical journey beneath glowing stars, cinematic anime style"
+        else:
+            return "A radiant star illuminating the horizon, hopeful cinematic anime style"
+
     def create_plan(self, song_length):
         scene_count = max(1, int((song_length + 9) // 10))
 
@@ -14,18 +22,11 @@ class StoryPlanner:
             start = i * 10
             end = min(start + 10, song_length)
 
-            if i < 3:
-                prompt = "A quiet night sky filled with distant stars, cinematic anime style"
-            elif i < 6:
-                prompt = "A magical journey beneath glowing stars, cinematic anime style"
-            else:
-                prompt = "A radiant star illuminating the horizon, hopeful cinematic anime style"
-
             scenes.append({
                 "id": i + 1,
                 "start": start,
                 "end": end,
-                "prompt": prompt
+                "prompt": self.get_prompt(i)
             })
 
         return {
