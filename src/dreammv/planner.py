@@ -4,14 +4,31 @@ DreamMV Story Planner
 音楽を解析してMVの設計図を作る。
 """
 
+PROMPT_STAGES = [
+    {
+        "until_scene": 3,
+        "prompt": "A quiet night sky filled with distant stars, cinematic anime style"
+    },
+    {
+        "until_scene": 6,
+        "prompt": "A magical journey beneath glowing stars, cinematic anime style"
+    },
+    {
+        "until_scene": None,
+        "prompt": "A radiant star illuminating the horizon, hopeful cinematic anime style"
+    }
+]
+
+
 class StoryPlanner:
     def get_prompt(self, scene_index):
-        if scene_index < 3:
-            return "A quiet night sky filled with distant stars, cinematic anime style"
-        elif scene_index < 6:
-            return "A magical journey beneath glowing stars, cinematic anime style"
-        else:
-            return "A radiant star illuminating the horizon, hopeful cinematic anime style"
+        scene_number = scene_index + 1
+
+        for stage in PROMPT_STAGES:
+            if stage["until_scene"] is None or scene_number <= stage["until_scene"]:
+                return stage["prompt"]
+
+        return PROMPT_STAGES[-1]["prompt"]
 
     def create_plan(self, song_length):
         scene_count = max(1, int((song_length + 9) // 10))
