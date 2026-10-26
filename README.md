@@ -2,7 +2,7 @@
 
 Generate. Sleep. Wake up to your music video.
 
-DreamMV is an experimental local desktop application that turns an audio track into a music video. It analyzes the song, plans a scene-by-scene storyboard, then renders every scene on your own GPU, one after another, and finally joins the clips with the original audio.
+DreamMV is an experimental local desktop application that turns an audio track into a music video. It analyzes the song, plans a scene-by-scene storyboard, then uses Animagine XL 4.0 to create one anime illustration per scene, adds slow pan/zoom camera movement, and joins the clips with the original audio.
 
 > **Status: experimental.** Everything runs locally; nothing is uploaded. Expect rough edges.
 
@@ -12,25 +12,21 @@ DreamMV is an experimental local desktop application that turns an audio track i
 - Optional lyric transcription (Whisper). If it is unavailable, DreamMV continues without lyrics.
 - Generate a scene plan (scene names, descriptions, prompts) from the song length, lyrics and the themes in `config/themes/`.
 - Persistent per-scene queue (`output/queue.json`) with progress, failure details and **retry of failed scenes**.
-- Overnight rendering with a choice of engines (see below). A failed scene does not stop the run.
+- Overnight Animagine XL 4.0 rendering. A failed scene does not stop the run.
 - Clips are normalized to each scene's length, concatenated, and muxed with the song into `output/music_video.mp4`.
 
-## Render engines
+## Image generation
 
-Choose one with the installer (or `installer/download_model.py <preset>`). The active preset is stored in `wan_settings.json`.
+DreamMV uses **Animagine XL 4.0** (SDXL) as its only active generation engine.
 
-| Preset | Model | What you get | Rough VRAM* |
-|---|---|---|---|
-| `light` | Wan2.1 T2V 1.3B | 480p text-to-video clips | 8 GB+ |
-| `standard` | Wan2.2 TI2V 5B | 720p / 24 fps text-to-video clips | 16 GB+ |
-| `anime` | Animagine XL 4.0 (SDXL) | One anime still per scene with a slow zoom/pan (characters do not move) | 8 GB+ |
+- One anime still image is generated for each scene.
+- DreamMV adds slow pan/zoom camera movement and exports each scene as MP4.
+- The scene clips are joined and the original song is added.
+- The character itself does **not** animate like a text-to-video model.
+- The first setup downloads the model files; allow roughly several GB of free disk space.
+- With an 8 GB GPU, CPU offload and memory-saving VAE options are enabled. Generation can be slow.
 
-\* Rough guidelines, not benchmarked. Disk usage ranges from about 7 GB (`anime`) to tens of GB (`standard`).
-
-Notes:
-
-- Wan produces about 5 seconds per clip. Longer scenes are looped to fill their length.
-- The `anime` preset reads prompts as tags (`1girl, night sky, ...`); it works best with tag-style prompts in your theme files, and prompts beyond roughly 77 tokens are truncated.
+Theme prompts should use descriptive anime illustration tags where possible. Lyrics currently affect theme detection and scene naming, but are not yet automatically inserted into image prompts.
 
 ## Requirements
 
@@ -66,7 +62,7 @@ or
 .venv\Scripts\python.exe DreamMV.py
 ```
 
-Usage: **Open MP3** → **Generate** (creates the `.dreammv` project and the scene queue) → **Render with Wan** (processes the queue) → open `output/music_video.mp4` in the project folder.
+Usage: **Open MP3** → **Generate** (creates the `.dreammv` project and the scene queue) → **AnimagineでMV生成** (processes the queue) → open `output/music_video.mp4` in the project folder.
 
 > Pressing **Generate** again rebuilds the queue and resets all scene progress. After reopening a project, use the render button to resume instead.
 
@@ -83,7 +79,7 @@ Song.dreammv/
 │   ├── job.json
 │   └── music_video.mp4   final video
 └── render/
-    ├── clips/            one clip per scene (plus .png stills for the anime preset)
+    ├── clips/            one clip per scene plus the source .png still
     ├── normalized/       length-adjusted clips used for joining
     └── render.log        error details
 ```
@@ -103,7 +99,7 @@ DreamMV/
 ├── DreamMV.py
 ├── run.bat
 ├── config.json
-├── wan_settings.json          active preset and model folder (machine-specific)
+├── anime_settings.json         Animagine model cache directory
 ├── config/themes/             story themes (keywords, stages, prompts)
 ├── installer/
 │   ├── install.ps1
@@ -128,7 +124,7 @@ DreamMV/
 
 - Lyrics are used for scene names and theme detection, not (yet) for image prompts, so scenes in the same story stage share the same prompt.
 - Plain-text lyrics without timestamps are not spread across the song.
-- Model weights are **not** included in this repository and keep their own licenses (Wan: Apache 2.0, Animagine XL 4.0: CreativeML Open RAIL++-M). Check each license before redistributing weights or using output commercially.
+- Model weights are **not** included in this repository and keep their own licenses (Animagine XL 4.0: CreativeML Open RAIL++-M). Check each license before redistributing weights or using output commercially.
 
 ## License
 

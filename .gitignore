@@ -253,3 +253,4 @@ __pycache__/
 .ruff_cache/
 
 wan_settings.json
+anime_settings.json

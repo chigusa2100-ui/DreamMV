@@ -1,7 +1,7 @@
 ; Inno Setup 6 でコンパイルすると DreamMV-Setup.exe ができます
 [Setup]
 AppName=DreamMV
-AppVersion=0.23
+AppVersion=0.25
 DefaultDirName={localappdata}\DreamMV
 DefaultGroupName=DreamMV
 PrivilegesRequired=lowest
@@ -19,7 +19,7 @@ Name: "{autoprograms}\DreamMV"; Filename: "{app}\.venv\Scripts\pythonw.exe"; Par
 Name: "{autodesktop}\DreamMV"; Filename: "{app}\.venv\Scripts\pythonw.exe"; Parameters: """{app}\main.py"""; WorkingDir: "{app}"
 
 [Run]
-Filename: "powershell.exe"; Parameters: "-NoProfile -ExecutionPolicy Bypass -File ""{app}\installer\install.ps1"" -AppDir ""{app}"""; StatusMsg: "Python環境とWanモデルを準備中..."; Flags: waituntilterminated
+Filename: "powershell.exe"; Parameters: "-NoProfile -ExecutionPolicy Bypass -File ""{app}\installer\install.ps1"" -AppDir ""{app}"""; StatusMsg: "Python環境とAnimagineモデルを準備中..."; Flags: waituntilterminated
 
 [UninstallDelete]
 Type: filesandordirs; Name: "{app}\.venv"

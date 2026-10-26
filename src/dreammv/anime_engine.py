@@ -11,7 +11,6 @@ import subprocess
 from pathlib import Path
 from typing import Callable
 
-from .wan_engine import PRESETS
 
 QUALITY_TAGS = "masterpiece, high score, great score, absurdres"
 DEFAULT_NEGATIVE = (
@@ -20,6 +19,19 @@ DEFAULT_NEGATIVE = (
     "average score, signature, watermark, username, blurry"
 )
 MOTIONS = ("zoom_in", "pan_right", "zoom_out", "pan_left")
+
+# Animagine XL 4.0 is an SDXL still-image model, not a video-generation model.
+# Keep render settings here so the active engine has no dependency on Wan.
+ANIME_CONFIG: dict[str, object] = {
+    "repo": "cagliostrolab/animagine-xl-4.0",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "gen_width": 1024,
+    "gen_height": 1024,
+    "steps": 28,
+    "guidance": 5.0,
+}
 
 
 def _ffmpeg() -> str:
@@ -54,8 +66,10 @@ def ken_burns(image_path: str | Path, out_path: str | Path, duration: float,
 class AnimeEngine:
     def __init__(self, preset: str = "anime", models_dir: str | Path | None = None,
                  offload: bool = True):
-        self.preset_name = preset
-        self.cfg = PRESETS[preset]
+        if preset not in ("anime", "animagine"):
+            raise ValueError(f"unknown image-generation preset: {preset}")
+        self.preset_name = "animagine"
+        self.cfg = ANIME_CONFIG
         self.models_dir = str(models_dir) if models_dir else None
         self.offload = offload
         self.pipe = None
@@ -70,9 +84,14 @@ class AnimeEngine:
             raise RuntimeError("CUDA対応GPUが見つかりません。NVIDIA GPUとドライバを確認してください。")
         kw = {"cache_dir": self.models_dir} if self.models_dir else {}
         pipe = StableDiffusionXLPipeline.from_pretrained(
-            self.cfg["repo"], torch_dtype=torch.float16, use_safetensors=True,
+            str(self.cfg["repo"]), torch_dtype=torch.float16, use_safetensors=True,
             add_watermarker=False, **kw,
         )
+        # These reduce SDXL memory spikes; CPU offload is the default for 8 GB VRAM.
+        if hasattr(pipe, "enable_vae_slicing"):
+            pipe.enable_vae_slicing()
+        if hasattr(pipe, "enable_vae_tiling"):
+            pipe.enable_vae_tiling()
         if self.offload:
             pipe.enable_model_cpu_offload()
         else:
@@ -107,8 +126,8 @@ class AnimeEngine:
 
         image = self.pipe(
             prompt=f"{prompt}, {QUALITY_TAGS}", negative_prompt=negative_prompt,
-            width=c["gen_width"], height=c["gen_height"],
-            guidance_scale=c["guidance"], num_inference_steps=steps,
+            width=int(c["gen_width"]), height=int(c["gen_height"]),
+            guidance_scale=float(c["guidance"]), num_inference_steps=steps,
             generator=gen, callback_on_step_end=_cb,
         ).images[0]
 
@@ -122,5 +141,8 @@ class AnimeEngine:
         out_path.parent.mkdir(parents=True, exist_ok=True)
         still = out_path.with_suffix(".png")  # 静止画も残す（後で画像→動画に使える）
         image.save(still)
-        return ken_burns(still, out_path, duration, fps=c["fps"],
-                         size=(c["width"], c["height"]), motion=MOTIONS[seed % len(MOTIONS)])
+        return ken_burns(
+            still, out_path, duration, fps=int(c["fps"]),
+            size=(int(c["width"]), int(c["height"])),
+            motion=MOTIONS[seed % len(MOTIONS)],
+        )
