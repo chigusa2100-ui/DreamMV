@@ -1,0 +1,9 @@
+{
+  "scene_duration": 5,
+  "audio_sample_rate": 22050,
+  "audio_mono": true,
+  "output_subdir": "output",
+  "scenes_subdir": "scenes",
+  "project_filename": "project.json",
+  "job_filename": "job.json"
+}
