@@ -40,7 +40,7 @@ def main() -> None:
         ],
     )
     settings.update(engine="animagine-xl-4.0", models_dir=str(models_dir))
-    SETTINGS.write_text(json.dumps(settings, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    SETTINGS.write_text(json.dumps(settings, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Done. anime_settings.json saved. Model cache: {models_dir}")
 
 
