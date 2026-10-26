@@ -1,0 +1,88 @@
+{
+  "name": "love",
+  "keywords": [
+    "愛",
+    "恋",
+    "君",
+    "好き",
+    "ふたり",
+    "キス",
+    "手",
+    "抱きしめる",
+    "約束",
+    "恋人",
+    "ぬくもり",
+    "会いたい",
+    "好きだ",
+    "永遠"
+  ],
+  "emotion_keywords": {
+    "joy": [
+      "笑顔",
+      "幸せ",
+      "出会い"
+    ],
+    "sad": [
+      "さよなら",
+      "涙",
+      "会えない"
+    ],
+    "hope": [
+      "約束",
+      "未来",
+      "永遠"
+    ]
+  },
+  "emotion_styles": {
+    "joy": "soft golden glow, bright romantic color",
+    "sad": "wistful twilight, gentle blue shadows",
+    "hope": "warm sunrise, tender hopeful mood"
+  },
+  "camera_styles": [
+    "intimate close-up",
+    "two-shot silhouette",
+    "slow tracking shot",
+    "wide sunset composition"
+  ],
+  "color_palette": [
+    "rose pink",
+    "warm cream",
+    "lavender",
+    "sunset orange",
+    "soft gold"
+  ],
+  "locations": [
+    "flower garden",
+    "quiet train platform",
+    "rooftop at sunset",
+    "lantern-lit street",
+    "seaside promenade"
+  ],
+  "stages": [
+    {
+      "name": "出会い",
+      "description": "視線が重なり世界が変わる",
+      "prompt": "romantic anime cinematic illustration, two young adults meeting in a flower-filled street, gentle spring light, natural expressions"
+    },
+    {
+      "name": "ふたりの時間",
+      "description": "何気ない日常が宝物になる",
+      "prompt": "anime illustration, couple walking together beneath trees, candid smiles, warm sunlight, soft cinematic depth"
+    },
+    {
+      "name": "すれ違い",
+      "description": "言葉にできない想いが残る",
+      "prompt": "emotional anime illustration, two silhouettes separated by a rainy station platform, reflective blue light"
+    },
+    {
+      "name": "約束",
+      "description": "未来への願いを交わす",
+      "prompt": "romantic anime cinematic illustration, hands gently meeting beneath glowing evening lights, tender emotional atmosphere"
+    },
+    {
+      "name": "明日へ",
+      "description": "朝の光の中で一歩を踏み出す",
+      "prompt": "beautiful anime illustration, couple looking toward a golden sunrise by the sea, hopeful and heartfelt ending"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "name": "desert_journey",
+  "keywords": [
+    "砂漠",
+    "砂嵐",
+    "蜃気楼",
+    "オアシス",
+    "遺跡",
+    "砂丘",
+    "旅人",
+    "乾いた風",
+    "太陽",
+    "古代文明"
+  ],
+  "emotion_keywords": {
+    "struggle": [
+      "渇き",
+      "孤独",
+      "嵐"
+    ],
+    "wonder": [
+      "遺跡",
+      "蜃気楼",
+      "未知"
+    ],
+    "hope": [
+      "水",
+      "朝",
+      "オアシス"
+    ]
+  },
+  "emotion_styles": {
+    "struggle": "harsh sun, dramatic sandstorm",
+    "wonder": "mysterious ancient ruins, shimmering heat haze",
+    "hope": "cool dawn light, oasis reflections"
+  },
+  "camera_styles": [
+    "wide dune panorama",
+    "low angle walking shot",
+    "ruin reveal shot",
+    "sunset silhouette"
+  ],
+  "color_palette": [
+    "sand gold",
+    "burnt orange",
+    "lapis blue",
+    "ivory",
+    "deep red"
+  ],
+  "locations": [
+    "vast sand dunes",
+    "buried temple",
+    "desert oasis",
+    "rocky canyon",
+    "ancient caravan route"
+  ],
+  "stages": [
+    {
+      "name": "果てなき砂丘",
+      "description": "広大な砂の世界を進む",
+      "prompt": "anime cinematic landscape, endless golden desert dunes under a vast blue sky, lone traveler, epic scale"
+    },
+    {
+      "name": "砂嵐",
+      "description": "砂の嵐が旅を試す",
+      "prompt": "dramatic anime illustration, traveler crossing a powerful desert sandstorm, swirling amber sand, dynamic composition"
+    },
+    {
+      "name": "埋もれた遺跡",
+      "description": "砂の下から古代の記憶が現れる",
+      "prompt": "anime fantasy illustration, monumental ancient temple emerging from desert sands, mysterious symbols, golden light"
+    },
+    {
+      "name": "オアシス",
+      "description": "水と緑が命をつなぐ",
+      "prompt": "beautiful anime illustration, hidden desert oasis with clear turquoise water and palm trees, tranquil refuge"
+    },
+    {
+      "name": "星空の道",
+      "description": "夜空を頼りに旅を続ける",
+      "prompt": "cinematic anime illustration, caravan silhouettes beneath a brilliant desert starfield, quiet hopeful atmosphere"
+    }
+  ]
+}

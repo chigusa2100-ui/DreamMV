@@ -1,8 +1,9 @@
 {
   "name": "cyber_fox",
-
   "keywords": [
     "狐",
+    "白狐",
+    "狐火",
     "巫女",
     "未来",
     "ネオン",
@@ -15,133 +16,83 @@
     "月",
     "光",
     "コード",
-    "ネットワーク"
+    "ネットワーク",
+    "サイバー神社",
+    "仮想鳥居"
   ],
-
   "emotion_keywords": {
-
     "hope": [
       "未来",
       "光",
       "明日",
-      "夢"
+      "夢",
+      "希望"
     ],
-
     "sad": [
       "孤独",
       "涙",
-      "別れ"
+      "別れ",
+      "記憶"
     ],
-
     "cyber": [
       "電子",
       "電脳",
       "コード",
-      "回路"
+      "回路",
+      "ネットワーク"
     ]
   },
-
   "emotion_styles": {
-
-    "hope":
-      "hopeful cyberpunk skyline",
-
-    "sad":
-      "rain soaked neon street",
-
-    "cyber":
-      "holograms, digital effects, futuristic atmosphere"
+    "hope": "hopeful cyberpunk skyline, golden digital dawn",
+    "sad": "rain-soaked neon street, wistful blue reflections",
+    "cyber": "holographic foxfire, luminous data streams"
   },
-
   "camera_styles": [
-
     "cinematic wide shot",
-
     "drone city view",
-
-    "street level neon reflection",
-
+    "street-level neon reflection",
     "close-up portrait",
-
-    "flying camera movement"
+    "dynamic aerial camera"
   ],
-
   "color_palette": [
-
     "neon blue",
-
     "magenta",
-
     "cyan",
-
     "white",
-
     "gold"
   ],
-
   "locations": [
-
     "cyberpunk city",
-
     "rainy street",
-
     "neon alley",
-
     "digital shrine",
-
     "virtual world"
   ],
-
   "stages": [
-
     {
       "name": "ネオンの夜",
-
-      "description":
-        "都市の始まり",
-
-      "prompt":
-        "fox shrine maiden in cyberpunk city"
+      "description": "電脳都市に狐火が灯る",
+      "prompt": "high quality anime illustration, elegant fox spirit shrine maiden in a futuristic Japanese city, luminous foxfire, neon cyan and magenta, cinematic night"
     },
-
     {
       "name": "電脳神域",
-
-      "description":
-        "電子の鳥居",
-
-      "prompt":
-        "digital shrine, holographic torii"
+      "description": "電子の鳥居が異界への道を開く",
+      "prompt": "anime cinematic illustration, holographic torii gates in a digital shrine, floating luminous symbols, sacred cyberpunk atmosphere"
     },
-
     {
       "name": "接続",
-
-      "description":
-        "世界が広がる",
-
-      "prompt":
-        "network visualization, futuristic journey"
+      "description": "狐火がネットワークを駆け巡る",
+      "prompt": "dynamic anime illustration, spectral foxfire traveling through glowing data streams, futuristic network visualization, dramatic composition"
     },
-
     {
-      "name": "星界",
-
-      "description":
-        "光の海",
-
-      "prompt":
-        "cosmic cyberpunk landscape"
+      "name": "星界の旅",
+      "description": "仮想世界が星の海へ変わる",
+      "prompt": "anime cinematic illustration, cyber fox spirit crossing a cosmic virtual landscape, star ocean, luminous blue and violet"
     },
-
     {
-      "name": "夜明け",
-
-      "description":
-        "希望の未来",
-
-      "prompt":
-        "hopeful skyline, digital sunrise"
+      "name": "デジタル黎明",
+      "description": "電子の世界に新しい朝が訪れる",
+      "prompt": "beautiful anime illustration, futuristic shrine above a city at sunrise, golden foxfire, hopeful digital dawn"
     }
   ]
 }

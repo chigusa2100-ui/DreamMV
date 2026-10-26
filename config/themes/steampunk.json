@@ -1,0 +1,86 @@
+{
+  "name": "steampunk",
+  "keywords": [
+    "歯車",
+    "蒸気",
+    "機械仕掛け",
+    "飛行船",
+    "時計",
+    "真鍮",
+    "工房",
+    "発明",
+    "煙突",
+    "機関",
+    "ぜんまい",
+    "レトロ機械"
+  ],
+  "emotion_keywords": {
+    "wonder": [
+      "発明",
+      "未知",
+      "飛行船"
+    ],
+    "struggle": [
+      "壊れる",
+      "止まる",
+      "失敗"
+    ],
+    "hope": [
+      "動き出す",
+      "空",
+      "旅立ち"
+    ]
+  },
+  "emotion_styles": {
+    "wonder": "warm brass glow, intricate mechanical wonder",
+    "struggle": "smoky shadows, sparks and tension",
+    "hope": "sunlit clouds, adventurous optimism"
+  },
+  "camera_styles": [
+    "low angle airship shot",
+    "macro gear close-up",
+    "workshop tracking shot",
+    "wide industrial skyline"
+  ],
+  "color_palette": [
+    "brass gold",
+    "copper",
+    "sepia",
+    "smoke gray",
+    "teal"
+  ],
+  "locations": [
+    "clockwork workshop",
+    "airship dock",
+    "industrial rooftops",
+    "brass observatory",
+    "cloud sea"
+  ],
+  "stages": [
+    {
+      "name": "歯車の工房",
+      "description": "小さな機械が動き始める",
+      "prompt": "anime steampunk illustration, intricate clockwork workshop, brass gears, copper pipes, warm practical lights"
+    },
+    {
+      "name": "発明の閃き",
+      "description": "新しい仕組みが生まれる",
+      "prompt": "anime cinematic illustration, young inventor surrounded by blueprints and glowing mechanical parts, sparks of inspiration"
+    },
+    {
+      "name": "飛行船の港",
+      "description": "巨大な飛行船が空へ向かう",
+      "prompt": "epic anime steampunk scene, ornate brass airships docked above a Victorian-inspired city, clouds and steam"
+    },
+    {
+      "name": "雲海の旅",
+      "description": "雲の上に未知の世界が広がる",
+      "prompt": "anime cinematic illustration, steampunk airship sailing above a vast sea of clouds, golden sunlight, adventurous mood"
+    },
+    {
+      "name": "時計仕掛けの夜明け",
+      "description": "機械都市に朝日が差し込む",
+      "prompt": "beautiful anime steampunk skyline at sunrise, brass clock towers, warm gold light, hopeful finale"
+    }
+  ]
+}

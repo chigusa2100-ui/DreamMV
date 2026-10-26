@@ -1,0 +1,89 @@
+{
+  "name": "ocean",
+  "keywords": [
+    "海",
+    "波",
+    "潮",
+    "砂浜",
+    "水平線",
+    "船",
+    "深海",
+    "珊瑚",
+    "人魚",
+    "海風",
+    "夏",
+    "浜辺",
+    "青い海",
+    "潮騒"
+  ],
+  "emotion_keywords": {
+    "freedom": [
+      "自由",
+      "遠く",
+      "旅",
+      "風"
+    ],
+    "sad": [
+      "別れ",
+      "涙",
+      "沈む"
+    ],
+    "hope": [
+      "水平線",
+      "朝",
+      "光"
+    ]
+  },
+  "emotion_styles": {
+    "freedom": "vast open horizon, bright ocean blues",
+    "sad": "deep blue water, quiet drifting light",
+    "hope": "golden sunrise over calm waves"
+  },
+  "camera_styles": [
+    "aerial coastline shot",
+    "low angle near the waves",
+    "underwater floating camera",
+    "sunset silhouette"
+  ],
+  "color_palette": [
+    "ocean blue",
+    "turquoise",
+    "foam white",
+    "coral pink",
+    "sunset gold"
+  ],
+  "locations": [
+    "sunlit beach",
+    "rocky coast",
+    "underwater coral garden",
+    "lighthouse cliff",
+    "quiet harbor"
+  ],
+  "stages": [
+    {
+      "name": "波打ち際",
+      "description": "波が足元に触れる",
+      "prompt": "anime cinematic illustration, gentle waves washing onto a sunlit beach, sparkling sea foam, summer breeze"
+    },
+    {
+      "name": "青の世界",
+      "description": "海の深い色へ沈んでいく",
+      "prompt": "dreamlike anime illustration, underwater blue world with shafts of sunlight, drifting bubbles, serene atmosphere"
+    },
+    {
+      "name": "遠い灯台",
+      "description": "水平線の向こうに導きの光を見る",
+      "prompt": "anime cinematic landscape, lonely lighthouse on a coastal cliff at dusk, vast ocean, dramatic clouds"
+    },
+    {
+      "name": "潮風の旅",
+      "description": "風を受けて新しい場所へ向かう",
+      "prompt": "anime illustration, small sailboat crossing a brilliant blue sea, expansive horizon, sense of freedom"
+    },
+    {
+      "name": "黄金の水平線",
+      "description": "海の向こうに朝が生まれる",
+      "prompt": "cinematic anime illustration, golden sunrise across a calm ocean horizon, luminous reflections, peaceful finale"
+    }
+  ]
+}

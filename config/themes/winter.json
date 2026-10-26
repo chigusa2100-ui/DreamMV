@@ -1,0 +1,86 @@
+{
+  "name": "winter",
+  "keywords": [
+    "冬",
+    "雪",
+    "氷",
+    "霜",
+    "白い息",
+    "凍る",
+    "冬空",
+    "雪景色",
+    "粉雪",
+    "雪解け",
+    "寒い",
+    "冬の海"
+  ],
+  "emotion_keywords": {
+    "lonely": [
+      "孤独",
+      "ひとり",
+      "遠い"
+    ],
+    "warm": [
+      "ぬくもり",
+      "手",
+      "灯り"
+    ],
+    "hope": [
+      "雪解け",
+      "春",
+      "朝"
+    ]
+  },
+  "emotion_styles": {
+    "lonely": "pale blue snowlight, quiet negative space",
+    "warm": "amber window light against cold snow",
+    "hope": "soft dawn light over fresh snow"
+  },
+  "camera_styles": [
+    "wide snow landscape",
+    "close-up falling snow",
+    "window-side portrait",
+    "slow tracking footsteps"
+  ],
+  "color_palette": [
+    "snow white",
+    "ice blue",
+    "silver",
+    "warm amber",
+    "pale pink"
+  ],
+  "locations": [
+    "snow-covered village",
+    "frozen lake",
+    "quiet winter station",
+    "warm-lit cottage",
+    "snowy shrine path"
+  ],
+  "stages": [
+    {
+      "name": "初雪",
+      "description": "静かに雪が降り始める",
+      "prompt": "anime cinematic illustration, first snow falling over a Japanese town, delicate flakes, soft blue twilight"
+    },
+    {
+      "name": "白い道",
+      "description": "足跡だけが雪に残る",
+      "prompt": "poetic anime illustration, lone footprints across a pristine snowy path, distant trees, quiet atmosphere"
+    },
+    {
+      "name": "窓辺の灯り",
+      "description": "冷たい夜に小さな温もりを見つける",
+      "prompt": "anime illustration, warm cottage window glowing against a snowy night, inviting amber light, peaceful scene"
+    },
+    {
+      "name": "凍る湖",
+      "description": "広い氷の世界を見つめる",
+      "prompt": "cinematic anime landscape, frozen lake reflecting pale winter sky, snow-covered mountains, crystalline detail"
+    },
+    {
+      "name": "雪解けの朝",
+      "description": "冬の向こうに春の気配が訪れる",
+      "prompt": "beautiful anime illustration, early spring sunlight melting snow, tiny flowers emerging, hopeful gentle finale"
+    }
+  ]
+}

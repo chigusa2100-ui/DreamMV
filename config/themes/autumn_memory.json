@@ -1,0 +1,85 @@
+{
+  "name": "autumn_memory",
+  "keywords": [
+    "秋",
+    "紅葉",
+    "落ち葉",
+    "夕焼け",
+    "木枯らし",
+    "秋風",
+    "枯葉",
+    "黄昏",
+    "長い影",
+    "秋雨",
+    "金木犀"
+  ],
+  "emotion_keywords": {
+    "nostalgia": [
+      "思い出",
+      "懐かしい",
+      "昔"
+    ],
+    "sad": [
+      "別れ",
+      "涙",
+      "枯れる"
+    ],
+    "hope": [
+      "帰る",
+      "明日",
+      "灯り"
+    ]
+  },
+  "emotion_styles": {
+    "nostalgia": "amber film tones, gentle melancholy",
+    "sad": "overcast autumn light, long shadows",
+    "hope": "warm window glow in cool evening air"
+  },
+  "camera_styles": [
+    "wide autumn landscape",
+    "falling leaf close-up",
+    "slow walking shot",
+    "sunset silhouette"
+  ],
+  "color_palette": [
+    "burnt orange",
+    "amber gold",
+    "burgundy",
+    "moss green",
+    "dusky blue"
+  ],
+  "locations": [
+    "maple-lined path",
+    "quiet old town",
+    "autumn riverbank",
+    "mountain overlook",
+    "warm cafe window"
+  ],
+  "stages": [
+    {
+      "name": "色づく森",
+      "description": "木々が秋の色へ変わる",
+      "prompt": "anime cinematic landscape, vivid autumn maple forest, golden leaves drifting in gentle wind, rich warm colors"
+    },
+    {
+      "name": "落ち葉の道",
+      "description": "足音とともに記憶がよみがえる",
+      "prompt": "poetic anime illustration, solitary walk on a leaf-covered path, long afternoon shadows, nostalgic atmosphere"
+    },
+    {
+      "name": "秋雨の街",
+      "description": "雨に濡れた街で想いを巡らせる",
+      "prompt": "anime cinematic illustration, quiet old town in autumn rain, amber shop windows reflected on wet pavement"
+    },
+    {
+      "name": "夕暮れの川辺",
+      "description": "沈む夕日が水面を染める",
+      "prompt": "beautiful anime landscape, autumn river reflecting a deep orange sunset, drifting leaves, contemplative mood"
+    },
+    {
+      "name": "灯りの帰り道",
+      "description": "温かな灯りが帰る場所を示す",
+      "prompt": "cinematic anime illustration, warm house lights along a cool autumn street at dusk, peaceful bittersweet ending"
+    }
+  ]
+}

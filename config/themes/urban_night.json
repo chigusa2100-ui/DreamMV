@@ -1,0 +1,86 @@
+{
+  "name": "urban_night",
+  "keywords": [
+    "夜",
+    "街灯",
+    "路地",
+    "高架下",
+    "終電",
+    "ビル",
+    "交差点",
+    "夜景",
+    "コンビニ",
+    "都会",
+    "ひとり歩く",
+    "窓明かり"
+  ],
+  "emotion_keywords": {
+    "lonely": [
+      "孤独",
+      "ひとり",
+      "帰れない"
+    ],
+    "wonder": [
+      "夜空",
+      "光",
+      "遠く"
+    ],
+    "hope": [
+      "朝",
+      "始発",
+      "明日"
+    ]
+  },
+  "emotion_styles": {
+    "lonely": "moody urban blues, isolated pools of light",
+    "wonder": "cinematic city bokeh, atmospheric night haze",
+    "hope": "quiet blue dawn, first warm windows"
+  },
+  "camera_styles": [
+    "street-level tracking shot",
+    "wide city establishing shot",
+    "window reflection close-up",
+    "rooftop silhouette"
+  ],
+  "color_palette": [
+    "midnight blue",
+    "amber",
+    "concrete gray",
+    "neon cyan",
+    "muted violet"
+  ],
+  "locations": [
+    "quiet crosswalk",
+    "late-night convenience store",
+    "overpass walkway",
+    "rooftop stairwell",
+    "first-train platform"
+  ],
+  "stages": [
+    {
+      "name": "街灯の下",
+      "description": "夜の街へ歩き出す",
+      "prompt": "anime cinematic illustration, solitary figure walking beneath streetlights on a quiet Japanese city street, reflective pavement"
+    },
+    {
+      "name": "高架下",
+      "description": "都市の音が遠く響く",
+      "prompt": "moody anime illustration, underpass with concrete pillars and pools of amber light, late-night urban atmosphere"
+    },
+    {
+      "name": "窓明かり",
+      "description": "誰かの暮らしを遠くに感じる",
+      "prompt": "anime cinematic city view, countless apartment windows glowing in the night, contemplative rooftop foreground"
+    },
+    {
+      "name": "終電のホーム",
+      "description": "静かな駅で時間が流れる",
+      "prompt": "poetic anime illustration, nearly empty train platform late at night, fluorescent lights, deep blue shadows"
+    },
+    {
+      "name": "始発前",
+      "description": "夜の終わりに空が少し明るくなる",
+      "prompt": "anime cinematic illustration, quiet city just before sunrise, first train lights in the distance, subdued hopeful mood"
+    }
+  ]
+}

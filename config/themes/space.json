@@ -1,11 +1,91 @@
 {
-  "name":"space",
-  "keywords":["宇宙","銀河","星","惑星","時空","光"],
-  "stages":[
-    {"name":"発進","description":"導入","prompt":"spaceship launch"},
-    {"name":"航行","description":"旅","prompt":"deep space travel"},
-    {"name":"遭遇","description":"中盤","prompt":"cosmic phenomenon"},
-    {"name":"超越","description":"覚醒","prompt":"time space distortion"},
-    {"name":"帰還","description":"結末","prompt":"earthrise"}
+  "name": "space",
+  "keywords": [
+    "宇宙",
+    "銀河",
+    "星",
+    "惑星",
+    "時空",
+    "光",
+    "宇宙船",
+    "月面",
+    "軌道",
+    "彗星",
+    "ブラックホール",
+    "星雲",
+    "無重力",
+    "天体",
+    "宇宙飛行"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "未来",
+      "旅立ち",
+      "光",
+      "地球"
+    ],
+    "sad": [
+      "孤独",
+      "遠い",
+      "消える"
+    ],
+    "wonder": [
+      "星雲",
+      "銀河",
+      "未知",
+      "宇宙"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "luminous earthrise, hopeful cosmic dawn",
+    "sad": "quiet lonely starlight, deep blue shadows",
+    "wonder": "awe-inspiring nebula, surreal cosmic scale"
+  },
+  "camera_styles": [
+    "orbital wide shot",
+    "slow floating camera",
+    "spaceship cockpit close-up",
+    "planetary aerial view"
+  ],
+  "color_palette": [
+    "deep navy",
+    "nebula violet",
+    "stellar cyan",
+    "silver",
+    "sun gold"
+  ],
+  "locations": [
+    "orbital station",
+    "lunar plain",
+    "nebula corridor",
+    "alien ocean planet",
+    "earth orbit"
+  ],
+  "stages": [
+    {
+      "name": "発進",
+      "description": "地上を離れ星の海へ向かう",
+      "prompt": "anime cinematic illustration, futuristic spacecraft launching into a star-filled sky, powerful engines, dramatic scale"
+    },
+    {
+      "name": "星間航行",
+      "description": "無数の星々の間を進む",
+      "prompt": "beautiful anime illustration, spaceship gliding through deep space, colorful nebulae and distant galaxies"
+    },
+    {
+      "name": "未知との遭遇",
+      "description": "巨大な宇宙現象に出会う",
+      "prompt": "anime cinematic illustration, astronaut witnessing an immense luminous nebula and cosmic phenomenon, awe and wonder"
+    },
+    {
+      "name": "時空の彼方",
+      "description": "時空がゆがみ世界が変わる",
+      "prompt": "surreal anime science fiction illustration, spacetime distortion, luminous rings, stars bending through a cosmic portal"
+    },
+    {
+      "name": "地球への帰還",
+      "description": "青い惑星が帰る場所を照らす",
+      "prompt": "cinematic anime illustration, beautiful blue Earth rising above the lunar horizon, quiet emotional hopeful finale"
+    }
   ]
 }

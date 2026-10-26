@@ -1,0 +1,87 @@
+{
+  "name": "underwater",
+  "keywords": [
+    "深海",
+    "水中",
+    "泡",
+    "珊瑚",
+    "人魚",
+    "海底",
+    "水圧",
+    "青い光",
+    "沈む",
+    "水面",
+    "魚群",
+    "海の底"
+  ],
+  "emotion_keywords": {
+    "wonder": [
+      "未知",
+      "光",
+      "人魚",
+      "珊瑚"
+    ],
+    "sad": [
+      "沈む",
+      "孤独",
+      "暗い"
+    ],
+    "hope": [
+      "水面",
+      "浮かぶ",
+      "光"
+    ]
+  },
+  "emotion_styles": {
+    "wonder": "ethereal bioluminescence, dreamlike blue glow",
+    "sad": "deep indigo shadows, slow drifting particles",
+    "hope": "sunbeams reaching the surface, luminous turquoise"
+  },
+  "camera_styles": [
+    "underwater wide shot",
+    "slow floating camera",
+    "macro bubbles and coral",
+    "silhouette against the surface"
+  ],
+  "color_palette": [
+    "deep ocean blue",
+    "teal",
+    "bioluminescent cyan",
+    "violet",
+    "pearl white"
+  ],
+  "locations": [
+    "deep sea canyon",
+    "coral garden",
+    "sunken temple",
+    "underwater cave",
+    "sunlit ocean surface"
+  ],
+  "stages": [
+    {
+      "name": "水面の向こう",
+      "description": "光の揺れる水中へ潜る",
+      "prompt": "anime cinematic illustration, diver descending beneath a shimmering ocean surface, shafts of turquoise light, floating bubbles"
+    },
+    {
+      "name": "珊瑚の庭",
+      "description": "色鮮やかな生命の世界に出会う",
+      "prompt": "beautiful anime underwater illustration, colorful coral garden, schools of fish, luminous clear water"
+    },
+    {
+      "name": "沈んだ神殿",
+      "description": "海底に眠る古代の記憶を探す",
+      "prompt": "anime fantasy illustration, ancient temple ruins beneath the sea, drifting particles, mysterious blue light"
+    },
+    {
+      "name": "深海の光",
+      "description": "暗闇の中で小さな光が輝く",
+      "prompt": "dreamlike anime illustration, bioluminescent creatures in the deep ocean, glowing cyan and violet, immense darkness"
+    },
+    {
+      "name": "浮上",
+      "description": "水面の向こうに太陽を見つける",
+      "prompt": "cinematic anime illustration, looking upward toward a bright ocean surface, golden sunbeams, bubbles rising, hopeful atmosphere"
+    }
+  ]
+}

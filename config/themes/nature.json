@@ -1,11 +1,94 @@
 {
-  "name":"nature",
-  "keywords":["森","風","海","花","桜","山","川"],
-  "stages":[
-    {"name":"風","description":"導入","prompt":"wind through grasslands"},
-    {"name":"森","description":"探索","prompt":"lush forest"},
-    {"name":"海","description":"広がり","prompt":"ocean horizon"},
-    {"name":"花","description":"感情","prompt":"flower petals"},
-    {"name":"大地","description":"結末","prompt":"golden landscape"}
+  "name": "nature",
+  "keywords": [
+    "森",
+    "風",
+    "海",
+    "花",
+    "桜",
+    "山",
+    "川",
+    "草原",
+    "雨",
+    "雲",
+    "鳥",
+    "大地",
+    "新緑",
+    "紅葉",
+    "雪",
+    "自然",
+    "木漏れ日"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "芽吹く",
+      "春",
+      "始まり",
+      "光"
+    ],
+    "sad": [
+      "枯れる",
+      "涙",
+      "別れ",
+      "雨"
+    ],
+    "peace": [
+      "静けさ",
+      "風",
+      "森",
+      "海"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "fresh morning light, renewal",
+    "sad": "soft rain, wistful muted tones",
+    "peace": "calm natural atmosphere, gentle sunlight"
+  },
+  "camera_styles": [
+    "wide landscape shot",
+    "slow tracking through grass",
+    "macro flower close-up",
+    "aerial forest view"
+  ],
+  "color_palette": [
+    "leaf green",
+    "sky blue",
+    "soft white",
+    "sunset gold",
+    "flower pink"
+  ],
+  "locations": [
+    "wildflower meadow",
+    "ancient forest",
+    "rocky coast",
+    "mountain river",
+    "cherry blossom path"
+  ],
+  "stages": [
+    {
+      "name": "風の草原",
+      "description": "風が旅の始まりを告げる",
+      "prompt": "anime cinematic landscape, vast grassland swaying in the wind, soft clouds, peaceful natural beauty"
+    },
+    {
+      "name": "緑の森",
+      "description": "木漏れ日の中を進む",
+      "prompt": "beautiful anime illustration, sunbeams through lush ancient forest, floating pollen, rich layered greenery"
+    },
+    {
+      "name": "青い海",
+      "description": "水平線の向こうへ思いを馳せる",
+      "prompt": "anime cinematic illustration, expansive turquoise ocean and rocky shore, sea breeze, luminous horizon"
+    },
+    {
+      "name": "花の記憶",
+      "description": "花びらが感情を映し出す",
+      "prompt": "poetic anime illustration, flower petals drifting around a quiet character, shallow depth of field, delicate light"
+    },
+    {
+      "name": "大地の光",
+      "description": "黄金の夕日が世界を包む",
+      "prompt": "cinematic anime landscape, golden sunlight across mountains and meadow, tranquil hopeful finale"
+    }
   ]
 }

@@ -1,22 +1,90 @@
 {
   "name": "fantasy",
-  "keywords": ["星","月","夢","祈り","光","魔法","奇跡","空"],
+  "keywords": [
+    "星",
+    "月",
+    "夢",
+    "祈り",
+    "光",
+    "魔法",
+    "奇跡",
+    "空",
+    "剣",
+    "竜",
+    "妖精",
+    "王国",
+    "伝説",
+    "冒険",
+    "聖剣"
+  ],
   "emotion_keywords": {
-    "hope":["光","未来","夢","希望"],
-    "sad":["涙","別れ","孤独"],
-    "love":["君","愛"]
+    "hope": [
+      "光",
+      "未来",
+      "夢",
+      "希望"
+    ],
+    "sad": [
+      "涙",
+      "別れ",
+      "孤独"
+    ],
+    "love": [
+      "君",
+      "愛",
+      "約束"
+    ]
   },
   "emotion_styles": {
-    "hope":"golden light, sunrise",
-    "sad":"melancholy atmosphere",
-    "love":"warm emotional lighting"
+    "hope": "golden light, radiant sunrise",
+    "sad": "melancholy mist, soft moonlight",
+    "love": "warm magical glow, intimate atmosphere"
   },
-  "keyword_candidates": ["星","月","夢","祈り","光"],
-  "stages":[
-    {"name":"星降る夜","description":"旅の始まり","prompt":"starry sky, moonlight"},
-    {"name":"旅立ち","description":"冒険","prompt":"fantasy journey"},
-    {"name":"祈り","description":"転機","prompt":"sacred light"},
-    {"name":"奇跡","description":"覚醒","prompt":"magical transformation"},
-    {"name":"夜明け","description":"結末","prompt":"hopeful sunrise"}
+  "camera_styles": [
+    "epic wide shot",
+    "low angle hero shot",
+    "close-up portrait",
+    "sweeping aerial view"
+  ],
+  "color_palette": [
+    "royal blue",
+    "moon silver",
+    "gold",
+    "violet",
+    "emerald"
+  ],
+  "locations": [
+    "ancient castle",
+    "enchanted forest",
+    "floating ruins",
+    "crystal lake",
+    "mountain sanctuary"
+  ],
+  "stages": [
+    {
+      "name": "星降る夜",
+      "description": "星空の下で旅が始まる",
+      "prompt": "high quality anime fantasy illustration, vast starry sky above an ancient kingdom, silver moonlight, intricate scenery"
+    },
+    {
+      "name": "旅立ち",
+      "description": "未知の世界へ踏み出す",
+      "prompt": "anime cinematic illustration, young adventurer on a winding path through an enchanted landscape, flowing cloak, epic scale"
+    },
+    {
+      "name": "祈りの聖域",
+      "description": "願いが静かに力を宿す",
+      "prompt": "anime fantasy illustration, sacred crystal sanctuary, hands clasped in prayer, gentle radiant magic, delicate details"
+    },
+    {
+      "name": "奇跡の覚醒",
+      "description": "秘められた力が目覚める",
+      "prompt": "epic anime fantasy illustration, magical transformation, luminous runes and swirling stardust, dramatic light"
+    },
+    {
+      "name": "希望の夜明け",
+      "description": "旅の先に新しい世界が広がる",
+      "prompt": "cinematic anime fantasy landscape, golden sunrise over mountains and castle, hopeful grand finale"
+    }
   ]
 }

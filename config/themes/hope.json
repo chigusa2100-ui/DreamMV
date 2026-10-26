@@ -1,0 +1,88 @@
+{
+  "name": "hope",
+  "keywords": [
+    "希望",
+    "未来",
+    "明日",
+    "光",
+    "始まり",
+    "進む",
+    "夢",
+    "願い",
+    "立ち上がる",
+    "羽ばたく",
+    "道",
+    "朝",
+    "生きる"
+  ],
+  "emotion_keywords": {
+    "struggle": [
+      "壁",
+      "暗闇",
+      "負けない"
+    ],
+    "hope": [
+      "希望",
+      "光",
+      "未来",
+      "明日"
+    ],
+    "freedom": [
+      "羽ばたく",
+      "空",
+      "飛ぶ"
+    ]
+  },
+  "emotion_styles": {
+    "struggle": "dramatic shadows breaking into light",
+    "hope": "radiant golden sunrise, uplifting atmosphere",
+    "freedom": "open sky, wind-swept sense of liberation"
+  },
+  "camera_styles": [
+    "low angle hero shot",
+    "wide sunrise shot",
+    "tracking shot from behind",
+    "slow upward crane shot"
+  ],
+  "color_palette": [
+    "sunrise gold",
+    "sky blue",
+    "white",
+    "warm orange",
+    "soft violet"
+  ],
+  "locations": [
+    "mountain ridge",
+    "city rooftop at dawn",
+    "open grassland",
+    "long road toward the horizon",
+    "cloud sea"
+  ],
+  "stages": [
+    {
+      "name": "暗闇の中で",
+      "description": "小さな光を見つける",
+      "prompt": "anime cinematic illustration, lone figure in a dark landscape seeing a small distant light, emotional contrast"
+    },
+    {
+      "name": "一歩",
+      "description": "迷いながらも前へ進む",
+      "prompt": "anime illustration, determined character walking along a long road at dawn, wind moving clothes, cinematic perspective"
+    },
+    {
+      "name": "雲を越えて",
+      "description": "空が大きく開ける",
+      "prompt": "epic anime landscape, character reaching a mountain summit above a sea of clouds, brilliant sunlight"
+    },
+    {
+      "name": "光の中へ",
+      "description": "心にあった力が解き放たれる",
+      "prompt": "uplifting anime cinematic illustration, radiant beams of sunlight, flowing energy and wind, triumphant yet graceful"
+    },
+    {
+      "name": "新しい朝",
+      "description": "未来へ続く景色を見渡す",
+      "prompt": "beautiful anime illustration, vast golden sunrise over a peaceful world, hopeful cinematic finale"
+    }
+  ]
+}

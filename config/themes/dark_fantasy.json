@@ -1,0 +1,88 @@
+{
+  "name": "dark_fantasy",
+  "keywords": [
+    "闇",
+    "呪い",
+    "魔王",
+    "影",
+    "悪夢",
+    "禁忌",
+    "黒い月",
+    "血",
+    "絶望",
+    "廃墟",
+    "亡霊",
+    "魔女",
+    "封印",
+    "堕ちる"
+  ],
+  "emotion_keywords": {
+    "fear": [
+      "悪夢",
+      "恐怖",
+      "影"
+    ],
+    "sad": [
+      "絶望",
+      "喪失",
+      "涙"
+    ],
+    "resolve": [
+      "立ち向かう",
+      "封印",
+      "解放"
+    ]
+  },
+  "emotion_styles": {
+    "fear": "ominous mist, deep crimson accents",
+    "sad": "cold moonlight, desolate atmosphere",
+    "resolve": "dramatic backlight, defiant silhouette"
+  },
+  "camera_styles": [
+    "dramatic low angle",
+    "wide ruined kingdom shot",
+    "close-up eyes",
+    "slow reveal from shadows"
+  ],
+  "color_palette": [
+    "obsidian black",
+    "blood crimson",
+    "violet",
+    "moon silver",
+    "ashen gray"
+  ],
+  "locations": [
+    "ruined cathedral",
+    "black forest",
+    "abandoned castle",
+    "cursed lake",
+    "storm-covered wasteland"
+  ],
+  "stages": [
+    {
+      "name": "黒い前兆",
+      "description": "不吉な空の下で物語が始まる",
+      "prompt": "dark fantasy anime illustration, black moon above a ruined kingdom, ravens, storm clouds, ominous cinematic lighting"
+    },
+    {
+      "name": "呪われた森",
+      "description": "霧の森に何かが潜む",
+      "prompt": "anime dark fantasy scene, twisted ancient forest, drifting violet mist, mysterious silhouettes, intricate atmosphere"
+    },
+    {
+      "name": "封印の間",
+      "description": "古い力が目を覚ます",
+      "prompt": "dark anime fantasy illustration, ancient sealed chamber, glowing runes, broken chains, supernatural energy"
+    },
+    {
+      "name": "最後の対峙",
+      "description": "闇の中心で運命と向き合う",
+      "prompt": "epic dark fantasy anime illustration, lone hero facing a colossal shadow beneath crimson lightning, dramatic composition"
+    },
+    {
+      "name": "灰の夜明け",
+      "description": "長い闇の先にかすかな光が差す",
+      "prompt": "cinematic anime dark fantasy landscape, ruined castle at pale dawn, ash drifting in the air, bittersweet hope"
+    }
+  ]
+}

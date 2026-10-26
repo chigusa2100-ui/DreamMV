@@ -1,0 +1,87 @@
+{
+  "name": "music_stage",
+  "keywords": [
+    "歌",
+    "歌声",
+    "音楽",
+    "メロディ",
+    "リズム",
+    "ギター",
+    "ピアノ",
+    "ドラム",
+    "ライブ",
+    "ステージ",
+    "拍手",
+    "響く",
+    "旋律"
+  ],
+  "emotion_keywords": {
+    "joy": [
+      "踊る",
+      "笑顔",
+      "歓声"
+    ],
+    "sad": [
+      "静か",
+      "涙",
+      "別れ"
+    ],
+    "hope": [
+      "歌う",
+      "響く",
+      "未来"
+    ]
+  },
+  "emotion_styles": {
+    "joy": "vibrant concert lighting, energetic atmosphere",
+    "sad": "single spotlight, intimate emotional performance",
+    "hope": "radiant stage lights, uplifting finale"
+  },
+  "camera_styles": [
+    "wide concert shot",
+    "performer close-up",
+    "audience point of view",
+    "dynamic stage tracking"
+  ],
+  "color_palette": [
+    "electric blue",
+    "violet",
+    "hot pink",
+    "white spotlight",
+    "gold"
+  ],
+  "locations": [
+    "concert stage",
+    "rehearsal room",
+    "backstage corridor",
+    "rooftop performance",
+    "open-air festival stage"
+  ],
+  "stages": [
+    {
+      "name": "開演前",
+      "description": "静かな舞台に光が灯る",
+      "prompt": "anime cinematic illustration, empty concert stage before the show, haze in spotlights, instruments waiting, anticipation"
+    },
+    {
+      "name": "最初の一音",
+      "description": "音が世界を動かし始める",
+      "prompt": "dynamic anime illustration, singer stepping into a spotlight, stage lights blooming, expressive performance"
+    },
+    {
+      "name": "共鳴",
+      "description": "音楽と観客の感情が重なる",
+      "prompt": "anime concert illustration, energetic live performance, luminous stage beams, joyful audience silhouettes"
+    },
+    {
+      "name": "静かな間奏",
+      "description": "旋律が心の奥へ届く",
+      "prompt": "emotional anime illustration, performer alone beneath a soft spotlight, intimate piano and atmospheric haze"
+    },
+    {
+      "name": "アンコール",
+      "description": "最後の光が未来へつながる",
+      "prompt": "epic anime concert finale, golden confetti and radiant lights, singer facing a cheering audience, triumphant mood"
+    }
+  ]
+}

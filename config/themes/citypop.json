@@ -1,11 +1,93 @@
 {
-  "name":"citypop",
-  "keywords":["夜","都会","恋","街","夏","ドライブ"],
-  "stages":[
-    {"name":"夕暮れ","description":"導入","prompt":"city sunset"},
-    {"name":"ドライブ","description":"移動","prompt":"retro sports car"},
-    {"name":"ネオン","description":"夜","prompt":"city lights"},
-    {"name":"想い出","description":"回想","prompt":"nostalgic atmosphere"},
-    {"name":"朝焼け","description":"結末","prompt":"morning city skyline"}
+  "name": "citypop",
+  "keywords": [
+    "夜",
+    "都会",
+    "恋",
+    "街",
+    "夏",
+    "ドライブ",
+    "シティポップ",
+    "ネオン",
+    "海岸線",
+    "カセット",
+    "80年代",
+    "きらめき",
+    "終電",
+    "街灯",
+    "黄昏"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "明日",
+      "未来",
+      "朝焼け",
+      "始まり"
+    ],
+    "sad": [
+      "さよなら",
+      "涙",
+      "ひとり",
+      "終電"
+    ],
+    "love": [
+      "恋",
+      "君",
+      "愛",
+      "キス",
+      "ふたり"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "hopeful dawn glow, warm pastel highlights",
+    "sad": "melancholic blue hour, soft rain reflections",
+    "love": "romantic amber light, dreamy soft focus"
+  },
+  "camera_styles": [
+    "cinematic wide shot",
+    "tracking shot beside a retro car",
+    "close-up portrait with city bokeh",
+    "rooftop establishing shot"
+  ],
+  "color_palette": [
+    "teal blue",
+    "magenta",
+    "warm amber",
+    "midnight navy",
+    "soft peach"
+  ],
+  "locations": [
+    "coastal expressway at dusk",
+    "retro city boulevard",
+    "neon-lit record shop",
+    "rooftop overlooking the bay",
+    "quiet train platform"
+  ],
+  "stages": [
+    {
+      "name": "黄昏の街",
+      "description": "夕暮れの都会に物語が始まる",
+      "prompt": "anime cinematic illustration, Japanese city pop aesthetic, sunset skyline, pastel orange and teal, nostalgic 1980s atmosphere, detailed background"
+    },
+    {
+      "name": "海岸線ドライブ",
+      "description": "街の灯りを追いながら走る",
+      "prompt": "anime cinematic illustration, retro sports car cruising along coastal expressway at twilight, ocean reflections, wind in hair, dynamic tracking shot"
+    },
+    {
+      "name": "ネオンの交差点",
+      "description": "街の光と想いが交差する",
+      "prompt": "anime cinematic illustration, neon crossing at night, wet pavement reflections, magenta and cyan signage, stylish city pop mood"
+    },
+    {
+      "name": "思い出のレコード",
+      "description": "音楽とともに記憶がよみがえる",
+      "prompt": "anime cinematic illustration, cozy vintage record shop, vinyl records, warm amber lamps, nostalgic intimate atmosphere"
+    },
+    {
+      "name": "朝焼けの湾岸",
+      "description": "夜を越えて新しい朝へ",
+      "prompt": "anime cinematic illustration, dawn over the bay skyline, peach sunrise, quiet hopeful ending, cinematic wide composition"
+    }
   ]
 }

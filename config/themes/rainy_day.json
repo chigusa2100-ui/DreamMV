@@ -1,0 +1,88 @@
+{
+  "name": "rainy_day",
+  "keywords": [
+    "雨",
+    "傘",
+    "水たまり",
+    "雫",
+    "濡れる",
+    "雨音",
+    "曇り",
+    "雨宿り",
+    "涙",
+    "梅雨",
+    "雨上がり",
+    "虹"
+  ],
+  "emotion_keywords": {
+    "sad": [
+      "涙",
+      "別れ",
+      "孤独",
+      "さよなら"
+    ],
+    "hope": [
+      "虹",
+      "晴れる",
+      "明日",
+      "光"
+    ],
+    "love": [
+      "傘",
+      "ふたり",
+      "寄り添う"
+    ]
+  },
+  "emotion_styles": {
+    "sad": "cool desaturated blue, reflective rain",
+    "hope": "soft sunbeams after rainfall, gentle optimism",
+    "love": "warm light beneath an umbrella, intimate framing"
+  },
+  "camera_styles": [
+    "close-up raindrops",
+    "street-level reflection shot",
+    "slow-motion umbrella shot",
+    "wide rainy city shot"
+  ],
+  "color_palette": [
+    "rain blue",
+    "slate gray",
+    "soft lavender",
+    "warm amber",
+    "rainbow pastel"
+  ],
+  "locations": [
+    "rainy alley",
+    "quiet bus stop",
+    "window overlooking the city",
+    "covered shopping street",
+    "wet riverside path"
+  ],
+  "stages": [
+    {
+      "name": "降り出す雨",
+      "description": "雨が街の色を変える",
+      "prompt": "anime cinematic illustration, first rain falling over a quiet Japanese street, reflective pavement, soft overcast light"
+    },
+    {
+      "name": "傘の下",
+      "description": "小さな距離に想いが宿る",
+      "prompt": "poetic anime illustration, two figures sharing an umbrella in gentle rain, intimate emotional composition"
+    },
+    {
+      "name": "窓辺の記憶",
+      "description": "雨音が過去を呼び起こす",
+      "prompt": "anime illustration, thoughtful character beside a rain-streaked window, blurred city lights, melancholy mood"
+    },
+    {
+      "name": "水たまりの光",
+      "description": "濡れた街に灯りが揺れる",
+      "prompt": "cinematic anime night street, neon and lanterns reflected in puddles, delicate raindrops, atmospheric depth"
+    },
+    {
+      "name": "雨上がり",
+      "description": "雲の向こうに光が差す",
+      "prompt": "beautiful anime illustration, sunbeams after rain, glistening leaves and a faint rainbow, hopeful ending"
+    }
+  ]
+}

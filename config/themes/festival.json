@@ -1,0 +1,88 @@
+{
+  "name": "festival",
+  "keywords": [
+    "祭",
+    "祭り",
+    "花火",
+    "提灯",
+    "浴衣",
+    "夏祭り",
+    "太鼓",
+    "踊り",
+    "屋台",
+    "縁日",
+    "夜店",
+    "神輿",
+    "笛",
+    "夏の夜"
+  ],
+  "emotion_keywords": {
+    "joy": [
+      "笑う",
+      "楽しい",
+      "踊る"
+    ],
+    "nostalgia": [
+      "思い出",
+      "あの日",
+      "懐かしい"
+    ],
+    "love": [
+      "君",
+      "ふたり",
+      "待ち合わせ"
+    ]
+  },
+  "emotion_styles": {
+    "joy": "vibrant lantern glow, lively festive energy",
+    "nostalgia": "warm film grain, distant fireworks",
+    "love": "soft lantern light, intimate festival evening"
+  },
+  "camera_styles": [
+    "lantern-level tracking shot",
+    "wide fireworks shot",
+    "close-up festival details",
+    "crowd-level cinematic shot"
+  ],
+  "color_palette": [
+    "lantern amber",
+    "crimson",
+    "indigo",
+    "gold",
+    "midnight blue"
+  ],
+  "locations": [
+    "traditional festival street",
+    "riverside fireworks viewing",
+    "shrine grounds",
+    "food stall alley",
+    "summer night bridge"
+  ],
+  "stages": [
+    {
+      "name": "祭りの灯",
+      "description": "提灯が夜の始まりを告げる",
+      "prompt": "anime cinematic illustration, Japanese summer festival street glowing with paper lanterns, colorful stalls, lively atmosphere"
+    },
+    {
+      "name": "縁日の賑わい",
+      "description": "屋台と人々の笑顔が広がる",
+      "prompt": "anime illustration, traditional festival food stalls, warm lantern light, joyful candid moments, detailed setting"
+    },
+    {
+      "name": "神楽の舞",
+      "description": "太鼓と笛に合わせて舞う",
+      "prompt": "beautiful anime illustration, traditional shrine dance at a summer festival, flowing garments, dramatic lantern lighting"
+    },
+    {
+      "name": "夜空の花火",
+      "description": "花火が夜空を鮮やかに染める",
+      "prompt": "cinematic anime illustration, enormous colorful fireworks above a river, glowing reflections, silhouettes watching in wonder"
+    },
+    {
+      "name": "祭りのあと",
+      "description": "静かな夜に余韻が残る",
+      "prompt": "poetic anime illustration, quiet festival street after the crowd has left, a few glowing lanterns, wistful midnight atmosphere"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "name": "spring_bloom",
+  "keywords": [
+    "春",
+    "桜",
+    "花びら",
+    "芽吹く",
+    "新生活",
+    "卒業",
+    "入学",
+    "出会い",
+    "若葉",
+    "春風",
+    "花見",
+    "旅立ち"
+  ],
+  "emotion_keywords": {
+    "joy": [
+      "出会い",
+      "笑顔",
+      "花"
+    ],
+    "sad": [
+      "卒業",
+      "別れ",
+      "散る"
+    ],
+    "hope": [
+      "芽吹く",
+      "始まり",
+      "旅立ち"
+    ]
+  },
+  "emotion_styles": {
+    "joy": "soft pastel sunlight, fresh spring air",
+    "sad": "falling petals, wistful warm light",
+    "hope": "clear morning sky, new beginnings"
+  },
+  "camera_styles": [
+    "petal-level close-up",
+    "wide blossom avenue",
+    "backlit portrait",
+    "slow tracking through trees"
+  ],
+  "color_palette": [
+    "cherry blossom pink",
+    "fresh green",
+    "sky blue",
+    "cream",
+    "sunlight gold"
+  ],
+  "locations": [
+    "cherry blossom avenue",
+    "school gate",
+    "riverside path",
+    "spring meadow",
+    "quiet garden"
+  ],
+  "stages": [
+    {
+      "name": "蕾の季節",
+      "description": "春の気配が近づく",
+      "prompt": "anime cinematic illustration, delicate cherry buds in early spring, soft morning light, gentle anticipation"
+    },
+    {
+      "name": "桜並木",
+      "description": "花びらの中で出会いが生まれる",
+      "prompt": "beautiful anime illustration, cherry blossom avenue filled with drifting petals, fresh pastel colors, cinematic depth"
+    },
+    {
+      "name": "旅立ちの日",
+      "description": "新しい場所へ歩き出す",
+      "prompt": "anime cinematic illustration, student at a school gate in spring, blossoms in the breeze, emotional new beginning"
+    },
+    {
+      "name": "花びらの記憶",
+      "description": "過ぎた時間を優しく振り返る",
+      "prompt": "poetic anime illustration, falling cherry petals over a quiet riverside, nostalgic afternoon light"
+    },
+    {
+      "name": "若葉の朝",
+      "description": "新緑とともに未来が始まる",
+      "prompt": "cinematic anime landscape, fresh green leaves glowing in morning sun, bright spring sky, hopeful finale"
+    }
+  ]
+}

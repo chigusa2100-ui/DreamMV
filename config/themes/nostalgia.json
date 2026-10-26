@@ -1,0 +1,87 @@
+{
+  "name": "nostalgia",
+  "keywords": [
+    "思い出",
+    "懐かしい",
+    "昔",
+    "故郷",
+    "写真",
+    "アルバム",
+    "帰る",
+    "夏休み",
+    "放課後",
+    "卒業",
+    "母校",
+    "あの日",
+    "記憶"
+  ],
+  "emotion_keywords": {
+    "warm": [
+      "故郷",
+      "家",
+      "笑顔"
+    ],
+    "sad": [
+      "別れ",
+      "卒業",
+      "もう戻れない"
+    ],
+    "hope": [
+      "また会う",
+      "未来",
+      "帰る"
+    ]
+  },
+  "emotion_styles": {
+    "warm": "sun-faded colors, warm nostalgic glow",
+    "sad": "quiet twilight, muted film tones",
+    "hope": "soft morning haze, gentle optimism"
+  },
+  "camera_styles": [
+    "soft focus close-up",
+    "slow pan across old objects",
+    "wide nostalgic landscape",
+    "backlit silhouette"
+  ],
+  "color_palette": [
+    "faded gold",
+    "dusty blue",
+    "cream",
+    "warm brown",
+    "soft green"
+  ],
+  "locations": [
+    "old family home",
+    "empty school corridor",
+    "rural train station",
+    "summer festival street",
+    "overgrown childhood path"
+  ],
+  "stages": [
+    {
+      "name": "古い写真",
+      "description": "一枚の写真から記憶が開く",
+      "prompt": "nostalgic anime illustration, old photograph album on a wooden desk, afternoon sunlight and floating dust motes"
+    },
+    {
+      "name": "放課後",
+      "description": "誰もいない教室に夏の風が吹く",
+      "prompt": "cinematic anime illustration, empty school classroom in late summer, curtains moving in breeze, warm nostalgic light"
+    },
+    {
+      "name": "帰り道",
+      "description": "見慣れた道をゆっくり歩く",
+      "prompt": "anime cinematic landscape, quiet rural road bordered by grasses, golden hour, wistful summer atmosphere"
+    },
+    {
+      "name": "祭りの記憶",
+      "description": "遠くに祭囃子と提灯が揺れる",
+      "prompt": "beautiful anime illustration, nostalgic Japanese summer festival, glowing lanterns, distant fireworks, atmospheric crowd"
+    },
+    {
+      "name": "新しいページ",
+      "description": "思い出を胸に未来へ進む",
+      "prompt": "anime cinematic illustration, character walking toward a bright morning along a familiar country road, bittersweet hope"
+    }
+  ]
+}

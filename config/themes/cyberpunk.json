@@ -1,22 +1,94 @@
 {
-  "name":"cyberpunk",
-  "keywords":["未来","都市","ネオン","電子","電脳","コード","回路"],
-  "emotion_keywords":{
-    "hope":["未来","光"],
-    "sad":["孤独","消える"],
-    "cyber":["電子","コード","電脳"]
+  "name": "cyberpunk",
+  "keywords": [
+    "未来",
+    "都市",
+    "ネオン",
+    "電子",
+    "電脳",
+    "コード",
+    "回路",
+    "AI",
+    "アンドロイド",
+    "サイバー",
+    "仮想",
+    "データ",
+    "機械",
+    "ハッキング",
+    "高層ビル"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "未来",
+      "光",
+      "明日",
+      "解放"
+    ],
+    "sad": [
+      "孤独",
+      "消える",
+      "涙",
+      "記憶"
+    ],
+    "cyber": [
+      "電子",
+      "コード",
+      "電脳",
+      "回路",
+      "データ"
+    ]
   },
-  "emotion_styles":{
-    "hope":"futuristic sunrise",
-    "sad":"rain soaked streets",
-    "cyber":"holograms, digital effects"
+  "emotion_styles": {
+    "hope": "futuristic sunrise, luminous hopeful skyline",
+    "sad": "rain-soaked streets, lonely blue neon",
+    "cyber": "holograms, digital effects, intricate circuitry"
   },
-  "keyword_candidates":["未来","都市","ネオン","電子","電脳"],
-  "stages":[
-    {"name":"ネオンシティ","description":"導入","prompt":"cyberpunk city"},
-    {"name":"接続","description":"覚醒","prompt":"digital network"},
-    {"name":"追跡","description":"疾走","prompt":"high speed action"},
-    {"name":"突破","description":"反撃","prompt":"epic cyber battle"},
-    {"name":"新世界","description":"結末","prompt":"hopeful skyline"}
+  "camera_styles": [
+    "cinematic wide shot",
+    "street-level tracking shot",
+    "dramatic low angle",
+    "aerial megacity view",
+    "close-up portrait with holographic reflections"
+  ],
+  "color_palette": [
+    "neon cyan",
+    "electric blue",
+    "magenta",
+    "graphite black",
+    "signal red"
+  ],
+  "locations": [
+    "rainy megacity street",
+    "holographic market",
+    "rooftop antenna garden",
+    "underground data center",
+    "orbital elevator terminal"
+  ],
+  "stages": [
+    {
+      "name": "ネオンシティ",
+      "description": "巨大都市の夜に入る",
+      "prompt": "high quality anime cinematic illustration, vast cyberpunk megacity at night, layered skyscrapers, neon cyan and magenta, atmospheric depth"
+    },
+    {
+      "name": "データ接続",
+      "description": "光のネットワークが目覚める",
+      "prompt": "anime cinematic illustration, character surrounded by floating holographic interfaces and luminous data streams, intricate digital network"
+    },
+    {
+      "name": "追跡者",
+      "description": "雨の路地を駆け抜ける",
+      "prompt": "dynamic anime action illustration, running through rain-soaked neon alley, reflections, motion, dramatic perspective"
+    },
+    {
+      "name": "システム突破",
+      "description": "閉ざされた世界に道を開く",
+      "prompt": "epic anime cyberpunk scene, enormous security barrier dissolving into glowing pixels, determined hero, electric light"
+    },
+    {
+      "name": "新世界の夜明け",
+      "description": "都市の向こうに希望が見える",
+      "prompt": "cinematic anime illustration, cyberpunk skyline at luminous sunrise, neon fading into gold, hopeful atmosphere"
+    }
   ]
 }
