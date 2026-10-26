@@ -13,7 +13,7 @@ from src.dreammv.jobs import JobManager
 from src.dreammv.planner import StoryPlanner
 from src.dreammv.project import ProjectManager
 from src.dreammv.project_queue import ProjectQueueService
-from src.dreammv.render_worker import RenderWorker
+from src.dreammv.render_worker import AssembleWorker, RenderWorker
 
 
 # ---- クラッシュ診断: 落ちたときの原因を crash.log に残す ----
@@ -36,7 +36,7 @@ sys.excepthook = _excepthook
 class DreamMV(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("DreamMV v0.24 - Wan")
+        self.setWindowTitle("DreamMV v0.25 - Animagine XL 4.0")
         self.resize(820, 700)
         self.selected_path: str | None = None
         self.project_dir: Path | None = None
@@ -58,8 +58,10 @@ class DreamMV(QWidget):
         self.refresh_queue_button = QPushButton("🔄 キュー更新")
         self.retry_button = QPushButton("↻ 失敗シーンを再試行")
         self.retry_button.setEnabled(False)
-        self.render_button = QPushButton("🌙 Wanでレンダリング開始")
+        self.render_button = QPushButton("🎨 AnimagineでMV生成")
         self.render_button.setEnabled(False)
+        self.assemble_button = QPushButton("🎞 完了済みシーンから再結合（再生成なし）")
+        self.assemble_button.setEnabled(False)
         self.stop_button = QPushButton("■ 中止")
         self.stop_button.setEnabled(False)
         self.render_log = QLabel("")
@@ -83,6 +85,7 @@ class DreamMV(QWidget):
         layout.addLayout(buttons)
         render_buttons = QHBoxLayout()
         render_buttons.addWidget(self.render_button)
+        render_buttons.addWidget(self.assemble_button)
         render_buttons.addWidget(self.stop_button)
         layout.addLayout(render_buttons)
         layout.addWidget(self.render_log)
@@ -93,6 +96,7 @@ class DreamMV(QWidget):
         self.refresh_queue_button.clicked.connect(self.refresh_queue)
         self.retry_button.clicked.connect(self.retry_failed_scenes)
         self.render_button.clicked.connect(self.start_render)
+        self.assemble_button.clicked.connect(self.start_assemble_only)
         self.stop_button.clicked.connect(self.stop_render)
 
         self.config_path = Path.cwd() / "config.json"
@@ -149,7 +153,7 @@ class DreamMV(QWidget):
             audio_path = self.project_dir / audio_name
             self.selected_path = str(audio_path) if audio_path.exists() else None
             self.duration = float(self.project["duration"])
-            self.generate_button.setEnabled(self.selected_path is not None)
+            self.generate_button.setEnabled(False)  # 既存プロジェクトのキューを誤って作り直さない
             self.label.setText(
                 "プロジェクト読み込み成功\n"
                 f"タイトル: {self.project.get('title', self.project_dir.name)}\n"
@@ -190,7 +194,7 @@ class DreamMV(QWidget):
                 "MVの設計図を作成しました！\n"
                 f"タイトル: {project['title']}\nシーン数: {project['scene_count']}\n"
                 f"キュー内シーン数: {len(queue_data.get('scenes', []))}\n保存先: {project_dir}\n\n"
-                "「🌙 Wanでレンダリング開始」を押すと、シーンごとに動画を生成します。"
+                "「🎨 AnimagineでMV生成」を押すと、シーンごとに動画を生成します。"
             )
             self.refresh_queue()
         except Exception as exc:
@@ -204,6 +208,7 @@ class DreamMV(QWidget):
         self.scene_table.setRowCount(0)
         self.retry_button.setEnabled(False)
         self.render_button.setEnabled(False)
+        self.assemble_button.setEnabled(False)
 
     def refresh_queue(self):
         if self.queue_service is None:
@@ -237,6 +242,16 @@ class DreamMV(QWidget):
             idle = self.worker is None
             self.retry_button.setEnabled(idle and failed > 0)
             self.render_button.setEnabled(idle and self.selected_path is not None and (queued + running) > 0)
+            completed_with_files = any(
+                scene.get("status") == "completed"
+                and scene.get("output")
+                and Path(scene["output"]).exists()
+                for scene in scenes
+            )
+            self.assemble_button.setEnabled(
+                idle and self.selected_path is not None and self.project_dir is not None
+                and completed_with_files
+            )
         except FileNotFoundError:
             self._clear_queue_view()
             self.queue_summary.setText("キューがありません。Generate で設計図を作成してください。")
@@ -252,7 +267,7 @@ class DreamMV(QWidget):
             QMessageBox.information(
                 self, "失敗シーンの再試行",
                 f"{count} 件の失敗シーンを待機状態に戻しました。\n"
-                "「🌙 Wanでレンダリング開始」を押すと、これらを再生成します。",
+                "「🎨 AnimagineでMV生成」を押すと、これらを再生成します。",
             )
         except Exception as exc:
             QMessageBox.critical(self, "再試行エラー", str(exc))
@@ -263,16 +278,23 @@ class DreamMV(QWidget):
             return
         if self.worker is not None:
             return
-        settings_path = Path.cwd() / "wan_settings.json"
+        settings_path = Path.cwd() / "anime_settings.json"
         settings: dict = {}
         if settings_path.exists():
             try:
                 settings = json.loads(settings_path.read_text("utf-8-sig"))
             except Exception as exc:
-                QMessageBox.warning(self, "設定エラー", f"wan_settings.json を読めません: {exc}")
+                QMessageBox.warning(self, "設定エラー", f"anime_settings.json を読めません: {exc}")
+        # Old settings are read only as a migration fallback for the model cache path.
+        if not settings and (Path.cwd() / "wan_settings.json").exists():
+            try:
+                old_settings = json.loads((Path.cwd() / "wan_settings.json").read_text("utf-8-sig"))
+                settings = {"models_dir": old_settings.get("models_dir")}
+            except Exception:
+                settings = {}
         self.worker = RenderWorker(
             self.queue_service, self.project_dir, Path(self.selected_path),
-            preset=settings.get("preset", "light"), models_dir=settings.get("models_dir"),
+            preset="animagine", models_dir=settings.get("models_dir"),
         )
         self.worker.log.connect(self.render_log.setText)
         self.worker.scene_changed.connect(self.refresh_queue)
@@ -283,6 +305,35 @@ class DreamMV(QWidget):
         self.retry_button.setEnabled(False)
         self.stop_button.setEnabled(True)
         self.render_log.setText("レンダリングを開始しました（初回はモデルの読み込みに時間がかかります）...")
+        self.worker.start()
+
+    def start_assemble_only(self):
+        """Mux existing completed clips; do not initialize Animagine or regenerate scenes."""
+        if self.queue_service is None or not self.selected_path or self.project_dir is None:
+            return
+        if self.worker is not None:
+            return
+        answer = QMessageBox.question(
+            self, "完成済みシーンから再結合",
+            "画像生成は行わず、完了済みのシーンクリップと音声だけを結合します。\\n"
+            "既存の完成動画 music_video.mp4 は上書きされます。続けますか？",
+            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+            QMessageBox.StandardButton.No,
+        )
+        if answer != QMessageBox.StandardButton.Yes:
+            return
+        self.worker = AssembleWorker(
+            self.queue_service, self.project_dir, Path(self.selected_path)
+        )
+        self.worker.log.connect(self.render_log.setText)
+        self.worker.finished_ok.connect(self._render_done)
+        self.worker.failed.connect(self._render_failed)
+        self.worker.finished.connect(self._thread_finished)
+        self.render_button.setEnabled(False)
+        self.assemble_button.setEnabled(False)
+        self.retry_button.setEnabled(False)
+        self.stop_button.setEnabled(False)
+        self.render_log.setText("完了済みシーンを再結合しています（画像の再生成はしません）...")
         self.worker.start()
 
     def stop_render(self):

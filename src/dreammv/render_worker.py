@@ -1,4 +1,4 @@
-"""一晩レンダリング用ワーカー: キューのシーンを順に Wan で生成 → ffmpeg で結合 → 音声を合成。"""
+"""Animagine-only renderer: generate one anime still per scene, animate it, then mux audio."""
 from __future__ import annotations
 
 import subprocess
@@ -9,17 +9,16 @@ from pathlib import Path
 
 from PySide6.QtCore import QThread, Signal
 
-from .anime_engine import AnimeEngine
-from .wan_engine import PRESETS, WanEngine
+from .anime_engine import ANIME_CONFIG, AnimeEngine
 
 PROMPT_KEYS = ("prompt", "visual_prompt", "video_prompt", "description", "title", "name")
 
 
 def scene_prompt(scene: dict) -> str:
-    for k in PROMPT_KEYS:
-        if scene.get(k):
-            return str(scene[k])
-    return "cinematic music video scene"
+    for key in PROMPT_KEYS:
+        if scene.get(key):
+            return str(scene[key])
+    return "masterpiece, anime illustration, cinematic music video scene"
 
 
 def scene_duration(scene: dict) -> float:
@@ -29,7 +28,7 @@ def scene_duration(scene: dict) -> float:
         length = float(scene.get("end", 0)) - float(scene.get("start", 0))
     except (TypeError, ValueError):
         length = 0.0
-    return length if length > 0 else 5.0  # start/end が未設定(0)のときは5秒
+    return length if length > 0 else 5.0
 
 
 def _ffmpeg() -> str:
@@ -37,46 +36,69 @@ def _ffmpeg() -> str:
     return imageio_ffmpeg.get_ffmpeg_exe()
 
 
-def assemble(project_dir: Path, scenes: list[dict], audio_path: Path,
-             preset: str, out_file: Path) -> Path:
-    """各クリップをシーン長に正規化（足りなければループ、長ければトリム）して結合し音声を載せる。"""
-    cfg = PRESETS[preset]
+def _write_concat_file(concat_txt: Path, clips: list[Path]) -> None:
+    """Write FFmpeg concat entries using relative filenames and real newlines.
+
+    FFmpeg's concat demuxer can misread absolute paths containing Japanese
+    characters on Windows. The list lives beside the normalized clips, so use
+    only each clip's filename and run FFmpeg with that directory as cwd.
+    """
+    lines = []
+    for clip in clips:
+        name = clip.name.replace("\\", "/").replace("'", "'\\''")
+        lines.append(f"file '{name}'")
+    concat_txt.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
+
+
+def _run_ffmpeg(args: list[str], *, cwd: Path | None = None) -> None:
+    """Run FFmpeg and include its stderr in any raised error."""
+    result = subprocess.run(args, cwd=str(cwd) if cwd else None, capture_output=True, text=True, encoding="utf-8", errors="replace")
+    if result.returncode:
+        details = (result.stderr or result.stdout or "FFmpeg returned a non-zero exit code.").strip()
+        raise RuntimeError(f"FFmpeg の処理に失敗しました (exit {result.returncode})\n{details[-6000:]}")
+
+
+def assemble(project_dir: Path, scenes: list[dict], audio_path: Path, out_file: Path) -> Path:
+    """Normalize generated clips to scene lengths, concatenate them, and add the song."""
+    cfg = ANIME_CONFIG
     ff = _ffmpeg()
     norm_dir = project_dir / "render" / "normalized"
     norm_dir.mkdir(parents=True, exist_ok=True)
-    listing = []
-    for s in scenes:
-        raw = s.get("output")
+    listing: list[Path] = []
+    for index, scene in enumerate(scenes, start=1):
+        raw = scene.get("output")
         if not raw or not Path(raw).exists():
             continue
-        dst = norm_dir / f"{s.get('id')}.mp4"
-        subprocess.run([
-            ff, "-y", "-stream_loop", "-1", "-i", raw, "-t", f"{scene_duration(s):.3f}",
-            "-vf", f"scale={cfg['width']}:{cfg['height']},fps=24",
+        dst = norm_dir / f"{scene.get('id', index)}.mp4"
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        _run_ffmpeg([
+            ff, "-y", "-stream_loop", "-1", "-i", str(raw),
+            "-t", f"{scene_duration(scene):.3f}",
+            "-vf", f"scale={cfg['width']}:{cfg['height']},fps={cfg['fps']}",
             "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "18", "-an", str(dst),
-        ], check=True, capture_output=True)
+        ])
         listing.append(dst)
     if not listing:
         raise RuntimeError("結合できるクリップがありません。")
     concat_txt = norm_dir / "concat.txt"
-    concat_txt.write_text("".join(f"file '{p.as_posix()}'\n" for p in listing), encoding="utf-8")
+    _write_concat_file(concat_txt, listing)
     out_file.parent.mkdir(parents=True, exist_ok=True)
-    subprocess.run([
-        ff, "-y", "-f", "concat", "-safe", "0", "-i", str(concat_txt), "-i", str(audio_path),
-        "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
-        "-shortest", str(out_file),
-    ], check=True, capture_output=True)
+    _run_ffmpeg([
+        ff, "-y", "-f", "concat", "-safe", "0", "-i", concat_txt.name, "-i", str(audio_path),
+        "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy", "-c:a", "aac",
+        "-b:a", "192k", "-shortest", str(out_file),
+    ], cwd=norm_dir)
     return out_file
 
 
 class RenderWorker(QThread):
     log = Signal(str)
-    scene_changed = Signal()          # キュー表示の更新用
+    scene_changed = Signal()
     finished_ok = Signal(str)
     failed = Signal(str)
 
     def __init__(self, queue_service, project_dir: Path, audio_path: Path,
-                 preset: str = "light", models_dir: str | None = None):
+                 preset: str = "animagine", models_dir: str | None = None):
         super().__init__()
         self.queue = queue_service
         self.project_dir = Path(project_dir)
@@ -90,70 +112,124 @@ class RenderWorker(QThread):
 
     def _log_exc(self, label: str):
         try:
-            d = self.project_dir / "render"
-            d.mkdir(parents=True, exist_ok=True)
-            with open(d / "render.log", "a", encoding="utf-8") as f:
-                f.write(f"--- {time.strftime('%Y-%m-%d %H:%M:%S')} {label} ---\n{traceback.format_exc()}\n")
+            log_dir = self.project_dir / "render"
+            log_dir.mkdir(parents=True, exist_ok=True)
+            with (log_dir / "render.log").open("a", encoding="utf-8") as handle:
+                handle.write(
+                    f"--- {time.strftime('%Y-%m-%d %H:%M:%S')} {label} ---\n"
+                    f"{traceback.format_exc()}\n"
+                )
         except Exception:
             pass
 
     def run(self):
-        engine_cls = AnimeEngine if PRESETS[self.preset].get("engine") == "anime" else WanEngine
-        engine = engine_cls(self.preset, models_dir=self.models_dir)
+        if self.preset not in ("anime", "animagine"):
+            self.failed.emit(f"未対応の生成方式です: {self.preset}。Animagine XL 4.0 を使用してください。")
+            return
+        engine = AnimeEngine("animagine", models_dir=self.models_dir)
         try:
-            # 先にモデルを読み込む。環境の問題（torch未導入など）はここで止め、シーンは失敗扱いにしない
-            self.log.emit("モデルを読み込み中...（初回は数分かかります）")
+            self.log.emit("Animagine XL 4.0 を読み込み中...（初回は数分かかります）")
             try:
                 engine.load()
             except ModuleNotFoundError as exc:
                 raise RuntimeError(
                     f"必要なライブラリが見つかりません: {exc.name}\n\n"
-                    "このアプリを .venv の Python で起動していますか？ run.bat から起動してください。\n"
+                    "DreamMV の .venv で起動しているか確認してください。run.bat から起動できます。\n"
                     f"現在の Python: {sys.executable}"
                 ) from exc
-            self.queue.recover_running()  # 前回クラッシュ等で running のまま残ったものを戻す
+            self.queue.recover_running()
             data = self.queue.load()
             scenes = data.get("scenes", [])
-            for s in scenes:
+            for scene in scenes:
                 if self._cancel:
-                    self.log.emit("キャンセルされました。")
+                    self.log.emit("キャンセルされました。実行中のシーンが終わり次第停止します。")
                     break
-                if s.get("status") not in (None, "queued"):
+                if scene.get("status") not in (None, "queued"):
                     continue
-                sid = s.get("id")
-                self.queue.set_scene_status(sid, "running")
+                scene_id = scene.get("id")
+                self.queue.set_scene_status(scene_id, "running")
                 self.scene_changed.emit()
-                out = self.project_dir / "render" / "clips" / f"{sid}.mp4"
-                t0 = time.time()
-                self.log.emit(f"シーン {sid}: 準備中（テキスト解析・モデル転送）...")
+                out = self.project_dir / "render" / "clips" / f"{scene_id}.mp4"
+                started = time.time()
+                self.log.emit(f"シーン {scene_id}: Animagine で画像を生成中...")
 
-                def on_step(i, n, sid=sid):
-                    msg = f"シーン {sid}: step {i}/{n}"
-                    if i == n:
-                        msg += " → 映像にデコード・書き出し中（数分かかることがあります）..."
-                    self.log.emit(msg)
+                def on_step(step, total, sid=scene_id):
+                    suffix = " → カメラワーク動画を書き出し中..." if step == total else ""
+                    self.log.emit(f"シーン {sid}: 画像生成 step {step}/{total}{suffix}")
 
                 try:
-                    engine.generate(scene_prompt(s), out, scene_duration(s), on_step=on_step)
-                    self.queue.set_scene_status(sid, "completed", output=str(out))
-                    self.log.emit(f"シーン {sid} 完了（{(time.time() - t0) / 60:.1f} 分）")
-                except Exception as exc:  # OOM等でも次のシーンへ進む（一晩放置用）
-                    self._log_exc(f"scene {sid}")
+                    engine.generate(scene_prompt(scene), out, scene_duration(scene), on_step=on_step)
+                    self.queue.set_scene_status(scene_id, "completed", output=str(out))
+                    self.log.emit(f"シーン {scene_id} 完了（{(time.time() - started) / 60:.1f} 分）")
+                except Exception as exc:
+                    self._log_exc(f"scene {scene_id}")
                     engine.unload()
-                    self.queue.set_scene_status(sid, "failed", error=f"{type(exc).__name__}: {exc}")
+                    self.queue.set_scene_status(scene_id, "failed", error=f"{type(exc).__name__}: {exc}")
+                    self.log.emit(f"シーン {scene_id} 失敗: {exc}")
                 self.scene_changed.emit()
 
             data = self.queue.load()
-            done = [s for s in data.get("scenes", []) if s.get("status") == "completed"]
-            if not done:
-                raise RuntimeError("完了したシーンがありません。")
+            completed = [scene for scene in data.get("scenes", []) if scene.get("status") == "completed"]
+            if not completed:
+                raise RuntimeError("完了したシーンがありません。キューと render.log を確認してください。")
             engine.unload()
-            self.log.emit("動画を結合中...")
-            result = assemble(self.project_dir, data["scenes"], self.audio_path,
-                              self.preset, self.project_dir / "output" / "music_video.mp4")
+            self.log.emit("生成したシーンを結合し、音声を追加中...")
+            result = assemble(
+                self.project_dir, data["scenes"], self.audio_path,
+                self.project_dir / "output" / "music_video.mp4",
+            )
             self.finished_ok.emit(str(result))
         except Exception as exc:
             self._log_exc("worker")
             self.failed.emit(str(exc))
         finally:
             engine.unload()
+
+
+class AssembleWorker(QThread):
+    """Rebuild the final MP4 from already completed scene clips without regenerating images."""
+    log = Signal(str)
+    finished_ok = Signal(str)
+    failed = Signal(str)
+
+    def __init__(self, queue_service, project_dir: Path, audio_path: Path):
+        super().__init__()
+        self.queue = queue_service
+        self.project_dir = Path(project_dir)
+        self.audio_path = Path(audio_path)
+
+    def run(self):
+        try:
+            data = self.queue.load()
+            scenes = data.get("scenes", [])
+            completed = [scene for scene in scenes if scene.get("status") == "completed"]
+            if not completed:
+                raise RuntimeError("完了済みシーンがありません。画像生成を行わずに結合できるクリップがありません。")
+            missing = [
+                str(scene.get("id", "?")) for scene in completed
+                if not scene.get("output") or not Path(scene["output"]).exists()
+            ]
+            if missing:
+                raise RuntimeError(
+                    "完了扱いですが動画ファイルが見つからないシーンがあります: "
+                    + ", ".join(missing)
+                    + "\\n生成済みファイルを削除せず、キューと render/clips を確認してください。"
+                )
+            self.log.emit(f"Animagineは起動せず、完了済み {len(completed)} シーンを結合しています...")
+            result = assemble(
+                self.project_dir, completed, self.audio_path,
+                self.project_dir / "output" / "music_video.mp4",
+            )
+            self.finished_ok.emit(str(result))
+        except Exception as exc:
+            try:
+                log_dir = self.project_dir / "render"
+                log_dir.mkdir(parents=True, exist_ok=True)
+                with (log_dir / "render.log").open("a", encoding="utf-8") as handle:
+                    handle.write(
+                        f"--- {time.strftime('%Y-%m-%d %H:%M:%S')} assemble-only ---\\n"
+                        f"{type(exc).__name__}: {exc}\\n"
+                    )
+            except Exception:
+                pass
+            self.failed.emit(str(exc))
