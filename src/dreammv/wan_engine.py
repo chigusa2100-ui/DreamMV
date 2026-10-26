@@ -19,6 +19,14 @@ PRESETS: dict[str, dict] = {
         "width": 1280, "height": 704, "fps": 24, "max_frames": 121,
         "steps": 40, "guidance": 5.0,
     },
+    # 軽量アニメ: Animagine XL 4.0 (SDXL) で絵を作り、ズーム/パンで動かす。VRAM 8GB目安。
+    "anime": {
+        "engine": "anime",
+        "repo": "cagliostrolab/animagine-xl-4.0",
+        "width": 1280, "height": 720, "fps": 24,
+        "gen_width": 1344, "gen_height": 768,
+        "steps": 28, "guidance": 5.0,
+    },
 }
 
 DEFAULT_NEGATIVE = (

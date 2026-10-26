@@ -13,8 +13,9 @@ Write-Host ""
 Write-Host "Choose a model:"
 Write-Host "  1) light    Wan2.1 1.3B  (480p, VRAM 8GB or more)"
 Write-Host "  2) standard Wan2.2 5B    (720p, VRAM 16GB or more, tens of GB of disk)"
+Write-Host "  3) anime    Animagine XL 4.0 still + camera move (lightest, VRAM 8GB or more, ~7GB disk)"
 $choice = Read-Host "Number [1]"
-if ($choice -eq "2") { $preset = "standard" } else { $preset = "light" }
+if ($choice -eq "2") { $preset = "standard" } elseif ($choice -eq "3") { $preset = "anime" } else { $preset = "light" }
 
 # uv (also fetches Python itself)
 if (-not (Get-Command uv -ErrorAction SilentlyContinue)) {
@@ -35,12 +36,7 @@ if (Test-Path "$AppDir\requirements.txt") {
     uv pip install --python $py -r "$AppDir\requirements.txt"
 }
 
-$repos = @{ light = "Wan-AI/Wan2.1-T2V-1.3B-Diffusers"; standard = "Wan-AI/Wan2.2-TI2V-5B-Diffusers" }
-$repo = $repos[$preset]
-$models = Join-Path $AppDir "models"
-Write-Host "Downloading Wan weights ($repo). This takes a while..."
-& $py -c "from huggingface_hub import snapshot_download; snapshot_download('$repo', cache_dir=r'$models')"
+& $py "$AppDir\installer\download_model.py" $preset
 
-@{ preset = $preset; models_dir = $models } | ConvertTo-Json | Set-Content -Encoding UTF8 (Join-Path $AppDir "wan_settings.json")
 Write-Host "Done." -ForegroundColor Green
 Read-Host "Press Enter to close"

@@ -9,6 +9,7 @@ from pathlib import Path
 
 from PySide6.QtCore import QThread, Signal
 
+from .anime_engine import AnimeEngine
 from .wan_engine import PRESETS, WanEngine
 
 PROMPT_KEYS = ("prompt", "visual_prompt", "video_prompt", "description", "title", "name")
@@ -97,7 +98,8 @@ class RenderWorker(QThread):
             pass
 
     def run(self):
-        engine = WanEngine(self.preset, models_dir=self.models_dir)
+        engine_cls = AnimeEngine if PRESETS[self.preset].get("engine") == "anime" else WanEngine
+        engine = engine_cls(self.preset, models_dir=self.models_dir)
         try:
             # 先にモデルを読み込む。環境の問題（torch未導入など）はここで止め、シーンは失敗扱いにしない
             self.log.emit("モデルを読み込み中...（初回は数分かかります）")
