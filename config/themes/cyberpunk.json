@@ -1,0 +1,22 @@
+{
+  "name":"cyberpunk",
+  "keywords":["未来","都市","ネオン","電子","電脳","コード","回路"],
+  "emotion_keywords":{
+    "hope":["未来","光"],
+    "sad":["孤独","消える"],
+    "cyber":["電子","コード","電脳"]
+  },
+  "emotion_styles":{
+    "hope":"futuristic sunrise",
+    "sad":"rain soaked streets",
+    "cyber":"holograms, digital effects"
+  },
+  "keyword_candidates":["未来","都市","ネオン","電子","電脳"],
+  "stages":[
+    {"name":"ネオンシティ","description":"導入","prompt":"cyberpunk city"},
+    {"name":"接続","description":"覚醒","prompt":"digital network"},
+    {"name":"追跡","description":"疾走","prompt":"high speed action"},
+    {"name":"突破","description":"反撃","prompt":"epic cyber battle"},
+    {"name":"新世界","description":"結末","prompt":"hopeful skyline"}
+  ]
+}

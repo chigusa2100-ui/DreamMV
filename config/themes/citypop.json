@@ -1,0 +1,11 @@
+{
+  "name":"citypop",
+  "keywords":["夜","都会","恋","街","夏","ドライブ"],
+  "stages":[
+    {"name":"夕暮れ","description":"導入","prompt":"city sunset"},
+    {"name":"ドライブ","description":"移動","prompt":"retro sports car"},
+    {"name":"ネオン","description":"夜","prompt":"city lights"},
+    {"name":"想い出","description":"回想","prompt":"nostalgic atmosphere"},
+    {"name":"朝焼け","description":"結末","prompt":"morning city skyline"}
+  ]
+}

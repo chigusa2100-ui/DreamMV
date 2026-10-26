@@ -1,0 +1,133 @@
+{
+  "name": "fox_shrine",
+
+  "keywords": [
+    "狐",
+    "白狐",
+    "巫女",
+    "神社",
+    "鳥居",
+    "祈り",
+    "神",
+    "神域",
+    "神楽",
+    "祭",
+    "願い",
+    "魂",
+    "和",
+    "御神木",
+    "桜"
+  ],
+
+  "emotion_keywords": {
+    "hope": [
+      "光",
+      "希望",
+      "未来",
+      "願い",
+      "届け"
+    ],
+
+    "sad": [
+      "涙",
+      "別れ",
+      "喪失",
+      "寂しい"
+    ],
+
+    "spiritual": [
+      "祈り",
+      "神",
+      "魂",
+      "神域",
+      "祝詞"
+    ]
+  },
+
+  "emotion_styles": {
+
+    "hope":
+      "warm sacred light, hopeful atmosphere",
+
+    "sad":
+      "misty shrine, melancholy mood",
+
+    "spiritual":
+      "divine energy, sacred atmosphere"
+  },
+
+  "camera_styles": [
+    "wide cinematic shot",
+    "dramatic low angle",
+    "close-up portrait",
+    "slow dolly movement",
+    "aerial shrine view"
+  ],
+
+  "color_palette": [
+    "warm gold",
+    "crimson",
+    "white",
+    "emerald green",
+    "soft blue"
+  ],
+
+  "locations": [
+    "ancient shrine",
+    "sacred forest",
+    "torii path",
+    "mountain temple",
+    "moonlit shrine courtyard"
+  ],
+
+  "stages": [
+
+    {
+      "name": "神域の入口",
+      "description": "鳥居の先へ",
+
+      "prompt":
+        "fox shrine maiden, sacred torii gate, spiritual atmosphere"
+    },
+
+    {
+      "name": "祈り",
+
+      "description":
+        "願いを捧げる",
+
+      "prompt":
+        "divine ritual, sacred light"
+    },
+
+    {
+      "name": "神楽",
+
+      "description":
+        "魂の舞",
+
+      "prompt":
+        "traditional kagura dance, divine energy"
+    },
+
+    {
+      "name": "覚醒",
+
+      "description":
+        "光に包まれる",
+
+      "prompt":
+        "radiant light, divine transformation"
+    },
+
+    {
+      "name": "帰還",
+
+      "description":
+        "希望の結末",
+
+      "prompt":
+        "peaceful sacred ending, warm sunlight"
+    }
+  ]
+}

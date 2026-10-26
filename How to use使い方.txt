@@ -1,0 +1,51 @@
+パイソン3.10環境下で動く事を前提としています。
+パイソンって何って人は触らないほうが吉です。
+
+コード全体をダウンロードしたら、下記コマンドをダウンロードしたフォルダのディレクトリでPowerShellで実行。
+Once you have downloaded the entire codebase, 
+run the following command in PowerShell from within the directory where you downloaded the files.
+
+powershell -ExecutionPolicy Bypass -File installer\install.ps1
+
+ロウ版（ほとんどのユーザーがこちら）:1を選択
+スタンダード版:2を選択
+Raw version (for most users): Select 1
+Standard version: Select 2
+
+自動インストール開始
+Automatic installation started
+
+.venv の作成、PyTorch、Wan の重みのダウンロードの順に進みます。
+重みは容量が大きいので、数十分以上かかることがあります。（30GB）
+途中で止まったように見えても、そのままお待ちください。
+The process involves creating a `.venv` environment, followed by downloading the weights for PyTorch and Wan.
+Since the weights are large, the download may take several tens of minutes or longer.(30GB)
+Please wait, even if it appears to have stopped at some point.
+
+インストール(install.ps1)は最初の1回だけで、2回目以降は起動するだけです。
+いちばん簡単な方法: run.bat を作る
+DreamMV フォルダ(DreamMV.py がある場所)で、メモ帳を開きます。
+次の3行を書きます。
+The installation process (install.ps1) only needs to be performed once; 
+for all subsequent uses, you simply need to launch the program.
+The easiest method is to create a `run.bat` file.
+Open Notepad in the DreamMV folder (where `DreamMV.py` is located).
+Enter the following three lines:
+
+@echo off
+cd /d %~dp0
+.venv\Scripts\python.exe DreamMV.py
+
+名前を付けて保存します。ファイル名は run.bat、ファイルの種類は「すべてのファイル」にします。
+run.bat.txt になっていると動かないので注意してください。
+以降は、run.bat をダブルクリックすれば起動します。
+Save the file with the name "run.bat," and set the file type to "All files."
+Be careful—if it ends up as "run.bat.txt," it will not work.
+From then on, you can launch it by double-clicking "run.bat."
+
+注意
+
+同じように、足りないライブラリが他にも出る可能性があります。
+ModuleNotFoundError: No module named 'xxx' と出たら、xxx を上のコマンドの末尾に足して、
+同じように入れてください。名前が分からなければ、その表示を貼ってもらえれば、入れるコマンドを書きます。
+↑ChatGPTにでも聞いてください。

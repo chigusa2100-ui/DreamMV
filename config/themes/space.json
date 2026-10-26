@@ -1,0 +1,11 @@
+{
+  "name":"space",
+  "keywords":["宇宙","銀河","星","惑星","時空","光"],
+  "stages":[
+    {"name":"発進","description":"導入","prompt":"spaceship launch"},
+    {"name":"航行","description":"旅","prompt":"deep space travel"},
+    {"name":"遭遇","description":"中盤","prompt":"cosmic phenomenon"},
+    {"name":"超越","description":"覚醒","prompt":"time space distortion"},
+    {"name":"帰還","description":"結末","prompt":"earthrise"}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name":"nature",
+  "keywords":["森","風","海","花","桜","山","川"],
+  "stages":[
+    {"name":"風","description":"導入","prompt":"wind through grasslands"},
+    {"name":"森","description":"探索","prompt":"lush forest"},
+    {"name":"海","description":"広がり","prompt":"ocean horizon"},
+    {"name":"花","description":"感情","prompt":"flower petals"},
+    {"name":"大地","description":"結末","prompt":"golden landscape"}
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "fantasy",
+  "keywords": ["星","月","夢","祈り","光","魔法","奇跡","空"],
+  "emotion_keywords": {
+    "hope":["光","未来","夢","希望"],
+    "sad":["涙","別れ","孤独"],
+    "love":["君","愛"]
+  },
+  "emotion_styles": {
+    "hope":"golden light, sunrise",
+    "sad":"melancholy atmosphere",
+    "love":"warm emotional lighting"
+  },
+  "keyword_candidates": ["星","月","夢","祈り","光"],
+  "stages":[
+    {"name":"星降る夜","description":"旅の始まり","prompt":"starry sky, moonlight"},
+    {"name":"旅立ち","description":"冒険","prompt":"fantasy journey"},
+    {"name":"祈り","description":"転機","prompt":"sacred light"},
+    {"name":"奇跡","description":"覚醒","prompt":"magical transformation"},
+    {"name":"夜明け","description":"結末","prompt":"hopeful sunrise"}
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "name": "cyber_fox",
+
+  "keywords": [
+    "狐",
+    "巫女",
+    "未来",
+    "ネオン",
+    "都市",
+    "電脳",
+    "電子",
+    "雨",
+    "デジタル",
+    "星",
+    "月",
+    "光",
+    "コード",
+    "ネットワーク"
+  ],
+
+  "emotion_keywords": {
+
+    "hope": [
+      "未来",
+      "光",
+      "明日",
+      "夢"
+    ],
+
+    "sad": [
+      "孤独",
+      "涙",
+      "別れ"
+    ],
+
+    "cyber": [
+      "電子",
+      "電脳",
+      "コード",
+      "回路"
+    ]
+  },
+
+  "emotion_styles": {
+
+    "hope":
+      "hopeful cyberpunk skyline",
+
+    "sad":
+      "rain soaked neon street",
+
+    "cyber":
+      "holograms, digital effects, futuristic atmosphere"
+  },
+
+  "camera_styles": [
+
+    "cinematic wide shot",
+
+    "drone city view",
+
+    "street level neon reflection",
+
+    "close-up portrait",
+
+    "flying camera movement"
+  ],
+
+  "color_palette": [
+
+    "neon blue",
+
+    "magenta",
+
+    "cyan",
+
+    "white",
+
+    "gold"
+  ],
+
+  "locations": [
+
+    "cyberpunk city",
+
+    "rainy street",
+
+    "neon alley",
+
+    "digital shrine",
+
+    "virtual world"
+  ],
+
+  "stages": [
+
+    {
+      "name": "ネオンの夜",
+
+      "description":
+        "都市の始まり",
+
+      "prompt":
+        "fox shrine maiden in cyberpunk city"
+    },
+
+    {
+      "name": "電脳神域",
+
+      "description":
+        "電子の鳥居",
+
+      "prompt":
+        "digital shrine, holographic torii"
+    },
+
+    {
+      "name": "接続",
+
+      "description":
+        "世界が広がる",
+
+      "prompt":
+        "network visualization, futuristic journey"
+    },
+
+    {
+      "name": "星界",
+
+      "description":
+        "光の海",
+
+      "prompt":
+        "cosmic cyberpunk landscape"
+    },
+
+    {
+      "name": "夜明け",
+
+      "description":
+        "希望の未来",
+
+      "prompt":
+        "hopeful skyline, digital sunrise"
+    }
+  ]
+}
