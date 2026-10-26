@@ -1,51 +1,189 @@
-パイソン3.10環境下で動く事を前提としています。
-パイソンって何って人は触らないほうが吉です。
+# DreamMV — インストール・使い方ガイド
+**DreamMV Installation & User Guide**
 
-コード全体をダウンロードしたら、下記コマンドをダウンロードしたフォルダのディレクトリでPowerShellで実行。
-Once you have downloaded the entire codebase, 
-run the following command in PowerShell from within the directory where you downloaded the files.
+ローカル環境で、音楽からシーンを生成し、アニメーション付きのミュージックビデオを制作するためのアプリです。
 
+DreamMV uses a local workflow to create anime-style music video scenes and combine them with your music.
+
+---
+
+## 1. 動作環境 / Requirements
+
+- Windows 10 / 11
+- NVIDIA GPU推奨
+- Python環境：インストーラーが用意する仮想環境（`.venv`）を使用
+- 十分な空きディスク容量
+- モデルのダウンロードに必要なインターネット接続
+
+DreamMV uses **Animagine XL 4.0**, an anime-style image-generation model. Generated images are animated with camera movements and combined with audio to create an MP4 video.
+
+**注意：** Animagine XL 4.0は動画を直接生成するモデルではありません。DreamMVは生成した画像にカメラワークを加えて映像化します。
+
+**Note:** Animagine XL 4.0 generates still images, not video directly. DreamMV animates these images and combines the resulting clips with your music.
+
+---
+
+## 2. インストール / Installation
+
+### Step 1 — ダウンロード
+
+GitHubからDreamMVのコード一式をダウンロードし、ZIPを展開してください。
+
+Download the DreamMV source code from GitHub and extract the ZIP archive.
+
+展開したフォルダ内に、`DreamMV.py`、`run.bat`、`installer` フォルダなどがあることを確認してください。
+
+Make sure the extracted folder contains `DreamMV.py`, `run.bat`, and the `installer` directory.
+
+### Step 2 — インストーラーを実行
+
+DreamMVフォルダ内でPowerShellを開き、次のコマンドを実行します。
+
+Open PowerShell in the DreamMV folder and run:
+
+```powershell
 powershell -ExecutionPolicy Bypass -File installer\install.ps1
+```
 
-ロウ版（ほとんどのユーザーがこちら）:1を選択
-スタンダード版:2を選択
-Raw version (for most users): Select 1
-Standard version: Select 2
+インストーラーに選択肢が表示された場合は、画面の説明に従って選択してください。
 
-自動インストール開始
-Automatic installation started
+If the installer presents installation options, follow the descriptions displayed on screen.
 
-.venv の作成、PyTorch、Wan の重みのダウンロードの順に進みます。
-重みは容量が大きいので、数十分以上かかることがあります。（30GB）
-途中で止まったように見えても、そのままお待ちください。
-The process involves creating a `.venv` environment, followed by downloading the weights for PyTorch and Wan.
-Since the weights are large, the download may take several tens of minutes or longer.(30GB)
-Please wait, even if it appears to have stopped at some point.
+インストーラーは、必要なPython環境やライブラリ、設定に応じたモデルの準備を行います。初回はダウンロードに時間がかかる場合があります。
 
-インストール(install.ps1)は最初の1回だけで、2回目以降は起動するだけです。
-いちばん簡単な方法: run.bat を作る
-DreamMV フォルダ(DreamMV.py がある場所)で、メモ帳を開きます。
-次の3行を書きます。
-The installation process (install.ps1) only needs to be performed once; 
-for all subsequent uses, you simply need to launch the program.
-The easiest method is to create a `run.bat` file.
-Open Notepad in the DreamMV folder (where `DreamMV.py` is located).
-Enter the following three lines:
+The installer prepares the Python environment, required libraries, and model files according to the installation settings. The first installation may take some time.
 
-@echo off
-cd /d %~dp0
-.venv\Scripts\python.exe DreamMV.py
+**注意：** モデルの容量や必要な空き容量は、実際のインストール対象によって異なります。十分なディスク容量を確保してください。
 
-名前を付けて保存します。ファイル名は run.bat、ファイルの種類は「すべてのファイル」にします。
-run.bat.txt になっていると動かないので注意してください。
-以降は、run.bat をダブルクリックすれば起動します。
-Save the file with the name "run.bat," and set the file type to "All files."
-Be careful—if it ends up as "run.bat.txt," it will not work.
-From then on, you can launch it by double-clicking "run.bat."
+**Note:** Model downloads and disk-space requirements depend on the selected installation configuration.
 
-注意
+### Step 3 — 初回起動
 
-同じように、足りないライブラリが他にも出る可能性があります。
-ModuleNotFoundError: No module named 'xxx' と出たら、xxx を上のコマンドの末尾に足して、
-同じように入れてください。名前が分からなければ、その表示を貼ってもらえれば、入れるコマンドを書きます。
-↑ChatGPTにでも聞いてください。
+インストールが完了したら、DreamMVフォルダ内の `run.bat` をダブルクリックして起動します。
+
+After installation, double-click `run.bat` in the DreamMV folder.
+
+`run.bat` は、DreamMV用の仮想環境にあるPythonを使用してアプリを起動します。通常は、Pythonを手動で起動する必要はありません。
+
+The launcher uses DreamMV's virtual environment, so you normally do not need to start Python manually.
+
+---
+
+## 3. 基本的な使い方 / Basic Workflow
+
+### Step 1 — 音楽ファイルを読み込む
+
+DreamMVを起動し、音楽ファイルを読み込みます。対応形式や読み込み可能なファイルは、アプリのファイル選択画面で確認してください。
+
+Launch DreamMV and load your music file. Check the file-selection dialog for supported formats.
+
+### Step 2 — プロジェクトを作成・読み込む
+
+新しいプロジェクトを作成するか、既存のDreamMVプロジェクトを読み込みます。
+
+Create a new project or open an existing DreamMV project.
+
+既存プロジェクトには、シーン情報や生成済みファイルが保存されている場合があります。再開するときは、既存のプロジェクトフォルダをそのまま使用してください。
+
+Existing projects may contain scene information and generated clips. Keep the original project folder intact when resuming work.
+
+### Step 3 — Animagineでシーンを生成する
+
+生成対象のシーンを確認し、Animagineによる画像生成を開始します。
+
+Review the queued scenes and start image generation with Animagine.
+
+初回はモデルの読み込みに時間がかかる場合があります。生成中は、アプリの進捗表示やログを確認してください。
+
+The first model load may take some time. Monitor the progress display and logs while generation is running.
+
+### Step 4 — 動画を出力する
+
+生成したシーンはカメラワーク付きのクリップに変換され、音楽と結合されます。
+
+DreamMV converts the generated scenes into animated clips and combines them with your music.
+
+出力先やファイル名は、プロジェクト内の `output` フォルダを確認してください。
+
+Check the project's `output` folder for the resulting video.
+
+---
+
+## 4. 生成済みシーンから再結合する / Reassemble Existing Scenes
+
+すでにシーンの生成が完了している場合は、**「完了済みシーンから再結合（再生成なし）」** を使用できます。
+
+If your scene clips have already been generated, use **“Reassemble completed scenes (no regeneration)”**.
+
+この機能は、完了済みのシーンクリップを使って音声との結合をやり直すためのものです。画像生成を最初から実行する必要はありません。
+
+This feature reassembles completed scene clips with the audio without regenerating the images.
+
+**注意：** 完成動画 `output/music_video.mp4` が上書きされる場合があります。必要に応じて、事前にコピーを保存してください。
+
+**Note:** The existing `output/music_video.mp4` may be overwritten. Make a backup first if you want to preserve it.
+
+生成済みクリップやキューファイルは、手動で削除・初期化しないでください。
+
+Do not manually delete or reset generated clips or queue files when resuming a project.
+
+---
+
+## 5. トラブルシューティング / Troubleshooting
+
+### アプリが起動しない / The application will not start
+
+- `run.bat` がDreamMVフォルダ内にあるか確認してください。
+- インストールが途中で失敗していないか確認してください。
+- PowerShellから `run.bat` を実行し、表示されるエラーメッセージを確認してください。
+
+Check that `run.bat` exists, verify the installation completed, and inspect any error messages.
+
+### `ModuleNotFoundError` が表示される
+
+必要なPythonライブラリが見つからない場合に表示されるエラーです。
+
+This error means that Python cannot find a required library.
+
+表示されたエラーメッセージを省略せずに保存し、DreamMVの開発者またはサポート先に共有してください。むやみに別のPython環境へライブラリを追加するのではなく、まず `.venv` が正しく作成されているか確認してください。
+
+Save the complete error message and share it with the developer or support contact. First verify that `.venv` is configured correctly instead of installing packages into an unrelated Python environment.
+
+### 画像生成に失敗する / Image generation fails
+
+- GPUメモリ（VRAM）が不足していないか確認してください。
+- モデルのダウンロードが完了しているか確認してください。
+- エラーメッセージと `render/render.log` が存在する場合は、その内容を確認してください。
+
+Check GPU memory usage, model availability, and the error log if one exists.
+
+### 動画の結合に失敗する / Video assembly fails
+
+- 生成済みのシーンクリップが残っているか確認してください。
+- プロジェクト内の `render` フォルダを削除しないでください。
+- エラーメッセージとログを保存してください。
+
+Verify that the generated scene clips still exist. Do not delete the project's `render` directory, and save any error messages and logs.
+
+---
+
+## 6. サポート / Support
+
+エラーが発生した場合は、次の情報を添えて報告してください。
+
+When reporting a problem, include:
+
+1. エラーメッセージ全文 / The complete error message
+2. 実行した操作 / The steps that caused the issue
+3. `render/render.log` がある場合はその内容 / The contents of `render/render.log`, if available
+4. 使用しているGPUとVRAM容量 / GPU model and VRAM capacity
+
+問題を調査するときは、生成済みの動画・シーンクリップ・プロジェクトデータを削除せず、先にバックアップを取ってください。
+
+Before troubleshooting, back up your project, generated clips, and completed videos.
+
+---
+
+**DreamMVは開発中のソフトウェアです。機能やインストール手順は、今後の更新によって変更される場合があります。**
+
+**DreamMV is under active development. Features and installation procedures may change in future releases.**
