@@ -1,131 +1,151 @@
-# DreamMV
+﻿# DreamMV
 
-Generate. Sleep. Wake up to your music video.
+**Generate. Sleep. Wake up to your music video.**
 
-DreamMV is an experimental local desktop application that turns an audio track into a music video. It analyzes the song, plans a scene-by-scene storyboard, then uses Animagine XL 4.0 to create one anime illustration per scene, adds slow pan/zoom camera movement, and joins the clips with the original audio.
+DreamMV is an experimental local desktop application that turns an audio track into a music video. It analyzes the song, plans scenes, generates anime illustrations, adds camera motion, and combines the clips with the original audio.
 
-> **Status: experimental.** Everything runs locally; nothing is uploaded. Expect rough edges.
+DreamMV は、音楽からミュージックビデオを生成するためのローカルデスクトップアプリです。曲を解析してシーンを計画し、アニメイラストを生成してカメラ移動を加え、元の音声と組み合わせます。
 
-## Features
+> **Status / 状態: Experimental / 実験的なリリース**
+>
+> Processing is designed to run locally. Model downloads require an internet connection. Results and performance depend on your hardware and settings.
+>
+> 処理はローカル環境で実行する設計です。モデルのダウンロードにはインターネット接続が必要です。生成速度や結果はハードウェアと設定によって変わります。
 
-- Select an audio file (`.mp3 .wav .flac .ogg .m4a`) and read its duration.
-- Optional lyric transcription (Whisper). If it is unavailable, DreamMV continues without lyrics.
-- Generate a scene plan (scene names, descriptions, prompts) from the song length, lyrics and the themes in `config/themes/`.
-- Persistent per-scene queue (`output/queue.json`) with progress, failure details and **retry of failed scenes**.
-- Overnight Animagine XL 4.0 rendering. A failed scene does not stop the run.
-- Clips are normalized to each scene's length, concatenated, and muxed with the song into `output/music_video.mp4`.
+## Features / 主な機能
 
-## Image generation
+- Load audio files: MP3, WAV, FLAC, OGG, and M4A.
+- Analyze audio duration.
+- Optionally transcribe lyrics with Whisper when available.
+- Plan scenes using song length, lyrics, and theme configuration.
+- Save project information, job state, and scene queue.
+- Track scene progress and retry failed scenes.
+- Generate anime illustrations with Animagine XL 4.0.
+- Add slow pan/zoom camera motion to scene clips.
+- Combine scene clips with the original audio into `output/music_video.mp4`.
 
-DreamMV uses **Animagine XL 4.0** (SDXL) as its only active generation engine.
+日本語:
 
-- One anime still image is generated for each scene.
-- DreamMV adds slow pan/zoom camera movement and exports each scene as MP4.
-- The scene clips are joined and the original song is added.
-- The character itself does **not** animate like a text-to-video model.
-- The first setup downloads the model files; allow roughly several GB of free disk space.
-- With an 8 GB GPU, CPU offload and memory-saving VAE options are enabled. Generation can be slow.
+- MP3、WAV、FLAC、OGG、M4A の読み込み。
+- 曲の長さの解析。
+- 利用可能な場合の Whisper による歌詞の文字起こし。
+- 曲の長さ、歌詞、テーマ設定に基づくシーン計画。
+- プロジェクト情報、ジョブ状態、シーンキューの保存。
+- シーンの進行状況確認と失敗シーンの再試行。
+- Animagine XL 4.0 によるアニメイラスト生成。
+- パン・ズームによるカメラ移動の追加。
+- シーンクリップと元の音声を結合した MP4 の出力。
 
-Theme prompts should use descriptive anime illustration tags where possible. Lyrics currently affect theme detection and scene naming, but are not yet automatically inserted into image prompts.
+## Image generation / 画像生成
 
-## Requirements
+DreamMV currently uses **Animagine XL 4.0**, an SDXL-based image-generation model.
 
-- Windows with an **NVIDIA GPU** and a recent driver (CUDA build of PyTorch)
-- Internet access for the first setup (Python, PyTorch, model weights)
-- Python 3.11 is installed automatically into `.venv` by the installer (via [uv](https://github.com/astral-sh/uv))
+- One still illustration is generated for each scene.
+- Camera motion is added to create video clips.
+- The clips are combined with the original song.
+- Characters do not animate like they would in a dedicated text-to-video model.
+- Model files require several gigabytes of disk space.
+- On GPUs with 8 GB of VRAM, memory-saving options may reduce performance.
 
-## Install
+DreamMV の現在の画像生成エンジンは **Animagine XL 4.0** です。各シーンに静止画を生成し、カメラ移動を加えて動画クリップを作成します。専用の動画生成モデルのようにキャラクターそのものが連続的に動く方式ではありません。
 
-From the repository root, in PowerShell:
+歌詞は現在、テーマ検出やシーン名の作成に利用されますが、画像プロンプトへの自動挿入には制限があります。
+
+## Requirements / 動作要件
+
+- Windows
+- NVIDIA GPU and a compatible driver
+- Internet connection for initial setup and model downloads
+- Python environment configured by the installer
+
+Windows と NVIDIA GPU、および対応するドライバーが必要です。初回セットアップとモデルのダウンロードにはインターネット接続が必要です。
+
+## Installation / インストール
+
+Run PowerShell from the repository root:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File installer\install.ps1
 ```
 
-You will be asked which model to download (1 = light, 2 = standard, 3 = anime). To add or switch a model later:
+リポジトリのルートフォルダーで上記のコマンドを実行してください。
+
+To download or switch to the anime model later, if needed:
 
 ```powershell
 .venv\Scripts\python.exe installer\download_model.py anime
 ```
 
-The installer does not install a Whisper package. Lyric transcription is optional; see `src/dreammv/whisper_engine.py`.
+## Run / 起動
 
-## Run
-
-```
-run.bat
-```
-
-or
+Use `run.bat`, or run:
 
 ```powershell
 .venv\Scripts\python.exe DreamMV.py
 ```
 
-Usage: **Open MP3** → **Generate** (creates the `.dreammv` project and the scene queue) → **AnimagineでMV生成** (processes the queue) → open `output/music_video.mp4` in the project folder.
+Typical workflow:
 
-> Pressing **Generate** again rebuilds the queue and resets all scene progress. After reopening a project, use the render button to resume instead.
+1. Open an audio file.
+2. Select **Generate** to create the project and scene queue.
+3. Use **AnimagineでMV生成** to process the queue.
+4. Open `output/music_video.mp4` in the project folder.
 
-On first launch DreamMV creates `config.json` if it does not exist. Existing settings are not overwritten.
+基本的な使い方:
 
-## Project folder
+1. 音声ファイルを開く。
+2. **Generate** でプロジェクトとシーンキューを作成する。
+3. **AnimagineでMV生成** でキューを処理する。
+4. プロジェクト内の `output/music_video.mp4` を再生する。
 
-```
+**Important / 注意:** Selecting Generate again rebuilds the scene queue and resets its progress. To resume an existing project, reopen it and use the rendering action.
+
+Generate を再度実行するとシーンキューが作り直され、進行状況がリセットされます。既存プロジェクトの続きから生成する場合は、プロジェクトを開き直してレンダリング操作を使用してください。
+
+## Project output / 出力構成
+
+```text
 Song.dreammv/
-├── song.mp3              copy of the audio
-├── project.json          metadata, lyrics, scene plan
+├── song.mp3
+├── project.json
 ├── output/
-│   ├── queue.json        per-scene state (queued / running / completed / failed)
+│   ├── queue.json
 │   ├── job.json
-│   └── music_video.mp4   final video
+│   └── music_video.mp4
 └── render/
-    ├── clips/            one clip per scene plus the source .png still
-    ├── normalized/       length-adjusted clips used for joining
-    └── render.log        error details
+    ├── clips/
+    ├── normalized/
+    └── render.log
 ```
 
-If the app crashes, `crash.log` in the repository root records the cause.
+If the application crashes, check `crash.log` in the repository root when available.
 
-## Test
+アプリがクラッシュした場合は、リポジトリのルートに `crash.log` が作成されていれば確認してください。
 
-```
-py -m unittest discover -s tests -v
-```
+## Tests / テスト
 
-## Repository layout
+Run the test suite from the repository root:
 
-```
-DreamMV/
-├── DreamMV.py
-├── run.bat
-├── config.json
-├── anime_settings.json         Animagine model cache directory
-├── config/themes/             story themes (keywords, stages, prompts)
-├── installer/
-│   ├── install.ps1
-│   ├── download_model.py
-│   └── DreamMV.iss            Inno Setup script for DreamMV-Setup.exe
-├── src/dreammv/
-│   ├── audio.py
-│   ├── config.py
-│   ├── jobs.py
-│   ├── planner.py
-│   ├── project.py
-│   ├── queue.py
-│   ├── project_queue.py
-│   ├── whisper_engine.py
-│   ├── wan_engine.py
-│   ├── anime_engine.py
-│   └── render_worker.py
-└── tests/
+```powershell
+.venv\Scripts\python.exe -m unittest discover -s tests -v
 ```
 
-## Known limitations
+## Known limitations / 既知の制限
 
-- Lyrics are used for scene names and theme detection, not (yet) for image prompts, so scenes in the same story stage share the same prompt.
-- Plain-text lyrics without timestamps are not spread across the song.
-- Model weights are **not** included in this repository and keep their own licenses (Animagine XL 4.0: CreativeML Open RAIL++-M). Check each license before redistributing weights or using output commercially.
+- Lyrics are not yet automatically inserted into image prompts.
+- Plain-text lyrics without timestamps are not distributed precisely across the song.
+- Image generation produces still illustrations with camera motion, not full character animation.
+- Generation speed and memory use depend on hardware and settings.
 
-## License
+- 歌詞はまだ画像プロンプトに自動挿入されません。
+- タイムスタンプのない歌詞は曲中に正確に割り当てられません。
+- 生成されるのはカメラ移動を加えた静止画ベースの動画であり、キャラクター自体の完全なアニメーションではありません。
+- 生成速度とメモリ使用量はハードウェアや設定によって異なります。
 
-The DreamMV source code is released under the MIT License (see `LICENSE`).
+## License / ライセンス
+
+DreamMV source code is released under the MIT License. See `LICENSE`.
+
+DreamMV のソースコードは MIT License で公開されています。`LICENSE` を確認してください。
+
+Model weights have separate licenses. Check the applicable model license before redistribution or commercial use.
