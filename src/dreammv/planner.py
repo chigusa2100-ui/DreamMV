@@ -271,6 +271,104 @@ class StoryPlanner:
         return stage
 
     # =====================================================
+    # Per-scene emotion and visual styling
+    # =====================================================
+
+    @staticmethod
+    def _string_list(value) -> list[str]:
+        """JSON ?????????????????"""
+        if not isinstance(value, list):
+            return []
+        return [
+            str(item).strip()
+            for item in value
+            if str(item).strip()
+        ]
+
+    def detect_emotion(
+        self,
+        lyric: str,
+        theme: dict[str, Any],
+    ) -> str | None:
+        """????????????????????????"""
+        emotion_keywords = theme.get("emotion_keywords", {})
+        if not isinstance(emotion_keywords, dict) or not lyric:
+            return None
+
+        text = lyric.casefold()
+        scores: dict[str, int] = {}
+
+        for emotion, words in emotion_keywords.items():
+            keywords = self._string_list(words)
+            score = sum(
+                text.count(word.casefold())
+                for word in keywords
+            )
+            if score > 0:
+                scores[str(emotion)] = score
+
+        if not scores:
+            return None
+
+        # ?????? JSON ??????????
+        return max(scores, key=scores.get)
+
+    @staticmethod
+    def _pick_by_scene(
+        values: list[str],
+        scene_index: int,
+    ) -> str | None:
+        """????????????????????"""
+        if not values:
+            return None
+        return values[scene_index % len(values)]
+
+    def build_scene_prompt(
+        self,
+        stage: dict[str, Any],
+        theme: dict[str, Any],
+        lyric: str,
+        scene_index: int,
+    ) -> tuple[str, str | None]:
+        """????????????????????????"""
+        base_prompt = str(
+            stage.get("prompt") or "cinematic anime scene"
+        ).strip()
+        parts = [base_prompt]
+
+        emotion = self.detect_emotion(lyric, theme)
+        emotion_styles = theme.get("emotion_styles", {})
+
+        if emotion and isinstance(emotion_styles, dict):
+            style = emotion_styles.get(emotion)
+            if isinstance(style, str) and style.strip():
+                parts.append(
+                    f"emotional visual style: {style.strip()}"
+                )
+
+        camera = self._pick_by_scene(
+            self._string_list(theme.get("camera_styles")),
+            scene_index,
+        )
+        palette = self._pick_by_scene(
+            self._string_list(theme.get("color_palette")),
+            scene_index,
+        )
+        location = self._pick_by_scene(
+            self._string_list(theme.get("locations")),
+            scene_index,
+        )
+
+        if camera:
+            parts.append(f"camera: {camera}")
+        if palette:
+            parts.append(f"color palette: {palette}")
+        if location:
+            parts.append(f"setting: {location}")
+
+        return ", ".join(parts), emotion
+
+    # =====================================================
     # Main
     # =====================================================
 
@@ -341,6 +439,13 @@ class StoryPlanner:
                 stage_name,
             )
 
+            prompt_text, emotion = self.build_scene_prompt(
+                stage,
+                theme,
+                lyric,
+                index,
+            )
+
             scenes.append(
                 {
                     "id": index + 1,
@@ -353,10 +458,8 @@ class StoryPlanner:
                     "description": stage.get(
                         "description", ""
                     ),
-                    "prompt": stage.get(
-                        "prompt",
-                        "cinematic anime scene",
-                    ),
+                    "emotion": emotion,
+                    "prompt": prompt_text,
                 }
             )
 
