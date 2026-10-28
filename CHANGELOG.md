@@ -1,7 +1,19 @@
-﻿# Changelog
+# Changelog
 
 All notable changes to DreamMV are documented here.
 DreamMV の主な変更履歴を記録しています。
+
+## [1.0.1] - 2026-10-28
+
+### 日本語
+
+- 歌詞の感情キーワードに基づくシーン別の感情判定を追加。
+- テーマ設定に基づくカメラ、色調、場所の映像演出を追加。
+
+### English
+
+- Added per-scene emotion detection based on lyric keywords.
+- Added camera, color palette, and setting variations based on theme data.
 
 ## [1.0.0] - 2026-10-27
 
