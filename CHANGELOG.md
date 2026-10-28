@@ -3,12 +3,30 @@
 All notable changes to DreamMV are documented here.
 DreamMV の主な変更履歴を記録しています。
 
+## [1.0.2] - 2026-10-29
+
+### 日本語
+
+- ビジュアルテーマを70種類に拡張。
+- テーマに応じたシーン生成プロンプトを改善。
+- カメラ、色彩、舞台設定のテーマ別バリエーションを強化。
+- テーマ関連のテスト43件すべての成功を確認。
+- 実際の動画生成テストで正常動作を確認。
+
+### English
+
+- Expanded the visual theme library to 70 themes.
+- Improved scene-generation prompts based on theme data.
+- Enhanced theme-specific camera, color palette, and setting variations.
+- Verified that all 43 tests passed.
+- Confirmed successful operation in a real video-generation test.
+
 ## [1.0.1] - 2026-10-28
 
 ### 日本語
 
 - 歌詞の感情キーワードに基づくシーン別の感情判定を追加。
-- テーマ設定に基づくカメラ、色調、場所の映像演出を追加。
+- テーマ設定に基づくカメラ、色調、舞台設定のバリエーションを追加。
 
 ### English
 
