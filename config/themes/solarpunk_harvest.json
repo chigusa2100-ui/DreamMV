@@ -1,0 +1,139 @@
+{
+  "name": "solarpunk_harvest",
+  "keywords": [
+    "solarpunk",
+    "renewable",
+    "community",
+    "共生",
+    "収穫祭",
+    "再生可能"
+  ],
+  "stages": [
+    {
+      "name": "opening",
+      "description": "導入",
+      "prompt": "Establish the world with a cinematic wide shot and introduce the main visual motif. Theme: ソーラーパンクの収穫祭. Keep visual identity consistent and the focal subject clear."
+    },
+    {
+      "name": "development",
+      "description": "展開",
+      "prompt": "Move closer and reveal meaningful environmental details with a gradually building rhythm. Theme: ソーラーパンクの収穫祭. Keep visual identity consistent and the focal subject clear."
+    },
+    {
+      "name": "turning_point",
+      "description": "転換",
+      "prompt": "Introduce a discovery or contrast and increase emotional intensity. Theme: ソーラーパンクの収穫祭. Keep visual identity consistent and the focal subject clear."
+    },
+    {
+      "name": "climax",
+      "description": "頂点",
+      "prompt": "Use the strongest composition, scale and lighting while keeping the focal subject readable. Theme: ソーラーパンクの収穫祭. Keep visual identity consistent and the focal subject clear."
+    },
+    {
+      "name": "resolution",
+      "description": "余韻",
+      "prompt": "Resolve into a memorable final image with softened motion and emotional afterglow. Theme: ソーラーパンクの収穫祭. Keep visual identity consistent and the focal subject clear."
+    }
+  ],
+  "emotion_keywords": {
+    "joy": [
+      "joy",
+      "happy",
+      "smile",
+      "celebrate",
+      "笑顔",
+      "喜び",
+      "幸せ"
+    ],
+    "sadness": [
+      "sad",
+      "tears",
+      "lonely",
+      "farewell",
+      "悲しい",
+      "涙",
+      "別れ"
+    ],
+    "hope": [
+      "hope",
+      "tomorrow",
+      "future",
+      "dawn",
+      "希望",
+      "明日",
+      "未来"
+    ],
+    "anger": [
+      "anger",
+      "rage",
+      "fight",
+      "burn",
+      "怒り",
+      "闘い",
+      "燃える"
+    ],
+    "love": [
+      "love",
+      "heart",
+      "beloved",
+      "together",
+      "愛",
+      "恋",
+      "心"
+    ],
+    "fear": [
+      "fear",
+      "darkness",
+      "lost",
+      "afraid",
+      "恐怖",
+      "闇",
+      "迷い"
+    ],
+    "nostalgia": [
+      "memory",
+      "remember",
+      "home",
+      "past",
+      "思い出",
+      "懐かしい",
+      "故郷"
+    ],
+    "wonder": [
+      "wonder",
+      "miracle",
+      "stars",
+      "infinite",
+      "奇跡",
+      "星",
+      "無限"
+    ]
+  },
+  "emotion_styles": {
+    "joy": "uplifting composition, open framing, lively movement, warm luminous highlights",
+    "sadness": "quiet composition, restrained motion, reflective atmosphere, soft diffused light",
+    "hope": "rising perspective, widening horizons, gradual light bloom, forward-moving camera",
+    "anger": "dynamic low angles, decisive motion, strong contrast, dramatic lighting",
+    "love": "intimate framing, gentle camera drift, soft highlights, harmonious visual rhythm",
+    "fear": "deep shadows, partial silhouettes, cautious camera movement, atmospheric tension",
+    "nostalgia": "soft film grain, gentle halation, warm faded highlights, unhurried camera movement",
+    "wonder": "expansive scale, floating particles, slow reveal, luminous atmospheric depth"
+  },
+  "camera_styles": [
+    "wide establishing shot with layered depth",
+    "slow cinematic dolly-in with stable horizon",
+    "gentle lateral tracking shot revealing environmental detail",
+    "dramatic low-angle composition with controlled perspective",
+    "slow pull-back into a wide atmospheric finale"
+  ],
+  "color_palette": [
+    "leaf green",
+    "sun yellow",
+    "sky blue"
+  ],
+  "locations": [
+    "green rooftop farms",
+    "sunlit community gardens",
+    "solar glass greenhouses"
+  ]
+}
