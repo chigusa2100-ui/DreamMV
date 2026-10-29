@@ -1,0 +1,92 @@
+{
+  "name": "edo_night_street",
+  "keywords": [
+    "江戸",
+    "江戸時代",
+    "長屋",
+    "行灯",
+    "暖簾",
+    "屋形船",
+    "浮世絵",
+    "夜鳴きそば",
+    "木戸",
+    "edo period",
+    "ukiyoe",
+    "andon"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "warm paper-lantern light spilling into a snowy lane, cozy hope",
+    "sad": "rain-slick wooden street, blurred lantern reflections, faint loneliness",
+    "peace": "calm river night with quiet boats, soft amber glow"
+  },
+  "camera_styles": [
+    "slow tracking down a narrow lantern-lit lane",
+    "wide river view of a pleasure boat",
+    "low shot of rain reflections",
+    "overhead view of tiled rooftops"
+  ],
+  "color_palette": [
+    "indigo",
+    "lantern amber",
+    "vermilion",
+    "timber brown",
+    "snow white"
+  ],
+  "locations": [
+    "wooden row-house alley",
+    "river with lantern boats",
+    "wooden bridge at night",
+    "noodle stall at a corner",
+    "tiled rooftops under the moon"
+  ],
+  "stages": [
+    {
+      "name": "行灯の路地",
+      "description": "暖簾の奥に灯りがともる",
+      "prompt": "anime cinematic illustration, narrow Edo-period alley of wooden row houses, glowing paper andon lanterns, indigo noren curtains, warm amber against deep blue night"
+    },
+    {
+      "name": "川端の屋形船",
+      "description": "水面に灯が揺れる",
+      "prompt": "beautiful anime illustration, lantern-lit pleasure boats drifting on a river at night, wooden bridge, soft reflections, gentle ripples, warm and cool contrast"
+    },
+    {
+      "name": "雨の石畳",
+      "description": "濡れた道が灯を映す",
+      "prompt": "atmospheric anime street scene, rain falling on a wooden-bridge approach, lantern light mirrored on wet ground, umbrellas as silhouettes, misty depth"
+    },
+    {
+      "name": "夜店の賑わい",
+      "description": "湯気と笑い声が通りに満ちる",
+      "prompt": "lively anime illustration, bustling night street stalls with steaming bowls and hanging lanterns, colorful banners, warm golden haze, rich detail"
+    },
+    {
+      "name": "屋根の月",
+      "description": "瓦の上に静かな月が昇る",
+      "prompt": "poetic anime panorama, overlapping tiled Edo rooftops under a large pale moon, thin clouds, scattered window lights, tranquil blue night"
+    }
+  ]
+}

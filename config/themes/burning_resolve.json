@@ -1,0 +1,92 @@
+{
+  "name": "burning_resolve",
+  "keywords": [
+    "燃え上がる",
+    "決意",
+    "覚悟",
+    "灼熱",
+    "逆境",
+    "咆哮",
+    "魂の叫び",
+    "ember",
+    "resolve",
+    "blaze",
+    "defiance",
+    "inferno"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "dawn fire breaking through black clouds, fierce determined hope",
+    "sad": "smoldering ash and dying embers, dark red grief",
+    "peace": "banked coals and a still flame, steady resolute calm"
+  },
+  "camera_styles": [
+    "low-angle shot of flames rising",
+    "slow push-in on glowing embers",
+    "wide shot of a burning horizon",
+    "slow-motion of sparks swirling"
+  ],
+  "color_palette": [
+    "ember orange",
+    "crimson",
+    "charcoal black",
+    "gold",
+    "ash grey"
+  ],
+  "locations": [
+    "wasteland under a fire sky",
+    "forge with glowing metal",
+    "cliff above a burning horizon",
+    "ash field with embers",
+    "mountain top at dawn"
+  ],
+  "stages": [
+    {
+      "name": "灰の中の火",
+      "description": "小さな火種が目を覚ます",
+      "prompt": "anime cinematic close-up, single glowing ember in black ash with rising sparks, deep orange glow on dark ground, shallow depth of field"
+    },
+    {
+      "name": "炎の柱",
+      "description": "風が火を空へ押し上げる",
+      "prompt": "dynamic anime scene, towering column of fire twisting into a charcoal sky, swirling sparks, strong contrast, powerful upward composition"
+    },
+    {
+      "name": "鍛冶の光",
+      "description": "火花が決意を叩く",
+      "prompt": "beautiful anime illustration, forge with white-hot metal and spraying sparks, dark workshop, orange-gold light on soot, no fixed characters"
+    },
+    {
+      "name": "燃える地平",
+      "description": "夕焼けが火に変わる",
+      "prompt": "dramatic anime landscape, fire-red horizon and storm clouds above a dark ridge, drifting embers, vast oppressive scale, intense color"
+    },
+    {
+      "name": "夜明けの炎",
+      "description": "赤が金に変わる",
+      "prompt": "poetic anime dawn, crimson fire sky turning to gold over a quiet mountain, falling ash glowing, resolute finale"
+    }
+  ]
+}

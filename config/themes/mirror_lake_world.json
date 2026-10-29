@@ -1,0 +1,89 @@
+{
+  "name": "mirror_lake_world",
+  "keywords": [
+    "鏡の世界",
+    "逆さの世界",
+    "湖面",
+    "鏡像",
+    "映し鏡",
+    "鏡の国",
+    "mirror world",
+    "reflection",
+    "looking-glass"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "perfect mirrored sunrise over still water, clear inspiring hope",
+    "sad": "ripples breaking the reflected sky, dim blue hush, uncertain",
+    "peace": "absolute stillness and symmetry, serene weightless calm"
+  },
+  "camera_styles": [
+    "perfectly symmetrical wide shot split by the waterline",
+    "slow descent toward the reflected sky",
+    "close-up of a ripple spreading",
+    "slow rotation as the world flips"
+  ],
+  "color_palette": [
+    "mirror blue",
+    "dawn pink",
+    "forest green",
+    "silver",
+    "twilight violet"
+  ],
+  "locations": [
+    "still lake mirroring mountains",
+    "stepping stones into the reflection",
+    "island tree and its double",
+    "misty shoreline at dawn",
+    "starfield on water"
+  ],
+  "stages": [
+    {
+      "name": "水面の空",
+      "description": "湖が世界を二つにする",
+      "prompt": "anime cinematic landscape, perfectly still lake mirroring snow mountains and a pink dawn sky in perfect symmetry, thin mist, tiny island tree"
+    },
+    {
+      "name": "波紋の輪",
+      "description": "一滴が世界を揺らす",
+      "prompt": "beautiful anime scene, single ripple spreading across a mirror-like lake and distorting the reflected sky, concentric rings, soft light, minimalist"
+    },
+    {
+      "name": "飛び石",
+      "description": "反対側へ渡る道",
+      "prompt": "poetic anime scene, line of stepping stones leading into the reflected sky on a calm lake, stones doubled in the water, dreamy pastel colors"
+    },
+    {
+      "name": "逆さの森",
+      "description": "上下がほどけていく",
+      "prompt": "surreal anime scene, forest and its reflection merging at the horizon so the world appears to rotate, floating leaves, vivid green and teal, deep symmetry"
+    },
+    {
+      "name": "星の水面",
+      "description": "夜の湖に星が満ちる",
+      "prompt": "serene anime night, lake mirroring a dense starry sky and the Milky Way, faint ripples, silhouette of pines, quiet finale"
+    }
+  ]
+}

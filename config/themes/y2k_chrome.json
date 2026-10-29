@@ -1,0 +1,89 @@
+{
+  "name": "y2k_chrome",
+  "keywords": [
+    "Y2K",
+    "ミレニアム",
+    "2000年代",
+    "クロームメタル",
+    "ガラケー",
+    "プリクラ",
+    "chrome",
+    "millennium",
+    "flip phone"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "shiny silver gradients and cheerful sparkles, optimistic digital future",
+    "sad": "dim translucent plastic and low battery glow, sentimental fade",
+    "peace": "slow-glowing gel screens and soft blue light, playful calm"
+  },
+  "camera_styles": [
+    "close-up pan across chrome shapes",
+    "slow orbit around a translucent device",
+    "wide shot of a glossy futuristic room",
+    "tracking over bubble-like icons"
+  ],
+  "color_palette": [
+    "chrome silver",
+    "bubble blue",
+    "candy pink",
+    "lime",
+    "translucent white"
+  ],
+  "locations": [
+    "chrome-filled futuristic room",
+    "translucent gadget shelf",
+    "glossy blue sky with bubbles",
+    "sticker photo booth",
+    "glowing screen desk"
+  ],
+  "stages": [
+    {
+      "name": "銀の部屋",
+      "description": "光沢が空間を満たす",
+      "prompt": "anime cinematic interior, futuristic room with chrome furniture, inflatable translucent shapes, glossy white floor, bright blue-silver lighting, Y2K aesthetic"
+    },
+    {
+      "name": "透明な機械",
+      "description": "半透明のプラスチック",
+      "prompt": "beautiful anime close-up, translucent blue and pink flip phones and gadgets with visible circuits, glossy highlights, shallow depth of field, soft glow"
+    },
+    {
+      "name": "泡のアイコン",
+      "description": "丸いUIが空に浮かぶ",
+      "prompt": "playful anime scene, glossy bubble icons and sparkling stars floating over a bright blue gradient sky, lens flares, cheerful digital world"
+    },
+    {
+      "name": "シール手帳",
+      "description": "小さな思い出の貼り方",
+      "prompt": "anime cinematic macro scene, sticker-covered booth photos and glitter pens on a pastel desk, soft flash lighting, nostalgic detail"
+    },
+    {
+      "name": "電源の落ちる前",
+      "description": "画面が最後に青く光る",
+      "prompt": "poetic anime scene, old handheld screen glowing blue in a dark room beside chrome trinkets, fading light, tender finale"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "name": "brutalist_dawn",
+  "keywords": [
+    "ブルータリズム",
+    "コンクリート",
+    "打ちっぱなし",
+    "団地",
+    "無機質",
+    "巨大な壁",
+    "brutalist",
+    "concrete",
+    "monolith",
+    "housing block"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "soft peach dawn on raw concrete, quiet resolve",
+    "sad": "overcast sky over a vast grey slab, cold heavy silence",
+    "peace": "long shadows and still air, calm austere geometry"
+  },
+  "camera_styles": [
+    "symmetrical wide shot of a concrete monolith",
+    "slow tilt up a sheer wall",
+    "tracking along repeating balconies",
+    "top-down view of a stepped plaza"
+  ],
+  "color_palette": [
+    "concrete grey",
+    "overcast white",
+    "dawn peach",
+    "moss green",
+    "steel blue"
+  ],
+  "locations": [
+    "monolithic housing block",
+    "stepped concrete plaza",
+    "skybridge between towers",
+    "empty stair court",
+    "weed-lined atrium"
+  ],
+  "stages": [
+    {
+      "name": "コンクリートの朝",
+      "description": "巨大な壁に薄い光が触れる",
+      "prompt": "anime cinematic landscape, enormous brutalist concrete block at dawn, repeating deep windows, peach light on raw textured surfaces, large scale, still sky"
+    },
+    {
+      "name": "反復する窓",
+      "description": "同じ形が果てしなく続く",
+      "prompt": "beautiful anime illustration, endless repeating balconies and windows on a concrete facade, strong rhythmic shadows, a few small plants, cool light"
+    },
+    {
+      "name": "階段広場",
+      "description": "光と影が段を刻む",
+      "prompt": "anime cinematic scene, wide stepped concrete plaza with long diagonal shadows, tiny distant silhouettes for scale, hazy blue sky, strong geometry"
+    },
+    {
+      "name": "空中の橋",
+      "description": "塔と塔をつなぐ道",
+      "prompt": "dramatic anime perspective, concrete skybridge linking two massive towers against a dramatic cloud-filled sky, shafts of light, vertigo-inducing depth"
+    },
+    {
+      "name": "苔むす団地",
+      "description": "緑が静かに壁を覆う",
+      "prompt": "poetic anime scene, concrete courtyard with moss and wildflowers creeping over stairs at sunset, warm amber light, soft haze, peaceful ending"
+    }
+  ]
+}

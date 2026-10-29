@@ -1,0 +1,90 @@
+{
+  "name": "reunion_sunrise",
+  "keywords": [
+    "再会",
+    "巡り会う",
+    "駆け寄る",
+    "久しぶり",
+    "待ち続けた",
+    "やっと会えた",
+    "抱き合う",
+    "reunion",
+    "homecoming",
+    "embrace"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "golden sunrise on an open path toward one another, overflowing relief",
+    "sad": "long shadows on an empty platform, anticipation mixed with ache",
+    "peace": "warm light settling over a quiet reunion place, tender calm"
+  },
+  "camera_styles": [
+    "wide shot of a long road at sunrise",
+    "slow tracking toward distant silhouettes",
+    "close-up of a small gesture of wind in hair",
+    "low shot of two shadows merging"
+  ],
+  "color_palette": [
+    "sunrise gold",
+    "rose pink",
+    "sky blue",
+    "field green",
+    "warm white"
+  ],
+  "locations": [
+    "long road toward the sun",
+    "station platform at dawn",
+    "hilltop with a lone tree",
+    "blooming meadow path",
+    "harbor pier at sunrise"
+  ],
+  "stages": [
+    {
+      "name": "ホームの朝",
+      "description": "待ち続けた線路の先",
+      "prompt": "anime cinematic scene, quiet station platform at dawn, tracks leading toward a glowing horizon, long shadows, pastel pink and gold sky"
+    },
+    {
+      "name": "遠くの影",
+      "description": "二つの輪郭が近づく",
+      "prompt": "beautiful anime landscape, two small distant silhouettes walking toward each other on a long road across a meadow, rising sun, lens flare, wide emotional distance"
+    },
+    {
+      "name": "駆け出す風",
+      "description": "草が一斉に揺れる",
+      "prompt": "dynamic anime scene, wind sweeping across a green hill and bending tall grass in one direction, flying petals, bright cinematic sky, sense of rushing"
+    },
+    {
+      "name": "影が重なる",
+      "description": "光がひとつの形をつくる",
+      "prompt": "poetic anime close scene, two long shadows merging on a sunlit path, glowing dust and petals around, golden backlight, tender atmosphere"
+    },
+    {
+      "name": "同じ朝の色",
+      "description": "空がやさしく広がる",
+      "prompt": "serene anime panorama, wide sky filled with warm pink and gold clouds above a blooming field, birds in flight, calm joyful finale"
+    }
+  ]
+}

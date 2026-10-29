@@ -1,0 +1,93 @@
+{
+  "name": "sengoku_castle",
+  "keywords": [
+    "戦国",
+    "天守",
+    "武将",
+    "陣幕",
+    "城下",
+    "石垣",
+    "軍旗",
+    "鬨の声",
+    "甲冑",
+    "sengoku",
+    "daimyo",
+    "shogun",
+    "armor"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "red sun rising behind a castle keep, resolute golden light",
+    "sad": "grey rain on empty battlefield grass, torn banners, somber tones",
+    "peace": "quiet castle town at dusk, soft smoke from chimneys, steady calm"
+  },
+  "camera_styles": [
+    "low-angle shot of a tall castle keep",
+    "wide sweep over a banner-filled field",
+    "slow tracking along a stone wall",
+    "dramatic close-up of fluttering war banners"
+  ],
+  "color_palette": [
+    "iron black",
+    "crimson",
+    "gold leaf",
+    "stone grey",
+    "dawn orange"
+  ],
+  "locations": [
+    "white castle keep on a stone base",
+    "banner-lined battlefield",
+    "castle town street",
+    "moat at dawn",
+    "mountain fortress in clouds"
+  ],
+  "stages": [
+    {
+      "name": "天守の朝",
+      "description": "城が朝日を背負う",
+      "prompt": "anime cinematic landscape, majestic multi-tiered castle keep on massive stone walls silhouetted by a blazing red sunrise, drifting morning mist, crisp details"
+    },
+    {
+      "name": "陣幕の風",
+      "description": "無数の旗が風をはらむ",
+      "prompt": "dynamic anime scene, rows of crimson and gold war banners snapping in strong wind on an open plain, distant mountains, dramatic clouds, sweeping depth"
+    },
+    {
+      "name": "石垣の影",
+      "description": "堀に映る重い影",
+      "prompt": "beautiful anime illustration, towering curved stone walls reflected in a dark moat, falling maple leaves, cold shafts of light, textured masonry"
+    },
+    {
+      "name": "決戦の空",
+      "description": "雷鳴と炎が空を染める",
+      "prompt": "dramatic anime battle atmosphere, castle under a tempestuous sky of lightning and orange fire glow, embers flying, no fixed characters, epic scale"
+    },
+    {
+      "name": "城下の黄昏",
+      "description": "戦の終わりに静けさが降りる",
+      "prompt": "poetic anime scene, quiet castle town rooftops at dusk, thin chimney smoke, castle keep silhouette against a soft pink and violet sky"
+    }
+  ]
+}

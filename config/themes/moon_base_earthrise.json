@@ -1,0 +1,89 @@
+{
+  "name": "moon_base_earthrise",
+  "keywords": [
+    "月基地",
+    "地球の出",
+    "月の裏側",
+    "クレーター",
+    "静かの海",
+    "lunar base",
+    "earthrise",
+    "crater",
+    "lunar"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "blue Earth rising over grey horizon, tender awestruck hope",
+    "sad": "black sky and cold shadows in a crater, silent distance from home",
+    "peace": "slow low gravity drift and soft base glow, serene hush"
+  },
+  "camera_styles": [
+    "slow pan across a grey plain with Earth",
+    "low shot of footprints in fine dust",
+    "close-up of a base window glow",
+    "wide shot of a ring of crater walls"
+  ],
+  "color_palette": [
+    "regolith grey",
+    "earth blue",
+    "sun white",
+    "base amber",
+    "void black"
+  ],
+  "locations": [
+    "domed outpost on a crater rim",
+    "dust plain under the Earth",
+    "solar panel field",
+    "lava tube entrance",
+    "observation window"
+  ],
+  "stages": [
+    {
+      "name": "地球の出",
+      "description": "青い星が地平に昇る",
+      "prompt": "anime cinematic landscape, small lunar outpost under a large blue Earth rising above a stark grey horizon, deep black sky, crisp shadows"
+    },
+    {
+      "name": "足跡",
+      "description": "細かな砂に残る道",
+      "prompt": "beautiful anime close scene, footprints and rover tracks in fine grey dust, sharp sunlight, long shadows, tiny pebbles, quiet minimal composition"
+    },
+    {
+      "name": "基地の窓",
+      "description": "暖かな灯が暗闇を押し返す",
+      "prompt": "anime cinematic interior, base observation window glowing amber with Earth visible outside, soft instrument lights, intimate calm against vast dark"
+    },
+    {
+      "name": "クレーターの縁",
+      "description": "影が深い谷になる",
+      "prompt": "dramatic anime scene, vast crater walls with razor-sharp shadows and solar glare, tiny lights of a vehicle below, immense scale"
+    },
+    {
+      "name": "帰還の光",
+      "description": "地球の光が遠くをなでる",
+      "prompt": "poetic anime scene, earthshine illuminating the lunar surface in soft blue, a lone lit module, drifting stars, tranquil finale"
+    }
+  ]
+}

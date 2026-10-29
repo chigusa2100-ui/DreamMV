@@ -1,0 +1,91 @@
+{
+  "name": "sleepless_room",
+  "keywords": [
+    "眠れない",
+    "不眠",
+    "夜更かし",
+    "天井",
+    "寝返り",
+    "枕元",
+    "午前三時",
+    "秒針",
+    "insomnia",
+    "sleepless",
+    "bedroom"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "first gray light slipping through the curtain, relief of morning",
+    "sad": "dark ceiling and glowing clock, cold blue loop of thoughts",
+    "peace": "soft streetlight on a quiet bed, drowsy sinking calm"
+  },
+  "camera_styles": [
+    "static ceiling-view shot with slow drift",
+    "close-up of a ticking clock",
+    "slow dolly across a dim bedroom",
+    "tight shot of curtains with a light gap"
+  ],
+  "color_palette": [
+    "night blue",
+    "streetlight orange",
+    "clock red",
+    "bedsheet white",
+    "dawn grey"
+  ],
+  "locations": [
+    "dim bedroom at 3am",
+    "window with a curtain gap",
+    "desk with a glowing lamp",
+    "ceiling with passing headlight shadows",
+    "balcony at dawn"
+  ],
+  "stages": [
+    {
+      "name": "午前三時",
+      "description": "時計の赤が闇に浮かぶ",
+      "prompt": "anime cinematic interior, dark bedroom with a red digital clock glowing at 3AM, rumpled sheets, faint streetlight through curtains, deep blue shadows"
+    },
+    {
+      "name": "天井の光",
+      "description": "車のライトが走る",
+      "prompt": "atmospheric anime scene, ceiling with slow moving stripes of headlight shadows crossing the wall, soft orange and blue contrast, hushed mood"
+    },
+    {
+      "name": "秒針の音",
+      "description": "小さな音が大きくなる",
+      "prompt": "beautiful anime macro scene, analog clock with ticking second hand in dim light, dust motes in a thin light strip, shallow depth of field"
+    },
+    {
+      "name": "机の灯り",
+      "description": "眠れない人のための光",
+      "prompt": "poetic anime scene, small desk lamp casting a warm pool of light on notebooks and a cup of tea, dark room, quiet intimate feeling"
+    },
+    {
+      "name": "ベランダの朝",
+      "description": "灰色が少し青くなる",
+      "prompt": "serene anime scene, balcony at dawn with pale grey-blue sky and a first line of pink, birds starting to sing, hopeful finale"
+    }
+  ]
+}

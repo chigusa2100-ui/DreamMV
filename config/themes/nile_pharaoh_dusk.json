@@ -1,0 +1,94 @@
+{
+  "name": "nile_pharaoh_dusk",
+  "keywords": [
+    "ナイル川",
+    "ファラオ",
+    "ピラミッド",
+    "スフィンクス",
+    "パピルス",
+    "王家の谷",
+    "ヒエログリフ",
+    "古代エジプト",
+    "nile",
+    "pharaoh",
+    "pyramid",
+    "sphinx",
+    "papyrus",
+    "hieroglyph"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "golden sun rising behind the pyramids, warm triumphant glow",
+    "sad": "dusty twilight over silent tombs, faded ochre, ancient sorrow",
+    "peace": "slow river drifting under a calm amber sky, palm shadows"
+  },
+  "camera_styles": [
+    "wide desert shot with monumental silhouettes",
+    "slow tracking along a painted temple wall",
+    "low river-level view of felucca sails",
+    "aerial sweep over dunes and the Nile"
+  ],
+  "color_palette": [
+    "sand gold",
+    "lapis blue",
+    "turquoise",
+    "papyrus green",
+    "sunset copper"
+  ],
+  "locations": [
+    "pyramids on the desert horizon",
+    "lotus-lined Nile bank",
+    "columned temple hall",
+    "painted tomb corridor",
+    "sphinx at twilight"
+  ],
+  "stages": [
+    {
+      "name": "砂漠の夜明け",
+      "description": "巨大な影の向こうから太陽が昇る",
+      "prompt": "anime cinematic landscape, monumental pyramids silhouetted against a glowing amber sunrise, rippled sand dunes, long shadows, warm haze"
+    },
+    {
+      "name": "ナイルの流れ",
+      "description": "ゆるやかな川が大地を潤す",
+      "prompt": "beautiful anime illustration, wide Nile river with white felucca sails, lush papyrus and palm banks, reflective gold and turquoise water, soft evening light"
+    },
+    {
+      "name": "壁画の回廊",
+      "description": "色褪せぬ神々の物語",
+      "prompt": "anime cinematic illustration, temple hall of towering carved columns, vivid lapis and gold hieroglyph murals, torchlight, drifting dust motes"
+    },
+    {
+      "name": "王家の谷",
+      "description": "星の下で墓所が目を覚ます",
+      "prompt": "dramatic anime scene, hidden royal tomb entrance in a rocky valley under a dense starry sky, glowing golden carvings, deep indigo shadows"
+    },
+    {
+      "name": "スフィンクスの黄昏",
+      "description": "千年の沈黙が空に溶ける",
+      "prompt": "poetic anime landscape, great sphinx in profile against a crimson and violet dusk, long soft shadows, quiet timeless atmosphere"
+    }
+  ]
+}

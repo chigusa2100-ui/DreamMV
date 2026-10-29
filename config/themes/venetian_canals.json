@@ -1,0 +1,91 @@
+{
+  "name": "venetian_canals",
+  "keywords": [
+    "ヴェネチア",
+    "ベネチア",
+    "運河",
+    "ゴンドラ",
+    "水の都",
+    "水路",
+    "アドリア海",
+    "venice",
+    "gondola",
+    "canal",
+    "adriatic"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "golden sunrise reflecting along a canal, warm romantic hope",
+    "sad": "winter fog on dark water, muted rose and grey, tender melancholy",
+    "peace": "slow gondola drifting through quiet side canals, soft ripples"
+  },
+  "camera_styles": [
+    "low gondola-level shot along a canal",
+    "wide shot of a domed basilica across water",
+    "slow tracking under stone bridges",
+    "aerial view over terracotta roofs"
+  ],
+  "color_palette": [
+    "terracotta",
+    "canal green",
+    "stone cream",
+    "dusk rose",
+    "deep teal"
+  ],
+  "locations": [
+    "narrow side canal between old houses",
+    "stone bridge with reflections",
+    "grand canal at sunset",
+    "piazza with arcades",
+    "misty lagoon at dawn"
+  ],
+  "stages": [
+    {
+      "name": "朝の運河",
+      "description": "水面が金色に目覚める",
+      "prompt": "anime cinematic illustration, quiet narrow canal at sunrise lined with weathered pastel palaces, golden reflections rippling on green water"
+    },
+    {
+      "name": "石橋の下",
+      "description": "影と光が水に揺れる",
+      "prompt": "beautiful anime illustration, view from a gondola passing beneath an arched stone bridge, patterned light on walls, drifting ripples, intimate framing"
+    },
+    {
+      "name": "大運河の黄昏",
+      "description": "宮殿が茜色に染まる",
+      "prompt": "anime cinematic landscape, grand canal at dusk with ornate palaces glowing orange and pink, long reflections, boats as small silhouettes, wide depth"
+    },
+    {
+      "name": "霧の潟",
+      "description": "街が霧の中に浮かぶ",
+      "prompt": "atmospheric anime scene, domed church and bell tower floating in lagoon fog, pale lilac and silver light, faint lamps on the water"
+    },
+    {
+      "name": "夜の灯",
+      "description": "水路に灯りが散る",
+      "prompt": "poetic anime night scene, lamp-lit canal reflecting warm windows and stars, a lone gondola, deep teal water, tranquil ending"
+    }
+  ]
+}

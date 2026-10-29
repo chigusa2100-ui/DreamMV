@@ -1,0 +1,92 @@
+{
+  "name": "harbor_town_morning",
+  "keywords": [
+    "港町",
+    "漁港",
+    "朝市",
+    "漁船",
+    "防波堤",
+    "カモメ",
+    "岸壁",
+    "harbor",
+    "harbour",
+    "fishing boat",
+    "seagull",
+    "pier"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "pink morning light on busy boats, fresh cheerful hope",
+    "sad": "grey drizzle on moored boats, salt wind, quiet longing",
+    "peace": "gentle water slapping hulls, slow gulls, soft blue calm"
+  },
+  "camera_styles": [
+    "wide shot of a harbor at sunrise",
+    "low tracking along a quay of crates",
+    "close-up of ropes and rust",
+    "aerial sweep over boats and rooftops"
+  ],
+  "color_palette": [
+    "sea blue",
+    "buoy orange",
+    "rust red",
+    "morning pink",
+    "concrete grey"
+  ],
+  "locations": [
+    "fishing harbor at sunrise",
+    "morning fish market",
+    "breakwater with a lighthouse",
+    "rooftop view of the port",
+    "rope-strewn quay"
+  ],
+  "stages": [
+    {
+      "name": "港の夜明け",
+      "description": "桃色の空に船が揺れる",
+      "prompt": "anime cinematic landscape, fishing harbor at sunrise with moored boats, pink and gold sky reflecting on calm water, seagulls, hills of tiled roofs"
+    },
+    {
+      "name": "朝市の声",
+      "description": "箱と氷の光",
+      "prompt": "beautiful anime illustration, lively morning fish market with crates of silver fish on ice, hanging lamps, steam, warm and cool contrast, rich detail"
+    },
+    {
+      "name": "錆とロープ",
+      "description": "潮が染みた道具たち",
+      "prompt": "anime cinematic macro scene, coiled thick rope, rusted chain and weathered buoys on a quay, glinting droplets, soft side light"
+    },
+    {
+      "name": "防波堤の風",
+      "description": "波が白く砕ける",
+      "prompt": "dynamic anime seascape, waves breaking against a concrete breakwater with a small white lighthouse, flying spray, dramatic morning clouds"
+    },
+    {
+      "name": "凪の昼下がり",
+      "description": "静かな海に雲が映る",
+      "prompt": "serene anime scene, still harbor at midday with reflections of cumulus clouds, boats at rest, cats on the quay, calm finale"
+    }
+  ]
+}

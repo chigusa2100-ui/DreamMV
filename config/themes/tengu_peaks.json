@@ -1,0 +1,91 @@
+{
+  "name": "tengu_peaks",
+  "keywords": [
+    "天狗",
+    "修験道",
+    "山伏",
+    "霊峰",
+    "羽団扇",
+    "杉木立",
+    "断崖",
+    "tengu",
+    "yamabushi",
+    "shugendo",
+    "cedar"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "first sunlight striking a sea of cloud between peaks, fresh and uplifting",
+    "sad": "mist-soaked cedar forest, grey-green hush, lonely wind",
+    "peace": "still mountain temple in drifting fog, calm monochrome greens"
+  },
+  "camera_styles": [
+    "wide shot of peaks above a cloud sea",
+    "slow vertical tilt up a giant cedar",
+    "tracking along a stone stair",
+    "sweeping aerial dive through ravines"
+  ],
+  "color_palette": [
+    "cedar green",
+    "mist grey",
+    "vermilion",
+    "ink black",
+    "dawn gold"
+  ],
+  "locations": [
+    "cliffside mountain temple",
+    "ancient cedar stair",
+    "rope bridge over a ravine",
+    "peak above a cloud sea",
+    "moss-covered shrine gate"
+  ],
+  "stages": [
+    {
+      "name": "霊峰の朝",
+      "description": "雲海の上に峰が連なる",
+      "prompt": "anime cinematic landscape, jagged sacred peaks rising from a golden cloud sea at dawn, tiny temple roofs, crisp air, layered mountain silhouettes"
+    },
+    {
+      "name": "杉の石段",
+      "description": "苔むした道が山へ続く",
+      "prompt": "beautiful anime illustration, endless mossy stone stairs between giant ancient cedars, shafts of light, drifting mist, small stone lanterns"
+    },
+    {
+      "name": "断崖の祠",
+      "description": "風が羽根を鳴らす",
+      "prompt": "anime cinematic illustration, tiny shrine on a sheer cliff edge, rope bridge swaying over a deep ravine, leaves and feathers spiraling in a strong wind"
+    },
+    {
+      "name": "天狗風",
+      "description": "山が咆哮し空が割れる",
+      "prompt": "dynamic anime scene, powerful whirlwind of leaves and cloud sweeping across mountain ridges, dramatic dark sky with light cracks, bold motion lines, epic scale"
+    },
+    {
+      "name": "夕霧の寺",
+      "description": "静寂の鐘が谷に響く",
+      "prompt": "poetic anime landscape, mountain temple with a bell in drifting evening fog, vermilion lantern glow, deep blue valley, calm afterglow"
+    }
+  ]
+}

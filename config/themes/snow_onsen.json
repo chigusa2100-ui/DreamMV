@@ -1,0 +1,90 @@
+{
+  "name": "snow_onsen",
+  "keywords": [
+    "温泉",
+    "露天風呂",
+    "湯けむり",
+    "雪見風呂",
+    "湯の花",
+    "山の宿",
+    "旅館",
+    "onsen",
+    "ryokan",
+    "hot spring"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "steam glowing in first sun over snow, warm gentle hope",
+    "sad": "falling snow on a quiet empty bath, muted blue and grey, tender solitude",
+    "peace": "thick steam and warm lantern glow, deep cozy calm"
+  },
+  "camera_styles": [
+    "slow push-in through rising steam",
+    "wide shot of a snowy mountain inn",
+    "low shot of snow falling on hot water",
+    "close-up of lanterns in the snow"
+  ],
+  "color_palette": [
+    "steam white",
+    "snow blue",
+    "lantern amber",
+    "cedar brown",
+    "night indigo"
+  ],
+  "locations": [
+    "outdoor stone bath in snow",
+    "wooden inn with lit windows",
+    "snowy path with lanterns",
+    "mountain valley with steam",
+    "cedar bath at night"
+  ],
+  "stages": [
+    {
+      "name": "雪の宿",
+      "description": "山あいに灯がともる",
+      "prompt": "anime cinematic landscape, wooden mountain inn with glowing amber windows in a deep snowy valley, falling snow, blue twilight, chimney smoke"
+    },
+    {
+      "name": "湯けむり",
+      "description": "白い湯気が空へのぼる",
+      "prompt": "beautiful anime scene, steam rising from a rocky outdoor hot spring surrounded by snow-laden pines, soft light, glowing mist, gentle ripples"
+    },
+    {
+      "name": "石灯籠の雪",
+      "description": "小さな灯が雪を溶かす",
+      "prompt": "anime close composition, stone lanterns capped with snow along a path to the bath, warm glow on drifting flakes, shallow depth of field"
+    },
+    {
+      "name": "吹雪の夜",
+      "description": "外の冷たさと湯の温もり",
+      "prompt": "atmospheric anime night scene, blizzard swirling around a steaming outdoor bath, warm lantern light fighting cold wind, strong contrast"
+    },
+    {
+      "name": "朝の山",
+      "description": "陽が雪原を金色に染める",
+      "prompt": "poetic anime dawn, snowy mountains turning gold above the steaming valley, crisp blue shadows, quiet and bright finale"
+    }
+  ]
+}

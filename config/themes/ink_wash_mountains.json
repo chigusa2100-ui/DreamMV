@@ -1,0 +1,91 @@
+{
+  "name": "ink_wash_mountains",
+  "keywords": [
+    "水墨画",
+    "墨絵",
+    "山水画",
+    "余白",
+    "仙境",
+    "筆致",
+    "岩山",
+    "ink-wash",
+    "sumi",
+    "brushstroke",
+    "shanshui"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "pale sun appearing as a soft disc through mist, gentle ink gradients",
+    "sad": "heavy grey washes and a thin rain, deep monochrome melancholy",
+    "peace": "still misty valley, vast white space, calm brush rhythm"
+  },
+  "camera_styles": [
+    "slow horizontal scroll across layered mountains",
+    "gentle push-in through mist",
+    "wide shot with a tiny pavilion for scale",
+    "close-up of ink diffusing in water"
+  ],
+  "color_palette": [
+    "ink black",
+    "wash grey",
+    "paper white",
+    "vermilion seal red",
+    "pale celadon"
+  ],
+  "locations": [
+    "layered mountains in mist",
+    "small pavilion on a cliff",
+    "pine-covered rock spire",
+    "river with a lone boat",
+    "waterfall in a gorge"
+  ],
+  "stages": [
+    {
+      "name": "墨の山",
+      "description": "霧に峰が滲んでいく",
+      "prompt": "anime-meets-ink-painting landscape, layered misty mountains in black and grey washes, vast empty paper-white space, tiny pine silhouettes, soft gradients"
+    },
+    {
+      "name": "松と岩",
+      "description": "筆の線が岩に息を与える",
+      "prompt": "beautiful ink-wash illustration, gnarled pines clinging to a rock spire, bold brush strokes with dry-brush texture, drifting cloud, a small red seal accent"
+    },
+    {
+      "name": "小舟の川",
+      "description": "静かな水が余白を流れる",
+      "prompt": "poetic ink-style scene, lone small boat on a calm river between steep cliffs, faint ripples, mist, subtle celadon tint, generous negative space"
+    },
+    {
+      "name": "滝の音",
+      "description": "墨の飛沫が谷に響く",
+      "prompt": "dynamic ink-wash illustration, white waterfall plunging through a dark gorge, splashing ink-like spray, swirling mist, strong tonal contrast"
+    },
+    {
+      "name": "朱印の夕",
+      "description": "一点の赤が静けさを締める",
+      "prompt": "serene ink painting, distant pavilion on a mountainside at dusk, pale warm wash in the sky, single red seal accent, calm and spacious"
+    }
+  ]
+}

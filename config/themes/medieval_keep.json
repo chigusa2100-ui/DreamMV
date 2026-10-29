@@ -1,0 +1,92 @@
+{
+  "name": "medieval_keep",
+  "keywords": [
+    "中世",
+    "騎士",
+    "城壁",
+    "吟遊詩人",
+    "旗印",
+    "修道院",
+    "紋章",
+    "medieval",
+    "knight",
+    "castle",
+    "minstrel",
+    "heraldry"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "pale gold sunrise over a stone castle, noble hopeful light",
+    "sad": "cold fog around old stone walls, desaturated greys, solemn mood",
+    "peace": "warm hearth glow and quiet courtyard, steady calm"
+  },
+  "camera_styles": [
+    "wide shot of a hilltop castle",
+    "slow dolly through a stone hall",
+    "low tracking over a drawbridge",
+    "aerial pull-back over fields and banners"
+  ],
+  "color_palette": [
+    "stone grey",
+    "heraldic blue",
+    "crimson",
+    "forest green",
+    "torch gold"
+  ],
+  "locations": [
+    "hilltop castle with banners",
+    "torchlit great hall",
+    "drawbridge over a moat",
+    "village fair in the valley",
+    "cloister garden"
+  ],
+  "stages": [
+    {
+      "name": "丘の城",
+      "description": "朝焼けが石壁を染める",
+      "prompt": "anime cinematic landscape, grand stone castle on a green hill under a pale golden dawn, colorful heraldic banners, patchwork fields below, soft mist"
+    },
+    {
+      "name": "大広間",
+      "description": "松明が壁の旗を照らす",
+      "prompt": "beautiful anime interior, vast stone great hall with long wooden tables and hanging banners, torchlight and warm shadows, drifting dust, rich texture"
+    },
+    {
+      "name": "跳ね橋",
+      "description": "霧の向こうへ橋が下りる",
+      "prompt": "anime cinematic illustration, drawbridge lowering over a misty moat, iron chains, towering gate, cold blue light with a warm glow from within"
+    },
+    {
+      "name": "祭の市",
+      "description": "旗と音楽が谷にあふれる",
+      "prompt": "lively anime scene, medieval village fair in a valley with colorful tents and pennants, golden afternoon sun, crowds as small silhouettes, playful depth"
+    },
+    {
+      "name": "回廊の夕暮れ",
+      "description": "祈りの鐘が静かに響く",
+      "prompt": "poetic anime scene, quiet stone cloister with a garden at sunset, long arches, warm orange light fading to violet, serene finale"
+    }
+  ]
+}

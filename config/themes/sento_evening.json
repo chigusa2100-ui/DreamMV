@@ -1,0 +1,89 @@
+{
+  "name": "sento_evening",
+  "keywords": [
+    "銭湯",
+    "風呂上がり",
+    "湯船",
+    "番台",
+    "牛乳瓶",
+    "脱衣所",
+    "湯上がり",
+    "sento",
+    "bathhouse"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "cheerful warm tiles under bright lamps, relaxed hopeful mood",
+    "sad": "empty changing room after closing, humming fan, soft nostalgia",
+    "peace": "deep steam and splashing echoes, soothing warm calm"
+  },
+  "camera_styles": [
+    "wide view of a tiled bath hall",
+    "slow tracking along lockers and fans",
+    "close-up of milk bottles in a cooler",
+    "exterior dusk shot with chimney smoke"
+  ],
+  "color_palette": [
+    "tile blue",
+    "steam white",
+    "wood brown",
+    "milk cream",
+    "dusk orange"
+  ],
+  "locations": [
+    "tiled bath hall with a mural",
+    "changing room with lockers",
+    "front desk and cooler",
+    "chimney at dusk",
+    "alley outside the entrance"
+  ],
+  "stages": [
+    {
+      "name": "夕方の暖簾",
+      "description": "煙突の先に雲が流れる",
+      "prompt": "anime cinematic exterior, old neighborhood bathhouse at dusk with a tall chimney and a hanging entrance curtain, warm light inside, orange sky"
+    },
+    {
+      "name": "タイルの湯",
+      "description": "湯気が天井に昇る",
+      "prompt": "beautiful anime interior, large tiled bath hall with a painted mountain mural, rising steam, wooden buckets, bright warm glow, shimmering water"
+    },
+    {
+      "name": "脱衣所",
+      "description": "扇風機が回る",
+      "prompt": "anime cinematic illustration, retro changing room with wooden lockers, a rotating electric fan, weighing scale, warm yellow lamp, nostalgic detail"
+    },
+    {
+      "name": "牛乳瓶",
+      "description": "冷たい一本の贅沢",
+      "prompt": "poetic anime close-up, glass milk bottles in a retro cooler with condensation drops, soft light, vivid cream and blue tones, shallow depth"
+    },
+    {
+      "name": "帰り道",
+      "description": "髪が乾く夜風",
+      "prompt": "serene anime street at night, walking path home from the bathhouse with glowing vending machine, faint steam from the chimney, calm finale"
+    }
+  ]
+}

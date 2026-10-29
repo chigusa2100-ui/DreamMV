@@ -1,0 +1,91 @@
+{
+  "name": "shattered_memory",
+  "keywords": [
+    "記憶の欠片",
+    "砕けた",
+    "ガラス片",
+    "割れた鏡",
+    "断片",
+    "忘れたくない",
+    "欠けた",
+    "思い出せない",
+    "shattered",
+    "fragments",
+    "shards"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "pieces of light slowly rejoining into a picture, restorative hope",
+    "sad": "sharp drifting shards and faded images, cold painful longing",
+    "peace": "slow floating glass dust and quiet reflections, delicate calm"
+  },
+  "camera_styles": [
+    "slow-motion orbit around floating shards",
+    "close-up of a fragment reflecting a scene",
+    "wide shot of a room suspended in pieces",
+    "slow pull-back as pieces reassemble"
+  ],
+  "color_palette": [
+    "glass blue",
+    "silver",
+    "faded sepia",
+    "ember pink",
+    "white light"
+  ],
+  "locations": [
+    "room frozen mid-shatter",
+    "fragments reflecting a summer street",
+    "mirror hall of cracks",
+    "void with floating photos",
+    "sunrise through broken glass"
+  ],
+  "stages": [
+    {
+      "name": "砕ける瞬間",
+      "description": "時間が止まる",
+      "prompt": "surreal anime scene, a bedroom frozen mid-shatter into thousands of floating glass fragments, each reflecting a different memory, cool blue and silver light"
+    },
+    {
+      "name": "欠片の景色",
+      "description": "一枚ごとに別の日",
+      "prompt": "beautiful anime close scene, single glass shard reflecting a sunlit summer street, edges refracting rainbow light, shallow depth of field"
+    },
+    {
+      "name": "鏡の廊下",
+      "description": "ひび割れの向こうの顔",
+      "prompt": "atmospheric anime scene, long hall of cracked mirrors showing blurred scenes of past moments, silver reflections, dark corridor, faint warm glow ahead"
+    },
+    {
+      "name": "舞い上がる写真",
+      "description": "色褪せた記憶が浮かぶ",
+      "prompt": "poetic anime scene, old faded photographs floating in a dark void with glittering dust, sepia and teal tones, soft drifting motion"
+    },
+    {
+      "name": "光で繋がる",
+      "description": "割れ目に朝が差す",
+      "prompt": "hopeful anime scene, shards slowly realigning as golden sunrise shines through the cracks, rays forming a complete image, tender finale"
+    }
+  ]
+}

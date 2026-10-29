@@ -1,0 +1,91 @@
+{
+  "name": "maya_temple_jungle",
+  "keywords": [
+    "マヤ文明",
+    "アステカ",
+    "マヤ暦",
+    "ジャングル遺跡",
+    "セノーテ",
+    "ケツァル",
+    "黒曜石",
+    "maya",
+    "cenote",
+    "quetzal",
+    "obsidian"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "golden sunrise above the jungle canopy, warm renewal",
+    "sad": "heavy humid mist over silent ruins, moss green and slate",
+    "peace": "soft dappled light in a quiet jungle clearing"
+  },
+  "camera_styles": [
+    "aerial rise above the canopy to a stepped temple",
+    "slow upward tilt along stone stairs",
+    "tracking through hanging vines",
+    "top-down shot of a cenote"
+  ],
+  "color_palette": [
+    "jungle green",
+    "limestone cream",
+    "turquoise",
+    "jade",
+    "sun gold"
+  ],
+  "locations": [
+    "stepped temple above the canopy",
+    "sunlit cenote pool",
+    "vine-covered stone stairway",
+    "jungle clearing with carved stelae",
+    "misty river at dawn"
+  ],
+  "stages": [
+    {
+      "name": "密林の頂",
+      "description": "緑の海から神殿が現れる",
+      "prompt": "anime cinematic landscape, stepped stone temple emerging from an endless green jungle canopy at sunrise, mist rising, colorful birds in flight"
+    },
+    {
+      "name": "蔦の石段",
+      "description": "遺跡を覆う緑の記憶",
+      "prompt": "beautiful anime illustration, steep carved stone stairway wrapped in vines and moss, shafts of green-gold light, humid haze, intricate relief carvings"
+    },
+    {
+      "name": "聖なる泉",
+      "description": "セノーテに光が降り注ぐ",
+      "prompt": "anime cinematic illustration, circular limestone cenote with turquoise water, sunbeams streaming through an opening above, hanging roots, glowing depth"
+    },
+    {
+      "name": "太陽の儀式",
+      "description": "日の光が神殿の中心を貫く",
+      "prompt": "dramatic anime scene, beam of sunlight striking a temple altar at solstice, glowing jade and gold carvings, swirling dust, powerful symmetrical composition"
+    },
+    {
+      "name": "夜の鳥の声",
+      "description": "星と霧が遺跡を包む",
+      "prompt": "poetic anime jungle night, stone temple under a dense starfield, drifting fireflies and soft mist, deep teal and indigo, quiet afterglow"
+    }
+  ]
+}

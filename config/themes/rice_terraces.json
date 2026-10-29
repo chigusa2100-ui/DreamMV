@@ -1,0 +1,91 @@
+{
+  "name": "rice_terraces",
+  "keywords": [
+    "棚田",
+    "田んぼ",
+    "稲穂",
+    "田植え",
+    "水田",
+    "畦道",
+    "里山",
+    "案山子",
+    "paddy",
+    "scarecrow",
+    "satoyama"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "sunrise glinting on flooded fields, fresh green hope",
+    "sad": "grey rain on empty paddies, quiet rural loneliness",
+    "peace": "still evening water mirroring the sky, gentle country calm"
+  },
+  "camera_styles": [
+    "wide aerial view of stepped terraces",
+    "slow tracking along a narrow ridge path",
+    "close-up of rice shoots in water",
+    "low sunset shot across a golden field"
+  ],
+  "color_palette": [
+    "paddy green",
+    "sky reflection blue",
+    "harvest gold",
+    "earth brown",
+    "dusk pink"
+  ],
+  "locations": [
+    "stepped flooded terraces",
+    "golden harvest field",
+    "narrow ridge path",
+    "village among hills",
+    "mist-filled valley"
+  ],
+  "stages": [
+    {
+      "name": "水を張る朝",
+      "description": "田が空を映す",
+      "prompt": "anime cinematic landscape, flooded rice terraces curving down a hillside, mirror reflections of a pink sunrise, light mist, tiny huts, layered depth"
+    },
+    {
+      "name": "緑の畦道",
+      "description": "若い稲が風に揺れる",
+      "prompt": "beautiful anime illustration, narrow ridge path between bright green rice shoots, gentle wind ripples, big white clouds, vivid summer colors"
+    },
+    {
+      "name": "雨の棚田",
+      "description": "雨粒が水面に輪を描く",
+      "prompt": "atmospheric anime scene, rain on terraced paddies with countless ripples, misty green hills, soft grey sky, a straw hat hung on a post"
+    },
+    {
+      "name": "黄金の稲穂",
+      "description": "実りが丘を染める",
+      "prompt": "anime cinematic landscape, golden ripe rice swaying on terraces under a warm autumn sun, scarecrow silhouette, long shadows, rich amber tones"
+    },
+    {
+      "name": "夕焼けの里",
+      "description": "里山に灯がともる",
+      "prompt": "poetic anime scene, hillside village with a few lit windows among empty terraces at sunset, red dragonflies, violet haze, calm finale"
+    }
+  ]
+}

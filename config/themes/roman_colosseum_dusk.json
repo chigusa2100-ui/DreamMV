@@ -1,0 +1,91 @@
+{
+  "name": "roman_colosseum_dusk",
+  "keywords": [
+    "ローマ帝国",
+    "古代ローマ",
+    "円形闘技場",
+    "コロッセオ",
+    "水道橋",
+    "元老院",
+    "roman",
+    "colosseum",
+    "aqueduct",
+    "forum",
+    "legion"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "warm golden sun filling a vast arena, triumphant glow",
+    "sad": "ruined arches at twilight, cool dust, weathered stone sorrow",
+    "peace": "quiet marble forum in late afternoon sun, serene calm"
+  },
+  "camera_styles": [
+    "wide low shot of a vast amphitheater",
+    "slow tilt up a triple arcade",
+    "tracking along an aqueduct",
+    "aerial sweep over city ruins"
+  ],
+  "color_palette": [
+    "travertine cream",
+    "imperial purple",
+    "terracotta",
+    "sky blue",
+    "bronze"
+  ],
+  "locations": [
+    "amphitheater arcade",
+    "marble forum with columns",
+    "aqueduct across the plain",
+    "triumphal arch",
+    "bathhouse with sunlit pools"
+  ],
+  "stages": [
+    {
+      "name": "闘技場の光",
+      "description": "巨大な円形に日が満ちる",
+      "prompt": "anime cinematic landscape, immense Roman amphitheater with layered arches bathed in golden afternoon light, sand floor, deep blue sky, monumental scale"
+    },
+    {
+      "name": "フォロの柱",
+      "description": "大理石の街に風が通る",
+      "prompt": "beautiful anime illustration, Roman marble forum with towering columns and weathered statues, long warm shadows across the paving, drifting pigeons, soft golden haze"
+    },
+    {
+      "name": "水道橋",
+      "description": "長い橋が大地を渡る",
+      "prompt": "anime cinematic scene, endless stone aqueduct arches crossing a green valley toward a distant city, golden hour, wide perspective"
+    },
+    {
+      "name": "凱旋の門",
+      "description": "金の光が門をくぐる",
+      "prompt": "dramatic anime composition, huge triumphal arch with light flooding through, drifting laurel leaves and gold dust, symmetrical grand framing"
+    },
+    {
+      "name": "遺跡の黄昏",
+      "description": "時が石を黄金に変える",
+      "prompt": "poetic anime scene, ruined arcade glowing orange and violet at dusk, wild flowers among broken stones, calm timeless afterglow"
+    }
+  ]
+}

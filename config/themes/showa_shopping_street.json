@@ -1,0 +1,91 @@
+{
+  "name": "showa_shopping_street",
+  "keywords": [
+    "昭和",
+    "商店街",
+    "純喫茶",
+    "駄菓子屋",
+    "レトロ看板",
+    "ブラウン管",
+    "公衆電話",
+    "路面電車",
+    "showa",
+    "shotengai",
+    "dagashi"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "warm afternoon crowd and bright awnings, nostalgic cheer",
+    "sad": "closing shutters at dusk, faded signs, tender nostalgia",
+    "peace": "slow evening street, buzzing neon tubes, easy sentimental calm"
+  },
+  "camera_styles": [
+    "slow tracking down a covered arcade",
+    "close-up of a faded signboard",
+    "wide dusk shot of a tram crossing",
+    "low shot of a candy shop display"
+  ],
+  "color_palette": [
+    "faded red",
+    "signboard yellow",
+    "tube green",
+    "wood brown",
+    "dusk orange"
+  ],
+  "locations": [
+    "covered shopping arcade",
+    "candy shop front",
+    "tram stop at dusk",
+    "old cinema signboard",
+    "alley with glowing lanterns"
+  ],
+  "stages": [
+    {
+      "name": "アーケードの午後",
+      "description": "色褪せた看板が並ぶ",
+      "prompt": "anime cinematic illustration, busy covered shopping arcade with faded hand-painted signs, hanging paper decorations, warm afternoon light, nostalgic detail"
+    },
+    {
+      "name": "駄菓子屋",
+      "description": "小さな宝箱が並ぶ",
+      "prompt": "beautiful anime illustration, tiny candy shop with jars of colorful sweets, old coin games and a wooden counter, warm lamp light, rich retro textures"
+    },
+    {
+      "name": "路面電車",
+      "description": "線路が夕焼けへ伸びる",
+      "prompt": "anime cinematic scene, vintage tram crossing a street at sunset, overhead wires, orange glow, small shops with glowing windows"
+    },
+    {
+      "name": "ブラウン管の光",
+      "description": "青い光が部屋にこぼれる",
+      "prompt": "atmospheric anime scene, old CRT television glowing in a dark shop window, scan-lines, reflections on glass, cool blue against warm wood"
+    },
+    {
+      "name": "シャッターの音",
+      "description": "夜がやさしく降りる",
+      "prompt": "poetic anime scene, arcade at closing time with half-drawn shutters and a few neon tubes still lit, empty street, soft melancholy finale"
+    }
+  ]
+}

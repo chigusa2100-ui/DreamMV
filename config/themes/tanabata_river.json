@@ -1,0 +1,91 @@
+{
+  "name": "tanabata_river",
+  "keywords": [
+    "七夕",
+    "天の川",
+    "織姫",
+    "彦星",
+    "短冊",
+    "笹の葉",
+    "星合",
+    "tanabata",
+    "orihime",
+    "hikoboshi",
+    "milky way"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "clear starry sky parting after rain, shimmering silver-blue hope",
+    "sad": "thin rain clouds veiling the stars, soft indigo longing",
+    "peace": "gentle summer night breeze, bamboo leaves rustling, quiet glow"
+  },
+  "camera_styles": [
+    "wide shot of a luminous Milky Way over a meadow",
+    "slow tilt up a bamboo with paper strips",
+    "gliding shot along a glowing river of stars",
+    "close-up of fluttering tanzaku"
+  ],
+  "color_palette": [
+    "midnight blue",
+    "silver",
+    "paper pink",
+    "bamboo green",
+    "starlight gold"
+  ],
+  "locations": [
+    "river of stars across the night sky",
+    "bamboo grove with hanging wishes",
+    "summer meadow at night",
+    "stone bridge over a quiet stream",
+    "hilltop under the Milky Way"
+  ],
+  "stages": [
+    {
+      "name": "笹の願い",
+      "description": "色とりどりの短冊が風に揺れる",
+      "prompt": "anime cinematic illustration, tall bamboo branches hung with colorful paper wish strips swaying in a summer night breeze, soft lantern glow, deep blue sky"
+    },
+    {
+      "name": "天の川",
+      "description": "星の流れが空を渡る",
+      "prompt": "beautiful anime landscape, luminous Milky Way arching over a quiet meadow, countless glittering stars, faint violet and teal clouds, vast depth"
+    },
+    {
+      "name": "星の橋",
+      "description": "光の鳥が橋をかける",
+      "prompt": "anime cinematic scene, a bridge of shimmering light spanning a river of stars, sparkling wings of birds, ethereal white and silver glow, wide composition"
+    },
+    {
+      "name": "雨雲のむこう",
+      "description": "雨が止み星が顔を出す",
+      "prompt": "dramatic anime sky, rain clouds splitting apart to reveal blazing stars, raindrops catching starlight, deep indigo and silver contrast"
+    },
+    {
+      "name": "朝の笹",
+      "description": "願いを乗せて夜が明ける",
+      "prompt": "poetic anime landscape, dawn light touching bamboo leaves with dew, pale stars fading, soft pink and aqua sky, tranquil finale"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "name": "glacier_blue",
+  "keywords": [
+    "氷河",
+    "氷の洞窟",
+    "青い氷",
+    "流氷",
+    "氷山",
+    "南極",
+    "白銀",
+    "glacier",
+    "iceberg",
+    "antarctic",
+    "crevasse"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "pale sun lighting turquoise ice, clear crisp hope",
+    "sad": "grey wind over frozen plains, cold desaturated solitude",
+    "peace": "still blue air, soft snow, vast silent calm"
+  },
+  "camera_styles": [
+    "slow glide inside a blue ice cave",
+    "wide aerial view of a glacier river",
+    "low shot over drifting floes",
+    "close-up of frost crystals"
+  ],
+  "color_palette": [
+    "glacier blue",
+    "ice white",
+    "deep cyan",
+    "slate",
+    "pale pink"
+  ],
+  "locations": [
+    "blue ice cave",
+    "towering iceberg in dark water",
+    "glacier crevasse field",
+    "snow plain at dawn",
+    "drifting ice floes at sunset"
+  ],
+  "stages": [
+    {
+      "name": "青い氷の洞",
+      "description": "氷が光を閉じ込める",
+      "prompt": "anime cinematic interior, luminous turquoise ice cave with smooth rippled walls, sunlight filtering through translucent ice, glittering frost, hushed depth"
+    },
+    {
+      "name": "氷山の影",
+      "description": "巨大な塊が海に浮かぶ",
+      "prompt": "beautiful anime seascape, towering iceberg with sculpted arches floating in dark blue water, soft overcast light, tiny ripples, huge scale"
+    },
+    {
+      "name": "割れ目の迷宮",
+      "description": "氷の谷が深く口を開ける",
+      "prompt": "dramatic anime landscape, deep glacier crevasses with sharp blue walls and a thin line of sky above, drifting snow, vertigo depth"
+    },
+    {
+      "name": "風の雪原",
+      "description": "白い風が大地を撫でる",
+      "prompt": "dynamic anime scene, wind sweeping powdery snow across a vast white plain, low sun glare, long blowing plumes, cold crisp air"
+    },
+    {
+      "name": "薄紅の氷原",
+      "description": "空と氷が同じ色に溶ける",
+      "prompt": "poetic anime landscape, frozen sea at sunset with pink and lilac sky mirrored on glossy ice, distant icebergs, serene finale"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "name": "ryugu_palace",
+  "keywords": [
+    "竜宮城",
+    "乙姫",
+    "浦島",
+    "玉手箱",
+    "海底の宮殿",
+    "舞い踊る魚",
+    "ryugu",
+    "otohime",
+    "urashima",
+    "sea palace"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "sunbeams piercing a clear sea, shimmering hopeful turquoise",
+    "sad": "dim deep blue water, drifting bubbles, wistful faded coral colors",
+    "peace": "gentle swaying kelp and slow fish, soft aqua glow"
+  },
+  "camera_styles": [
+    "slow descent through shafts of sunlight",
+    "wide shot of a palace on the sea floor",
+    "gliding tracking shot past schools of fish",
+    "close-up on a glowing lacquer box"
+  ],
+  "color_palette": [
+    "aquamarine",
+    "vermilion",
+    "pearl white",
+    "coral pink",
+    "abyss blue"
+  ],
+  "locations": [
+    "lacquered palace on the seabed",
+    "coral garden",
+    "sunlit shallows",
+    "kelp forest corridor",
+    "pearl-lit banquet hall"
+  ],
+  "stages": [
+    {
+      "name": "海の入口",
+      "description": "波の下へ光が降りていく",
+      "prompt": "anime cinematic underwater scene, sunbeams descending through clear turquoise water, drifting bubbles, a distant glowing palace, serene depth"
+    },
+    {
+      "name": "朱塗りの宮",
+      "description": "海底に建つ龍宮の門",
+      "prompt": "beautiful anime illustration, vermilion lacquered palace with curved golden roofs on the sea floor, glowing paper lanterns, floating jellyfish, soft aqua light"
+    },
+    {
+      "name": "魚たちの舞",
+      "description": "鯛や平目が宴を彩る",
+      "prompt": "anime cinematic illustration, shimmering schools of colorful fish dancing in spirals around palace pillars, silk ribbons drifting in the current, luminous coral"
+    },
+    {
+      "name": "玉手箱",
+      "description": "光り輝く箱がそっと開く",
+      "prompt": "dramatic anime close composition, ornate lacquer treasure box slowly opening to release white mist and light, drifting pearls, deep blue background"
+    },
+    {
+      "name": "浮き上がる時",
+      "description": "泡とともに水面へ戻る",
+      "prompt": "poetic anime scene, ascending bubbles toward a bright shimmering surface, fading palace below, sunset-colored sky above waves, bittersweet calm"
+    }
+  ]
+}

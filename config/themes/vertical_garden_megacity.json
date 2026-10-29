@@ -1,0 +1,89 @@
+{
+  "name": "vertical_garden_megacity",
+  "keywords": [
+    "垂直農園",
+    "緑化都市",
+    "空中庭園",
+    "立体都市",
+    "屋上緑化",
+    "vertical farm",
+    "megacity",
+    "skygarden",
+    "eco tower"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "morning sun filtering through terraced greenery, bright sustainable hope",
+    "sad": "humid fog between towers and drooping leaves, quiet unease",
+    "peace": "soft green light and gentle water sounds, serene urban calm"
+  },
+  "camera_styles": [
+    "slow upward fly-through between green towers",
+    "wide aerial view of a tiered city",
+    "tracking shot along a skybridge garden",
+    "close-up of dripping leaves on glass"
+  ],
+  "color_palette": [
+    "leaf green",
+    "glass blue",
+    "white concrete",
+    "sun gold",
+    "water teal"
+  ],
+  "locations": [
+    "tower facades covered in plants",
+    "skybridge garden",
+    "terraced farm levels",
+    "canal in a plaza",
+    "rooftop greenhouse"
+  ],
+  "stages": [
+    {
+      "name": "緑の塔",
+      "description": "ビルが森になる",
+      "prompt": "anime cinematic cityscape, skyscrapers draped in terraced gardens and cascading vines, white and glass structures, sunrise glow, flying vehicles"
+    },
+    {
+      "name": "空中の畑",
+      "description": "光の層に作物が並ぶ",
+      "prompt": "beautiful anime illustration, multi-level vertical farm with rows of crops under soft white grow lights, workers as tiny silhouettes, clean futuristic detail"
+    },
+    {
+      "name": "空橋の庭",
+      "description": "風が緑を渡る",
+      "prompt": "anime cinematic scene, glass skybridge overgrown with flowers between two green towers, wind moving leaves, dizzying depth, bright daylight"
+    },
+    {
+      "name": "水の都市",
+      "description": "運河と滝が街を巡る",
+      "prompt": "dynamic anime landscape, waterfalls and canals flowing down tiered plazas, rainbow spray, trees and bridges, vibrant fresh colors"
+    },
+    {
+      "name": "屋上の夕焼け",
+      "description": "温室が金に染まる",
+      "prompt": "poetic anime sunset, rooftop greenhouse glowing amber above a hazy green city, soft warm light on glass, calm finale"
+    }
+  ]
+}

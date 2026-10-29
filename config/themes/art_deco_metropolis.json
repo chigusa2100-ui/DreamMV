@@ -1,0 +1,89 @@
+{
+  "name": "art_deco_metropolis",
+  "keywords": [
+    "アールデコ",
+    "摩天楼",
+    "ジャズエイジ",
+    "幾何学模様",
+    "金の装飾",
+    "art deco",
+    "skyscraper",
+    "gatsby",
+    "jazz age"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "gold sunrise striking stepped towers, glamorous optimism",
+    "sad": "rainy night on polished streets, smoky blue, elegant loneliness",
+    "peace": "late-night jazz-club glow and quiet avenues, warm brass tones"
+  },
+  "camera_styles": [
+    "low-angle shot up a stepped tower",
+    "symmetrical lobby dolly-in",
+    "tracking along a rain-slick avenue",
+    "wide skyline at golden hour"
+  ],
+  "color_palette": [
+    "black and gold",
+    "emerald",
+    "champagne",
+    "midnight blue",
+    "ivory"
+  ],
+  "locations": [
+    "stepped skyscraper skyline",
+    "marble lobby with gold geometry",
+    "rain-lit avenue with streamlined cars",
+    "jazz club stage",
+    "rooftop terrace above the city"
+  ],
+  "stages": [
+    {
+      "name": "黄金の摩天楼",
+      "description": "幾何学の塔が朝日を弾く",
+      "prompt": "anime cinematic cityscape, stepped Art Deco skyscrapers with gold fins and spires glowing in sunrise, dramatic upward perspective, clean geometry"
+    },
+    {
+      "name": "大理石のロビー",
+      "description": "金の線が床に反射する",
+      "prompt": "beautiful anime interior, symmetrical grand lobby with black marble floor, gold geometric patterns, sunburst motifs, polished reflections, warm lighting"
+    },
+    {
+      "name": "雨の大通り",
+      "description": "街灯が濡れた道に流れる",
+      "prompt": "atmospheric anime scene, rain-slick avenue at night, streamlined vintage cars, glowing marquee signs, emerald and amber reflections, steam rising"
+    },
+    {
+      "name": "ジャズの夜",
+      "description": "舞台が光と影で脈打つ",
+      "prompt": "lively anime scene, jazz club stage with brass instruments, fan-shaped golden backdrop, smoky light shafts, rich warm tones, rhythmic composition"
+    },
+    {
+      "name": "屋上の夜明け",
+      "description": "街が静かな青に包まれる",
+      "prompt": "poetic anime rooftop terrace at dawn, city of towers fading into pale blue and champagne light, calm lingering glamour"
+    }
+  ]
+}

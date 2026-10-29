@@ -1,0 +1,89 @@
+{
+  "name": "space_elevator_dawn",
+  "keywords": [
+    "軌道エレベーター",
+    "宇宙エレベーター",
+    "昇降機",
+    "ケーブル",
+    "静止軌道",
+    "赤道",
+    "space elevator",
+    "tether",
+    "geostationary"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "sun igniting the cable and the horizon, soaring optimistic light",
+    "sad": "cold shadow at the base of an endless tower, small and distant",
+    "peace": "slow climb above clouds, soft blue silence"
+  },
+  "camera_styles": [
+    "long vertical tilt up the cable to the stars",
+    "wide ground shot of the tower's base",
+    "close-up of a climbing car",
+    "aerial view from above the cloud layer"
+  ],
+  "color_palette": [
+    "dawn gold",
+    "sky blue",
+    "carbon black",
+    "cable silver",
+    "starlight white"
+  ],
+  "locations": [
+    "tower base on the equator",
+    "climber car in the clouds",
+    "upper station above the atmosphere",
+    "ocean platform at sunrise",
+    "view of Earth from orbit"
+  ],
+  "stages": [
+    {
+      "name": "赤道の塔",
+      "description": "天へ伸びる一本の線",
+      "prompt": "anime cinematic landscape, immense space elevator cable rising from an ocean platform into the sky at sunrise, tiny ships, huge scale, golden horizon"
+    },
+    {
+      "name": "昇降の窓",
+      "description": "雲が足下に広がる",
+      "prompt": "beautiful anime interior, observation car window with a sea of clouds below and a curved horizon, soft glow of control panels, calm ascent"
+    },
+    {
+      "name": "成層圏",
+      "description": "空が藍から黒へ",
+      "prompt": "anime cinematic scene, climber capsule on a thin cable at the edge of space, deep blue gradient to starfield, thin atmosphere glow"
+    },
+    {
+      "name": "静止軌道駅",
+      "description": "星の海に浮かぶ港",
+      "prompt": "dramatic anime scene, vast ring-shaped orbital station at the end of the cable with Earth below, sunlight on metal, sparkling stars"
+    },
+    {
+      "name": "帰路の夜明け",
+      "description": "地球が青く輝く",
+      "prompt": "poetic anime scene, Earth dawn terminator glowing blue and gold beyond a station window, slow drifting dust, quiet finale"
+    }
+  ]
+}

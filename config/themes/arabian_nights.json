@@ -1,0 +1,92 @@
+{
+  "name": "arabian_nights",
+  "keywords": [
+    "千夜一夜",
+    "アラビアン",
+    "魔法のランプ",
+    "空飛ぶ絨毯",
+    "バザール",
+    "ランプの精",
+    "アラベスク",
+    "arabian",
+    "bazaar",
+    "scheherazade",
+    "minaret",
+    "genie"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "warm lantern-lit dawn over domes and minarets, optimistic gold",
+    "sad": "empty moonlit courtyard, cool blue shadows, wistful stillness",
+    "peace": "quiet fountain courtyard, soft jasmine-scented twilight"
+  },
+  "camera_styles": [
+    "wide shot over rooftops and domes",
+    "slow tracking through a crowded bazaar",
+    "low glide above sand on a flying carpet",
+    "close push-in on a glowing lamp"
+  ],
+  "color_palette": [
+    "midnight indigo",
+    "saffron",
+    "ruby red",
+    "emerald",
+    "brass gold"
+  ],
+  "locations": [
+    "domed palace skyline",
+    "lantern-hung bazaar",
+    "tiled fountain courtyard",
+    "desert dunes under stars",
+    "lamp-lit treasure chamber"
+  ],
+  "stages": [
+    {
+      "name": "砂漠の都",
+      "description": "月明かりにドームの街が浮かぶ",
+      "prompt": "anime cinematic landscape, glowing domes and slender minarets of a desert city under a vast starry sky, turquoise tiles, warm window lights"
+    },
+    {
+      "name": "バザールの灯",
+      "description": "色と香りが溢れる市場",
+      "prompt": "beautiful anime illustration, lantern-filled covered bazaar, hanging silk fabrics, brass lamps, spices in colorful heaps, warm golden haze, rich depth"
+    },
+    {
+      "name": "魔法のランプ",
+      "description": "ひとすじの煙が願いを形にする",
+      "prompt": "anime cinematic illustration, ornate brass lamp releasing swirling luminous blue smoke that forms shimmering shapes, dark treasure chamber, gold coins glinting"
+    },
+    {
+      "name": "絨毯の空",
+      "description": "星空を渡る旅",
+      "prompt": "dynamic anime scene, patterned flying carpet gliding above endless dunes under the Milky Way, trailing sparkles, wind-blown fabric, vast depth"
+    },
+    {
+      "name": "夜明けの噴水",
+      "description": "物語は朝日に溶けていく",
+      "prompt": "poetic anime courtyard, tiled fountain and arched colonnade at sunrise, jasmine petals on water, soft peach and gold light, gentle ending"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "name": "bamboo_grove",
+  "keywords": [
+    "竹林",
+    "竹の葉",
+    "竹やぶ",
+    "嵯峨野",
+    "笹鳴り",
+    "bamboo",
+    "bamboo grove",
+    "sasanami"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "green-gold light pouring down tall stalks, fresh hopeful glow",
+    "sad": "grey mist among wet bamboo, cool teal hush, quiet longing",
+    "peace": "soft filtered light and swaying leaves, deep green calm"
+  },
+  "camera_styles": [
+    "slow upward tilt along tall stalks",
+    "gentle tracking down a narrow path",
+    "close-up of leaves in backlight",
+    "wide aerial shot over a swaying green sea"
+  ],
+  "color_palette": [
+    "bamboo green",
+    "jade",
+    "mist white",
+    "light gold",
+    "shadow teal"
+  ],
+  "locations": [
+    "narrow path through towering bamboo",
+    "misty grove at dawn",
+    "stone lantern in a bamboo clearing",
+    "bamboo forest in wind",
+    "rain-soaked grove"
+  ],
+  "stages": [
+    {
+      "name": "緑の回廊",
+      "description": "高い竹が空を覆う",
+      "prompt": "anime cinematic illustration, towering bamboo stalks forming a green corridor, shafts of gold light from above, drifting pollen, vivid layered depth"
+    },
+    {
+      "name": "風の葉音",
+      "description": "竹が波のように揺れる",
+      "prompt": "dynamic anime landscape, bamboo grove swaying like waves in a strong breeze, leaves flying, shifting light patterns, cool green palette"
+    },
+    {
+      "name": "朝霧の小径",
+      "description": "霧が小径を溶かす",
+      "prompt": "beautiful anime scene, narrow stone path vanishing into misty bamboo at dawn, silver light, subtle dew, serene atmosphere"
+    },
+    {
+      "name": "雨の竹",
+      "description": "雨粒が葉を叩く",
+      "prompt": "atmospheric anime illustration, rain falling on glossy bamboo leaves, water droplets and ripples, saturated deep green, soft diffused light"
+    },
+    {
+      "name": "夕光の灯籠",
+      "description": "石灯籠に灯がともる",
+      "prompt": "poetic anime scene, stone lantern glowing softly in a bamboo clearing at dusk, warm light against deep teal shadows, quiet finale"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "name": "lucid_dream_stairs",
+  "keywords": [
+    "明晰夢",
+    "夢の階段",
+    "無限階段",
+    "だまし絵",
+    "重力が反転",
+    "夢の中の街",
+    "lucid",
+    "infinite stairs",
+    "impossible architecture",
+    "penrose"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "bright floating doorways in pastel sky, curious wonder",
+    "sad": "echoing hallways that never end, grey-lilac unease",
+    "peace": "slow drifting steps over a calm cloud floor, weightless calm"
+  },
+  "camera_styles": [
+    "slow glide up impossible stairs",
+    "rotating shot as gravity flips",
+    "wide shot of floating rooms",
+    "top-down view of looping stairs"
+  ],
+  "color_palette": [
+    "dream lilac",
+    "cloud white",
+    "sunrise peach",
+    "deep teal",
+    "soft gold"
+  ],
+  "locations": [
+    "looping staircases in the sky",
+    "rooms floating in clouds",
+    "upside-down city",
+    "mirror floor corridor",
+    "door on a cloud sea"
+  ],
+  "stages": [
+    {
+      "name": "終わらない階段",
+      "description": "上と下が入れ替わる",
+      "prompt": "surreal anime scene, impossible looping staircases floating in a pastel sky, soft clouds, lilac and peach light, dreamlike geometry"
+    },
+    {
+      "name": "浮かぶ部屋",
+      "description": "窓が空に開く",
+      "prompt": "beautiful anime illustration, small furnished rooms drifting in the clouds with open windows and curtains blowing, warm interior lights, gentle surreal wonder"
+    },
+    {
+      "name": "逆さまの街",
+      "description": "重力がほどける",
+      "prompt": "dynamic anime scene, city streets curling overhead and upside down above a mirror-like ground, slow rotation, soft glow, vivid surreal depth"
+    },
+    {
+      "name": "鏡の廊下",
+      "description": "どこまでも続く扉",
+      "prompt": "atmospheric anime scene, endless mirrored corridor with doors on all sides, drifting petals, cool teal and lilac light, one-point perspective"
+    },
+    {
+      "name": "雲海の扉",
+      "description": "目覚めの前の光",
+      "prompt": "poetic anime scene, lone doorway standing on a sea of clouds as the sun rises, warm gold light pouring through, serene finale"
+    }
+  ]
+}

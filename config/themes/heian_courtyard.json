@@ -1,0 +1,92 @@
+{
+  "name": "heian_courtyard",
+  "keywords": [
+    "平安",
+    "十二単",
+    "御簾",
+    "和歌",
+    "源氏物語",
+    "貴族",
+    "寝殿造",
+    "檜扇",
+    "heian",
+    "genji",
+    "courtier",
+    "twelve-layer"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "soft dawn light on a quiet palace garden, delicate pastel hope",
+    "sad": "moonlit veranda in thin rain, faded silks, refined melancholy",
+    "peace": "gentle breeze through bamboo blinds, calm elegant stillness"
+  },
+  "camera_styles": [
+    "slow lateral glide along a veranda",
+    "view through a half-raised bamboo blind",
+    "overhead shot of a garden pond",
+    "close-up of layered silk sleeves"
+  ],
+  "color_palette": [
+    "wisteria purple",
+    "pale peach",
+    "moss green",
+    "lacquer black",
+    "moon silver"
+  ],
+  "locations": [
+    "vermilion palace veranda",
+    "garden pond with arched bridge",
+    "moonlit courtyard",
+    "room behind bamboo blinds",
+    "plum blossom garden"
+  ],
+  "stages": [
+    {
+      "name": "御簾の向こう",
+      "description": "淡い光が寝殿に差し込む",
+      "prompt": "anime cinematic illustration, vermilion palace corridor with half-raised bamboo blinds, soft morning light, layered silk fabrics in pastel colors, delicate shadows"
+    },
+    {
+      "name": "池の庭",
+      "description": "朱の橋が水面に映る",
+      "prompt": "beautiful anime illustration, Heian garden pond with an arched vermilion bridge, floating petals, mirror reflections, hazy pastel sky, graceful composition"
+    },
+    {
+      "name": "襲の彩り",
+      "description": "幾重もの色が風に揺れる",
+      "prompt": "anime cinematic close composition, flowing layered silk robes in gradient wisteria, peach and green, fluttering fan, shallow depth of field, refined texture"
+    },
+    {
+      "name": "月の宴",
+      "description": "雅な音が夜に満ちる",
+      "prompt": "poetic anime night scene, moonlit courtyard banquet with floating lanterns and a koto resting on a veranda, silver light, cherry petals in the air"
+    },
+    {
+      "name": "和歌のあとさき",
+      "description": "余韻だけが廊下に残る",
+      "prompt": "quiet anime scene, empty veranda at dawn with a scattering of plum petals and a single folded poem, mist over the pond, soft rose and grey light"
+    }
+  ]
+}

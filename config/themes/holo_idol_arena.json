@@ -1,0 +1,92 @@
+{
+  "name": "holo_idol_arena",
+  "keywords": [
+    "ホログラム",
+    "アイドル",
+    "仮想歌姫",
+    "ボーカロイド",
+    "ペンライト",
+    "アリーナ",
+    "歌姫",
+    "hologram",
+    "idol",
+    "vocaloid",
+    "arena",
+    "penlight"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "burst of colored light and a roaring crowd of glow sticks, thrilling joy",
+    "sad": "emptying arena with fading lights, afterglow of a farewell song",
+    "peace": "soft spotlight and a gentle ballad, shimmering warm stillness"
+  },
+  "camera_styles": [
+    "sweeping crane shot over a sea of penlights",
+    "low front-stage shot of a glowing stage",
+    "close-up of holographic particles",
+    "wide shot of beams crossing the arena"
+  ],
+  "color_palette": [
+    "neon pink",
+    "electric cyan",
+    "violet",
+    "stage white",
+    "laser green"
+  ],
+  "locations": [
+    "huge arena filled with penlights",
+    "holographic stage with floating screens",
+    "backstage corridor of cables",
+    "empty seats after the show",
+    "rooftop screen at night"
+  ],
+  "stages": [
+    {
+      "name": "開演前の海",
+      "description": "ペンライトが波になる",
+      "prompt": "anime cinematic scene, vast arena crowd with a sea of colored glow sticks waving in the dark, empty glowing stage ahead, blue and magenta haze"
+    },
+    {
+      "name": "光の歌姫",
+      "description": "舞台に粒子が集まる",
+      "prompt": "beautiful anime illustration, holographic stage where glowing particles form shifting shapes and floating screens, no fixed character, pink and cyan beams"
+    },
+    {
+      "name": "ビームの交差",
+      "description": "音が光になる",
+      "prompt": "dynamic anime concert scene, intersecting laser beams and strobes across the arena, confetti of light, huge scale, vivid saturated colors"
+    },
+    {
+      "name": "バラードの照明",
+      "description": "一筋のスポットだけが残る",
+      "prompt": "poetic anime close scene, single warm spotlight on an empty stage with slow drifting holographic petals, dark arena, intimate mood"
+    },
+    {
+      "name": "終演のあと",
+      "description": "空席に残る光",
+      "prompt": "quiet anime scene, empty arena seats lit by fading stage lights and a few glowing sticks left behind, soft violet tones, bittersweet finale"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "name": "renaissance_atelier",
+  "keywords": [
+    "ルネサンス",
+    "アトリエ",
+    "フレスコ",
+    "彫刻家",
+    "画家",
+    "キャンバス",
+    "絵の具",
+    "renaissance",
+    "atelier",
+    "fresco",
+    "sculptor",
+    "easel",
+    "florence"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "morning sun through tall studio windows, warm creative energy",
+    "sad": "dusty unfinished canvases in cold shadow, faded ochres",
+    "peace": "soft north-light studio, quiet craft and calm"
+  },
+  "camera_styles": [
+    "slow dolly through a cluttered studio",
+    "overhead view of a palette of pigments",
+    "close-up on a marble chisel",
+    "wide shot of a domed city skyline"
+  ],
+  "color_palette": [
+    "umber brown",
+    "ultramarine",
+    "vermilion",
+    "marble white",
+    "gold leaf"
+  ],
+  "locations": [
+    "sunlit painter's studio",
+    "marble sculptor's workshop",
+    "fresco chapel with scaffolding",
+    "arched city courtyard",
+    "domed skyline at dusk"
+  ],
+  "stages": [
+    {
+      "name": "北窓の光",
+      "description": "アトリエに朝が差し込む",
+      "prompt": "anime cinematic interior, spacious Renaissance studio with tall windows, easels and half-finished paintings, warm morning light, dust motes, rich earthy textures"
+    },
+    {
+      "name": "顔料の色",
+      "description": "色が生まれる瞬間",
+      "prompt": "beautiful anime close-up, bowls of vivid ultramarine, vermilion and ochre pigments with brushes, soft light, shallow depth of field, tactile detail"
+    },
+    {
+      "name": "大理石の声",
+      "description": "石から形が現れる",
+      "prompt": "anime cinematic illustration, marble block being carved into a flowing figure, white dust floating in a sunbeam, chisels and tools, dramatic side lighting"
+    },
+    {
+      "name": "天井のフレスコ",
+      "description": "天井が光と色で満ちる",
+      "prompt": "dramatic anime scene, scaffolding beneath a vast fresco ceiling glowing with gold and blue heavenly clouds, upward perspective, awe-inspiring scale"
+    },
+    {
+      "name": "丘の街の夕暮れ",
+      "description": "ドームが空に溶けていく",
+      "prompt": "poetic anime cityscape, terracotta rooftops and a great dome at dusk, glowing windows, rose and amber sky, calm creative afterglow"
+    }
+  ]
+}

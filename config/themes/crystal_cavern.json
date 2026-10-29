@@ -1,0 +1,91 @@
+{
+  "name": "crystal_cavern",
+  "keywords": [
+    "水晶",
+    "鍾乳洞",
+    "結晶",
+    "地底湖",
+    "鉱石",
+    "宝石",
+    "crystal",
+    "cavern",
+    "stalactite",
+    "geode",
+    "gemstone"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "bright inner light blooming through crystals, wondrous hope",
+    "sad": "dim cave with cold blue gleams, echoing drips, quiet solitude",
+    "peace": "still underground lake reflecting soft crystal glow, hushed calm"
+  },
+  "camera_styles": [
+    "slow glide through a glittering tunnel",
+    "close-up on crystal facets",
+    "wide reveal of a vast chamber",
+    "overhead view of an underground lake"
+  ],
+  "color_palette": [
+    "amethyst violet",
+    "aquamarine",
+    "rose quartz",
+    "cave black",
+    "pearl white"
+  ],
+  "locations": [
+    "crystal-lined chamber",
+    "underground lake",
+    "geode hollow",
+    "stalactite hall",
+    "narrow glowing passage"
+  ],
+  "stages": [
+    {
+      "name": "光る洞窟",
+      "description": "暗闇に結晶が灯る",
+      "prompt": "anime cinematic illustration, dark cave walls studded with glowing amethyst and aquamarine crystals, soft inner light, sparkling dust, mysterious depth"
+    },
+    {
+      "name": "結晶の面",
+      "description": "光が宝石の中で折れる",
+      "prompt": "beautiful anime macro scene, translucent crystal facets refracting prismatic light, sharp edges, rainbow caustics on stone, shallow depth"
+    },
+    {
+      "name": "地底の湖",
+      "description": "静かな水が光を映す",
+      "prompt": "anime cinematic landscape, vast underground lake reflecting luminous crystal clusters and stalactites, mist, perfect symmetry, quiet magical glow"
+    },
+    {
+      "name": "大空洞",
+      "description": "巨大な結晶柱が立ち並ぶ",
+      "prompt": "dramatic anime scene, colossal crystal pillars in an enormous cavern, beams of light crossing the dark, floating sparkles, epic scale"
+    },
+    {
+      "name": "出口の光",
+      "description": "外の世界へ戻る道",
+      "prompt": "poetic anime scene, bright opening at the end of a crystal-lined tunnel, warm sunlight spilling over glittering walls, hopeful finale"
+    }
+  ]
+}

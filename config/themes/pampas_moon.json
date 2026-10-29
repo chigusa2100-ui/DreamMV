@@ -1,0 +1,92 @@
+{
+  "name": "pampas_moon",
+  "keywords": [
+    "十五夜",
+    "月見",
+    "ススキ",
+    "団子",
+    "秋の七草",
+    "名月",
+    "中秋",
+    "虫の音",
+    "満月",
+    "harvest moon",
+    "pampas",
+    "susuki"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "huge golden moon rising over silver grass, gentle bright hope",
+    "sad": "pale moon behind thin cloud, rustling pampas, wistful autumn",
+    "peace": "insect song and calm silver light, still countryside night"
+  },
+  "camera_styles": [
+    "wide shot of a giant moon over a field",
+    "slow tracking through tall pampas plumes",
+    "close-up of dango and susuki on a veranda",
+    "low backlit shot of waving grass"
+  ],
+  "color_palette": [
+    "moon gold",
+    "silver grass",
+    "deep indigo",
+    "autumn amber",
+    "cloud grey"
+  ],
+  "locations": [
+    "moonlit pampas field",
+    "wooden veranda with offerings",
+    "hillside path in autumn night",
+    "quiet pond reflecting the moon",
+    "village roofs under a full moon"
+  ],
+  "stages": [
+    {
+      "name": "月の出",
+      "description": "大きな月が稜線に昇る",
+      "prompt": "anime cinematic landscape, enormous golden full moon rising behind a hill of silver pampas grass, deep indigo sky, drifting thin clouds, warm glow"
+    },
+    {
+      "name": "ススキの海",
+      "description": "穂が銀色に揺れる",
+      "prompt": "beautiful anime illustration, sea of pampas plumes swaying and glowing silver in moonlight, soft backlight, gentle wind, layered depth"
+    },
+    {
+      "name": "月見の縁側",
+      "description": "団子とススキの小さな宴",
+      "prompt": "anime cinematic scene, wooden veranda with a plate of dango and a vase of pampas grass facing the moon, paper lantern glow, calm night"
+    },
+    {
+      "name": "虫の合唱",
+      "description": "草むらが音で満ちる",
+      "prompt": "poetic anime close scene, autumn grass at night with tiny glowing fireflies and silhouettes of crickets, deep teal shadows, cool moonlight"
+    },
+    {
+      "name": "名月の池",
+      "description": "水面に月が二つ",
+      "prompt": "serene anime scene, still pond reflecting a bright full moon and drifting maple leaves, silhouette of a thatched roof, peaceful finale"
+    }
+  ]
+}

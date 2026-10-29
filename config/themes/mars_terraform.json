@@ -1,0 +1,89 @@
+{
+  "name": "mars_terraform",
+  "keywords": [
+    "火星",
+    "テラフォーミング",
+    "赤い大地",
+    "ドーム都市",
+    "火星移住",
+    "mars",
+    "terraforming",
+    "martian",
+    "regolith"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "first green sprouts under a pink sky, courageous hope",
+    "sad": "dust storm over empty domes, rust-red isolation",
+    "peace": "quiet red dunes and thin cold light, still frontier calm"
+  },
+  "camera_styles": [
+    "wide shot of red plains with a dome settlement",
+    "close-up of green sprouts in red soil",
+    "slow tracking over dunes",
+    "aerial view of a vast canyon"
+  ],
+  "color_palette": [
+    "rust red",
+    "dust pink",
+    "dome glass blue",
+    "sprout green",
+    "sunset blue"
+  ],
+  "locations": [
+    "domed settlement on the red plain",
+    "greenhouse with first crops",
+    "canyon rim",
+    "dust-storm horizon",
+    "blue sunset over dunes"
+  ],
+  "stages": [
+    {
+      "name": "赤い地平",
+      "description": "ドームの灯が荒野に光る",
+      "prompt": "anime cinematic landscape, glowing glass dome settlement on a rust-red Martian plain, butterscotch sky, long shadows, small rovers"
+    },
+    {
+      "name": "最初の緑",
+      "description": "赤土から芽が出る",
+      "prompt": "beautiful anime macro scene, tiny green seedlings sprouting from red soil inside a greenhouse with condensation, warm light, shallow depth of field"
+    },
+    {
+      "name": "砂嵐",
+      "description": "空が赤く塗りつぶされる",
+      "prompt": "dramatic anime scene, towering dust storm wall rolling over a research base, orange haze, flickering lights, dynamic sense of scale"
+    },
+    {
+      "name": "巨大な峡谷",
+      "description": "世界が裂けて広がる",
+      "prompt": "anime cinematic aerial view, enormous Martian canyon with layered red cliffs and long shadows, thin morning clouds, vast scale"
+    },
+    {
+      "name": "青い夕焼け",
+      "description": "火星の日没は青い",
+      "prompt": "poetic anime scene, Martian sunset with a pale blue glow around the sun over red dunes, a distant dome lit warmly, serene finale"
+    }
+  ]
+}

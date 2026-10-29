@@ -1,0 +1,90 @@
+{
+  "name": "chrono_corridor",
+  "keywords": [
+    "時間旅行",
+    "タイムトラベル",
+    "時の回廊",
+    "並行世界",
+    "タイムループ",
+    "砂時計",
+    "chrono",
+    "timeloop",
+    "paradox",
+    "hourglass"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "forward light opening through a ring of clocks, steady hope",
+    "sad": "echoing hallways of fading moments, faded blue, wistful regret",
+    "peace": "slow falling sand and ticking, suspended dreamy calm"
+  },
+  "camera_styles": [
+    "slow dolly down an endless corridor",
+    "spiraling shot around floating clock gears",
+    "close-up of falling sand",
+    "wide shot of branching doorways in space"
+  ],
+  "color_palette": [
+    "chrono blue",
+    "brass gold",
+    "violet mist",
+    "white light",
+    "sand amber"
+  ],
+  "locations": [
+    "endless hall of doors",
+    "ring of floating clocks",
+    "giant hourglass",
+    "branching staircases in a void",
+    "station at the edge of time"
+  ],
+  "stages": [
+    {
+      "name": "時の回廊",
+      "description": "扉が無限に並ぶ",
+      "prompt": "anime cinematic scene, infinite corridor of tall doors each leaking different colored light, mirror-like floor, deep one-point perspective, blue and gold"
+    },
+    {
+      "name": "歯車の輪",
+      "description": "時計が空を回る",
+      "prompt": "beautiful anime illustration, enormous floating clock faces and brass gears rotating in a violet void, trails of light, intricate mechanical detail"
+    },
+    {
+      "name": "砂の落ちる音",
+      "description": "一粒ずつ過去へ",
+      "prompt": "anime cinematic close scene, giant hourglass with glowing sand falling upward and downward, drifting particles, soft golden light on dark blue"
+    },
+    {
+      "name": "分岐の階段",
+      "description": "選ばれなかった未来",
+      "prompt": "dramatic anime scene, branching staircases in a starry void leading to doors with different skies, sweeping curved composition, surreal scale"
+    },
+    {
+      "name": "今という駅",
+      "description": "光がゆっくり収束する",
+      "prompt": "poetic anime scene, quiet small station platform at the edge of time with a single clock glowing, soft aurora of light, calm finale"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "name": "alien_jungle_planet",
+  "keywords": [
+    "異星",
+    "系外惑星",
+    "二つの太陽",
+    "発光植物",
+    "異星の森",
+    "alien",
+    "exoplanet",
+    "twin suns",
+    "xenoflora"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "two suns rising over glowing vegetation, wondrous hope",
+    "sad": "dim purple mist and strange silence, uncanny loneliness",
+    "peace": "slow drifting spores under pastel sky, dreamlike calm"
+  },
+  "camera_styles": [
+    "slow glide through glowing flora",
+    "wide shot of a forest with two suns",
+    "low shot of drifting spores",
+    "close-up of a translucent alien plant"
+  ],
+  "color_palette": [
+    "alien teal",
+    "magenta",
+    "lime glow",
+    "violet",
+    "twin-sun orange"
+  ],
+  "locations": [
+    "forest of giant glowing plants",
+    "cliffs of floating rocks",
+    "bioluminescent river",
+    "spore-filled valley",
+    "twin-sun horizon"
+  ],
+  "stages": [
+    {
+      "name": "二つの朝",
+      "description": "異なる光が地平を染める",
+      "prompt": "anime cinematic landscape, alien jungle at dawn with two suns of orange and white, towering translucent plants, turquoise haze, strange silhouettes"
+    },
+    {
+      "name": "発光の森",
+      "description": "葉脈が脈打つ",
+      "prompt": "beautiful anime illustration, giant bioluminescent leaves with glowing veins in lime and magenta, dark undergrowth, floating spores, deep layered forest"
+    },
+    {
+      "name": "浮遊する岩",
+      "description": "重力が揺らぐ谷",
+      "prompt": "anime cinematic scene, floating rock islands with hanging vines over a misty valley, shimmering waterfalls falling upward, pastel violet sky"
+    },
+    {
+      "name": "光る川",
+      "description": "流れが星座のように輝く",
+      "prompt": "dynamic anime scene, glowing river of electric blue winding through an alien forest, bright particles in the water, reflective shoreline"
+    },
+    {
+      "name": "胞子の夕暮れ",
+      "description": "空に淡い輪が昇る",
+      "prompt": "poetic anime sunset, drifting luminous spores across a purple plain, ringed planet rising in a pink sky, tranquil finale"
+    }
+  ]
+}

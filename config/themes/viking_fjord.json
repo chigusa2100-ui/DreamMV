@@ -1,0 +1,93 @@
+{
+  "name": "viking_fjord",
+  "keywords": [
+    "バイキング",
+    "フィヨルド",
+    "北欧神話",
+    "ルーン",
+    "長船",
+    "角笛",
+    "北海",
+    "ヴァルハラ",
+    "viking",
+    "fjord",
+    "runestone",
+    "longship",
+    "valhalla"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "pale sun breaking over a cold fjord, hopeful silver-gold light",
+    "sad": "grey sea fog, heavy overcast, muted steel blues, mournful stillness",
+    "peace": "calm mirror-still fjord water, soft northern daylight, quiet pine shores"
+  },
+  "camera_styles": [
+    "wide shot of a longship entering a fjord",
+    "low tracking shot over dark water",
+    "slow dolly past carved runestones",
+    "aerial view along steep cliff walls"
+  ],
+  "color_palette": [
+    "steel blue",
+    "slate grey",
+    "pine green",
+    "ember orange",
+    "frost white"
+  ],
+  "locations": [
+    "narrow fjord between sheer cliffs",
+    "wooden longhouse village",
+    "runestone hill",
+    "storm-lit open sea",
+    "snowy mountain pass"
+  ],
+  "stages": [
+    {
+      "name": "霧の入り江",
+      "description": "長船が静かなフィヨルドへ滑り込む",
+      "prompt": "anime cinematic landscape, dragon-prowed longship gliding into a misty fjord, towering dark cliffs, cold blue light, mirror-like water"
+    },
+    {
+      "name": "ルーンの丘",
+      "description": "古い石碑が刻まれた言葉を語る",
+      "prompt": "beautiful anime illustration, moss-covered runestones on a windswept hill, faint glowing carved symbols, low golden sun, tall grass bending"
+    },
+    {
+      "name": "長屋の炎",
+      "description": "囲炉裏の火が夜を照らす",
+      "prompt": "cinematic anime interior, great timber longhouse with a crackling central fire, carved beams, warm amber glow against deep blue darkness, drifting smoke"
+    },
+    {
+      "name": "嵐の北海",
+      "description": "荒波が船を試す",
+      "prompt": "dramatic anime seascape, towering waves and a longship under a charcoal storm sky, white spray, bursts of lightning, epic scale"
+    },
+    {
+      "name": "ヴァルハラの空",
+      "description": "嵐の後に黄金の空が開く",
+      "prompt": "poetic anime sky scene, golden clouds parting over a calm northern sea, distant ship silhouette, rays of light, solemn peaceful finale"
+    }
+  ]
+}

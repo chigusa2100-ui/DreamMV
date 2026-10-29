@@ -1,0 +1,88 @@
+{
+  "name": "hidden_waterfall",
+  "keywords": [
+    "滝壺",
+    "秘境",
+    "渓流",
+    "水しぶき",
+    "飛沫",
+    "waterfall",
+    "cascade",
+    "gorge"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "sunlight and rainbows in rising spray, bright refreshing hope",
+    "sad": "dark wet rock and thunderous mist, cool green solitude",
+    "peace": "gentle cascade over mossy stones, soft green calm"
+  },
+  "camera_styles": [
+    "slow tilt from the pool up the falls",
+    "close-up of water over rock",
+    "wide hidden-valley reveal",
+    "gliding shot over a clear stream"
+  ],
+  "color_palette": [
+    "waterfall white",
+    "emerald",
+    "moss green",
+    "rock grey",
+    "rainbow tints"
+  ],
+  "locations": [
+    "tall waterfall in a mossy gorge",
+    "clear pool beneath the falls",
+    "stepping-stone stream",
+    "cave behind the cascade",
+    "sun-dappled river bend"
+  ],
+  "stages": [
+    {
+      "name": "谷の滝",
+      "description": "秘境に白い水が落ちる",
+      "prompt": "anime cinematic landscape, tall waterfall dropping into an emerald gorge, mossy cliffs, rising mist, sunlight streaming from above, lush detail"
+    },
+    {
+      "name": "滝壺の虹",
+      "description": "光が飛沫に色を与える",
+      "prompt": "beautiful anime illustration, rainbow arcing through spray above a clear turquoise pool, glistening wet rocks, vivid fresh greens, dynamic water"
+    },
+    {
+      "name": "苔の飛び石",
+      "description": "小さな流れが森を渡る",
+      "prompt": "anime cinematic scene, gentle stream over mossy stepping stones, dappled forest light, tiny cascades, shallow depth of field, tranquil"
+    },
+    {
+      "name": "裏見の洞",
+      "description": "水のカーテンの内側",
+      "prompt": "dramatic anime interior view, looking out through a curtain of falling water from a dark cave, backlit glittering streams, cool green-blue glow"
+    },
+    {
+      "name": "夕暮れの川",
+      "description": "水音が一日を閉じる",
+      "prompt": "poetic anime scene, river below the falls at dusk, soft golden light on mist, fireflies starting to appear, serene finale"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "name": "sunlit_cafe",
+  "keywords": [
+    "喫茶店",
+    "カフェ",
+    "珈琲",
+    "コーヒー",
+    "窓際",
+    "ラテ",
+    "湯気",
+    "cafe",
+    "coffee",
+    "latte",
+    "espresso"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "warm afternoon light across a wooden table, easy hopeful mood",
+    "sad": "rain on the window and a cooling cup, soft grey-blue nostalgia",
+    "peace": "slow steam and low chatter, mellow golden calm"
+  },
+  "camera_styles": [
+    "close-up of steam rising from a cup",
+    "slow dolly along the window seats",
+    "table-top shot of books and cups",
+    "wide view of a cozy interior"
+  ],
+  "color_palette": [
+    "coffee brown",
+    "cream",
+    "window gold",
+    "leaf green",
+    "dusty rose"
+  ],
+  "locations": [
+    "window seat in afternoon sun",
+    "wooden counter with a siphon",
+    "corner table with plants",
+    "alley-side terrace",
+    "rainy window view"
+  ],
+  "stages": [
+    {
+      "name": "窓際の光",
+      "description": "午後の光が机に落ちる",
+      "prompt": "anime cinematic interior, cozy cafe window seat with warm afternoon sunbeams on a wooden table, steaming cup, hanging plants, soft dust motes"
+    },
+    {
+      "name": "湯気のゆらぎ",
+      "description": "カップから白い息が昇る",
+      "prompt": "beautiful anime macro scene, steam curling from a fresh cup of coffee in backlight, latte art, shallow depth of field, creamy bokeh"
+    },
+    {
+      "name": "カウンターの音",
+      "description": "豆を挽く手と道具たち",
+      "prompt": "anime cinematic illustration, wooden cafe counter with a coffee grinder, siphon and hanging cups, warm lamp glow, tactile vintage details"
+    },
+    {
+      "name": "雨の窓",
+      "description": "ガラスの向こうが滲む",
+      "prompt": "atmospheric anime scene, rain-streaked cafe window with blurred umbrellas and street lights outside, warm interior reflections, cool blue exterior"
+    },
+    {
+      "name": "閉店の灯",
+      "description": "夕暮れの店に静かな余韻",
+      "prompt": "poetic anime scene, cafe at dusk with a few lights on, chairs on tables, orange sky through the window, soft quiet finale"
+    }
+  ]
+}

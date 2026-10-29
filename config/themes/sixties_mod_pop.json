@@ -1,0 +1,90 @@
+{
+  "name": "sixties_mod_pop",
+  "keywords": [
+    "60年代",
+    "モッズ",
+    "サイケデリック",
+    "ゴーゴー",
+    "ポップアート",
+    "サイケ",
+    "psychedelic",
+    "popart",
+    "gogo",
+    "mod style"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "bold bright color blocks and a bouncing rhythm, exuberant joy",
+    "sad": "dim swirling pattern in smoky light, dizzy faded dreaminess",
+    "peace": "slowly rotating patterns and mellow warm light, easy groove"
+  },
+  "camera_styles": [
+    "tight symmetrical frame of patterned walls",
+    "fast whip-pan across color blocks",
+    "top-down spin over a checker floor",
+    "wide shot of a dance floor"
+  ],
+  "color_palette": [
+    "tangerine",
+    "hot pink",
+    "mod blue",
+    "mustard yellow",
+    "black and white"
+  ],
+  "locations": [
+    "checkerboard dance floor",
+    "swirling psychedelic wall",
+    "retro lounge with round chairs",
+    "pop-art street",
+    "spinning record stage"
+  ],
+  "stages": [
+    {
+      "name": "市松の床",
+      "description": "白黒が踊りはじめる",
+      "prompt": "anime cinematic scene, black and white checkerboard dance floor under bright colored spotlights, bold geometric wall patterns, flat vivid colors, 1960s mod style"
+    },
+    {
+      "name": "渦巻く壁",
+      "description": "模様が呼吸する",
+      "prompt": "beautiful anime illustration, swirling psychedelic wall of concentric tangerine, pink and blue patterns, slowly rotating, high-contrast poster style"
+    },
+    {
+      "name": "丸い椅子",
+      "description": "ラウンジの午後",
+      "prompt": "anime cinematic interior, retro lounge with round plastic chairs and shag carpet in mustard and teal, pop-art posters, warm hazy light"
+    },
+    {
+      "name": "ポップな街",
+      "description": "看板が笑い出す",
+      "prompt": "lively anime street, pop-art style shop fronts with dotted halftone patterns and bold lettering-like shapes, bright flat shading, rhythmic composition"
+    },
+    {
+      "name": "レコードの回転",
+      "description": "針が最後の溝に触れる",
+      "prompt": "poetic anime close-up, vinyl record spinning with reflected colored lights on a stage, pink and orange glow, gentle finale"
+    }
+  ]
+}

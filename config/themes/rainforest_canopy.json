@@ -1,0 +1,90 @@
+{
+  "name": "rainforest_canopy",
+  "keywords": [
+    "熱帯雨林",
+    "樹冠",
+    "スコール",
+    "極楽鳥",
+    "ツタ",
+    "rainforest",
+    "canopy",
+    "toucan",
+    "orchid",
+    "squall"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "sun breaking through dripping leaves, lush vivid hope",
+    "sad": "heavy humid rain, dark green shadow, dripping solitude",
+    "peace": "soft mist drifting between huge trunks, warm green calm"
+  },
+  "camera_styles": [
+    "slow rise through layers of the canopy",
+    "close-up on dripping leaves",
+    "tracking along a mossy trunk",
+    "aerial view over an endless green roof"
+  ],
+  "color_palette": [
+    "emerald",
+    "moss green",
+    "orchid magenta",
+    "toucan orange",
+    "mist white"
+  ],
+  "locations": [
+    "emergent canopy above the clouds",
+    "forest floor with giant ferns",
+    "vine-draped riverbank",
+    "hanging orchid trees",
+    "waterfall in the green"
+  ],
+  "stages": [
+    {
+      "name": "緑の天井",
+      "description": "光が葉の層を貫く",
+      "prompt": "anime cinematic illustration, dense rainforest canopy with shafts of golden light piercing layers of glossy leaves, drifting mist, rich saturation"
+    },
+    {
+      "name": "スコール",
+      "description": "雨が森を打ち鳴らす",
+      "prompt": "dynamic anime scene, tropical downpour hammering broad leaves, splashing droplets, dark green shadows with bright rim light, powerful motion"
+    },
+    {
+      "name": "極楽の羽",
+      "description": "鮮やかな鳥が枝を渡る",
+      "prompt": "beautiful anime illustration, colorful tropical birds on vine-draped branches, orchids in bloom, humid haze, vivid magenta and teal accents"
+    },
+    {
+      "name": "蔦の川辺",
+      "description": "森の水路が静かに流れる",
+      "prompt": "anime cinematic landscape, slow brown river winding beneath hanging vines and giant roots, reflected green canopy, misty morning light"
+    },
+    {
+      "name": "雲の上の木々",
+      "description": "霧が緑の海に沈む",
+      "prompt": "poetic anime aerial view, emergent treetops rising above a sea of morning cloud, golden sunrise, flocks of birds, serene finale"
+    }
+  ]
+}

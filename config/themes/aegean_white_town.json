@@ -1,0 +1,91 @@
+{
+  "name": "aegean_white_town",
+  "keywords": [
+    "エーゲ海",
+    "サントリーニ",
+    "白壁",
+    "青い屋根",
+    "地中海",
+    "ブーゲンビリア",
+    "santorini",
+    "aegean",
+    "mediterranean",
+    "whitewashed",
+    "bougainvillea"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "bright morning light on whitewashed walls, crisp cheerful hope",
+    "sad": "windy grey-blue sea beyond empty stairs, faded sun-bleached tones",
+    "peace": "lazy afternoon heat and a soft sea breeze, calm blue and white"
+  },
+  "camera_styles": [
+    "wide cliffside view of a white town",
+    "slow tracking up a stepped alley",
+    "close-up on a blue door and flowers",
+    "aerial sweep over domes and sea"
+  ],
+  "color_palette": [
+    "whitewash",
+    "aegean blue",
+    "bougainvillea magenta",
+    "sunset pink",
+    "sea turquoise"
+  ],
+  "locations": [
+    "cliffside village above the sea",
+    "blue-domed chapel",
+    "stepped alley with flowers",
+    "rooftop terrace at sunset",
+    "small harbor with fishing boats"
+  ],
+  "stages": [
+    {
+      "name": "白い崖の街",
+      "description": "朝日が白壁に跳ねる",
+      "prompt": "anime cinematic landscape, white cubic houses stacked on a cliff above a deep blue sea, bright morning sun, crisp shadows, clear sky"
+    },
+    {
+      "name": "青い丸屋根",
+      "description": "空と海の色が重なる",
+      "prompt": "beautiful anime illustration, blue-domed chapel against an endless blue sea and sky, whitewashed walls, bright light, subtle haze"
+    },
+    {
+      "name": "花の階段",
+      "description": "ブーゲンビリアが路地を彩る",
+      "prompt": "anime cinematic illustration, narrow whitewashed stairway overflowing with magenta bougainvillea, bright blue doors and railings, dappled Mediterranean sunlight, crisp shadows"
+    },
+    {
+      "name": "風のテラス",
+      "description": "風が白い布を揺らす",
+      "prompt": "dynamic anime scene, rooftop terrace with white curtains billowing in a strong sea wind, glittering water behind, vivid blue and white contrast"
+    },
+    {
+      "name": "夕陽の入り江",
+      "description": "街が金とピンクに染まる",
+      "prompt": "poetic anime sunset, whitewashed town glowing gold and pink above a calm bay, boats on mirror-like water, soft clouds, serene finale"
+    }
+  ]
+}

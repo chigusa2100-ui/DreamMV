@@ -1,0 +1,91 @@
+{
+  "name": "silent_film_theatre",
+  "keywords": [
+    "活動写真",
+    "無声映画",
+    "弁士",
+    "モノクロ",
+    "映写機",
+    "銀幕",
+    "映画館",
+    "silent film",
+    "projector",
+    "silver screen",
+    "nickelodeon"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "projector beam cutting through dark, flickering bright wonder",
+    "sad": "empty rows and a stuttering reel, faded grain and dust",
+    "peace": "soft piano-like glow and slow flicker, quiet monochrome calm"
+  },
+  "camera_styles": [
+    "slow dolly along the projector beam",
+    "wide shot of a theatre hall with a glowing screen",
+    "close-up of film reel sprockets",
+    "low angle to a curtain"
+  ],
+  "color_palette": [
+    "silver white",
+    "charcoal",
+    "sepia",
+    "curtain red",
+    "beam gold"
+  ],
+  "locations": [
+    "old theatre interior",
+    "projection booth",
+    "lobby with posters",
+    "empty rows of seats",
+    "street marquee at night"
+  ],
+  "stages": [
+    {
+      "name": "映写機の光",
+      "description": "暗闇に光の柱が立つ",
+      "prompt": "anime cinematic interior, old theatre projector sending a dusty beam of light across dark rows of velvet seats, flickering monochrome screen, film grain"
+    },
+    {
+      "name": "リールの音",
+      "description": "フィルムが走り出す",
+      "prompt": "beautiful anime macro scene, film reel and sprockets spinning in a small projection booth, warm lamp, sepia and silver tones, mechanical detail"
+    },
+    {
+      "name": "銀幕の夢",
+      "description": "白黒の世界が揺れる",
+      "prompt": "poetic anime scene, silver screen showing a flickering monochrome landscape, silhouette heads in the front rows, glowing particles, nostalgic grain"
+    },
+    {
+      "name": "ロビーのポスター",
+      "description": "色褪せた物語たち",
+      "prompt": "anime cinematic illustration, theatre lobby with faded hand-painted posters and brass fixtures, red carpet, golden bulbs, soft dust"
+    },
+    {
+      "name": "終映",
+      "description": "緞帳がゆっくり下りる",
+      "prompt": "serene anime scene, red curtain slowly closing over a dim screen in an empty theatre, last glow of the projector, quiet finale"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "name": "melancholy_blue_hour",
+  "keywords": [
+    "ブルーアワー",
+    "憂い",
+    "青の時間",
+    "夜明け前",
+    "薄暮",
+    "物憂げ",
+    "メランコリー",
+    "切なさ",
+    "blue hour",
+    "melancholy",
+    "twilight"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "thin warm line on the horizon within deep blue, slow hope",
+    "sad": "cold indigo light and still air, heavy tender sadness",
+    "peace": "soft cobalt dusk and a few distant lights, quiet reflective calm"
+  },
+  "camera_styles": [
+    "slow static wide shot of a blue skyline",
+    "gentle push-in on a lit window",
+    "low shot of a quiet river",
+    "slow pan from dusk to first stars"
+  ],
+  "color_palette": [
+    "cobalt blue",
+    "indigo",
+    "ash violet",
+    "window amber",
+    "horizon peach"
+  ],
+  "locations": [
+    "river embankment at blue hour",
+    "rooftop with a distant skyline",
+    "empty street with a single lit window",
+    "beach at twilight",
+    "bridge in the haze"
+  ],
+  "stages": [
+    {
+      "name": "青の底",
+      "description": "街が深い青に沈む",
+      "prompt": "anime cinematic cityscape, entire city drenched in deep cobalt blue twilight, a few warm windows, silhouetted rooftops, still atmosphere"
+    },
+    {
+      "name": "川沿いの息",
+      "description": "水面が空の色を映す",
+      "prompt": "beautiful anime scene, calm river at blue hour reflecting indigo sky and scattered lights, embankment grass swaying, cool mist, quiet depth"
+    },
+    {
+      "name": "ひとつの窓",
+      "description": "誰かの灯りだけが見える",
+      "prompt": "poetic anime scene, single warm lit window in a dark blue apartment block, soft glow on railing, distant train lights, intimate loneliness"
+    },
+    {
+      "name": "海辺の薄暮",
+      "description": "波の音が静かに続く",
+      "prompt": "atmospheric anime beach at twilight, slow foam lines on dark sand, lilac horizon, first stars, smooth long exposure feeling"
+    },
+    {
+      "name": "夜明けの細い線",
+      "description": "桃色が空の端に生まれる",
+      "prompt": "serene anime dawn, thin peach line widening on the horizon above a blue city, fading stars, gentle hopeful finale"
+    }
+  ]
+}

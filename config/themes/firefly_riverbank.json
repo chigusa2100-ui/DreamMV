@@ -1,0 +1,89 @@
+{
+  "name": "firefly_riverbank",
+  "keywords": [
+    "ホタル",
+    "蛍火",
+    "蛍狩り",
+    "蛍の舞",
+    "川辺",
+    "草いきれ",
+    "firefly",
+    "fireflies",
+    "riverbank"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "swarm of soft lights rising from the grass, gentle wondering hope",
+    "sad": "single faint glow over dark water, lonely summer dusk",
+    "peace": "slow drifting lights and cool river air, hushed calm"
+  },
+  "camera_styles": [
+    "low slow-motion shot of drifting lights",
+    "wide dusk view of a winding stream",
+    "close-up of a glowing glimmer on a leaf",
+    "long exposure of light trails over water"
+  ],
+  "color_palette": [
+    "twilight blue",
+    "firefly yellow-green",
+    "reed green",
+    "deep navy",
+    "mist grey"
+  ],
+  "locations": [
+    "reed-lined stream at dusk",
+    "wooden footbridge",
+    "rice field edge at night",
+    "forest brook",
+    "old stone embankment"
+  ],
+  "stages": [
+    {
+      "name": "夕闇の川",
+      "description": "空が群青に染まる",
+      "prompt": "anime cinematic landscape, quiet stream winding through reeds under a deep blue dusk sky, last glow on the horizon, cool mist"
+    },
+    {
+      "name": "最初の灯",
+      "description": "草むらに光がともる",
+      "prompt": "beautiful anime illustration, first fireflies appearing among tall grass, tiny glowing yellow-green orbs, shallow depth of field, soft bokeh"
+    },
+    {
+      "name": "光の群れ",
+      "description": "蛍が空へ昇っていく",
+      "prompt": "anime cinematic scene, hundreds of fireflies swirling and rising above a river, glowing trails reflected in dark water, magical atmosphere"
+    },
+    {
+      "name": "木橋の夜",
+      "description": "光が橋を包む",
+      "prompt": "poetic anime scene, small wooden footbridge over a stream surrounded by drifting fireflies, faint lantern glow, deep teal night"
+    },
+    {
+      "name": "夜明けの余光",
+      "description": "最後の光が朝に溶ける",
+      "prompt": "serene anime dawn scene, last fireflies fading among dew-covered grass as pale pink light spreads over the river, gentle finale"
+    }
+  ]
+}

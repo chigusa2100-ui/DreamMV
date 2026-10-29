@@ -1,0 +1,92 @@
+{
+  "name": "morning_kitchen",
+  "keywords": [
+    "台所",
+    "朝ごはん",
+    "味噌汁",
+    "食卓",
+    "トースト",
+    "炊きたて",
+    "朝食",
+    "やかん",
+    "kitchen",
+    "breakfast",
+    "toast",
+    "kettle"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "sun on a clean counter and a ready breakfast, light hopeful start",
+    "sad": "grey morning and a single plate, quiet leftover feeling",
+    "peace": "slow kettle steam and soft light, warm domestic calm"
+  },
+  "camera_styles": [
+    "close-up of steam rising from a rice bowl",
+    "slow dolly along a sunlit counter",
+    "top-down view of a breakfast table",
+    "wide view of a small kitchen window"
+  ],
+  "color_palette": [
+    "sunrise cream",
+    "toast brown",
+    "steam white",
+    "tile blue",
+    "herb green"
+  ],
+  "locations": [
+    "small kitchen at sunrise",
+    "dining table with breakfast",
+    "window sill with herbs",
+    "stove with a kettle",
+    "doorway to a bright room"
+  ],
+  "stages": [
+    {
+      "name": "朝の窓",
+      "description": "光が台所に流れ込む",
+      "prompt": "anime cinematic interior, small kitchen filled with golden morning light through a window with potted herbs, tiled counter, dust motes, fresh mood"
+    },
+    {
+      "name": "やかんの湯気",
+      "description": "お湯が沸く音",
+      "prompt": "beautiful anime close-up, steam from a whistling kettle on a stove, backlit curling vapor, warm kitchen background, shallow depth of field"
+    },
+    {
+      "name": "食卓",
+      "description": "湯気の立つ茶碗",
+      "prompt": "anime top-down scene, breakfast table with steaming rice, miso soup, toast and fruit, wooden surfaces, soft natural light, gentle colors"
+    },
+    {
+      "name": "包丁の音",
+      "description": "小さなリズムが朝をつくる",
+      "prompt": "lively anime illustration, cutting board with fresh vegetables and a knife in rhythm, scattered herbs, cheerful morning light, dynamic composition"
+    },
+    {
+      "name": "窓辺の余韻",
+      "description": "皿を洗い終えた静けさ",
+      "prompt": "poetic anime scene, quiet kitchen after breakfast with dishes drying in the sun, curtain moving in breeze, calm finale"
+    }
+  ]
+}

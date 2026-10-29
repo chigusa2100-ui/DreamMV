@@ -1,0 +1,91 @@
+{
+  "name": "empty_city_quiet",
+  "keywords": [
+    "無人の街",
+    "静まり返った",
+    "誰もいない",
+    "深夜の街",
+    "静寂",
+    "孤独な街",
+    "取り残された",
+    "empty city",
+    "silence",
+    "deserted",
+    "solitude"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "first light touching empty avenues, gentle hopeful beginning",
+    "sad": "wide silent crossroads under a grey sky, hollow aloneness",
+    "peace": "perfect stillness and soft color, peaceful absence of noise"
+  },
+  "camera_styles": [
+    "static symmetrical wide shot of an empty crossing",
+    "slow glide down a deserted street",
+    "low shot of a traffic light changing",
+    "aerial view of quiet blocks at dawn"
+  ],
+  "color_palette": [
+    "pale grey",
+    "signal green",
+    "dawn pink",
+    "asphalt blue",
+    "window yellow"
+  ],
+  "locations": [
+    "empty scramble crossing",
+    "silent shopping street",
+    "deserted station concourse",
+    "dawn rooftops",
+    "bridge with no traffic"
+  ],
+  "stages": [
+    {
+      "name": "静かな交差点",
+      "description": "信号だけが変わる",
+      "prompt": "anime cinematic scene, vast empty city crossing at dawn, traffic lights cycling, pale pink sky, symmetrical composition, perfect stillness"
+    },
+    {
+      "name": "閉じた商店",
+      "description": "シャッターの列",
+      "prompt": "beautiful anime illustration, long empty shopping street with closed shutters and glowing vending machines, soft blue light, quiet details"
+    },
+    {
+      "name": "改札の朝",
+      "description": "誰もいない通路",
+      "prompt": "anime cinematic interior, deserted station concourse with sunlight streaming through high windows, drifting dust, long reflections on the floor"
+    },
+    {
+      "name": "橋の上",
+      "description": "風だけが動く",
+      "prompt": "atmospheric anime scene, empty bridge over a calm river with flags moving gently in wind, pale morning light, hazy skyline"
+    },
+    {
+      "name": "最初の足音",
+      "description": "世界が少しだけ動き出す",
+      "prompt": "poetic anime scene, city waking with one distant lit window and a flock of birds crossing a pale golden sky, hopeful finale"
+    }
+  ]
+}

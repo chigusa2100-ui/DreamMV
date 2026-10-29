@@ -1,0 +1,90 @@
+{
+  "name": "laundromat_glow",
+  "keywords": [
+    "コインランドリー",
+    "洗濯機",
+    "洗濯物",
+    "乾燥機",
+    "蛍光灯",
+    "洗剤",
+    "laundromat",
+    "dryer",
+    "fluorescent",
+    "detergent"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "fresh white light and clean warmth, quiet small hope",
+    "sad": "empty room humming at 3am, cold green-white fluorescence, lonely",
+    "peace": "slow spinning drums and soft machine hum, gentle meditative calm"
+  },
+  "camera_styles": [
+    "static wide shot of a row of machines",
+    "slow push-in on a spinning drum",
+    "close-up of folded fabric in warm light",
+    "view from outside through the glass at night"
+  ],
+  "color_palette": [
+    "fluorescent white",
+    "mint green",
+    "dryer orange",
+    "asphalt blue",
+    "soft pink"
+  ],
+  "locations": [
+    "rows of washers at night",
+    "warm dryer glow",
+    "bench by the window",
+    "neon-lit street outside",
+    "folding table with fabrics"
+  ],
+  "stages": [
+    {
+      "name": "夜の洗濯機",
+      "description": "白い光が無人の部屋を満たす",
+      "prompt": "anime cinematic interior, rows of front-load washing machines in an empty laundromat at night, flat fluorescent light, reflective floor, mint and white tones"
+    },
+    {
+      "name": "回る円",
+      "description": "ドラムが静かに巡る",
+      "prompt": "beautiful anime close-up, spinning washing machine drum with swirling colorful fabrics behind glass, motion blur, warm reflections, hypnotic rhythm"
+    },
+    {
+      "name": "乾燥機の温もり",
+      "description": "オレンジの光がやさしい",
+      "prompt": "anime cinematic illustration, row of dryers glowing warm orange, drifting lint particles, soft contrast against cool green walls, cozy mood"
+    },
+    {
+      "name": "窓の外",
+      "description": "街の灯が薄く滲む",
+      "prompt": "atmospheric anime scene, laundromat seen from the street through a fogged glass front, neon reflections on wet asphalt, bright box of light in blue night"
+    },
+    {
+      "name": "畳んだ朝",
+      "description": "朝の光が洗いたての布に触れる",
+      "prompt": "poetic anime scene, folded white sheets on a table in pale sunrise light from the window, quiet fresh finale"
+    }
+  ]
+}

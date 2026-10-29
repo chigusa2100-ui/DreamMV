@@ -1,0 +1,92 @@
+{
+  "name": "zen_stone_garden",
+  "keywords": [
+    "枯山水",
+    "石庭",
+    "座禅",
+    "禅寺",
+    "砂紋",
+    "鹿威し",
+    "京都",
+    "zen garden",
+    "karesansui",
+    "moss",
+    "kyoto",
+    "raked sand"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "clean morning light on raked sand, calm clarity",
+    "sad": "thin rain on quiet moss, grey-green hush, subtle longing",
+    "peace": "perfect stillness, soft shadows, minimal and serene"
+  },
+  "camera_styles": [
+    "static composed wide shot of a stone garden",
+    "slow push-in along raked patterns",
+    "low macro of moss and dew",
+    "slow pan across a temple veranda"
+  ],
+  "color_palette": [
+    "sand white",
+    "moss green",
+    "stone grey",
+    "maple red",
+    "wood brown"
+  ],
+  "locations": [
+    "raked sand and rock garden",
+    "moss-covered temple grounds",
+    "wooden veranda facing a garden",
+    "bamboo water fountain",
+    "maple tree by a gate"
+  ],
+  "stages": [
+    {
+      "name": "砂紋の庭",
+      "description": "朝の光が砂の波を浮かせる",
+      "prompt": "anime cinematic illustration, raked white gravel garden with a few mossy boulders, crisp patterns, soft early light, temple eaves framing the view"
+    },
+    {
+      "name": "苔の雫",
+      "description": "朝露が緑に宿る",
+      "prompt": "beautiful anime macro scene, dew drops on deep green moss and tiny ferns, soft backlight, shallow depth of field, calm textured detail"
+    },
+    {
+      "name": "鹿威し",
+      "description": "水の音が静けさを区切る",
+      "prompt": "poetic anime scene, bamboo water fountain tipping and filling beside a stone basin, ripples, dappled light, subtle ink-like shadows"
+    },
+    {
+      "name": "縁側の雨",
+      "description": "雨音が庭を包む",
+      "prompt": "atmospheric anime scene, wooden veranda facing a rain-soaked stone garden, rain chains, mist over moss, soft grey-green palette"
+    },
+    {
+      "name": "紅葉の門",
+      "description": "赤い葉が静かに降る",
+      "prompt": "serene anime scene, maple tree dropping red leaves onto raked sand beside an old wooden gate, golden low light, peaceful finale"
+    }
+  ]
+}

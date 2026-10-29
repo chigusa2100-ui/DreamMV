@@ -1,0 +1,90 @@
+{
+  "name": "mushroom_hollow",
+  "keywords": [
+    "キノコ",
+    "きのこ",
+    "胞子",
+    "切り株",
+    "木の根",
+    "倒木",
+    "mushroom",
+    "toadstool",
+    "spores",
+    "stump"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "soft glow awakening beneath huge caps, whimsical hope",
+    "sad": "damp dark forest floor with faint blue glimmers, quiet mystery",
+    "peace": "cozy mossy hollow and drifting spores, hushed calm"
+  },
+  "camera_styles": [
+    "ground-level tracking among giant caps",
+    "slow upward tilt along a glowing stalk",
+    "close-up of drifting spores",
+    "wide view into a mossy hollow"
+  ],
+  "color_palette": [
+    "toadstool red",
+    "moss green",
+    "glow teal",
+    "bark brown",
+    "spore gold"
+  ],
+  "locations": [
+    "ring of giant mushrooms",
+    "hollow in an old tree",
+    "mossy fallen log",
+    "glowing forest floor",
+    "small stream through ferns"
+  ],
+  "stages": [
+    {
+      "name": "きのこの輪",
+      "description": "森の底で傘が開く",
+      "prompt": "anime cinematic illustration, ring of giant toadstools with spotted red caps on a mossy forest floor, soft shafts of light, floating spores, whimsical scale"
+    },
+    {
+      "name": "胞子の光",
+      "description": "金色の粒が舞い上がる",
+      "prompt": "beautiful anime macro scene, golden spores drifting in a sunbeam among glowing mushroom gills, shallow depth of field, warm and cool contrast"
+    },
+    {
+      "name": "苔の洞",
+      "description": "倒木の中の小さな世界",
+      "prompt": "anime cinematic scene, hollow of a fallen tree filled with moss, tiny glowing mushrooms and ferns, intimate cozy atmosphere, layered texture"
+    },
+    {
+      "name": "夜光の森",
+      "description": "暗がりで青い光が呼吸する",
+      "prompt": "poetic anime night scene, bioluminescent teal mushrooms lighting a dark forest floor, drifting motes, mysterious soft glow, deep shadows"
+    },
+    {
+      "name": "雨上がりの朝",
+      "description": "滴が傘から落ちる",
+      "prompt": "serene anime scene, raindrops falling from mushroom caps after rain, golden morning mist between trunks, fresh greens, gentle finale"
+    }
+  ]
+}

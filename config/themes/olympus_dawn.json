@@ -1,0 +1,92 @@
+{
+  "name": "olympus_dawn",
+  "keywords": [
+    "オリンポス",
+    "パルテノン",
+    "大理石",
+    "円柱",
+    "神殿",
+    "ギリシャ神話",
+    "女神",
+    "月桂樹",
+    "olympus",
+    "parthenon",
+    "marble",
+    "laurel"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "radiant golden sunrise over marble temples, uplifting heroic light",
+    "sad": "pale mist among broken columns, muted ivory and grey, quiet lament",
+    "peace": "calm Aegean breeze, warm sunlit marble, serene laurel groves"
+  },
+  "camera_styles": [
+    "wide establishing shot of a hilltop temple",
+    "slow upward tilt along fluted columns",
+    "gentle tracking shot through an olive grove",
+    "aerial pull-back over clouds and sea"
+  ],
+  "color_palette": [
+    "marble white",
+    "aegean blue",
+    "sunrise gold",
+    "laurel green",
+    "terracotta"
+  ],
+  "locations": [
+    "hilltop marble temple above the clouds",
+    "olive grove terrace",
+    "colonnade at dawn",
+    "sea cliff altar",
+    "laurel-covered amphitheater"
+  ],
+  "stages": [
+    {
+      "name": "雲上の神殿",
+      "description": "夜明けとともに神々の丘が姿を現す",
+      "prompt": "anime cinematic landscape, white marble temple crowning a cloud-wrapped mountain, fluted columns catching first golden sunlight, deep blue Aegean far below"
+    },
+    {
+      "name": "円柱の回廊",
+      "description": "光と影が刻む列柱の道",
+      "prompt": "beautiful anime illustration, long colonnade of weathered marble columns, strong rhythmic light and shadow, drifting laurel leaves, warm stone textures"
+    },
+    {
+      "name": "月桂樹の庭",
+      "description": "オリーブと月桂樹が風にそよぐ",
+      "prompt": "anime cinematic illustration, sunlit olive and laurel grove beside ancient stone steps, silver-green leaves shimmering, soft haze, shallow depth of field"
+    },
+    {
+      "name": "天の祭壇",
+      "description": "雲を裂いて光の柱が降りる",
+      "prompt": "dramatic anime cinematic scene, monumental white stone altar on a cliff edge, shafts of golden light breaking through storm clouds, floating embers, epic scale"
+    },
+    {
+      "name": "海を見下ろす黄昏",
+      "description": "神話の時代の余韻が空に溶ける",
+      "prompt": "poetic anime landscape, ruined temple terrace overlooking a copper-colored sea at dusk, long soft shadows, peach and violet sky, tranquil afterglow"
+    }
+  ]
+}

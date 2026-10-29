@@ -1,0 +1,91 @@
+{
+  "name": "secondhand_bookshop",
+  "keywords": [
+    "古本屋",
+    "古書",
+    "本棚",
+    "古本の匂い",
+    "文庫本",
+    "万年筆",
+    "店番",
+    "bookshop",
+    "secondhand",
+    "bookmark",
+    "paperback"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "sun lighting dusty spines, warm quiet hope",
+    "sad": "rainy afternoon among old pages, brown-grey tenderness",
+    "peace": "slow ticking clock and paper scent, soft amber calm"
+  },
+  "camera_styles": [
+    "slow tracking along towering shelves",
+    "close-up of aged pages and a bookmark",
+    "wide view of a cluttered shop interior",
+    "low shot of a sunbeam on the floor"
+  ],
+  "color_palette": [
+    "paper cream",
+    "leather brown",
+    "lamp amber",
+    "ink blue",
+    "dust gold"
+  ],
+  "locations": [
+    "narrow shelves to the ceiling",
+    "reading nook by the window",
+    "stacked crates outside the door",
+    "wooden ladder aisle",
+    "cash desk with a lamp"
+  ],
+  "stages": [
+    {
+      "name": "本の路地",
+      "description": "背表紙が壁になる",
+      "prompt": "anime cinematic interior, narrow aisle between ceiling-high bookshelves packed with worn spines, warm lamp light, dust motes, deep perspective"
+    },
+    {
+      "name": "栞の頁",
+      "description": "ページの間に挟まる時間",
+      "prompt": "beautiful anime macro scene, old open book with yellowed pages and a ribbon bookmark, fountain pen beside it, soft side light, delicate texture"
+    },
+    {
+      "name": "窓辺の席",
+      "description": "光が埃をきらめかせる",
+      "prompt": "anime cinematic illustration, small reading nook by a rain-streaked window, wooden stool and stack of paperbacks, golden lamp glow, cat silhouette on the sill"
+    },
+    {
+      "name": "梯子の上",
+      "description": "高い棚の秘密",
+      "prompt": "poetic anime scene, wooden ladder rolling along towering shelves lit by a single swinging lamp, floating dust, warm shadows"
+    },
+    {
+      "name": "閉店前",
+      "description": "看板の灯が夕方に溶ける",
+      "prompt": "serene anime scene, bookshop front at dusk with crates of books and a small glowing sign, orange sky, quiet street, gentle finale"
+    }
+  ]
+}

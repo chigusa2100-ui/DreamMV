@@ -1,0 +1,89 @@
+{
+  "name": "sunflower_field",
+  "keywords": [
+    "ひまわり",
+    "向日葵",
+    "入道雲",
+    "麦わら帽子",
+    "ひまわり畑",
+    "夏草",
+    "sunflower",
+    "cumulonimbus",
+    "straw hat"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "huge blue sky and radiant yellow petals, joyful bright hope",
+    "sad": "afternoon storm clouds above bowing flowers, wistful summer end",
+    "peace": "slow warm breeze and cicada hum, drowsy golden calm"
+  },
+  "camera_styles": [
+    "low camera among tall stems looking up",
+    "wide shot of a field to the horizon",
+    "close-up on a flower face with bees",
+    "tracking along a dirt path between rows"
+  ],
+  "color_palette": [
+    "sunflower yellow",
+    "sky blue",
+    "cloud white",
+    "leaf green",
+    "earth brown"
+  ],
+  "locations": [
+    "endless sunflower field",
+    "dirt road between stems",
+    "hill under towering clouds",
+    "farm gate at noon",
+    "roadside stand in summer"
+  ],
+  "stages": [
+    {
+      "name": "黄色い海",
+      "description": "ひまわりが太陽を追う",
+      "prompt": "anime cinematic landscape, endless sunflowers facing a brilliant blue sky with towering white cumulonimbus clouds, strong sunlight, vivid saturated colors"
+    },
+    {
+      "name": "茎の間",
+      "description": "風が背丈を超える花を揺らす",
+      "prompt": "beautiful anime illustration, low angle among tall green stems and large flower heads against the sun, lens flare, leaf shadows, summer haze"
+    },
+    {
+      "name": "花と蜂",
+      "description": "光の粒が花粉をまとう",
+      "prompt": "anime macro scene, bee on a sunflower center with glistening pollen, shallow depth of field, warm gold and deep brown"
+    },
+    {
+      "name": "夕立の気配",
+      "description": "空が急に暗くなる",
+      "prompt": "dramatic anime sky, dark storm clouds building over a bright sunflower field, strong contrast light, first raindrops, wind-tossed petals"
+    },
+    {
+      "name": "夕焼けの畑",
+      "description": "花が静かに西を向く",
+      "prompt": "poetic anime sunset, sunflowers lit orange and rose in the evening, long shadows, scattered petals on the path, calm finale"
+    }
+  ]
+}

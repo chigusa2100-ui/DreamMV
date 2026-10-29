@@ -1,0 +1,91 @@
+{
+  "name": "savanna_horizon",
+  "keywords": [
+    "サバンナ",
+    "アフリカ",
+    "キリン",
+    "アカシア",
+    "野生動物",
+    "セレンゲティ",
+    "savanna",
+    "acacia",
+    "serengeti",
+    "safari",
+    "wildebeest"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "huge orange sun rising over golden grass, warm optimistic glow",
+    "sad": "dry haze and dust over a pale plain, tired ochre",
+    "peace": "slow herds under a vast soft sky, golden calm"
+  },
+  "camera_styles": [
+    "very wide horizon shot with a lone acacia",
+    "low tracking through tall grass",
+    "slow aerial follow of a migrating herd",
+    "silhouette shot against a huge sun"
+  ],
+  "color_palette": [
+    "grass gold",
+    "acacia green",
+    "sunset orange",
+    "dust red",
+    "sky teal"
+  ],
+  "locations": [
+    "lone acacia on the plain",
+    "waterhole at dawn",
+    "tall grass in the wind",
+    "red-dust track",
+    "rocky outcrop at sunset"
+  ],
+  "stages": [
+    {
+      "name": "朝焼けの大地",
+      "description": "太陽が地平線から昇る",
+      "prompt": "anime cinematic landscape, enormous orange sun rising over endless golden savanna, a lone flat-topped acacia silhouette, long shadows, warm haze"
+    },
+    {
+      "name": "風の草",
+      "description": "草の海が波打つ",
+      "prompt": "beautiful anime illustration, tall golden grass rippling in the wind, low camera, backlit seed heads glowing, soft bokeh distance"
+    },
+    {
+      "name": "水場の群れ",
+      "description": "生命が水辺に集まる",
+      "prompt": "anime cinematic scene, waterhole at dawn with silhouetted herds of animals, mirror-like reflections, pink and amber sky, calm depth"
+    },
+    {
+      "name": "大移動",
+      "description": "大地が動き出す",
+      "prompt": "dynamic anime aerial scene, vast herd moving across the plain raising golden dust, long diagonal shadows, dramatic sunlit clouds, epic scale"
+    },
+    {
+      "name": "夕陽の平原",
+      "description": "空が赤から藍に変わる",
+      "prompt": "poetic anime sunset, savanna horizon fading from red to deep indigo, acacia silhouettes, first stars appearing, tranquil finale"
+    }
+  ]
+}

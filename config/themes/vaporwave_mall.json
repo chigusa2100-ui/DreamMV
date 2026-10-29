@@ -1,0 +1,91 @@
+{
+  "name": "vaporwave_mall",
+  "keywords": [
+    "ヴェイパーウェイブ",
+    "ショッピングモール",
+    "エスカレーター",
+    "90年代",
+    "無人のモール",
+    "彫像",
+    "ヤシの木",
+    "vaporwave",
+    "mall",
+    "escalator",
+    "palm"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "glittering pink-aqua light and floating chrome, dreamy playful hope",
+    "sad": "empty halls humming in lilac haze, lonely nostalgic echo",
+    "peace": "slow escalators and a soft pastel glow, floating calm"
+  },
+  "camera_styles": [
+    "symmetrical wide shot down a mall atrium",
+    "slow tracking along a fountain",
+    "low shot of reflective floors",
+    "close-up of a glowing palm in a planter"
+  ],
+  "color_palette": [
+    "pastel pink",
+    "aqua",
+    "lilac",
+    "chrome silver",
+    "sunset magenta"
+  ],
+  "locations": [
+    "empty mall atrium with palms",
+    "glowing fountain and statue",
+    "escalators into the sky",
+    "reflective tile floor",
+    "pastel sunset skylight"
+  ],
+  "stages": [
+    {
+      "name": "無人のアトリウム",
+      "description": "ピンクの光が床に映る",
+      "prompt": "anime cinematic interior, empty retro shopping mall atrium with potted palms, glossy reflective floor, pastel pink and aqua light, vaporwave atmosphere"
+    },
+    {
+      "name": "空へのエスカレーター",
+      "description": "段が雲まで続く",
+      "prompt": "surreal anime scene, endless escalators rising into a pastel sunset sky with floating clouds, chrome handrails, soft gradient lighting"
+    },
+    {
+      "name": "彫像の噴水",
+      "description": "白い像が夕焼けを見る",
+      "prompt": "beautiful anime illustration, white marble statue in a glowing fountain surrounded by neon grid reflections, magenta and cyan sky, serene mood"
+    },
+    {
+      "name": "格子の海",
+      "description": "ネオンの水平線",
+      "prompt": "dynamic anime scene, glowing perspective grid floor under a giant sunset sun with palm silhouettes, shimmering chrome shapes, retro-futuristic depth"
+    },
+    {
+      "name": "閉店のBGM",
+      "description": "照明がゆっくり落ちる",
+      "prompt": "poetic anime scene, mall lights dimming one by one in lilac twilight, empty escalators humming, drifting soft particles, calm finale"
+    }
+  ]
+}

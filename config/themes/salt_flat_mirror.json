@@ -1,0 +1,88 @@
+{
+  "name": "salt_flat_mirror",
+  "keywords": [
+    "ウユニ",
+    "塩湖",
+    "塩原",
+    "地平線",
+    "鏡張り",
+    "uyuni",
+    "salt flat",
+    "mirror horizon"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "pink sunrise perfectly mirrored on the flat, boundless hope",
+    "sad": "overcast sky merging with a dull white plain, hollow silence",
+    "peace": "paper-thin water holding the whole sky, weightless calm"
+  },
+  "camera_styles": [
+    "symmetrical horizon shot split by mirror reflection",
+    "low shot skimming across thin water",
+    "top-down view of hexagon salt patterns",
+    "slow wide pan across the empty plain"
+  ],
+  "color_palette": [
+    "mirror blue",
+    "salt white",
+    "sunrise pink",
+    "violet dusk",
+    "starlight silver"
+  ],
+  "locations": [
+    "mirror-flooded salt plain",
+    "dry hexagonal salt crust",
+    "island of cactus on the flat",
+    "sunrise horizon",
+    "starry night flat"
+  ],
+  "stages": [
+    {
+      "name": "水鏡の朝",
+      "description": "空と大地が一つになる",
+      "prompt": "anime cinematic landscape, endless thin-water salt flat reflecting a pink and gold sunrise sky, horizon dissolving, perfect symmetry, tiny ripples"
+    },
+    {
+      "name": "塩の模様",
+      "description": "白い亀甲が地平まで続く",
+      "prompt": "beautiful anime top-down scene, hexagonal cracked salt crust stretching to the horizon, crisp white patterns, soft blue shadows, minimalist"
+    },
+    {
+      "name": "雲の中を歩く",
+      "description": "足跡が空に波紋を描く",
+      "prompt": "poetic anime scene, ripples spreading across a mirror-like surface reflecting towering clouds, a line of faint footprints, surreal weightless depth"
+    },
+    {
+      "name": "夕映えの鏡",
+      "description": "世界が茜から藍へ",
+      "prompt": "dramatic anime sunset, entire sky mirrored on water in blazing orange to deep violet gradient, silhouetted cactus island, wide composition"
+    },
+    {
+      "name": "星の鏡",
+      "description": "天と地に星が満ちる",
+      "prompt": "anime cinematic night, Milky Way mirrored perfectly on the flooded plain, stars above and below, faint glow on the horizon, quiet finale"
+    }
+  ]
+}

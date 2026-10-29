@@ -1,0 +1,90 @@
+{
+  "name": "mughal_garden",
+  "keywords": [
+    "ムガル",
+    "タージマハル",
+    "インド",
+    "蓮の池",
+    "霊廟",
+    "ジャスミン",
+    "mughal",
+    "mausoleum",
+    "jasmine",
+    "lotus pond"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "pink-gold sunrise over a white dome, serene hopeful light",
+    "sad": "monsoon-grey sky over a still reflecting pool, delicate sorrow",
+    "peace": "calm symmetrical garden, soft jasmine haze, gentle breeze"
+  },
+  "camera_styles": [
+    "symmetrical wide shot down a reflecting channel",
+    "slow tracking through carved arches",
+    "overhead view of a geometric garden",
+    "close-up on inlaid flower patterns"
+  ],
+  "color_palette": [
+    "ivory white",
+    "rose pink",
+    "jade green",
+    "saffron",
+    "sky turquoise"
+  ],
+  "locations": [
+    "white marble mausoleum with reflecting pool",
+    "arched sandstone gate",
+    "geometric garden with fountains",
+    "lotus pond at dawn",
+    "carved lattice pavilion"
+  ],
+  "stages": [
+    {
+      "name": "霊廟の朝",
+      "description": "白い丸屋根が薔薇色に染まる",
+      "prompt": "anime cinematic landscape, white marble domed mausoleum glowing rose and gold at sunrise, perfectly symmetrical reflecting pool, soft mist, slender minarets"
+    },
+    {
+      "name": "格子の窓",
+      "description": "光が模様を床に描く",
+      "prompt": "beautiful anime illustration, intricately carved marble lattice windows casting delicate patterns of light across a cool floor, floating petals, warm haze"
+    },
+    {
+      "name": "幾何学の庭",
+      "description": "水路と花が対称に広がる",
+      "prompt": "anime cinematic top-down view, geometric garden with crossing water channels, fountains, lines of cypress and blooming flowerbeds, jewel colors"
+    },
+    {
+      "name": "蓮の池",
+      "description": "水面に花と空が重なる",
+      "prompt": "poetic anime scene, pink lotus blossoms on a still pond reflecting a pastel sky, dew-covered leaves, soft backlight, shallow depth"
+    },
+    {
+      "name": "夜の白い影",
+      "description": "月が大理石を銀に染める",
+      "prompt": "serene anime scene, white marble domes glowing under a full moon, still reflection, scattered lantern lights, deep blue sky, quiet finale"
+    }
+  ]
+}

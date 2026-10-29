@@ -1,0 +1,88 @@
+{
+  "name": "lavender_hills",
+  "keywords": [
+    "ラベンダー",
+    "ラベンダー畑",
+    "プロヴァンス",
+    "紫の絨毯",
+    "蜜蜂",
+    "lavender",
+    "provence",
+    "honeybee"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "warm morning sun on purple rows, soft cheerful hope",
+    "sad": "overcast sky above fading blooms, muted violet nostalgia",
+    "peace": "slow summer breeze, drifting scent and humming bees, gentle calm"
+  },
+  "camera_styles": [
+    "wide aerial shot of curving purple rows",
+    "low tracking along a flowering furrow",
+    "close-up of bees on blossoms",
+    "slow dolly to a stone farmhouse"
+  ],
+  "color_palette": [
+    "lavender purple",
+    "sage green",
+    "honey gold",
+    "stone cream",
+    "sky blue"
+  ],
+  "locations": [
+    "rolling lavender fields",
+    "stone farmhouse among rows",
+    "dusty country road",
+    "hilltop with a single tree",
+    "golden-hour meadow"
+  ],
+  "stages": [
+    {
+      "name": "紫の畝",
+      "description": "畝が丘を描く",
+      "prompt": "anime cinematic landscape, curving rows of lavender over rolling hills, warm morning sun, long soft shadows, hazy blue distance, vivid violet tones"
+    },
+    {
+      "name": "蜜蜂の羽音",
+      "description": "花の上を光が跳ねる",
+      "prompt": "beautiful anime macro illustration, honeybees hovering over lavender blossoms, glittering pollen, shallow depth of field, soft backlit purple and gold"
+    },
+    {
+      "name": "石の家",
+      "description": "畑の中の小さな家",
+      "prompt": "anime cinematic scene, old stone farmhouse with shutters surrounded by lavender fields, a single cypress, warm afternoon light, drifting clouds"
+    },
+    {
+      "name": "風の波",
+      "description": "香りが丘を渡る",
+      "prompt": "dynamic anime landscape, wind rippling through endless lavender like purple waves, petals in the air, dramatic sky, sweeping motion"
+    },
+    {
+      "name": "黄昏の香り",
+      "description": "空が薔薇色に溶ける",
+      "prompt": "poetic anime sunset, lavender hills glowing violet and pink under a soft gradient sky, distant farmhouse lights, calm finale"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "name": "celtic_standing_stones",
+  "keywords": [
+    "ケルト",
+    "ストーンサークル",
+    "ドルイド",
+    "ヒース",
+    "巨石",
+    "霧の丘",
+    "celtic",
+    "druid",
+    "megalith",
+    "heather",
+    "moorland",
+    "cairn"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "pale gold sunrise through moorland mist, quiet renewal",
+    "sad": "cold drizzle on dark stones, grey-green gloom, windswept solitude",
+    "peace": "soft overcast light on rolling heather hills, hushed green stillness"
+  },
+  "camera_styles": [
+    "slow orbit around a stone circle",
+    "wide moorland panorama with low mist",
+    "ground-level tracking through heather",
+    "slow push-in on a carved knotwork stone"
+  ],
+  "color_palette": [
+    "heather purple",
+    "moss green",
+    "stone grey",
+    "mist white",
+    "dawn gold"
+  ],
+  "locations": [
+    "standing stone circle on a hill",
+    "mist-covered moor",
+    "ancient oak woodland",
+    "stone cairn on a sea cliff",
+    "green valley with a ruined chapel"
+  ],
+  "stages": [
+    {
+      "name": "霧の丘",
+      "description": "ストーンサークルが朝霧に浮かぶ",
+      "prompt": "anime cinematic landscape, ring of tall standing stones on a mist-covered hill, purple heather, cold silver dawn light, layered fog depth"
+    },
+    {
+      "name": "樫の森",
+      "description": "ドルイドの森に光が差す",
+      "prompt": "beautiful anime illustration, ancient twisted oak woodland, moss-covered roots, green-gold sunbeams, floating motes, intricate Celtic knotwork carved on a stone"
+    },
+    {
+      "name": "渦巻く紋様",
+      "description": "石の刻みが淡く光りはじめる",
+      "prompt": "anime cinematic illustration, glowing spiral and knotwork patterns across weathered standing stones, twilight blue sky, faint drifting lights, mystical atmosphere"
+    },
+    {
+      "name": "嵐の荒野",
+      "description": "風が荒れ野を駆け抜ける",
+      "prompt": "dramatic anime moorland, swirling storm clouds above stone circle, wind-bent heather, shafts of pale light, sweeping epic scale"
+    },
+    {
+      "name": "夕暮れの石",
+      "description": "静けさが丘に戻る",
+      "prompt": "poetic anime landscape, long shadows of standing stones across a heather hill, rose and teal dusk, a few birds in flight, serene afterglow"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "name": "night_ferry_crossing",
+  "keywords": [
+    "フェリー",
+    "夜の航路",
+    "甲板",
+    "汽笛",
+    "連絡船",
+    "船旅",
+    "対岸",
+    "ferry",
+    "foghorn",
+    "night crossing"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "far shore lights growing closer, gentle hopeful warmth",
+    "sad": "cold wind on an empty deck, dark water, lonely stretch",
+    "peace": "slow engine hum and rocking, hushed dark-blue calm"
+  },
+  "camera_styles": [
+    "slow glide along a deck rail",
+    "wide shot of lights across black water",
+    "low view of foam in the wake",
+    "close-up of a lit cabin window"
+  ],
+  "color_palette": [
+    "night navy",
+    "cabin yellow",
+    "wake white",
+    "far-light orange",
+    "fog grey"
+  ],
+  "locations": [
+    "open deck at night",
+    "lit passenger lounge",
+    "wake behind the ship",
+    "far-shore city lights",
+    "foggy harbor entrance"
+  ],
+  "stages": [
+    {
+      "name": "出航",
+      "description": "陸の灯が遠ざかる",
+      "prompt": "anime cinematic scene, large ferry pulling away from a harbor at night, shrinking city lights, white foam in the wake, deep navy sky"
+    },
+    {
+      "name": "甲板の風",
+      "description": "手すりに夜がもたれる",
+      "prompt": "atmospheric anime scene, empty ferry deck at night with a metal rail and a single lamp, windblown mist, dark water, cool blue light"
+    },
+    {
+      "name": "船室の窓",
+      "description": "小さな灯が揺れる",
+      "prompt": "beautiful anime interior, warm yellow lounge lights and rain-flecked windows, rows of empty seats, soft reflections, cozy against the dark sea"
+    },
+    {
+      "name": "汽笛の霧",
+      "description": "霧の中に音が溶ける",
+      "prompt": "dramatic anime scene, thick fog around the ship with an unseen foghorn, glowing lamps like halos, muted silver and blue"
+    },
+    {
+      "name": "対岸の朝",
+      "description": "遠い灯が朝焼けに変わる",
+      "prompt": "poetic anime scene, ferry approaching a far shore at dawn, pastel orange sky, calm sea, first streetlights switching off, gentle finale"
+    }
+  ]
+}

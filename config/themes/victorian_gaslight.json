@@ -1,0 +1,92 @@
+{
+  "name": "victorian_gaslight",
+  "keywords": [
+    "ヴィクトリア",
+    "ガス灯",
+    "石畳",
+    "馬車",
+    "ロンドン",
+    "山高帽",
+    "煤煙",
+    "victorian",
+    "gaslight",
+    "london",
+    "cobblestone",
+    "hansom"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "pale morning light breaking through London fog, gentle hope",
+    "sad": "dense yellow fog, wet cobblestones, muted sepia solitude",
+    "peace": "quiet lamp-lit street after rain, soft golden calm"
+  },
+  "camera_styles": [
+    "slow tracking along a gaslit street",
+    "wide shot of a bridge in fog",
+    "low shot of carriage wheels on wet stones",
+    "overhead view of rooftops and chimneys"
+  ],
+  "color_palette": [
+    "fog grey",
+    "gaslight amber",
+    "brick red",
+    "deep green",
+    "brass"
+  ],
+  "locations": [
+    "gaslit cobblestone street",
+    "iron bridge over the river",
+    "chimney-lined rooftops",
+    "glass-roofed station",
+    "quiet townhouse square"
+  ],
+  "stages": [
+    {
+      "name": "霧のガス灯",
+      "description": "黄色い灯が霧に滲む",
+      "prompt": "anime cinematic illustration, gaslit Victorian street dissolving into thick fog, glowing amber lamps in a row, wet cobblestones, brick townhouses"
+    },
+    {
+      "name": "鉄の橋",
+      "description": "川霧に橋が浮かぶ",
+      "prompt": "beautiful anime landscape, wrought-iron bridge over a river in morning fog, distant clock tower, pale gold light, silhouettes of steamers, layered depth"
+    },
+    {
+      "name": "馬車の音",
+      "description": "石畳に蹄の響き",
+      "prompt": "atmospheric anime scene, horse-drawn carriage rolling on rain-slick cobblestones, warm reflections of gas lamps in puddles, drifting steam from the horses, cinematic low angle"
+    },
+    {
+      "name": "駅のガラス屋根",
+      "description": "蒸気と光が天井を満たす",
+      "prompt": "dramatic anime interior, vast glass-and-iron station roof with beams of light through drifting steam, brass fittings and clock, long converging perspective"
+    },
+    {
+      "name": "煙突の夜明け",
+      "description": "屋根の上に薄い朝が来る",
+      "prompt": "poetic anime panorama, rows of chimneys and slate roofs at dawn above fading fog, pale peach sky, last street lamps glowing"
+    }
+  ]
+}

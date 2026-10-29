@@ -1,0 +1,89 @@
+{
+  "name": "countryside_busstop",
+  "keywords": [
+    "バス停",
+    "田舎道",
+    "時刻表",
+    "田園",
+    "待合所",
+    "電柱",
+    "bus stop",
+    "countryside",
+    "utility pole"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "clear blue morning and a long open road, light hopeful mood",
+    "sad": "long wait in rain beside a rusted sign, grey-green solitude",
+    "peace": "cicadas and heat shimmer over fields, slow drowsy calm"
+  },
+  "camera_styles": [
+    "static wide shot of a stop beside a long road",
+    "slow push-in on a faded timetable",
+    "low shot along power lines into the distance",
+    "tracking bus-window view of passing fields"
+  ],
+  "color_palette": [
+    "field green",
+    "sky blue",
+    "rust red",
+    "asphalt grey",
+    "sunset amber"
+  ],
+  "locations": [
+    "lonely bus stop by rice fields",
+    "wooden shelter with a bench",
+    "road under power lines",
+    "hill crossing at dusk",
+    "rainy roadside"
+  ],
+  "stages": [
+    {
+      "name": "田んぼのバス停",
+      "description": "一本道の向こうまで空",
+      "prompt": "anime cinematic landscape, small bus stop shelter beside green paddies under a huge summer sky, white clouds, long straight road, quiet vivid colors"
+    },
+    {
+      "name": "色褪せた時刻表",
+      "description": "文字が日に焼けていく",
+      "prompt": "beautiful anime close-up, sun-faded timetable and rusted bus stop sign, peeling paint, cicada shadow, shallow depth of field, warm light"
+    },
+    {
+      "name": "電線の空",
+      "description": "線が空を五線譜にする",
+      "prompt": "anime cinematic scene, power lines crossing a vast blue sky above a country road, birds perched like notes, heat shimmer, low angle"
+    },
+    {
+      "name": "雨の待合室",
+      "description": "屋根の音だけが続く",
+      "prompt": "atmospheric anime scene, wooden shelter in steady rain, bench with puddles around it, mist over distant fields, muted green and grey palette"
+    },
+    {
+      "name": "夕焼けの終点",
+      "description": "赤い空に影が伸びる",
+      "prompt": "poetic anime sunset, empty bus stop with a long shadow on the road, sky blazing orange and rose, silhouettes of mountains, calm finale"
+    }
+  ]
+}

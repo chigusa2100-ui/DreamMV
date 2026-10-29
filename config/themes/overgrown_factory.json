@@ -1,0 +1,90 @@
+{
+  "name": "overgrown_factory",
+  "keywords": [
+    "廃工場",
+    "工場跡",
+    "錆びた",
+    "配管",
+    "鉄骨",
+    "産業遺産",
+    "overgrown",
+    "rusted",
+    "girder",
+    "pipeline"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "green shoots and sun through a broken roof, defiant renewal",
+    "sad": "cold rust and dripping water, brown-green decay, forgotten hush",
+    "peace": "soft light on moss-covered machinery, quiet slow reclamation"
+  },
+  "camera_styles": [
+    "slow tracking along rusted pipes",
+    "wide shot of a collapsed roof with sunbeams",
+    "close-up of vines on machinery",
+    "low shot across a flooded floor"
+  ],
+  "color_palette": [
+    "rust orange",
+    "moss green",
+    "steel grey",
+    "sun gold",
+    "puddle blue"
+  ],
+  "locations": [
+    "collapsed hall with sunbeams",
+    "vine-covered machinery",
+    "flooded floor with reflections",
+    "rusted catwalk",
+    "chimney surrounded by trees"
+  ],
+  "stages": [
+    {
+      "name": "崩れた屋根",
+      "description": "光が鉄骨の間に落ちる",
+      "prompt": "anime cinematic interior, abandoned factory hall with a broken roof, dramatic sunbeams through dust, rusted girders, green plants pushing up through concrete"
+    },
+    {
+      "name": "蔦の機械",
+      "description": "緑が歯車を包む",
+      "prompt": "beautiful anime illustration, giant rusted machinery wrapped in vines and moss, drips of water, soft green-gold light, intricate worn texture"
+    },
+    {
+      "name": "水たまりの空",
+      "description": "床が空を映す",
+      "prompt": "atmospheric anime scene, flooded factory floor reflecting steel beams and sky, ripples from dripping water, calm teal and orange contrast"
+    },
+    {
+      "name": "錆の通路",
+      "description": "配管が迷路をつくる",
+      "prompt": "dynamic anime perspective, long rusted catwalk between tangled pipes and tanks, shafts of light, steam hissing, deep industrial depth"
+    },
+    {
+      "name": "煙突の木々",
+      "description": "自然が煙突を取り戻す",
+      "prompt": "poetic anime scene, old brick chimney surrounded by trees at sunset, wild flowers in the yard, warm orange sky, hopeful finale"
+    }
+  ]
+}

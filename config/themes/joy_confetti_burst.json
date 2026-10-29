@@ -1,0 +1,91 @@
+{
+  "name": "joy_confetti_burst",
+  "keywords": [
+    "紙吹雪",
+    "クラッカー",
+    "歓声",
+    "お祝い",
+    "風船",
+    "万歳",
+    "弾ける",
+    "confetti",
+    "balloon",
+    "cheer",
+    "party"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "explosions of confetti under a blazing sky, overflowing joy",
+    "sad": "scattered confetti on an empty street after the party, bittersweet",
+    "peace": "soft balloons floating at golden hour, gentle happy glow"
+  },
+  "camera_styles": [
+    "dynamic upward shot through falling confetti",
+    "wide shot of a celebration plaza",
+    "slow-motion close-up of popping balloons",
+    "spinning top-down shot of colorful streamers"
+  ],
+  "color_palette": [
+    "confetti pink",
+    "sunny yellow",
+    "sky blue",
+    "mint",
+    "party red"
+  ],
+  "locations": [
+    "plaza filled with streamers",
+    "rooftop party with string lights",
+    "street parade of balloons",
+    "stage with confetti cannons",
+    "golden-hour field of balloons"
+  ],
+  "stages": [
+    {
+      "name": "はじけるとき",
+      "description": "紙吹雪が空に舞い上がる",
+      "prompt": "dynamic anime scene, burst of colorful confetti and streamers exploding into a bright blue sky, motion blur, joyful saturated colors, no fixed characters"
+    },
+    {
+      "name": "風船の空",
+      "description": "色が高く昇っていく",
+      "prompt": "beautiful anime illustration, hundreds of balloons rising over a sunlit plaza, string shadows, cheerful blue sky with soft clouds, playful depth"
+    },
+    {
+      "name": "夜のパーティ",
+      "description": "灯りが祝福する",
+      "prompt": "lively anime scene, rooftop party with string lights, paper lanterns and sparkles, warm gold against twilight pink, festive energy"
+    },
+    {
+      "name": "スローモーション",
+      "description": "一瞬が光の粒になる",
+      "prompt": "anime cinematic close-up, slow-motion confetti pieces hanging in the air with glittering highlights, shallow depth of field, rainbow bokeh"
+    },
+    {
+      "name": "祭りのあと",
+      "description": "静かな幸せが残る",
+      "prompt": "poetic anime scene, quiet street at golden hour covered in soft confetti, a few balloons floating, long warm shadows, gentle finale"
+    }
+  ]
+}

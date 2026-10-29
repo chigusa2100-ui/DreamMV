@@ -1,0 +1,92 @@
+{
+  "name": "summit_ascent",
+  "keywords": [
+    "頂上",
+    "登頂",
+    "山頂",
+    "登山道",
+    "一歩ずつ",
+    "山脈",
+    "稜線",
+    "険しい",
+    "summit",
+    "ridge",
+    "ascent",
+    "climb"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "sun cresting a distant ridge above a cloud sea, triumphant uplift",
+    "sad": "wind-battered slope and heavy cloud, cold weary determination",
+    "peace": "thin clear air and vast silence above the clouds, still awe"
+  },
+  "camera_styles": [
+    "long upward tilt along a steep ridge",
+    "wide shot with tiny trail markers for scale",
+    "low shot of a snowy trail",
+    "aerial sweep above a cloud sea"
+  ],
+  "color_palette": [
+    "rock grey",
+    "snow white",
+    "alpenglow pink",
+    "sky blue",
+    "cloud silver"
+  ],
+  "locations": [
+    "narrow ridge trail",
+    "snow slope in wind",
+    "cloud sea at sunrise",
+    "rocky summit cairn",
+    "alpine meadow below the peak"
+  ],
+  "stages": [
+    {
+      "name": "登山道",
+      "description": "最初の一歩が道になる",
+      "prompt": "anime cinematic landscape, narrow switchback trail climbing a green alpine slope toward distant peaks, morning light, small wooden markers, crisp air"
+    },
+    {
+      "name": "風の稜線",
+      "description": "風が背を押す",
+      "prompt": "dynamic anime scene, exposed rocky ridge with strong wind blowing snow plumes, dramatic clouds racing, deep drop on both sides, sweeping scale"
+    },
+    {
+      "name": "雪の斜面",
+      "description": "一歩ごとに息が白い",
+      "prompt": "atmospheric anime scene, steep snowy slope under heavy grey clouds, wind-swept patterns, a faint line of footprints, cold muted palette"
+    },
+    {
+      "name": "雲海の上",
+      "description": "世界が下に広がる",
+      "prompt": "beautiful anime panorama, golden sunrise above a sea of clouds with sharp mountain tips rising, alpenglow pink on snow, immense vista"
+    },
+    {
+      "name": "頂の石積み",
+      "description": "空に一番近い場所",
+      "prompt": "poetic anime scene, small stone cairn on a summit with flags fluttering, infinite blue sky and soft clouds below, triumphant calm finale"
+    }
+  ]
+}

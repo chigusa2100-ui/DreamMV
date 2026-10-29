@@ -1,0 +1,93 @@
+{
+  "name": "pirate_sea_chart",
+  "keywords": [
+    "海賊",
+    "宝島",
+    "羅針盤",
+    "宝の地図",
+    "大航海",
+    "帆船",
+    "髑髏旗",
+    "財宝",
+    "pirate",
+    "treasure",
+    "compass",
+    "galleon",
+    "buccaneer"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "bright morning sail on a sparkling sea, adventurous gold",
+    "sad": "ragged sails under a grey sea fog, damp worn timber",
+    "peace": "calm night sea and a lantern-lit deck, creaking quiet"
+  },
+  "camera_styles": [
+    "low deck-level shot of billowing sails",
+    "wide aerial view of a galleon at sea",
+    "close-up of a compass and worn map",
+    "dramatic shot of a crashing wave"
+  ],
+  "color_palette": [
+    "ocean teal",
+    "parchment tan",
+    "timber brown",
+    "treasure gold",
+    "storm grey"
+  ],
+  "locations": [
+    "galleon on open water",
+    "sandy island cove with chests",
+    "storm-tossed sea",
+    "candlelit captain's cabin",
+    "hidden cave harbor"
+  ],
+  "stages": [
+    {
+      "name": "羅針盤",
+      "description": "地図の上で針が震える",
+      "prompt": "anime cinematic close-up, brass compass and aged treasure map on a candlelit wooden table, ink lines and a red X, warm shadows, tactile detail"
+    },
+    {
+      "name": "帆を張れ",
+      "description": "風が船を押し出す",
+      "prompt": "dynamic anime seascape, tall-masted galleon with billowing sails cutting through bright blue waves, sparkling spray, low camera angle, blue sky and clouds"
+    },
+    {
+      "name": "嵐の海",
+      "description": "波が船を呑み込もうとする",
+      "prompt": "dramatic anime seascape, towering waves and storm-black sky around a wooden ship, lightning, white foam, no fixed characters, epic motion"
+    },
+    {
+      "name": "宝の入り江",
+      "description": "洞窟に金の光が満ちる",
+      "prompt": "anime cinematic scene, hidden cove cave filled with glittering gold and gems reflecting on turquoise water, sunbeams through a rock opening"
+    },
+    {
+      "name": "星の甲板",
+      "description": "航海の夜が静かに更ける",
+      "prompt": "poetic anime scene, ship deck at night under a huge starry sky, swaying lantern, calm dark sea, soft warm light, peaceful ending"
+    }
+  ]
+}

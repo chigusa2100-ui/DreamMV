@@ -1,0 +1,90 @@
+{
+  "name": "canyon_light",
+  "keywords": [
+    "渓谷",
+    "赤い岩",
+    "グランドキャニオン",
+    "岩壁",
+    "砂岩",
+    "アンテロープ",
+    "canyon",
+    "sandstone",
+    "mesa",
+    "antelope"
+  ],
+  "emotion_keywords": {
+    "hope": [
+      "希望",
+      "明日",
+      "夜明け",
+      "始まり",
+      "未来へ"
+    ],
+    "sad": [
+      "涙",
+      "さよなら",
+      "切ない",
+      "ひとりぼっち",
+      "届かない"
+    ],
+    "peace": [
+      "静けさ",
+      "穏やか",
+      "安らぎ",
+      "やさしい",
+      "微笑み"
+    ]
+  },
+  "emotion_styles": {
+    "hope": "gold beam of light striking a narrow slot, awe and hope",
+    "sad": "cool shadow and drifting dust in a deep gorge, solitary hush",
+    "peace": "warm glowing rock walls, soft sand underfoot, steady calm"
+  },
+  "camera_styles": [
+    "slow upward tilt along curved sandstone walls",
+    "tracking through a narrow slot canyon",
+    "wide aerial view of layered red cliffs",
+    "close-up on swirling rock textures"
+  ],
+  "color_palette": [
+    "burnt orange",
+    "rust red",
+    "sand gold",
+    "sky blue",
+    "shadow violet"
+  ],
+  "locations": [
+    "narrow slot canyon with light beam",
+    "layered red mesas",
+    "dry riverbed in the gorge",
+    "rock arch at sunset",
+    "canyon rim at dawn"
+  ],
+  "stages": [
+    {
+      "name": "縞の岩壁",
+      "description": "赤い岩が波のようにうねる",
+      "prompt": "anime cinematic illustration, smooth swirling sandstone walls in bands of orange, red and violet, warm bounced light, sand ripples, narrow slot canyon"
+    },
+    {
+      "name": "光の柱",
+      "description": "一筋の光が砂を照らす",
+      "prompt": "beautiful anime scene, single golden shaft of sunlight falling through an opening into a dark canyon, drifting sand dust glowing, strong contrast"
+    },
+    {
+      "name": "赤い台地",
+      "description": "地層が空へ積み上がる",
+      "prompt": "anime cinematic landscape, vast layered red mesas under a blue sky with scattered clouds, long shadows, enormous scale, crisp air"
+    },
+    {
+      "name": "岩のアーチ",
+      "description": "風が石に穴を開けた",
+      "prompt": "dramatic anime scene, giant natural rock arch framing a blazing sunset, dust in the air, silhouetted rim, epic composition"
+    },
+    {
+      "name": "谷の星空",
+      "description": "夜が岩の色を静める",
+      "prompt": "poetic anime canyon night, stars above the narrow rim, cold blue walls with a warm campfire glow far below, quiet finale"
+    }
+  ]
+}
