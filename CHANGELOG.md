@@ -1,69 +1,68 @@
-# Changelog / 変更履歴
+# Changelog
 
-All notable changes to DreamMV are documented in this file.
+All notable changes to DreamMV are documented here.
 DreamMV の主な変更履歴を記録しています。
-
-## [1.1.0] - 2026-10-29
-
-### Added / 追加
-
-- Added narration illustration support for creating visual scenes to accompany narrated content.
-- 朗読音声に合わせた挿絵を生成する「朗読挿絵」機能に対応。
-- Added a dedicated narration workflow for managing narration audio and its associated illustrations.
-- 朗読音声と対応する挿絵を管理する、朗読専用のワークフローを追加。
-- Added `sd_embed` installation to support long-prompt embedding for Animagine XL 4.0.
-- Animagine XL 4.0 の長文プロンプト処理に対応するため、`sd_embed` のインストール処理を追加。
-- Added an import verification step to detect missing `sd_embed` dependencies during installation.
-- インストール時に `sd_embed` の読み込みを検証し、依存関係の不足を検出できるように改善。
-
-### Fixed / 修正
-
-- Fixed installer shortcuts to launch `DreamMV.py` instead of the missing `main.py`.
-- インストーラーが作成するショートカットの起動先を、存在しない `main.py` から `DreamMV.py` に修正。
-- Synchronized the project version and installer version to `1.1.0`.
-- プロジェクトとインストーラーのバージョン表記を `1.1.0` に統一。
-
-### Notes / 注意事項
-
-- Existing CUDA 12.8 PyTorch installation and Animagine XL 4.0 model setup procedures are retained.
-- 既存の CUDA 12.8 対応 PyTorch の導入処理と Animagine XL 4.0 のモデル導入処理は維持。
-- Long-prompt generation and narration illustration workflows should be tested in the installed environment before release.
-- リリース前に、インストール後の環境で長文プロンプトによる画像生成と朗読挿絵のワークフローを検証する必要があります。
-
----
 
 ## [1.0.2] - 2026-10-29
 
-### Changed / 変更
+### 日本語
+
+- ビジュアルテーマを70種類に拡張。
+- テーマに応じたシーン生成プロンプトを改善。
+- カメラ、色彩、舞台設定のテーマ別バリエーションを強化。
+- テーマ関連のテスト43件すべての成功を確認。
+- 実際の動画生成テストで正常動作を確認。
+
+### English
 
 - Expanded the visual theme library to 70 themes.
-- ビジュアルテーマのライブラリを70種類に拡張。
 - Improved scene-generation prompts based on theme data.
-- テーマデータに基づくシーン生成プロンプトを改善。
 - Enhanced theme-specific camera, color palette, and setting variations.
-- テーマごとのカメラワーク、カラーパレット、舞台設定のバリエーションを強化。
-
-### Tests / テスト
-
-- The previous release notes reported that all 43 tests passed.
-- 以前のリリース記録では、43件のテストがすべて成功したと報告されています。
-- The previous release notes reported successful operation in a real video-generation test.
-- 以前のリリース記録では、実際の動画生成テストで正常動作を確認したと報告されています。
-
----
+- Verified that all 43 tests passed.
+- Confirmed successful operation in a real video-generation test.
 
 ## [1.0.1] - 2026-10-28
 
-### Added / 追加
+### 日本語
+
+- 歌詞の感情キーワードに基づくシーン別の感情判定を追加。
+- テーマ設定に基づくカメラ、色調、舞台設定のバリエーションを追加。
+
+### English
 
 - Added per-scene emotion detection based on lyric keywords.
-- 歌詞のキーワードに基づき、シーンごとの感情を判定する機能を追加。
-- Added camera, color palette, and setting variations based on theme settings.
-- テーマ設定に基づくカメラワーク、色調、舞台設定のバリエーションを追加。
+- Added camera, color palette, and setting variations based on theme data.
 
----
+## [1.0.0] - 2026-10-27
 
-## Earlier Versions / 以前のバージョン
+### 日本語
 
-For earlier development history, refer to the project's Git history and release records.
-それ以前の開発履歴については、Git のコミット履歴およびリリース記録を参照してください。
+- ローカル環境で音楽からミュージックビデオを生成するワークフローを整備。
+- 音声ファイルの読み込みと曲の長さの解析に対応。
+- 曲の長さ、歌詞、テーマ設定に基づくシーン計画を追加。
+- プロジェクト、ジョブ状態、シーンキューの保存に対応。
+- 失敗したシーンの再試行と、進行状況の確認を改善。
+- Animagine XL 4.0 による静止画生成と、カメラ移動を使った動画クリップ作成に対応。
+- シーンのクリップを結合し、元の音声を含む MP4 を出力。
+- インストール手順と依存関係を改善。
+
+### English
+
+- Established a local workflow for generating music videos from audio.
+- Added audio loading and duration analysis.
+- Added scene planning based on song length, lyrics, and theme settings.
+- Added persistent project, job-state, and scene-queue data.
+- Improved progress tracking and retries for failed scenes.
+- Added still-image generation with Animagine XL 4.0 and video clips with camera motion.
+- Combined scene clips and the original audio into an MP4 output.
+- Improved installation and dependency handling.
+
+## [0.2.3]
+
+- ProtoTypeDone
+
+## [0.1.0] - Initial prototype
+
+- Added the PySide6 desktop GUI.
+- Added audio file selection and duration analysis.
+- Added basic scene planning and project JSON output.

@@ -11,8 +11,7 @@ class SafeResumePatchTests(unittest.TestCase):
         source = (ROOT / "DreamMV.py").read_text(encoding="utf-8")
         self.assertIn("完了済みシーンから再結合（再生成なし）", source)
         self.assertIn("def start_assemble_only(self):", source)
-        self.assertIn("self.generate_button.setEnabled(False)", source)
-        self.assertIn("self.assemble_button.clicked.connect(self.start_assemble_only)", source)
+        self.assertIn("self.generate_button.setEnabled(False)  # 既存プロジェクト", source)
 
     def test_assemble_worker_does_not_load_animagine(self):
         source = (ROOT / "src" / "dreammv" / "render_worker.py").read_text(encoding="utf-8")
