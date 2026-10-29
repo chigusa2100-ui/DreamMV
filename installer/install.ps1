@@ -33,7 +33,7 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 Write-Host "Installing DreamMV and Animagine dependencies..."
-uv pip install --python $py "diffusers>=0.35" transformers accelerate sentencepiece ftfy "imageio[ffmpeg]" imageio-ffmpeg huggingface_hub PySide6 librosa soundfile numpy pillow faster-whisper
+uv pip install --python $py "diffusers>=0.35" transformers accelerate sentencepiece ftfy "imageio[ffmpeg]" imageio-ffmpeg huggingface_hub PySide6 librosa soundfile numpy pillow faster-whisper "compel==2.5.1"
 if ($LASTEXITCODE -ne 0) {
     throw "Failed to install DreamMV dependencies."
 }

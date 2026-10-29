@@ -1,6 +1,6 @@
 [project]
 name = "dreammv"
-version = "1.0.3"
+version = "1.0.4"
 description = "Generate. Sleep. Wake up to your music video."
 requires-python = ">=3.10"
 dependencies = [
@@ -8,6 +8,7 @@ dependencies = [
     "librosa",
     "soundfile",
     "faster-whisper",
+    "compel==2.5.1",
 ]
 
 [tool.unittest]

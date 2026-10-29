@@ -3,6 +3,20 @@
 All notable changes to DreamMV are documented here.
 DreamMV の主な変更履歴を記録しています。
 
+## [1.0.4]
+
+### Fixed / 修正
+- Improved handling of long prompts using Compel.
+  - Compelを使用し、長いプロンプトの処理を改善。
+- Added Compel 2.5.1 to project dependencies and the installer.
+  - プロジェクトの依存関係とインストーラーにCompel 2.5.1を追加。
+
+### Tests / テスト
+- Verified Compel import successfully.
+  - Compelのインポートを確認。
+- All 8 related tests passed.
+  - 関連テスト8件がすべて成功。
+
 # [v1.0.3]
 
 ## 主な変更
