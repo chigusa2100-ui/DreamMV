@@ -1,7 +1,7 @@
 ; Inno Setup 6 でコンパイルすると DreamMV-Setup.exe ができます
 [Setup]
 AppName=DreamMV
-AppVersion=1.0.2
+AppVersion=1.0.3
 DefaultDirName={localappdata}\DreamMV
 DefaultGroupName=DreamMV
 PrivilegesRequired=lowest

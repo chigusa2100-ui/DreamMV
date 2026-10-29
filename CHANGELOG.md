@@ -3,6 +3,32 @@
 All notable changes to DreamMV are documented here.
 DreamMV の主な変更履歴を記録しています。
 
+# [v1.0.3]
+
+## 主な変更
+- MV生成用テーマを70種類追加
+- テーマライブラリを合計140種類に拡充
+
+## テスト
+- pytest：43 passed
+- テーマ関連サブテスト：140 passed
+- テーマJSON：140ファイルを検査し、構文エラー0件
+
+## 今後について
+モデルの追加はいったん終了し、既存モデルとテーマライブラリの活用・安定性向上を優先します。
+
+## Key Changes
+- Added 70 new themes for music video generation.
+- Expanded the theme library to a total of 140 themes.
+
+## Tests
+- pytest: 43 passed
+- Theme-related subtests: 140 passed
+- Theme JSON files: 140 validated, with 0 syntax errors.
+
+## Future Development
+Model additions are on hold for now. Development will focus on making better use of existing models and the theme library, while improving overall stability.
+
 ## [1.0.2] - 2026-10-29
 
 ### 日本語
