@@ -1,6 +1,6 @@
-﻿[project]
+[project]
 name = "dreammv"
-version = "1.0.2"
+version = "1.1.0"
 description = "Generate. Sleep. Wake up to your music video."
 requires-python = ">=3.10"
 dependencies = [

@@ -1,4 +1,4 @@
-# DreamMV setup: Python environment + PyTorch CUDA + Animagine XL 4.0
+﻿# DreamMV setup: Python environment + PyTorch CUDA + Animagine XL 4.0
 # NOTE: this file is intentionally ASCII-only for Windows PowerShell 5.1.
 param([string]$AppDir = (Split-Path -Parent $PSScriptRoot))
 $ErrorActionPreference = "Stop"
@@ -43,6 +43,19 @@ if (Test-Path (Join-Path $AppDir "requirements.txt")) {
     if ($LASTEXITCODE -ne 0) {
         throw "Failed to install requirements.txt dependencies."
     }
+}
+
+
+Write-Host "Installing sd_embed long-prompt support..."
+uv pip install --python $py "git+https://github.com/xhinker/sd_embed.git@4a47f71150a22942fa606fb741a1c971d95ba56f"
+if ($LASTEXITCODE -ne 0) {
+    throw "Failed to install sd_embed."
+}
+
+Write-Host "Verifying sd_embed dependency..."
+& $py -c "from sd_embed.embedding_funcs import get_weighted_text_embeddings_sdxl; print('sd_embed import OK')"
+if ($LASTEXITCODE -ne 0) {
+    throw "sd_embed verification failed."
 }
 
 Write-Host "Verifying Whisper dependency..."
