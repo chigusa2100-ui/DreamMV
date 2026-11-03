@@ -189,6 +189,7 @@ class AnimeEngine:
         seed: int | None = None,
         negative_prompt: str = DEFAULT_NEGATIVE,
         on_step: Callable[[int, int], None] | None = None,
+        camera_motion: str | None = None,
     ) -> Path:
         import torch
         from PIL import Image
@@ -256,5 +257,6 @@ class AnimeEngine:
             duration,
             fps=int(c["fps"]),
             size=(int(c["width"]), int(c["height"])),
-            motion=MOTIONS[seed % len(MOTIONS)],
+            # Preserve the legacy deterministic fallback for older queues.
+            motion=camera_motion or MOTIONS[seed % len(MOTIONS)],
         )

@@ -27,6 +27,10 @@ class AnimagineEngineTests(unittest.TestCase):
                 imported_modules.extend(alias.name for alias in node.names)
         self.assertNotIn("wan_engine", imported_modules)
 
+    def test_render_worker_forwards_separate_camera_motion(self):
+        source = (ROOT / "src" / "dreammv" / "render_worker.py").read_text(encoding="utf-8")
+        self.assertIn('camera_motion=scene.get("camera_motion")', source)
+
     def test_gui_uses_animagine_label_and_settings(self):
         source = (ROOT / "DreamMV.py").read_text(encoding="utf-8")
         self.assertIn("anime_settings.json", source)

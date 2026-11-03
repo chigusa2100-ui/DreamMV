@@ -158,7 +158,13 @@ class RenderWorker(QThread):
                     self.log.emit(f"シーン {sid}: 画像生成 step {step}/{total}{suffix}")
 
                 try:
-                    engine.generate(scene_prompt(scene), out, scene_duration(scene), on_step=on_step)
+                    engine.generate(
+                        scene_prompt(scene),
+                        out,
+                        scene_duration(scene),
+                        on_step=on_step,
+                        camera_motion=scene.get("camera_motion"),
+                    )
                     self.queue.set_scene_status(scene_id, "completed", output=str(out))
                     self.log.emit(f"シーン {scene_id} 完了（{(time.time() - started) / 60:.1f} 分）")
                 except Exception as exc:
