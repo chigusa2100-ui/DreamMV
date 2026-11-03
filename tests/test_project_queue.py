@@ -24,7 +24,11 @@ class ProjectQueueServiceTests(unittest.TestCase):
     def test_create_queue_persists_inside_project_output(self):
         plan = {
             "scenes": [
-                {"id": "scene-01", "name": "Opening", "start": 0, "end": 10, "prompt": "dawn"},
+                {
+                    "id": "scene-01", "name": "Opening", "start": 0, "end": 10,
+                    "prompt": "dawn", "camera_style": "wide cinematic shot",
+                    "camera_motion": "zoom_in",
+                },
                 {"id": "scene-02", "name": "Verse", "start": 10, "end": 20, "prompt": "city"},
             ]
         }
@@ -32,7 +36,10 @@ class ProjectQueueServiceTests(unittest.TestCase):
         queue_path = self.project_dir / "output" / "queue.json"
         self.assertTrue(queue_path.exists())
         self.assertEqual(result["title"], "Demo Song")
-        self.assertEqual(len(self.service.load()["scenes"]), 2)
+        saved_scenes = self.service.load()["scenes"]
+        self.assertEqual(len(saved_scenes), 2)
+        self.assertEqual(saved_scenes[0]["camera_style"], "wide cinematic shot")
+        self.assertEqual(saved_scenes[0]["camera_motion"], "zoom_in")
 
     def test_progress_reflects_scene_states(self):
         self.service.create_from_scenes([

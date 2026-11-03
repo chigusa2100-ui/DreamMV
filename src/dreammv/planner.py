@@ -346,10 +346,6 @@ class StoryPlanner:
                     f"emotional visual style: {style.strip()}"
                 )
 
-        camera = self._pick_by_scene(
-            self._string_list(theme.get("camera_styles")),
-            scene_index,
-        )
         palette = self._pick_by_scene(
             self._string_list(theme.get("color_palette")),
             scene_index,
@@ -359,8 +355,6 @@ class StoryPlanner:
             scene_index,
         )
 
-        if camera:
-            parts.append(f"camera: {camera}")
         if palette:
             parts.append(f"color palette: {palette}")
         if location:
@@ -445,6 +439,16 @@ class StoryPlanner:
                 lyric,
                 index,
             )
+            # Camera composition and camera movement are metadata for the
+            # video stage, never natural-language instructions for Animagine.
+            camera_style = self._pick_by_scene(
+                self._string_list(theme.get("camera_styles")),
+                index,
+            )
+            camera_motion = self._pick_by_scene(
+                self._string_list(theme.get("camera_motions")),
+                index,
+            )
 
             scenes.append(
                 {
@@ -460,6 +464,8 @@ class StoryPlanner:
                     ),
                     "emotion": emotion,
                     "prompt": prompt_text,
+                    "camera_style": camera_style,
+                    "camera_motion": camera_motion,
                 }
             )
 

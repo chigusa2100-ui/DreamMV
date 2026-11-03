@@ -3,6 +3,37 @@
 All notable changes to DreamMV are documented here.
 DreamMV の主な変更履歴を記録しています。
 
+## [1.1.0] - 2026-11-04
+
+### 主な変更
+
+- カメラ演出を画像生成プロンプトから分離。
+- シーンごとのカメラスタイルとカメラ移動を独立して管理。
+- カメラ移動の設定をレンダリングエンジンへ受け渡す仕組みを追加。
+- 旧プロジェクトや既存キューとの互換性を維持。
+- カメラ移動設定がない旧テーマでも正常に動作するよう改善。
+
+### テスト
+
+- ユニットテスト45件すべて成功。
+- GUIの正常起動を確認。
+- Animagine XL 4.0による動画生成を確認。
+- カメラ演出が画像生成ではなくレンダリング時に適用されることを確認。
+
+### English
+
+- Separated camera direction metadata from image-generation prompts.
+- Added independent per-scene camera style and motion settings.
+- Forwarded camera motion settings to the rendering engine.
+- Preserved backward compatibility with existing projects and queues.
+- Improved compatibility with legacy themes without camera motion settings.
+
+### Tests
+
+- All 45 unit tests passed.
+- Confirmed successful GUI startup and video generation.
+- Verified camera movement is applied during rendering.
+
 ## [1.0.4]
 
 ### Fixed / 修正

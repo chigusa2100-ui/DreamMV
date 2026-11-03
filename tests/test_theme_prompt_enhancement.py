@@ -25,6 +25,7 @@ class ThemePromptEnhancementTests(unittest.TestCase):
                 "struggle": "dramatic shadows, determined atmosphere",
             },
             "camera_styles": ["wide cinematic shot", "close-up shot"],
+            "camera_motions": ["zoom_in", "pan_right"],
             "color_palette": ["gold and blue", "violet and silver"],
             "locations": ["sunlit rooftop", "futuristic city street"],
             "stages": [
@@ -48,7 +49,9 @@ class ThemePromptEnhancementTests(unittest.TestCase):
         self.assertEqual(scene["emotion"], "hope")
         self.assertIn("cinematic anime scene", scene["prompt"])
         self.assertIn("radiant golden sunrise", scene["prompt"])
-        self.assertIn("camera: wide cinematic shot", scene["prompt"])
+        self.assertNotIn("camera:", scene["prompt"])
+        self.assertEqual(scene["camera_style"], "wide cinematic shot")
+        self.assertEqual(scene["camera_motion"], "zoom_in")
         self.assertIn("color palette: gold and blue", scene["prompt"])
         self.assertIn("setting: sunlit rooftop", scene["prompt"])
 
@@ -72,8 +75,12 @@ class ThemePromptEnhancementTests(unittest.TestCase):
         )
         first, second = plan["scenes"]
 
-        self.assertIn("camera: wide cinematic shot", first["prompt"])
-        self.assertIn("camera: close-up shot", second["prompt"])
+        self.assertNotIn("camera:", first["prompt"])
+        self.assertNotIn("camera:", second["prompt"])
+        self.assertEqual(first["camera_style"], "wide cinematic shot")
+        self.assertEqual(second["camera_style"], "close-up shot")
+        self.assertEqual(first["camera_motion"], "zoom_in")
+        self.assertEqual(second["camera_motion"], "pan_right")
         self.assertIn("color palette: gold and blue", first["prompt"])
         self.assertIn("color palette: violet and silver", second["prompt"])
         self.assertEqual(first["start"], 0)
@@ -89,6 +96,14 @@ class ThemePromptEnhancementTests(unittest.TestCase):
         self.assertEqual(prompt, "simple anime scene")
         self.assertIsNone(emotion)
 
+    def test_legacy_camera_styles_are_metadata_not_prompt_text(self):
+        self.theme.pop("camera_motions")
+        plan = self.planner.create_plan(5, [])
+        scene = plan["scenes"][0]
+        self.assertNotIn("camera:", scene["prompt"])
+        self.assertEqual(scene["camera_style"], "wide cinematic shot")
+        self.assertIsNone(scene["camera_motion"])
+
     def test_no_matching_emotion_keeps_visual_styles(self):
         plan = self.planner.create_plan(
             5,
@@ -98,7 +113,9 @@ class ThemePromptEnhancementTests(unittest.TestCase):
 
         self.assertIsNone(scene["emotion"])
         self.assertNotIn("emotional visual style:", scene["prompt"])
-        self.assertIn("camera: wide cinematic shot", scene["prompt"])
+        self.assertNotIn("camera:", scene["prompt"])
+        self.assertEqual(scene["camera_style"], "wide cinematic shot")
+        self.assertEqual(scene["camera_motion"], "zoom_in")
 
 
 if __name__ == "__main__":
