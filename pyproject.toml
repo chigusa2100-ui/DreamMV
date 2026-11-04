@@ -1,15 +1,47 @@
 [project]
 name = "dreammv"
-version = "1.1.0"
+version = "1.1.1"
 description = "Generate. Sleep. Wake up to your music video."
-requires-python = ">=3.10"
+requires-python = ">=3.11,<3.12"
 dependencies = [
-    "PySide6",
-    "librosa",
-    "soundfile",
-    "faster-whisper",
+    "PySide6==6.12.0",
+    "librosa==0.11.0",
+    "soundfile==0.14.0",
+    "faster-whisper==1.2.1",
+    "diffusers==0.42.1",
+    "transformers==5.21.1",
+    "accelerate==1.15.0",
     "compel==2.5.1",
+    "huggingface_hub==2.3.0",
+    "numpy==2.4.6",
+    "Pillow==13.0.0",
+    "ImageIO==2.38.1",
+    "imageio-ffmpeg==0.7.0",
+    "sentencepiece==0.2.2",
+    "ftfy==6.3.1",
+    "torch==2.11.0",
+    "torchvision==0.26.0",
+    "onnxruntime==1.31.1",
 ]
 
 [tool.unittest]
 start-directory = "tests"
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+torchvision = { index = "pytorch-cu128" }
