@@ -87,5 +87,45 @@
       "description": "星と霧が遺跡を包む",
       "prompt": "poetic anime jungle night, stone temple under a dense starfield, drifting fireflies and soft mist, deep teal and indigo, quiet afterglow"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the maya temple jungle world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in stepped temple above the canopy, sunlit cenote pool, vine-covered stone stairway; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with jungle green, limestone cream, turquoise, jade; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by aerial rise above the canopy to a stepped temple, slow upward tilt along stone stairs, tracking through hanging vines; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "stepped temple above the canopy",
+        "sunlit cenote pool",
+        "vine-covered stone stairway"
+      ]
+    },
+    "scene_progression": [
+      "密林の頂",
+      "蔦の石段",
+      "聖なる泉",
+      "太陽の儀式",
+      "夜の鳥の声"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "aerial rise above the canopy to a stepped temple",
+        "slow upward tilt along stone stairs",
+        "tracking through hanging vines",
+        "top-down shot of a cenote"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the maya temple jungle world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

@@ -1,10 +1,10 @@
-# DreamMV v1.1.1 GitHub installer
+# DreamMV v1.2.0 GitHub installer
 # Windows PowerShell 5.1 compatible. ASCII-only.
 
 $ErrorActionPreference = "Stop"
 
 $AppDir = $PSScriptRoot
-$Version = "v1.1.1"
+$Version = "v1.2.0"
 $Repo = "chigusa2100-ui/DreamMV"
 $ZipUrl = "https://github.com/$Repo/archive/refs/tags/$Version.zip"
 

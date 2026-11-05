@@ -87,5 +87,45 @@
       "description": "世界が少しだけ動き出す",
       "prompt": "poetic anime scene, city waking with one distant lit window and a flock of birds crossing a pale golden sky, hopeful finale"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the empty city quiet world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in empty scramble crossing, silent shopping street, deserted station concourse; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with pale grey, signal green, dawn pink, asphalt blue; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by static symmetrical wide shot of an empty crossing, slow glide down a deserted street, low shot of a traffic light changing; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "empty scramble crossing",
+        "silent shopping street",
+        "deserted station concourse"
+      ]
+    },
+    "scene_progression": [
+      "静かな交差点",
+      "閉じた商店",
+      "改札の朝",
+      "橋の上",
+      "最初の足音"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "static symmetrical wide shot of an empty crossing",
+        "slow glide down a deserted street",
+        "low shot of a traffic light changing",
+        "aerial view of quiet blocks at dawn"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the empty city quiet world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

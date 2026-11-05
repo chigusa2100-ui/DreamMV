@@ -81,5 +81,45 @@
       "description": "温かな灯りが帰る場所を示す",
       "prompt": "cinematic anime illustration, warm house lights along a cool autumn street at dusk, peaceful bittersweet ending"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the autumn memory world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in maple-lined path, quiet old town, autumn riverbank; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with burnt orange, amber gold, burgundy, moss green; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by wide autumn landscape, falling leaf close-up, slow walking shot; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "maple-lined path",
+        "quiet old town",
+        "autumn riverbank"
+      ]
+    },
+    "scene_progression": [
+      "色づく森",
+      "落ち葉の道",
+      "秋雨の街",
+      "夕暮れの川辺",
+      "灯りの帰り道"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "wide autumn landscape",
+        "falling leaf close-up",
+        "slow walking shot",
+        "sunset silhouette"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the autumn memory world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

@@ -85,5 +85,45 @@
       "description": "最後の光が朝に溶ける",
       "prompt": "serene anime dawn scene, last fireflies fading among dew-covered grass as pale pink light spreads over the river, gentle finale"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the firefly riverbank world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in reed-lined stream at dusk, wooden footbridge, rice field edge at night; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with twilight blue, firefly yellow-green, reed green, deep navy; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by low slow-motion shot of drifting lights, wide dusk view of a winding stream, close-up of a glowing glimmer on a leaf; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "reed-lined stream at dusk",
+        "wooden footbridge",
+        "rice field edge at night"
+      ]
+    },
+    "scene_progression": [
+      "夕闇の川",
+      "最初の灯",
+      "光の群れ",
+      "木橋の夜",
+      "夜明けの余光"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "low slow-motion shot of drifting lights",
+        "wide dusk view of a winding stream",
+        "close-up of a glowing glimmer on a leaf",
+        "long exposure of light trails over water"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the firefly riverbank world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

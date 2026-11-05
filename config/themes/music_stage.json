@@ -83,5 +83,45 @@
       "description": "最後の光が未来へつながる",
       "prompt": "epic anime concert finale, golden confetti and radiant lights, singer facing a cheering audience, triumphant mood"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the music stage world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in concert stage, rehearsal room, backstage corridor; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with electric blue, violet, hot pink, white spotlight; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by wide concert shot, performer close-up, audience point of view; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "concert stage",
+        "rehearsal room",
+        "backstage corridor"
+      ]
+    },
+    "scene_progression": [
+      "開演前",
+      "最初の一音",
+      "共鳴",
+      "静かな間奏",
+      "アンコール"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "wide concert shot",
+        "performer close-up",
+        "audience point of view",
+        "dynamic stage tracking"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the music stage world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

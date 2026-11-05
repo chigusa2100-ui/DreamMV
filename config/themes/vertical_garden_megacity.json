@@ -85,5 +85,45 @@
       "description": "温室が金に染まる",
       "prompt": "poetic anime sunset, rooftop greenhouse glowing amber above a hazy green city, soft warm light on glass, calm finale"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the vertical garden megacity world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in tower facades covered in plants, skybridge garden, terraced farm levels; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with leaf green, glass blue, white concrete, sun gold; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by slow upward fly-through between green towers, wide aerial view of a tiered city, tracking shot along a skybridge garden; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "tower facades covered in plants",
+        "skybridge garden",
+        "terraced farm levels"
+      ]
+    },
+    "scene_progression": [
+      "緑の塔",
+      "空中の畑",
+      "空橋の庭",
+      "水の都市",
+      "屋上の夕焼け"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "slow upward fly-through between green towers",
+        "wide aerial view of a tiered city",
+        "tracking shot along a skybridge garden",
+        "close-up of dripping leaves on glass"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the vertical garden megacity world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

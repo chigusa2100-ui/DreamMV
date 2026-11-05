@@ -89,5 +89,45 @@
       "description": "戦の終わりに静けさが降りる",
       "prompt": "poetic anime scene, quiet castle town rooftops at dusk, thin chimney smoke, castle keep silhouette against a soft pink and violet sky"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the sengoku castle world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in white castle keep on a stone base, banner-lined battlefield, castle town street; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with iron black, crimson, gold leaf, stone grey; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by low-angle shot of a tall castle keep, wide sweep over a banner-filled field, slow tracking along a stone wall; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "white castle keep on a stone base",
+        "banner-lined battlefield",
+        "castle town street"
+      ]
+    },
+    "scene_progression": [
+      "天守の朝",
+      "陣幕の風",
+      "石垣の影",
+      "決戦の空",
+      "城下の黄昏"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "low-angle shot of a tall castle keep",
+        "wide sweep over a banner-filled field",
+        "slow tracking along a stone wall",
+        "dramatic close-up of fluttering war banners"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the sengoku castle world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

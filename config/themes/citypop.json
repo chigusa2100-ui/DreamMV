@@ -89,5 +89,45 @@
       "description": "夜を越えて新しい朝へ",
       "prompt": "anime cinematic illustration, dawn over the bay skyline, peach sunrise, quiet hopeful ending, cinematic wide composition"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the citypop world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in coastal expressway at dusk, retro city boulevard, neon-lit record shop; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with teal blue, magenta, warm amber, midnight navy; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by cinematic wide shot, tracking shot beside a retro car, close-up portrait with city bokeh; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "coastal expressway at dusk",
+        "retro city boulevard",
+        "neon-lit record shop"
+      ]
+    },
+    "scene_progression": [
+      "黄昏の街",
+      "海岸線ドライブ",
+      "ネオンの交差点",
+      "思い出のレコード",
+      "朝焼けの湾岸"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "cinematic wide shot",
+        "tracking shot beside a retro car",
+        "close-up portrait with city bokeh",
+        "rooftop establishing shot"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the citypop world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

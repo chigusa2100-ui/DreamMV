@@ -83,5 +83,45 @@
       "description": "思い出を胸に未来へ進む",
       "prompt": "anime cinematic illustration, character walking toward a bright morning along a familiar country road, bittersweet hope"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the nostalgia world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in old family home, empty school corridor, rural train station; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with faded gold, dusty blue, cream, warm brown; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by soft focus close-up, slow pan across old objects, wide nostalgic landscape; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "old family home",
+        "empty school corridor",
+        "rural train station"
+      ]
+    },
+    "scene_progression": [
+      "古い写真",
+      "放課後",
+      "帰り道",
+      "祭りの記憶",
+      "新しいページ"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "soft focus close-up",
+        "slow pan across old objects",
+        "wide nostalgic landscape",
+        "backlit silhouette"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the nostalgia world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

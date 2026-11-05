@@ -84,5 +84,45 @@
       "description": "空が薔薇色に溶ける",
       "prompt": "poetic anime sunset, lavender hills glowing violet and pink under a soft gradient sky, distant farmhouse lights, calm finale"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the lavender hills world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in rolling lavender fields, stone farmhouse among rows, dusty country road; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with lavender purple, sage green, honey gold, stone cream; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by wide aerial shot of curving purple rows, low tracking along a flowering furrow, close-up of bees on blossoms; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "rolling lavender fields",
+        "stone farmhouse among rows",
+        "dusty country road"
+      ]
+    },
+    "scene_progression": [
+      "紫の畝",
+      "蜜蜂の羽音",
+      "石の家",
+      "風の波",
+      "黄昏の香り"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "wide aerial shot of curving purple rows",
+        "low tracking along a flowering furrow",
+        "close-up of bees on blossoms",
+        "slow dolly to a stone farmhouse"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the lavender hills world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

@@ -85,5 +85,45 @@
       "description": "髪が乾く夜風",
       "prompt": "serene anime street at night, walking path home from the bathhouse with glowing vending machine, faint steam from the chimney, calm finale"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the sento evening world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in tiled bath hall with a mural, changing room with lockers, front desk and cooler; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with tile blue, steam white, wood brown, milk cream; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by wide view of a tiled bath hall, slow tracking along lockers and fans, close-up of milk bottles in a cooler; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "tiled bath hall with a mural",
+        "changing room with lockers",
+        "front desk and cooler"
+      ]
+    },
+    "scene_progression": [
+      "夕方の暖簾",
+      "タイルの湯",
+      "脱衣所",
+      "牛乳瓶",
+      "帰り道"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "wide view of a tiled bath hall",
+        "slow tracking along lockers and fans",
+        "close-up of milk bottles in a cooler",
+        "exterior dusk shot with chimney smoke"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the sento evening world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

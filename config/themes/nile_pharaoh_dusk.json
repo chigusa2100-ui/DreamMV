@@ -90,5 +90,45 @@
       "description": "千年の沈黙が空に溶ける",
       "prompt": "poetic anime landscape, great sphinx in profile against a crimson and violet dusk, long soft shadows, quiet timeless atmosphere"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the nile pharaoh dusk world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in pyramids on the desert horizon, lotus-lined Nile bank, columned temple hall; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with sand gold, lapis blue, turquoise, papyrus green; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by wide desert shot with monumental silhouettes, slow tracking along a painted temple wall, low river-level view of felucca sails; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "pyramids on the desert horizon",
+        "lotus-lined Nile bank",
+        "columned temple hall"
+      ]
+    },
+    "scene_progression": [
+      "砂漠の夜明け",
+      "ナイルの流れ",
+      "壁画の回廊",
+      "王家の谷",
+      "スフィンクスの黄昏"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "wide desert shot with monumental silhouettes",
+        "slow tracking along a painted temple wall",
+        "low river-level view of felucca sails",
+        "aerial sweep over dunes and the Nile"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the nile pharaoh dusk world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

@@ -93,48 +93,75 @@ class StoryPlanner:
     def normalize_lyrics(
         self,
         lyrics,
+        song_length: float | None = None,
     ) -> list[dict[str, Any]]:
+        """Normalize lyric segments and distribute entries without timestamps.
+
+        Timestamped segments keep their original timing. Plain strings and
+        dictionaries without a usable time range are spread evenly across
+        the song when song_length is supplied.
+        """
         if not lyrics:
             return []
 
-        result: list[dict[str, Any]] = []
+        result: list[dict[str, Any] | None] = []
+        untimed_indices: list[int] = []
 
         for item in lyrics:
             if isinstance(item, dict):
-                try:
-                    start = float(item.get("start", 0.0))
-                    end = float(item.get("end", 0.0))
-                except (TypeError, ValueError):
+                text = str(item.get("text", "")).strip()
+                if not text:
                     continue
+                try:
+                    start = float(item.get("start"))
+                    end = float(item.get("end"))
+                except (TypeError, ValueError):
+                    start = end = 0.0
 
                 if (
-                    not math.isfinite(start)
-                    or not math.isfinite(end)
+                    math.isfinite(start)
+                    and math.isfinite(end)
+                    and start >= 0
+                    and end > start
                 ):
-                    continue
-
-                result.append(
-                    {
+                    result.append({
                         "start": start,
                         "end": end,
-                        "text": str(
-                            item.get("text", "")
-                        ).strip(),
-                    }
-                )
+                        "text": text,
+                    })
+                else:
+                    untimed_indices.append(len(result))
+                    result.append({
+                        "start": 0.0,
+                        "end": 0.0,
+                        "text": text,
+                    })
 
             elif isinstance(item, str):
                 text = item.strip()
                 if text:
-                    result.append(
-                        {
-                            "start": 0.0,
-                            "end": 0.0,
-                            "text": text,
-                        }
-                    )
+                    untimed_indices.append(len(result))
+                    result.append({
+                        "start": 0.0,
+                        "end": 0.0,
+                        "text": text,
+                    })
 
-        return result
+        if untimed_indices and song_length is not None:
+            try:
+                length = float(song_length)
+            except (TypeError, ValueError):
+                length = 0.0
+
+            if math.isfinite(length) and length > 0:
+                slot = length / len(untimed_indices)
+                for order, result_index in enumerate(untimed_indices):
+                    start = order * slot
+                    end = length if order == len(untimed_indices) - 1 else (order + 1) * slot
+                    result[result_index]["start"] = round(start, 3)
+                    result[result_index]["end"] = round(end, 3)
+
+        return [item for item in result if item is not None]
 
     def get_lyrics_for_scene(
         self,
@@ -142,15 +169,15 @@ class StoryPlanner:
         start_time: float,
         end_time: float,
     ) -> str:
+        """Return lyric segments that overlap a scene's half-open time range."""
         if not lyrics:
             return ""
 
         matched = []
-
         for item in lyrics:
             if (
-                item["start"] <= end_time
-                and item["end"] >= start_time
+                item["start"] < end_time
+                and item["end"] > start_time
                 and item["text"]
             ):
                 matched.append(item["text"])
@@ -323,6 +350,143 @@ class StoryPlanner:
             return None
         return values[scene_index % len(values)]
 
+    # =====================================================
+    # Lyric Interpreter / Scene Director
+    # =====================================================
+
+    _ACTION_RULES = (
+        ("embracing", ("抱きしめ", "抱きしめる", "抱く", "寄り添")),
+        ("singing", ("歌う", "歌って", "歌声", "歌い")),
+        ("dancing", ("踊", "舞う", "舞い")),
+        ("running", ("走", "駆け", "駆け抜け")),
+        ("walking forward", ("歩", "進む", "歩み")),
+        ("reaching toward something", ("手を伸ば", "掴", "つかむ", "届か")),
+        ("looking into the distance", ("見上げ", "見つめ", "見渡", "眺め", "見て", "見る")),
+        ("flying freely", ("飛ぶ", "飛ん", "羽ばた", "空へ")),
+        ("crying softly", ("泣", "涙", "哀し")),
+        ("smiling gently", ("微笑", "笑顔", "笑っ", "笑う")),
+        ("waiting quietly", ("待つ", "待って", "待ち続け")),
+        ("standing still", ("佇む", "立ち尽く", "立って")),
+        ("falling", ("落ちる", "堕ちる", "崩れ")),
+        ("opening something", ("開く", "開ける", "扉を")),
+    )
+
+    _LOCATION_RULES = (
+        ("by the ocean, with the horizon stretching into the distance", ("海", "波", "潮", "浜辺", "水平線")),
+        ("beneath a vast open sky", ("空", "雲", "青空", "星空")),
+        ("among a quiet forest and drifting leaves", ("森", "木々", "木漏れ日", "葉")),
+        ("on a quiet city street", ("街", "都会", "ビル", "交差点", "街角")),
+        ("at a train station or beside railway tracks", ("駅", "列車", "電車", "ホーム", "線路")),
+        ("inside a quiet room by the window", ("部屋", "窓辺", "窓", "カーテン")),
+        ("on a rooftop overlooking the city", ("屋上", "高層", "街を見下ろ")),
+        ("among flowers in a field", ("花", "草原", "野原", "花畑")),
+        ("among ancient ruins", ("遺跡", "廃墟", "崩れた壁")),
+    )
+
+    _TIME_RULES = (
+        ("at dawn", ("夜明け", "朝焼け", " dawn", " sunrise")),
+        ("in the morning", ("朝", " sunrise")),
+        ("at sunset", ("夕暮れ", "夕焼け", "黄昏", " sunset")),
+        ("at night", ("夜", "月", "星", "真夜中", " midnight")),
+    )
+
+    _EMOTION_LIGHTING = {
+        "hope": "soft golden backlight and luminous atmosphere",
+        "joy": "bright natural light with sparkling highlights",
+        "happiness": "bright natural light with sparkling highlights",
+        "sadness": "soft cool-blue light and gentle shadows",
+        "loneliness": "muted blue light with spacious negative space",
+        "struggle": "dramatic directional light and deep shadows",
+        "anger": "strong contrast with intense warm rim light",
+        "fear": "low-key lighting with restrained cold highlights",
+        "love": "warm diffused light and delicate highlights",
+        "nostalgia": "soft hazy sunset light and subtle film glow",
+    }
+
+    def interpret_lyric(
+        self, lyric: str, theme: dict[str, Any], emotion: str | None = None,
+    ) -> dict[str, str | None]:
+        """Convert lyric cues into conservative, structured visual direction.
+
+        This is a deterministic keyword interpreter, not an LLM. Theme JSON may
+        provide ``main_character`` or ``character_description`` to keep the
+        same protagonist wording across scenes.
+        """
+        text = str(lyric or "").strip()
+        if not text:
+            return {
+                "subject": None, "action": None, "setting": None,
+                "time_of_day": None, "lighting": None, "composition": None,
+                "continuity": None,
+            }
+
+        folded = text.casefold()
+        action = next((label for label, words in self._ACTION_RULES
+                       if any(word.casefold() in folded for word in words)), None)
+        setting = next((label for label, words in self._LOCATION_RULES
+                        if any(word.casefold() in folded for word in words)), None)
+        time_of_day = next((label for label, words in self._TIME_RULES
+                            if any(word.casefold() in folded for word in words)), None)
+
+        director_config = theme.get("director", {})
+        if not isinstance(director_config, dict):
+            director_config = {}
+        character_config = director_config.get("character", {})
+        if not isinstance(character_config, dict):
+            character_config = {}
+
+        subject = str(
+            character_config.get("description")
+            or theme.get("character_description")
+            or theme.get("main_character")
+            or theme.get("protagonist")
+            or "the same anime protagonist"
+        ).strip()
+        if not action:
+            action = "expressing the lyric's feeling through a subtle, natural gesture"
+
+        lighting = None
+        if emotion:
+            lighting = self._EMOTION_LIGHTING.get(str(emotion).casefold())
+        if not lighting and time_of_day == "at dawn":
+            lighting = "soft pastel dawn light with a delicate golden rim"
+        elif not lighting and time_of_day == "at sunset":
+            lighting = "warm sunset light with long atmospheric shadows"
+        elif not lighting and time_of_day == "at night":
+            lighting = "cool moonlight with subtle luminous highlights"
+        elif not lighting and time_of_day == "in the morning":
+            lighting = "clear morning light with soft natural shadows"
+
+        if action in ("crying softly", "smiling gently"):
+            composition = "intimate facial close-up, expressive eyes, cinematic depth of field"
+        elif action in ("running", "walking forward", "flying freely", "dancing"):
+            composition = "dynamic wide shot, clear body silhouette, cinematic sense of movement"
+        elif action in ("reaching toward something", "looking into the distance"):
+            composition = "medium-wide over-the-shoulder composition, strong visual direction"
+        else:
+            composition = "cinematic medium shot with clear subject silhouette and balanced negative space"
+
+        visual_language = director_config.get("visual_language", {})
+        if not isinstance(visual_language, dict):
+            visual_language = {}
+
+        return {
+            "subject": subject, "action": action, "setting": setting,
+            "time_of_day": time_of_day, "lighting": lighting,
+            "composition": composition, "continuity": subject,
+            "action_style": visual_language.get("action_style"),
+            "environment_style": visual_language.get("environment_style"),
+            "lighting_style": visual_language.get("lighting_style"),
+            "composition_style": visual_language.get("composition_style"),
+            "visual_motifs": visual_language.get("visual_motifs", []),
+        }
+
+    def direct_scene(
+        self, lyric: str, theme: dict[str, Any], emotion: str | None = None,
+    ) -> dict[str, str | None]:
+        """Public scene-director entry point; returns additive metadata only."""
+        return self.interpret_lyric(lyric, theme, emotion)
+
     def build_scene_prompt(
         self,
         stage: dict[str, Any],
@@ -330,7 +494,7 @@ class StoryPlanner:
         lyric: str,
         scene_index: int,
     ) -> tuple[str, str | None]:
-        """????????????????????????"""
+        """Build an Animagine-friendly prompt from theme and lyric direction."""
         base_prompt = str(
             stage.get("prompt") or "cinematic anime scene"
         ).strip()
@@ -342,23 +506,50 @@ class StoryPlanner:
         if emotion and isinstance(emotion_styles, dict):
             style = emotion_styles.get(emotion)
             if isinstance(style, str) and style.strip():
-                parts.append(
-                    f"emotional visual style: {style.strip()}"
-                )
+                parts.append(f"emotional visual style: {style.strip()}")
 
         palette = self._pick_by_scene(
-            self._string_list(theme.get("color_palette")),
-            scene_index,
+            self._string_list(theme.get("color_palette")), scene_index,
         )
         location = self._pick_by_scene(
-            self._string_list(theme.get("locations")),
-            scene_index,
+            self._string_list(theme.get("locations")), scene_index,
         )
+        direction = self.direct_scene(lyric, theme, emotion)
 
         if palette:
             parts.append(f"color palette: {palette}")
-        if location:
+        lyric_setting = direction.get("setting")
+        if lyric_setting:
+            parts.append(f"lyric-based environment: {lyric_setting}")
+        elif location:
             parts.append(f"setting: {location}")
+        if direction.get("subject"):
+            parts.append(f"consistent main character: {direction['subject']}")
+        if direction.get("action"):
+            parts.append(f"scene action: {direction['action']}")
+        if direction.get("time_of_day"):
+            parts.append(f"time of day: {direction['time_of_day']}")
+        if direction.get("lighting"):
+            parts.append(f"lighting: {direction['lighting']}")
+        if direction.get("composition"):
+            parts.append(f"composition: {direction['composition']}")
+
+        # Theme-specific Director language is optional, preserving legacy themes.
+        for key, label in (
+            ("action_style", "directed action language"),
+            ("environment_style", "theme environment direction"),
+            ("lighting_style", "theme lighting direction"),
+            ("composition_style", "theme composition direction"),
+        ):
+            value = direction.get(key)
+            if isinstance(value, str) and value.strip():
+                parts.append(f"{label}: {value.strip()}")
+
+        motifs = direction.get("visual_motifs")
+        if isinstance(motifs, list) and motifs:
+            parts.append("recurring visual motifs: " + ", ".join(
+                str(item).strip() for item in motifs if str(item).strip()
+            ))
 
         return ", ".join(parts), emotion
 
@@ -381,7 +572,7 @@ class StoryPlanner:
                 "song_length は 0 より大きい有限の秒数にしてください。"
             )
 
-        normalized_lyrics = self.normalize_lyrics(lyrics)
+        normalized_lyrics = self.normalize_lyrics(lyrics, length)
 
         scene_count = max(
             1,
@@ -449,6 +640,16 @@ class StoryPlanner:
                 self._string_list(theme.get("camera_motions")),
                 index,
             )
+            if camera_motion is None:
+                camera_motion = {
+                    "hope": "zoom_in", "joy": "pan_right",
+                    "happiness": "pan_right", "love": "zoom_in",
+                    "sadness": "zoom_out", "loneliness": "zoom_out",
+                    "nostalgia": "pan_left", "struggle": "zoom_in",
+                    "anger": "pan_right", "fear": "zoom_out",
+                }.get(str(emotion).casefold() if emotion else "")
+
+            director = self.direct_scene(lyric, theme, emotion)
 
             scenes.append(
                 {
@@ -466,6 +667,7 @@ class StoryPlanner:
                     "prompt": prompt_text,
                     "camera_style": camera_style,
                     "camera_motion": camera_motion,
+                    "director": director,
                 }
             )
 

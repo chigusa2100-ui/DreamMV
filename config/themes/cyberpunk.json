@@ -90,5 +90,46 @@
       "description": "都市の向こうに希望が見える",
       "prompt": "cinematic anime illustration, cyberpunk skyline at luminous sunrise, neon fading into gold, hopeful atmosphere"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the cyberpunk world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in rainy megacity street, holographic market, rooftop antenna garden; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with neon cyan, electric blue, magenta, graphite black; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by cinematic wide shot, street-level tracking shot, dramatic low angle; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "rainy megacity street",
+        "holographic market",
+        "rooftop antenna garden"
+      ]
+    },
+    "scene_progression": [
+      "ネオンシティ",
+      "データ接続",
+      "追跡者",
+      "システム突破",
+      "新世界の夜明け"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "cinematic wide shot",
+        "street-level tracking shot",
+        "dramatic low angle",
+        "aerial megacity view",
+        "close-up portrait with holographic reflections"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the cyberpunk world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

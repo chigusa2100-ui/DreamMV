@@ -85,5 +85,45 @@
       "description": "地球が青く輝く",
       "prompt": "poetic anime scene, Earth dawn terminator glowing blue and gold beyond a station window, slow drifting dust, quiet finale"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the space elevator dawn world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in tower base on the equator, climber car in the clouds, upper station above the atmosphere; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with dawn gold, sky blue, carbon black, cable silver; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by long vertical tilt up the cable to the stars, wide ground shot of the tower's base, close-up of a climbing car; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "tower base on the equator",
+        "climber car in the clouds",
+        "upper station above the atmosphere"
+      ]
+    },
+    "scene_progression": [
+      "赤道の塔",
+      "昇降の窓",
+      "成層圏",
+      "静止軌道駅",
+      "帰路の夜明け"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "long vertical tilt up the cable to the stars",
+        "wide ground shot of the tower's base",
+        "close-up of a climbing car",
+        "aerial view from above the cloud layer"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the space elevator dawn world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

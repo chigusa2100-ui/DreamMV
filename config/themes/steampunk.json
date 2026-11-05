@@ -82,5 +82,45 @@
       "description": "機械都市に朝日が差し込む",
       "prompt": "beautiful anime steampunk skyline at sunrise, brass clock towers, warm gold light, hopeful finale"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the steampunk world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in clockwork workshop, airship dock, industrial rooftops; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with brass gold, copper, sepia, smoke gray; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by low angle airship shot, macro gear close-up, workshop tracking shot; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "clockwork workshop",
+        "airship dock",
+        "industrial rooftops"
+      ]
+    },
+    "scene_progression": [
+      "歯車の工房",
+      "発明の閃き",
+      "飛行船の港",
+      "雲海の旅",
+      "時計仕掛けの夜明け"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "low angle airship shot",
+        "macro gear close-up",
+        "workshop tracking shot",
+        "wide industrial skyline"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the steampunk world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

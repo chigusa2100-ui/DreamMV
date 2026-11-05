@@ -87,5 +87,45 @@
       "description": "緞帳がゆっくり下りる",
       "prompt": "serene anime scene, red curtain slowly closing over a dim screen in an empty theatre, last glow of the projector, quiet finale"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the silent film theatre world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in old theatre interior, projection booth, lobby with posters; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with silver white, charcoal, sepia, curtain red; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by slow dolly along the projector beam, wide shot of a theatre hall with a glowing screen, close-up of film reel sprockets; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "old theatre interior",
+        "projection booth",
+        "lobby with posters"
+      ]
+    },
+    "scene_progression": [
+      "映写機の光",
+      "リールの音",
+      "銀幕の夢",
+      "ロビーのポスター",
+      "終映"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "slow dolly along the projector beam",
+        "wide shot of a theatre hall with a glowing screen",
+        "close-up of film reel sprockets",
+        "low angle to a curtain"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the silent film theatre world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

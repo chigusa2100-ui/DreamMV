@@ -85,5 +85,45 @@
       "description": "地球の光が遠くをなでる",
       "prompt": "poetic anime scene, earthshine illuminating the lunar surface in soft blue, a lone lit module, drifting stars, tranquil finale"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the moon base earthrise world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in domed outpost on a crater rim, dust plain under the Earth, solar panel field; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with regolith grey, earth blue, sun white, base amber; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by slow pan across a grey plain with Earth, low shot of footprints in fine dust, close-up of a base window glow; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "domed outpost on a crater rim",
+        "dust plain under the Earth",
+        "solar panel field"
+      ]
+    },
+    "scene_progression": [
+      "地球の出",
+      "足跡",
+      "基地の窓",
+      "クレーターの縁",
+      "帰還の光"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "slow pan across a grey plain with Earth",
+        "low shot of footprints in fine dust",
+        "close-up of a base window glow",
+        "wide shot of a ring of crater walls"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the moon base earthrise world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

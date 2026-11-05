@@ -3,6 +3,54 @@
 All notable changes to DreamMV are documented here.
 DreamMV の主な変更履歴を記録しています。
 
+## [1.2.0] - 2026-11-05
+
+### 日本語 / Japanese
+
+#### 主な変更 / Added
+
+- 歌詞の内容を解析し、シーンの演出を決定するScene Directorを追加。
+- 歌詞からアクション、舞台設定、時間帯、照明、構図を自動判定。
+- テーマ設定に基づくキャラクターの一貫性を強化。
+- 140種類のテーマJSONにDirector設定を追加。
+- 感情に応じたカメラ移動のフォールバック処理を追加。
+
+#### 改善 / Improved
+
+- 時刻指定のない歌詞を楽曲の長さに応じて自動配置。
+- シーン境界の処理を改善し、歌詞の重複を防止。
+- テーマ固有のビジュアル表現をシーン生成プロンプトに反映。
+
+#### テスト / Tests
+
+- pytest：52 passed。
+- テーマ関連サブテスト：140 passed。
+- 合計192件のテスト項目が成功。
+
+### English
+
+#### Added
+
+- Added a rule-based Scene Director that interprets lyrics and determines scene direction.
+- Automatically derives actions, settings, time of day, lighting, and composition from lyrics.
+- Improved character consistency using theme-specific character descriptions.
+- Added Director configuration to all 140 theme JSON files.
+- Added emotion-aware fallback camera movement.
+
+#### Improved
+
+- Automatically distributes untimed lyrics across the full song duration.
+- Improved scene-boundary handling to prevent duplicate lyrics.
+- Incorporated theme-specific visual language into scene-generation prompts.
+
+#### Tests
+
+- pytest: 52 passed.
+- Theme-related subtests: 140 passed.
+- All 192 test cases passed.
+
+---
+
 ## [1.1.0] - 2026-11-04
 
 ### 主な変更

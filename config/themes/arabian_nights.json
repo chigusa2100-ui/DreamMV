@@ -88,5 +88,45 @@
       "description": "物語は朝日に溶けていく",
       "prompt": "poetic anime courtyard, tiled fountain and arched colonnade at sunrise, jasmine petals on water, soft peach and gold light, gentle ending"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the arabian nights world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in domed palace skyline, lantern-hung bazaar, tiled fountain courtyard; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with midnight indigo, saffron, ruby red, emerald; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by wide shot over rooftops and domes, slow tracking through a crowded bazaar, low glide above sand on a flying carpet; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "domed palace skyline",
+        "lantern-hung bazaar",
+        "tiled fountain courtyard"
+      ]
+    },
+    "scene_progression": [
+      "砂漠の都",
+      "バザールの灯",
+      "魔法のランプ",
+      "絨毯の空",
+      "夜明けの噴水"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "wide shot over rooftops and domes",
+        "slow tracking through a crowded bazaar",
+        "low glide above sand on a flying carpet",
+        "close push-in on a glowing lamp"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the arabian nights world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

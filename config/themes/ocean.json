@@ -85,5 +85,45 @@
       "description": "海の向こうに朝が生まれる",
       "prompt": "cinematic anime illustration, golden sunrise across a calm ocean horizon, luminous reflections, peaceful finale"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the ocean world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in sunlit beach, rocky coast, underwater coral garden; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with ocean blue, turquoise, foam white, coral pink; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by aerial coastline shot, low angle near the waves, underwater floating camera; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "sunlit beach",
+        "rocky coast",
+        "underwater coral garden"
+      ]
+    },
+    "scene_progression": [
+      "波打ち際",
+      "青の世界",
+      "遠い灯台",
+      "潮風の旅",
+      "黄金の水平線"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "aerial coastline shot",
+        "low angle near the waves",
+        "underwater floating camera",
+        "sunset silhouette"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the ocean world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

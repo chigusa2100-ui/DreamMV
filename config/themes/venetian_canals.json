@@ -87,5 +87,45 @@
       "description": "水路に灯りが散る",
       "prompt": "poetic anime night scene, lamp-lit canal reflecting warm windows and stars, a lone gondola, deep teal water, tranquil ending"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the venetian canals world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in narrow side canal between old houses, stone bridge with reflections, grand canal at sunset; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with terracotta, canal green, stone cream, dusk rose; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by low gondola-level shot along a canal, wide shot of a domed basilica across water, slow tracking under stone bridges; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "narrow side canal between old houses",
+        "stone bridge with reflections",
+        "grand canal at sunset"
+      ]
+    },
+    "scene_progression": [
+      "朝の運河",
+      "石橋の下",
+      "大運河の黄昏",
+      "霧の潟",
+      "夜の灯"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "low gondola-level shot along a canal",
+        "wide shot of a domed basilica across water",
+        "slow tracking under stone bridges",
+        "aerial view over terracotta roofs"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the venetian canals world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

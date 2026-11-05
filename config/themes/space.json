@@ -87,5 +87,45 @@
       "description": "青い惑星が帰る場所を照らす",
       "prompt": "cinematic anime illustration, beautiful blue Earth rising above the lunar horizon, quiet emotional hopeful finale"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the space world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in orbital station, lunar plain, nebula corridor; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with deep navy, nebula violet, stellar cyan, silver; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by orbital wide shot, slow floating camera, spaceship cockpit close-up; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "orbital station",
+        "lunar plain",
+        "nebula corridor"
+      ]
+    },
+    "scene_progression": [
+      "発進",
+      "星間航行",
+      "未知との遭遇",
+      "時空の彼方",
+      "地球への帰還"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "orbital wide shot",
+        "slow floating camera",
+        "spaceship cockpit close-up",
+        "planetary aerial view"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the space world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }
