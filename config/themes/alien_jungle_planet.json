@@ -85,5 +85,45 @@
       "description": "空に淡い輪が昇る",
       "prompt": "poetic anime sunset, drifting luminous spores across a purple plain, ringed planet rising in a pink sky, tranquil finale"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the alien jungle planet world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in forest of giant glowing plants, cliffs of floating rocks, bioluminescent river; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with alien teal, magenta, lime glow, violet; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by slow glide through glowing flora, wide shot of a forest with two suns, low shot of drifting spores; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "forest of giant glowing plants",
+        "cliffs of floating rocks",
+        "bioluminescent river"
+      ]
+    },
+    "scene_progression": [
+      "二つの朝",
+      "発光の森",
+      "浮遊する岩",
+      "光る川",
+      "胞子の夕暮れ"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "slow glide through glowing flora",
+        "wide shot of a forest with two suns",
+        "low shot of drifting spores",
+        "close-up of a translucent alien plant"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the alien jungle planet world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

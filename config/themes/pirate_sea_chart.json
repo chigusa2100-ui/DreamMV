@@ -89,5 +89,45 @@
       "description": "航海の夜が静かに更ける",
       "prompt": "poetic anime scene, ship deck at night under a huge starry sky, swaying lantern, calm dark sea, soft warm light, peaceful ending"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the pirate sea chart world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in galleon on open water, sandy island cove with chests, storm-tossed sea; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with ocean teal, parchment tan, timber brown, treasure gold; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by low deck-level shot of billowing sails, wide aerial view of a galleon at sea, close-up of a compass and worn map; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "galleon on open water",
+        "sandy island cove with chests",
+        "storm-tossed sea"
+      ]
+    },
+    "scene_progression": [
+      "羅針盤",
+      "帆を張れ",
+      "嵐の海",
+      "宝の入り江",
+      "星の甲板"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "low deck-level shot of billowing sails",
+        "wide aerial view of a galleon at sea",
+        "close-up of a compass and worn map",
+        "dramatic shot of a crashing wave"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the pirate sea chart world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

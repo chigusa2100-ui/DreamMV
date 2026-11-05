@@ -84,5 +84,45 @@
       "description": "朝の光の中で一歩を踏み出す",
       "prompt": "beautiful anime illustration, couple looking toward a golden sunrise by the sea, hopeful and heartfelt ending"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the love world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in flower garden, quiet train platform, rooftop at sunset; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with rose pink, warm cream, lavender, sunset orange; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by intimate close-up, two-shot silhouette, slow tracking shot; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "flower garden",
+        "quiet train platform",
+        "rooftop at sunset"
+      ]
+    },
+    "scene_progression": [
+      "出会い",
+      "ふたりの時間",
+      "すれ違い",
+      "約束",
+      "明日へ"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "intimate close-up",
+        "two-shot silhouette",
+        "slow tracking shot",
+        "wide sunset composition"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the love world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

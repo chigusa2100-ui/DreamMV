@@ -87,5 +87,45 @@
       "description": "空が赤から藍に変わる",
       "prompt": "poetic anime sunset, savanna horizon fading from red to deep indigo, acacia silhouettes, first stars appearing, tranquil finale"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the savanna horizon world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in lone acacia on the plain, waterhole at dawn, tall grass in the wind; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with grass gold, acacia green, sunset orange, dust red; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by very wide horizon shot with a lone acacia, low tracking through tall grass, slow aerial follow of a migrating herd; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "lone acacia on the plain",
+        "waterhole at dawn",
+        "tall grass in the wind"
+      ]
+    },
+    "scene_progression": [
+      "朝焼けの大地",
+      "風の草",
+      "水場の群れ",
+      "大移動",
+      "夕陽の平原"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "very wide horizon shot with a lone acacia",
+        "low tracking through tall grass",
+        "slow aerial follow of a migrating herd",
+        "silhouette shot against a huge sun"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the savanna horizon world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

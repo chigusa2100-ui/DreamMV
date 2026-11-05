@@ -84,5 +84,45 @@
       "description": "雲の向こうに光が差す",
       "prompt": "beautiful anime illustration, sunbeams after rain, glistening leaves and a faint rainbow, hopeful ending"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the rainy day world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in rainy alley, quiet bus stop, window overlooking the city; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with rain blue, slate gray, soft lavender, warm amber; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by close-up raindrops, street-level reflection shot, slow-motion umbrella shot; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "rainy alley",
+        "quiet bus stop",
+        "window overlooking the city"
+      ]
+    },
+    "scene_progression": [
+      "降り出す雨",
+      "傘の下",
+      "窓辺の記憶",
+      "水たまりの光",
+      "雨上がり"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "close-up raindrops",
+        "street-level reflection shot",
+        "slow-motion umbrella shot",
+        "wide rainy city shot"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the rainy day world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

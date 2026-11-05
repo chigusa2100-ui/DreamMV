@@ -1,4 +1,4 @@
-# DreamMV v1.1.1 installer
+# DreamMV v1.2.0 installer
 # Windows PowerShell 5.1 compatible. ASCII-only.
 
 param(
@@ -10,7 +10,7 @@ Set-Location $AppDir
 
 Write-Host ""
 Write-Host "======================================" -ForegroundColor Cyan
-Write-Host " DreamMV v1.1.1 Setup" -ForegroundColor Cyan
+Write-Host " DreamMV v1.2.0 Setup" -ForegroundColor Cyan
 Write-Host " Animagine XL 4.0" -ForegroundColor Cyan
 Write-Host "======================================" -ForegroundColor Cyan
 Write-Host ""

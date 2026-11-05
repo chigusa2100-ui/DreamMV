@@ -87,5 +87,45 @@
       "description": "灰色が少し青くなる",
       "prompt": "serene anime scene, balcony at dawn with pale grey-blue sky and a first line of pink, birds starting to sing, hopeful finale"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the sleepless room world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in dim bedroom at 3am, window with a curtain gap, desk with a glowing lamp; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with night blue, streetlight orange, clock red, bedsheet white; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by static ceiling-view shot with slow drift, close-up of a ticking clock, slow dolly across a dim bedroom; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "dim bedroom at 3am",
+        "window with a curtain gap",
+        "desk with a glowing lamp"
+      ]
+    },
+    "scene_progression": [
+      "午前三時",
+      "天井の光",
+      "秒針の音",
+      "机の灯り",
+      "ベランダの朝"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "static ceiling-view shot with slow drift",
+        "close-up of a ticking clock",
+        "slow dolly across a dim bedroom",
+        "tight shot of curtains with a light gap"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the sleepless room world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

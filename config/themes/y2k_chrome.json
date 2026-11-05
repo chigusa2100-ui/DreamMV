@@ -85,5 +85,45 @@
       "description": "画面が最後に青く光る",
       "prompt": "poetic anime scene, old handheld screen glowing blue in a dark room beside chrome trinkets, fading light, tender finale"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the y2k chrome world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in chrome-filled futuristic room, translucent gadget shelf, glossy blue sky with bubbles; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with chrome silver, bubble blue, candy pink, lime; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by close-up pan across chrome shapes, slow orbit around a translucent device, wide shot of a glossy futuristic room; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "chrome-filled futuristic room",
+        "translucent gadget shelf",
+        "glossy blue sky with bubbles"
+      ]
+    },
+    "scene_progression": [
+      "銀の部屋",
+      "透明な機械",
+      "泡のアイコン",
+      "シール手帳",
+      "電源の落ちる前"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "close-up pan across chrome shapes",
+        "slow orbit around a translucent device",
+        "wide shot of a glossy futuristic room",
+        "tracking over bubble-like icons"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the y2k chrome world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

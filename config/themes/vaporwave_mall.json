@@ -87,5 +87,45 @@
       "description": "照明がゆっくり落ちる",
       "prompt": "poetic anime scene, mall lights dimming one by one in lilac twilight, empty escalators humming, drifting soft particles, calm finale"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the vaporwave mall world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in empty mall atrium with palms, glowing fountain and statue, escalators into the sky; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with pastel pink, aqua, lilac, chrome silver; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by symmetrical wide shot down a mall atrium, slow tracking along a fountain, low shot of reflective floors; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "empty mall atrium with palms",
+        "glowing fountain and statue",
+        "escalators into the sky"
+      ]
+    },
+    "scene_progression": [
+      "無人のアトリウム",
+      "空へのエスカレーター",
+      "彫像の噴水",
+      "格子の海",
+      "閉店のBGM"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "symmetrical wide shot down a mall atrium",
+        "slow tracking along a fountain",
+        "low shot of reflective floors",
+        "close-up of a glowing palm in a planter"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the vaporwave mall world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

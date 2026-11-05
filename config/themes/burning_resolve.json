@@ -88,5 +88,45 @@
       "description": "赤が金に変わる",
       "prompt": "poetic anime dawn, crimson fire sky turning to gold over a quiet mountain, falling ash glowing, resolute finale"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the burning resolve world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in wasteland under a fire sky, forge with glowing metal, cliff above a burning horizon; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with ember orange, crimson, charcoal black, gold; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by low-angle shot of flames rising, slow push-in on glowing embers, wide shot of a burning horizon; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "wasteland under a fire sky",
+        "forge with glowing metal",
+        "cliff above a burning horizon"
+      ]
+    },
+    "scene_progression": [
+      "灰の中の火",
+      "炎の柱",
+      "鍛冶の光",
+      "燃える地平",
+      "夜明けの炎"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "low-angle shot of flames rising",
+        "slow push-in on glowing embers",
+        "wide shot of a burning horizon",
+        "slow-motion of sparks swirling"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the burning resolve world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

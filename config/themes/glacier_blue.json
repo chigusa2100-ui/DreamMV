@@ -87,5 +87,45 @@
       "description": "空と氷が同じ色に溶ける",
       "prompt": "poetic anime landscape, frozen sea at sunset with pink and lilac sky mirrored on glossy ice, distant icebergs, serene finale"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the glacier blue world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in blue ice cave, towering iceberg in dark water, glacier crevasse field; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with glacier blue, ice white, deep cyan, slate; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by slow glide inside a blue ice cave, wide aerial view of a glacier river, low shot over drifting floes; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "blue ice cave",
+        "towering iceberg in dark water",
+        "glacier crevasse field"
+      ]
+    },
+    "scene_progression": [
+      "青い氷の洞",
+      "氷山の影",
+      "割れ目の迷宮",
+      "風の雪原",
+      "薄紅の氷原"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "slow glide inside a blue ice cave",
+        "wide aerial view of a glacier river",
+        "low shot over drifting floes",
+        "close-up of frost crystals"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the glacier blue world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

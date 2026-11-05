@@ -86,5 +86,45 @@
       "description": "自然が煙突を取り戻す",
       "prompt": "poetic anime scene, old brick chimney surrounded by trees at sunset, wild flowers in the yard, warm orange sky, hopeful finale"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the overgrown factory world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in collapsed hall with sunbeams, vine-covered machinery, flooded floor with reflections; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with rust orange, moss green, steel grey, sun gold; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by slow tracking along rusted pipes, wide shot of a collapsed roof with sunbeams, close-up of vines on machinery; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "collapsed hall with sunbeams",
+        "vine-covered machinery",
+        "flooded floor with reflections"
+      ]
+    },
+    "scene_progression": [
+      "崩れた屋根",
+      "蔦の機械",
+      "水たまりの空",
+      "錆の通路",
+      "煙突の木々"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "slow tracking along rusted pipes",
+        "wide shot of a collapsed roof with sunbeams",
+        "close-up of vines on machinery",
+        "low shot across a flooded floor"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the overgrown factory world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

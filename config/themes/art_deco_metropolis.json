@@ -85,5 +85,45 @@
       "description": "街が静かな青に包まれる",
       "prompt": "poetic anime rooftop terrace at dawn, city of towers fading into pale blue and champagne light, calm lingering glamour"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the art deco metropolis world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in stepped skyscraper skyline, marble lobby with gold geometry, rain-lit avenue with streamlined cars; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with black and gold, emerald, champagne, midnight blue; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by low-angle shot up a stepped tower, symmetrical lobby dolly-in, tracking along a rain-slick avenue; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "stepped skyscraper skyline",
+        "marble lobby with gold geometry",
+        "rain-lit avenue with streamlined cars"
+      ]
+    },
+    "scene_progression": [
+      "黄金の摩天楼",
+      "大理石のロビー",
+      "雨の大通り",
+      "ジャズの夜",
+      "屋上の夜明け"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "low-angle shot up a stepped tower",
+        "symmetrical lobby dolly-in",
+        "tracking along a rain-slick avenue",
+        "wide skyline at golden hour"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the art deco metropolis world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

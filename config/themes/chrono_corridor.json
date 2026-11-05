@@ -86,5 +86,45 @@
       "description": "光がゆっくり収束する",
       "prompt": "poetic anime scene, quiet small station platform at the edge of time with a single clock glowing, soft aurora of light, calm finale"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the chrono corridor world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in endless hall of doors, ring of floating clocks, giant hourglass; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with chrono blue, brass gold, violet mist, white light; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by slow dolly down an endless corridor, spiraling shot around floating clock gears, close-up of falling sand; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "endless hall of doors",
+        "ring of floating clocks",
+        "giant hourglass"
+      ]
+    },
+    "scene_progression": [
+      "時の回廊",
+      "歯車の輪",
+      "砂の落ちる音",
+      "分岐の階段",
+      "今という駅"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "slow dolly down an endless corridor",
+        "spiraling shot around floating clock gears",
+        "close-up of falling sand",
+        "wide shot of branching doorways in space"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the chrono corridor world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

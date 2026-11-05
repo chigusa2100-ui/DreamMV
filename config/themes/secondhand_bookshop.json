@@ -87,5 +87,45 @@
       "description": "看板の灯が夕方に溶ける",
       "prompt": "serene anime scene, bookshop front at dusk with crates of books and a small glowing sign, orange sky, quiet street, gentle finale"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the secondhand bookshop world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in narrow shelves to the ceiling, reading nook by the window, stacked crates outside the door; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with paper cream, leather brown, lamp amber, ink blue; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by slow tracking along towering shelves, close-up of aged pages and a bookmark, wide view of a cluttered shop interior; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "narrow shelves to the ceiling",
+        "reading nook by the window",
+        "stacked crates outside the door"
+      ]
+    },
+    "scene_progression": [
+      "本の路地",
+      "栞の頁",
+      "窓辺の席",
+      "梯子の上",
+      "閉店前"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "slow tracking along towering shelves",
+        "close-up of aged pages and a bookmark",
+        "wide view of a cluttered shop interior",
+        "low shot of a sunbeam on the floor"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the secondhand bookshop world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

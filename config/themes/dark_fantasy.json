@@ -84,5 +84,45 @@
       "description": "長い闇の先にかすかな光が差す",
       "prompt": "cinematic anime dark fantasy landscape, ruined castle at pale dawn, ash drifting in the air, bittersweet hope"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the dark fantasy world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in ruined cathedral, black forest, abandoned castle; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with obsidian black, blood crimson, violet, moon silver; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by dramatic low angle, wide ruined kingdom shot, close-up eyes; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "ruined cathedral",
+        "black forest",
+        "abandoned castle"
+      ]
+    },
+    "scene_progression": [
+      "黒い前兆",
+      "呪われた森",
+      "封印の間",
+      "最後の対峙",
+      "灰の夜明け"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "dramatic low angle",
+        "wide ruined kingdom shot",
+        "close-up eyes",
+        "slow reveal from shadows"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the dark fantasy world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

@@ -83,5 +83,45 @@
       "description": "水面の向こうに太陽を見つける",
       "prompt": "cinematic anime illustration, looking upward toward a bright ocean surface, golden sunbeams, bubbles rising, hopeful atmosphere"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the underwater world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in deep sea canyon, coral garden, sunken temple; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with deep ocean blue, teal, bioluminescent cyan, violet; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by underwater wide shot, slow floating camera, macro bubbles and coral; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "deep sea canyon",
+        "coral garden",
+        "sunken temple"
+      ]
+    },
+    "scene_progression": [
+      "水面の向こう",
+      "珊瑚の庭",
+      "沈んだ神殿",
+      "深海の光",
+      "浮上"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "underwater wide shot",
+        "slow floating camera",
+        "macro bubbles and coral",
+        "silhouette against the surface"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the underwater world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }

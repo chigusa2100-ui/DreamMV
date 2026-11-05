@@ -84,5 +84,45 @@
       "description": "静かな夜に余韻が残る",
       "prompt": "poetic anime illustration, quiet festival street after the crowd has left, a few glowing lanterns, wistful midnight atmosphere"
     }
-  ]
+  ],
+  "director": {
+    "schema_version": 1,
+    "character": {
+      "description": "the same recurring anime protagonist in the festival world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "consistency_rules": [
+        "keep the same face and hairstyle across scenes",
+        "keep outfit design and color identity consistent unless the story explicitly changes them",
+        "keep age impression, body proportions, and character identity stable",
+        "do not introduce additional protagonists unless the lyrics or scene require them"
+      ]
+    },
+    "visual_language": {
+      "action_style": "expressive, readable full-body gestures; natural movement; clear pose silhouettes; avoid static repeated poses",
+      "environment_style": "rich anime background design rooted in traditional festival street, riverside fireworks viewing, shrine grounds; preserve the theme's distinctive world and recognizable environmental details",
+      "lighting_style": "cinematic lighting harmonized with lantern amber, crimson, indigo, gold; coherent light direction, atmospheric depth, and controlled highlights",
+      "composition_style": "varied cinematic framing informed by lantern-level tracking shot, wide fireworks shot, close-up festival details; clear subject separation and intentional negative space",
+      "visual_motifs": [
+        "traditional festival street",
+        "riverside fireworks viewing",
+        "shrine grounds"
+      ]
+    },
+    "scene_progression": [
+      "祭りの灯",
+      "縁日の賑わい",
+      "神楽の舞",
+      "夜空の花火",
+      "祭りのあと"
+    ],
+    "camera_guidance": {
+      "available_styles": [
+        "lantern-level tracking shot",
+        "wide fireworks shot",
+        "close-up festival details",
+        "crowd-level cinematic shot"
+      ],
+      "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
+    }
+  },
+  "character_description": "the same recurring anime protagonist in the festival world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
 }
