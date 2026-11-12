@@ -3,6 +3,65 @@
 All notable changes to DreamMV are documented here.
 DreamMV の主な変更履歴を記録しています。
 
+## [2.0.0] - 2026-11-12
+
+### 日本語 / Japanese
+
+#### 主な変更 / Added
+
+- 次世代動画生成エンジンとしてLTX-2.5を追加。
+- Animagine XL 4.0とLTX-2.5を独立した生成エンジンとして利用できる構成に拡張。
+- ComfyUIを実行時依存とせず、LTX-2.5のネイティブパイプラインを直接実行するローカル推論方式を追加。
+- LTX-2.5専用のPython 3.12実行環境を導入し、DreamMV本体のPython環境から分離。
+- LTX-2.5のソースを固定コミットで取得し、Windows向けランタイムパッチを適用するインストール処理を追加。
+- LTX-2.5のモデルファイルを必要に応じて導入できるオプションを追加。モデルのダウンロードにはHugging Faceの認証とアクセス許可が必要。
+- 日本語2Dアニメ調のスタイルプロンプトをLTX-2.5の標準設定として追加。
+- LTX-2.5による動画のみの生成に対応し、DreamMV側で元楽曲と動画を合成するワークフローを追加。
+- LTX-2.5の生成処理を独立プロセスとして実行し、ログ記録、キャンセル、タイムアウト処理に対応。
+
+#### 改善 / Improved
+
+- Animagine XL 4.0とLTX-2.5で共通のシーンキューおよび動画結合ワークフローを利用できるよう改善。
+- LTX-2.5の動画をFFmpegで正規化・結合し、元楽曲を含むMP4として出力する処理を追加。
+- 既存のAnimagine XL 4.0による生成環境を維持しながら、新しい動画生成エンジンを追加できる構成に改善。
+
+#### テスト / Tests
+
+- LTX-2.5エンジン関連テスト：11 passed。
+- RenderWorker関連テスト：3 passed。
+- 全体テスト：63 passed。
+- テーマ関連サブテスト：140 passed。
+- 合計203件のテスト項目が成功。
+
+### English
+
+#### Added
+
+- Added LTX-2.5 as the next-generation video generation engine.
+- Expanded the engine architecture to support Animagine XL 4.0 and LTX-2.5 as independent generation engines.
+- Added native local inference by directly launching the LTX-2.5 pipeline without requiring ComfyUI at runtime.
+- Introduced a dedicated Python 3.12 environment for LTX-2.5, isolated from DreamMV's main Python environment.
+- Added an installation workflow that checks out a pinned LTX-2.5 source commit and applies Windows runtime patches.
+- Added optional installation of LTX-2.5 model files. Model downloads require Hugging Face authentication and access approval.
+- Added a Japanese 2D anime-style prompt as the default visual style for LTX-2.5.
+- Added video-only generation with LTX-2.5 and a workflow for combining generated video with the original song inside DreamMV.
+- Run LTX-2.5 generation as an independent process with logging, cancellation, and timeout handling.
+
+#### Improved
+
+- Improved the shared scene queue and video assembly workflow to support both Animagine XL 4.0 and LTX-2.5.
+- Added FFmpeg processing to normalize and combine LTX-2.5 clips and produce MP4 output with the original audio.
+- Extended DreamMV with a new video generation engine while preserving the existing Animagine XL 4.0 environment.
+
+#### Tests
+
+- LTX-2.5 engine tests: 11 passed.
+- RenderWorker tests: 3 passed.
+- Full test suite: 63 passed.
+- Theme-related subtests: 140 passed.
+- All 203 test cases passed.
+
+---
 ## [1.2.0] - 2026-11-05
 
 ### 日本語 / Japanese

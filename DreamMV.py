@@ -5,7 +5,8 @@ import sys
 from pathlib import Path
 from PySide6.QtWidgets import (
     QApplication, QFileDialog, QLabel, QMessageBox, QPushButton, QVBoxLayout,
-    QWidget, QHBoxLayout, QProgressBar, QTableWidget, QTableWidgetItem, QHeaderView,
+    QWidget, QHBoxLayout, QProgressBar, QTableWidget, QTableWidgetItem,
+    QHeaderView, QComboBox,
 )
 from src.dreammv.audio import AudioAnalyzer
 from src.dreammv.config import load_config, write_default_config
@@ -36,7 +37,7 @@ sys.excepthook = _excepthook
 class DreamMV(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("DreamMV v1.2.0 - Animagine XL 4.0")
+        self.setWindowTitle("DreamMV v2.0.0 - Animagine XL 4.0 + LTX-2.5")
         self.resize(820, 700)
         self.selected_path: str | None = None
         self.project_dir: Path | None = None
@@ -58,7 +59,10 @@ class DreamMV(QWidget):
         self.refresh_queue_button = QPushButton("🔄 キュー更新")
         self.retry_button = QPushButton("↻ 失敗シーンを再試行")
         self.retry_button.setEnabled(False)
-        self.render_button = QPushButton("🎨 AnimagineでMV生成")
+        self.engine_selector = QComboBox()
+        self.engine_selector.addItem("Animagine XL 4.0", "animagine")
+        self.engine_selector.addItem("LTX-2.5 (動画)", "ltx25")
+        self.render_button = QPushButton("🎨 選択したエンジンでMV生成")
         self.render_button.setEnabled(False)
         self.assemble_button = QPushButton("🎞 完了済みシーンから再結合（再生成なし）")
         self.assemble_button.setEnabled(False)
@@ -84,6 +88,7 @@ class DreamMV(QWidget):
         buttons.addWidget(self.retry_button)
         layout.addLayout(buttons)
         render_buttons = QHBoxLayout()
+        render_buttons.addWidget(self.engine_selector)
         render_buttons.addWidget(self.render_button)
         render_buttons.addWidget(self.assemble_button)
         render_buttons.addWidget(self.stop_button)
@@ -267,7 +272,7 @@ class DreamMV(QWidget):
             QMessageBox.information(
                 self, "失敗シーンの再試行",
                 f"{count} 件の失敗シーンを待機状態に戻しました。\n"
-                "「🎨 AnimagineでMV生成」を押すと、これらを再生成します。",
+                "「🎨 選択したエンジンでMV生成」を押すと、これらを再生成します。",
             )
         except Exception as exc:
             QMessageBox.critical(self, "再試行エラー", str(exc))
@@ -292,9 +297,11 @@ class DreamMV(QWidget):
                 settings = {"models_dir": old_settings.get("models_dir")}
             except Exception:
                 settings = {}
+        preset = self.engine_selector.currentData()
         self.worker = RenderWorker(
             self.queue_service, self.project_dir, Path(self.selected_path),
-            preset="animagine", models_dir=settings.get("models_dir"),
+            preset=preset,
+            models_dir=settings.get("models_dir") if preset == "animagine" else None,
         )
         self.worker.log.connect(self.render_log.setText)
         self.worker.scene_changed.connect(self.refresh_queue)
