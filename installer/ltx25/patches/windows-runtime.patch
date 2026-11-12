@@ -1,0 +1,52 @@
+diff --git a/packages/ltx-core/src/ltx_core/loader/buffers.py b/packages/ltx-core/src/ltx_core/loader/buffers.py
+index a3e0d59..7aa6d14 100644
+--- a/packages/ltx-core/src/ltx_core/loader/buffers.py
++++ b/packages/ltx-core/src/ltx_core/loader/buffers.py
+@@ -1,6 +1,8 @@
++
+ """Exact host byte buffers, aligned unit layouts, and capacity checks for streamed tensor units."""
+
+ import mmap
++import os
+ import weakref
+ from collections.abc import Mapping, Sequence
+ from dataclasses import dataclass
+@@ -20,7 +22,18 @@ def host_bytes(nbytes: int, *, pin: bool = False) -> torch.Tensor:
+     """
+     if not pin or nbytes < _EXACT_PIN_BYTES:
+         return torch.empty(nbytes, dtype=torch.uint8, pin_memory=pin)
+-    region = mmap.mmap(-1, nbytes, flags=mmap.MAP_PRIVATE | mmap.MAP_ANONYMOUS)
++
++    if os.name == "nt":
++        # Windows: create an anonymous memory mapping.
++        region = mmap.mmap(-1, nbytes)
++    else:
++        # POSIX: create a private anonymous memory mapping.
++        region = mmap.mmap(
++            -1,
++            nbytes,
++            flags=mmap.MAP_PRIVATE | mmap.MAP_ANONYMOUS,
++        )
++
+     buffer = torch.frombuffer(region, dtype=torch.uint8)
+     cudart = torch.cuda.cudart()
+     if int(cudart.cudaHostRegister(buffer.data_ptr(), nbytes, 0)) != 0:
+diff --git a/packages/ltx-pipelines/src/ltx_pipelines/distilled.py b/packages/ltx-pipelines/src/ltx_pipelines/distilled.py
+index 49931e0..0bf3132 100644
+--- a/packages/ltx-pipelines/src/ltx_pipelines/distilled.py
++++ b/packages/ltx-pipelines/src/ltx_pipelines/distilled.py
+@@ -233,13 +233,7 @@ class DistilledPipeline:
+             alloc_trim_strategy=alloc_trim_strategy,
+             diffvae_optimization=diffvae_optimization,
+         )
+-        self.audio_decoder = AudioDecoder(
+-            model_paths.audio_vae(),
+-            self.dtype,
+-            self.device,
+-            registry=registry,
+-            alloc_trim_strategy=alloc_trim_strategy,
+-        )
++        self.audio_decoder = None
+         # None on checkpoints that predate DurationHead (LTX 2.5 / gemma4 only) -- __call__ requires
+         # an explicit num_frames in that case instead of crashing deep in a forward pass.
+         self.duration_predictor = DurationPredictor.from_checkpoint(
