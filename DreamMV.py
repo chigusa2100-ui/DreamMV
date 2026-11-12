@@ -37,7 +37,7 @@ sys.excepthook = _excepthook
 class DreamMV(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("DreamMV v2.0.0 - Animagine XL 4.0 + LTX-2.5")
+        self.setWindowTitle("DreamMV v2.0.1 - Animagine XL 4.0 + LTX-2.5")
         self.resize(820, 700)
         self.selected_path: str | None = None
         self.project_dir: Path | None = None

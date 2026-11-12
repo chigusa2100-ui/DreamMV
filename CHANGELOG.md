@@ -3,6 +3,26 @@
 All notable changes to DreamMV are documented here.
 DreamMV の主な変更履歴を記録しています。
 
+## [2.0.1] - 2026-11-12
+
+### 日本語 / Japanese
+
+#### 修正 / Fixed
+
+- レンダリング中に表示される日本語メッセージの文字化けを修正。
+- シーン生成、進捗表示、キャンセル、動画結合時のメッセージを正常な日本語に修正。
+- レンダリングと動画結合で、出力クリップの存在確認を共通化。
+
+### English
+
+#### Fixed
+
+- Fixed mojibake in Japanese messages displayed during rendering.
+- Corrected Japanese messages for scene generation, progress updates, cancellation, and video assembly.
+- Unified completed-clip validation for rendering and video assembly.
+
+---
+
 ## [2.0.0] - 2026-11-12
 
 ### 日本語 / Japanese
