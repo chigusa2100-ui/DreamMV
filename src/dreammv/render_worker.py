@@ -49,24 +49,23 @@ def scene_duration(scene: dict) -> float:
 
 
 def _ensure_completed_outputs(scenes: list[dict]) -> None:
-    """Reject completed scenes whose output video is missing."""
-    missing = [
-        str(scene.get("id", "?"))
-        for scene in scenes
-        if scene.get("status") == "completed"
-        and (
-            not scene.get("output")
-            or not Path(scene["output"]).is_file()
-        )
-    ]
+    """Refuse to assemble a project when a completed scene clip is missing."""
+    missing = []
+
+    for scene in scenes:
+        if scene.get("status") != "completed":
+            continue
+
+        output = scene.get("output")
+        if not output or not Path(output).is_file():
+            missing.append(str(scene.get("id", "?")))
 
     if missing:
         raise RuntimeError(
             "完了扱いですが動画ファイルが見つからないシーンがあります: "
             + ", ".join(missing)
-            + "\n\u30ec\u30f3\u30c0\u30ea\u30f3\u30b0\u3092\u518d\u5b9f\u884c\u3059\u308b\u304b\u3001\u5b8c\u6210\u6e08\u307f\u30af\u30ea\u30c3\u30d7\u3092\u78ba\u8a8d\u3057\u3066\u304f\u3060\u3055\u3044\u3002"
+            + "\nレンダリングを再実行するか、完成済みクリップを確認してください。"
         )
-
 
 
 def _ffmpeg() -> str:
@@ -85,6 +84,7 @@ def _write_concat_file(concat_txt: Path, clips: list[Path]) -> None:
     for clip in clips:
         name = clip.name.replace("\\", "/").replace("'", "'\\''")
         lines.append(f"file '{name}'")
+
     concat_txt.write_text(
         "\n".join(lines) + "\n",
         encoding="utf-8",
@@ -102,12 +102,14 @@ def _run_ffmpeg(args: list[str], *, cwd: Path | None = None) -> None:
         encoding="utf-8",
         errors="replace",
     )
+
     if result.returncode:
         details = (
             result.stderr
             or result.stdout
             or "FFmpeg returned a non-zero exit code."
         ).strip()
+
         raise RuntimeError(
             f"FFmpeg の処理に失敗しました "
             f"(exit {result.returncode})\n{details[-6000:]}"
@@ -135,6 +137,7 @@ def _detect_video_config(video_path: Path) -> dict:
             errors="replace",
             timeout=30,
         )
+
         info = result.stderr or result.stdout or ""
 
         resolution_match = re.search(
@@ -169,7 +172,10 @@ def assemble(
     video_config: dict | None = None,
 ) -> Path:
     """Normalize generated clips, concatenate them, and add the original song."""
+
+    # Do not silently omit clips whose queue status says they are completed.
     _ensure_completed_outputs(scenes)
+
     cfg = video_config or ANIME_CONFIG
 
     width = int(cfg["width"])
@@ -184,7 +190,8 @@ def assemble(
 
     for index, scene in enumerate(scenes, start=1):
         raw = scene.get("output")
-        if not raw or not Path(raw).exists():
+
+        if not raw or not Path(raw).is_file():
             continue
 
         dst = norm_dir / f"{scene.get('id', index)}.mp4"
@@ -215,7 +222,8 @@ def assemble(
 
     if not listing:
         raise RuntimeError(
-            "邨仙粋縺ｧ縺阪ｋ繧ｯ繝ｪ繝・・縺後≠繧翫∪縺帙ｓ縲・"
+            "結合できる動画クリップがありません。"
+            "シーンのレンダリング状態と出力ファイルを確認してください。"
         )
 
     concat_txt = norm_dir / "concat.txt"
@@ -310,30 +318,29 @@ class RenderWorker(QThread):
             return LTX25Engine()
 
         raise RuntimeError(
-            f"譛ｪ蟇ｾ蠢懊・逕滓・譁ｹ蠑上〒縺・ "
-            f"{self.preset}縲・"
+            f"未対応のレンダリングエンジンです: {self.preset}"
         )
 
     def _load_engine(self, engine):
         if isinstance(engine, LTX25Engine):
             self.log.emit(
-                "LTX-2.5 native CLI 繧定ｪｭ縺ｿ霎ｼ縺ｿ荳ｭ..."
+                "LTX-2.5 native CLI を初期化しています..."
             )
         else:
             self.log.emit(
-                "Animagine XL 4.0 繧定ｪｭ縺ｿ霎ｼ縺ｿ荳ｭ... "
-                "・亥・蝗槭・謨ｰ蛻・°縺九ｊ縺ｾ縺呻ｼ・"
+                "Animagine XL 4.0 を初期化しています... "
+                "初回はモデルの読み込みに時間がかかる場合があります。"
             )
 
         try:
             engine.load()
+
         except ModuleNotFoundError as exc:
             raise RuntimeError(
-                f"蠢・ｦ√↑繝ｩ繧､繝悶Λ繝ｪ縺瑚ｦ九▽縺九ｊ縺ｾ縺帙ｓ: "
-                f"{exc.name}\n\n"
-                "DreamMV 縺ｮ .venv 縺ｧ襍ｷ蜍輔＠縺ｦ縺・ｋ縺狗｢ｺ隱阪＠縺ｦ"
-                "縺上□縺輔＞縲Ｓun.bat 縺九ｉ襍ｷ蜍輔〒縺阪∪縺吶・n"
-                f"迴ｾ蝨ｨ縺ｮ Python: {sys.executable}"
+                f"必要なPythonモジュールが見つかりません: {exc.name}\n\n"
+                "DreamMV の .venv 環境に必要なパッケージが"
+                "インストールされているか確認してください。\n"
+                f"現在の Python: {sys.executable}"
             ) from exc
 
     def _generate_scene(
@@ -348,8 +355,8 @@ class RenderWorker(QThread):
 
         if isinstance(engine, LTX25Engine):
             self.log.emit(
-                f"繧ｷ繝ｼ繝ｳ {scene_id}: "
-                "LTX-2.5 縺ｧ蜍慕判繧呈函謌舌＠縺ｾ縺・..."
+                f"シーン {scene_id}: "
+                "LTX-2.5 で動画を生成しています..."
             )
 
             return engine.generate(
@@ -360,19 +367,20 @@ class RenderWorker(QThread):
             )
 
         self.log.emit(
-            f"繧ｷ繝ｼ繝ｳ {scene_id}: "
-            "Animagine 縺ｧ逕ｻ蜒上ｒ逕滓・荳ｭ..."
+            f"シーン {scene_id}: "
+            "Animagine で画像を生成しています..."
         )
 
         def on_step(step, total, sid=scene_id):
             suffix = (
-                " 竊・繧ｫ繝｡繝ｩ繝ｯ繝ｼ繧ｯ蜍慕判繧呈嶌縺榊・縺嶺ｸｭ..."
+                " 画像生成が完了しました。"
                 if step == total
                 else ""
             )
+
             self.log.emit(
-                f"繧ｷ繝ｼ繝ｳ {sid}: "
-                f"逕ｻ蜒冗函謌・step {step}/{total}{suffix}"
+                f"シーン {sid}: "
+                f"生成ステップ {step}/{total}{suffix}"
             )
 
         return engine.generate(
@@ -399,8 +407,8 @@ class RenderWorker(QThread):
             for scene in scenes:
                 if self._cancel:
                     self.log.emit(
-                        "繧ｭ繝｣繝ｳ繧ｻ繝ｫ縺輔ｌ縺ｾ縺励◆縲・"
-                        "螳溯｡御ｸｭ縺ｮ繧ｷ繝ｼ繝ｳ縺檎ｵゅｏ繧頑ｬ｡隨ｬ蛛懈ｭ｢縺励∪縺吶・"
+                        "レンダリングがキャンセルされました。"
+                        "現在のシーンまでの生成結果を保持します。"
                     )
                     break
 
@@ -440,8 +448,8 @@ class RenderWorker(QThread):
                     )
 
                     self.log.emit(
-                        f"繧ｷ繝ｼ繝ｳ {scene_id} 螳御ｺ・ｼ・"
-                        f"{(time.time() - started) / 60:.1f} 蛻・ｼ・"
+                        f"シーン {scene_id} 完了 "
+                        f"({(time.time() - started) / 60:.1f} 分)"
                     )
 
                 except Exception as exc:
@@ -456,7 +464,7 @@ class RenderWorker(QThread):
                     )
 
                     self.log.emit(
-                        f"繧ｷ繝ｼ繝ｳ {scene_id} 螟ｱ謨・ {exc}"
+                        f"シーン {scene_id} 失敗: {exc}"
                     )
 
                 self.scene_changed.emit()
@@ -471,9 +479,8 @@ class RenderWorker(QThread):
 
             if not completed:
                 raise RuntimeError(
-                    "螳御ｺ・＠縺溘す繝ｼ繝ｳ縺後≠繧翫∪縺帙ｓ縲・"
-                    "繧ｯ繝･繝ｼ縺ｨ render.log 繧堤｢ｺ隱阪＠縺ｦ"
-                    "縺上□縺輔＞縲・"
+                    "完了したシーンがありません。"
+                    "render.log を確認してください。"
                 )
 
             engine.unload()
@@ -481,14 +488,13 @@ class RenderWorker(QThread):
             if self.preset == "ltx25":
                 video_config = LTX_CONFIG
                 self.log.emit(
-                    "LTX-2.5 縺ｮ蜍慕判繧堤ｵ仙粋縺励・"
-                    "蜍慕判險ｭ螳壹ｒ704x384 / 24fps縺ｫ險ｭ螳壹＠縺ｾ縺・..."
+                    "LTX-2.5 の動画クリップを結合しています..."
+                    " (704x384 / 24fps)"
                 )
             else:
                 video_config = ANIME_CONFIG
                 self.log.emit(
-                    "逕滓・縺励◆繧ｷ繝ｼ繝ｳ繧堤ｵ仙粋縺励・"
-                    "浹螢ｰ繧定ｿｽ蜉荳ｭ..."
+                    "Animagine の動画クリップを結合しています..."
                 )
 
             result = assemble(
@@ -546,18 +552,18 @@ class AssembleWorker(QThread):
 
             if not completed:
                 raise RuntimeError(
-                    "螳御ｺ・ｸ医∩繧ｷ繝ｼ繝ｳ縺後≠繧翫∪縺帙ｓ縲・"
-                    "逕滓・貂医∩繝輔ぃ繧､繝ｫ繧貞炎髯､縺帙★縲・"
-                    "邨仙粋縺ｧ縺阪ｋ繧ｯ繝ｪ繝・・縺後≠繧翫∪縺帙ｓ縲・"
+                    "完了済みのシーンがありません。"
+                    "先にシーンのレンダリングを実行してください。"
                 )
 
+            # Use the same validation as normal rendering.
             _ensure_completed_outputs(completed)
 
             first_clip = Path(completed[0]["output"])
             video_config = _detect_video_config(first_clip)
 
             self.log.emit(
-                f"螳御ｺ・ｸ医∩ {len(completed)} 繧ｷ繝ｼ繝ｳ繧堤ｵ仙粋..."
+                f"完了済み {len(completed)} シーンを結合しています..."
                 f" ({video_config['width']}x{video_config['height']} "
                 f"/ {video_config['fps']}fps)"
             )
