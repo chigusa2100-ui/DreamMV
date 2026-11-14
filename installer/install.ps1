@@ -64,13 +64,35 @@ if ($LASTEXITCODE -ne 0) {
     throw "DreamMV dependency verification failed."
 }
 
+function Read-YesNo {
+    param([string]$Prompt)
+
+    do {
+        $answer = (Read-Host "$Prompt (Y/N)").Trim()
+        if ($answer -match '^[Yy]$') {
+            return $true
+        }
+        if ($answer -match '^[Nn]$') {
+            return $false
+        }
+        Write-Host "Please enter Y or N."
+    } while ($true)
+}
+
 Write-Host ""
-Write-Host "[3/5] Downloading Animagine XL 4.0..."
+Write-Host "[3/5] Optional Animagine XL 4.0 model download"
 
-& $py (Join-Path $AppDir "installer\download_model.py")
+$DownloadAnimagine = Read-YesNo "Download Animagine XL 4.0 now?"
 
-if ($LASTEXITCODE -ne 0) {
-    throw "Animagine model download failed."
+if ($DownloadAnimagine) {
+    & $py (Join-Path $AppDir "installer\download_model.py")
+
+    if ($LASTEXITCODE -ne 0) {
+        throw "Animagine model download failed."
+    }
+}
+else {
+    Write-Host "Skipping Animagine XL 4.0. You can download it later."
 }
 
 Write-Host ""
@@ -92,9 +114,9 @@ catch {
 Write-Host ""
 Write-Host "[5/5] Optional LTX-2.5 model download"
 
-$DownloadChoice = Read-Host "Download approximately 66 GB of LTX-2.5 model files now? (Y/N)"
+$DownloadChoice = Read-YesNo "Download approximately 66 GB of LTX-2.5 model files now?"
 
-if ($DownloadChoice -match '^[Yy]$') {
+if ($DownloadChoice) {
     $LtxRoot = "C:\AI\DreamMV-LTX25\LTX-2"
     $LtxPython = Join-Path $LtxRoot ".venv\Scripts\python.exe"
     $HfExe = Join-Path $LtxRoot ".venv\Scripts\hf.exe"

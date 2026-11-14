@@ -199,7 +199,7 @@ class DreamMV(QWidget):
                 "MVの設計図を作成しました！\n"
                 f"タイトル: {project['title']}\nシーン数: {project['scene_count']}\n"
                 f"キュー内シーン数: {len(queue_data.get('scenes', []))}\n保存先: {project_dir}\n\n"
-                "「🎨 AnimagineでMV生成」を押すと、シーンごとに動画を生成します。"
+                "「MV生成」を押すと、選択したエンジンで動画を生成します。"
             )
             self.refresh_queue()
         except Exception as exc:

@@ -135,13 +135,21 @@ class AnimeEngine:
 
         kw = {"cache_dir": self.models_dir} if self.models_dir else {}
 
-        pipe = StableDiffusionXLPipeline.from_pretrained(
-            str(self.cfg["repo"]),
-            torch_dtype=torch.float16,
-            use_safetensors=True,
-            add_watermarker=False,
-            **kw,
-        )
+        try:
+            pipe = StableDiffusionXLPipeline.from_pretrained(
+                str(self.cfg["repo"]),
+                torch_dtype=torch.float16,
+                use_safetensors=True,
+                add_watermarker=False,
+                local_files_only=True,
+                **kw,
+            )
+        except OSError as exc:
+            raise RuntimeError(
+                "Animagine XL 4.0 is not installed locally or its model files are incomplete. "
+                "To install it, run this command from the DreamMV folder: "
+                ".\\.venv\\Scripts\\python.exe installer\\download_model.py"
+            ) from exc
 
         # Reduce SDXL memory usage for GPUs with 8 GB VRAM.
         if hasattr(pipe, "enable_vae_slicing"):

@@ -88,12 +88,13 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "the same recurring anime protagonist in the hope world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "description": "the same young adult female anime protagonist throughout the entire music video, with long flowing silver hair, clear blue eyes, a recognizable gentle but determined face, and a distinctive blue coat with consistent design and color, feminine facial features and body proportions",
       "consistency_rules": [
-        "keep the same face and hairstyle across scenes",
-        "keep outfit design and color identity consistent unless the story explicitly changes them",
-        "keep age impression, body proportions, and character identity stable",
-        "do not introduce additional protagonists unless the lyrics or scene require them"
+        "the protagonist is always the same female character",
+        "preserve her long silver hair, clear blue eyes, and distinctive blue coat",
+        "keep her face, hairstyle, age impression, and body proportions consistent",
+        "do not change the protagonist into a male character",
+        "do not introduce another protagonist unless the lyrics explicitly require one"
       ]
     },
     "visual_language": {
@@ -124,5 +125,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "the same recurring anime protagonist in the hope world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
+  "character_description": "the same young adult female anime protagonist throughout the entire music video, with long flowing silver hair, clear blue eyes, a recognizable gentle but determined face, and a distinctive blue coat with consistent design and color, feminine facial features and body proportions"
 }

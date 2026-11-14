@@ -38,6 +38,105 @@ def scene_prompt(scene: dict) -> str:
     return "masterpiece, anime illustration, cinematic music video scene"
 
 
+def build_ltx_video_prompt(scene: dict) -> str:
+    """Build a motion-oriented prompt from a planned scene and Director data."""
+    parts = []
+
+    base_prompt = scene_prompt(scene).strip()
+    if base_prompt:
+        parts.append(base_prompt)
+
+    director = scene.get("director")
+    if not isinstance(director, dict):
+        director = {}
+
+    subject = director.get("subject") or director.get("continuity")
+    if isinstance(subject, str) and subject.strip():
+        parts.append(
+            "Main character: " + subject.strip()
+        )
+
+    continuity = director.get("continuity")
+    if (
+        isinstance(continuity, str)
+        and continuity.strip()
+        and continuity.strip() != subject
+    ):
+        parts.append(
+            "Character identity and continuity: "
+            + continuity.strip()
+        )
+
+    action = director.get("action")
+    if isinstance(action, str) and action.strip():
+        parts.append(
+            "The character performs this action clearly and naturally: "
+            + action.strip()
+        )
+
+    setting = director.get("setting")
+    if isinstance(setting, str) and setting.strip():
+        parts.append("Environment: " + setting.strip())
+
+    time_of_day = director.get("time_of_day")
+    if isinstance(time_of_day, str) and time_of_day.strip():
+        parts.append("Time: " + time_of_day.strip())
+
+    lighting = director.get("lighting")
+    if isinstance(lighting, str) and lighting.strip():
+        parts.append("Lighting: " + lighting.strip())
+
+    composition = director.get("composition")
+    if isinstance(composition, str) and composition.strip():
+        parts.append("Shot composition: " + composition.strip())
+
+    for key, label in (
+        ("action_style", "Movement direction"),
+        ("environment_style", "Environment direction"),
+        ("lighting_style", "Visual lighting style"),
+        ("composition_style", "Cinematography direction"),
+    ):
+        value = director.get(key)
+        if isinstance(value, str) and value.strip():
+            parts.append(f"{label}: {value.strip()}")
+
+    motifs = director.get("visual_motifs")
+    if isinstance(motifs, list):
+        valid_motifs = [
+            str(item).strip()
+            for item in motifs
+            if str(item).strip()
+        ]
+        if valid_motifs:
+            parts.append(
+                "Recurring visual elements: "
+                + ", ".join(valid_motifs)
+            )
+
+    camera_style = scene.get("camera_style")
+    if isinstance(camera_style, str) and camera_style.strip():
+        parts.append("Camera framing: " + camera_style.strip())
+
+    camera_motion = scene.get("camera_motion")
+    camera_directions = {
+        "zoom_in": "The camera slowly moves closer to the subject.",
+        "zoom_out": "The camera slowly pulls back to reveal the surroundings.",
+        "pan_right": "The camera smoothly pans to the right.",
+        "pan_left": "The camera smoothly pans to the left.",
+    }
+    if camera_motion in camera_directions:
+        parts.append(camera_directions[camera_motion])
+
+    parts.append(
+        "Maintain the same character identity, face, hairstyle, outfit, "
+        "and body proportions throughout the shot. "
+        "Show visible, coherent movement rather than a static image. "
+        "Use smooth natural motion and preserve visual continuity."
+    )
+
+    return ", ".join(parts)
+
+
 def scene_duration(scene: dict) -> float:
     if scene.get("duration"):
         return float(scene["duration"])
@@ -359,8 +458,14 @@ class RenderWorker(QThread):
                 "LTX-2.5 で動画を生成しています..."
             )
 
+            video_prompt = build_ltx_video_prompt(scene)
+
+            self.log.emit(
+                f"[LTX-2.5] Scene {scene_id}: applying Director guidance"
+            )
+
             return engine.generate(
-                prompt=prompt,
+                prompt=video_prompt,
                 duration=duration,
                 output_path=output_path,
                 seed=scene.get("seed"),

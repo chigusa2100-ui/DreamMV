@@ -31,11 +31,28 @@ class AnimagineEngineTests(unittest.TestCase):
         source = (ROOT / "src" / "dreammv" / "render_worker.py").read_text(encoding="utf-8")
         self.assertIn('camera_motion=scene.get("camera_motion")', source)
 
-    def test_gui_uses_animagine_label_and_settings(self):
+    def test_gui_supports_animagine_and_ltx25_engine_selection(self):
         source = (ROOT / "DreamMV.py").read_text(encoding="utf-8")
         self.assertIn("anime_settings.json", source)
-        self.assertIn("AnimagineでMV生成", source)
+        self.assertIn('"animagine"', source)
+        self.assertIn('"ltx25"', source)
+        self.assertIn('"LTX-2.5', source)
+        self.assertIn("self.render_button = QPushButton(", source)
         self.assertNotIn("preset=settings.get", source)
+
+
+    def test_animagine_load_uses_local_files_only(self):
+        source = (ROOT / "src" / "dreammv" / "anime_engine.py").read_text(encoding="utf-8")
+        self.assertIn("local_files_only=True", source)
+        self.assertIn("Animagine XL 4.0 is not installed locally", source)
+        self.assertIn("installer\\\\download_model.py", source)
+
+    def test_installer_makes_both_model_downloads_optional(self):
+        source = (ROOT / "installer" / "install.ps1").read_text(encoding="utf-8")
+        self.assertIn('Read-YesNo "Download Animagine XL 4.0 now?"', source)
+        self.assertIn('Read-YesNo "Download approximately 66 GB of LTX-2.5 model files now?"', source)
+        self.assertIn('Skipping Animagine XL 4.0.', source)
+        self.assertIn('Skipping LTX-2.5 model download.', source)
 
 
 if __name__ == "__main__":
