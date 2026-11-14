@@ -87,12 +87,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "The same young adult female anime protagonist: soft auburn hair in twin braids, soft rose-brown eyes, a thoughtful face with gently angled features; an independent explorer of remote waters and wild places, wearing a weather-ready expedition coat, layered travel clothes, and practical boots with deep ocean blue accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene.",
+      "description": "The same young adult man anime protagonist throughout the full music video: dark teal hair floating in soft layers, bright turquoise eyes, with a distinct consistent face and adult proportions. Their role is a marine rescue diver exploring submerged reefs and shipwrecks. Fixed signature outfit: a streamlined deep-blue wetsuit with aqua panels, compact oxygen rig, and fin boots. Defining personal item: a waterproof rescue beacon with a glowing coral marker. Preserve the exact face, hair shape and color, eye color, body proportions, outfit silhouette, and defining item in every scene.",
       "consistency_rules": [
-        "Use this exact protagonist identity in every scene; do not redesign, replace, or randomly reinterpret the character.",
-        "Preserve the same face, hairstyle, hair color, eye color, age impression, and body proportions.",
-        "Keep the signature outfit silhouette, defining accessories, and main color accents consistent across the entire music video.",
-        "Do not introduce another protagonist unless the lyrics or scene explicitly require one."
+        "This theme follows one fixed protagonist identity from the opening to the finale.",
+        "Keep the same face, hairstyle, hair color, eye color, adult age impression, and body proportions.",
+        "Maintain the signature costume silhouette, colors, and defining personal item in every scene.",
+        "Do not substitute the protagonist or add a second lead unless the lyrics explicitly require it."
       ]
     },
     "visual_language": {
@@ -123,5 +123,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "The same young adult female anime protagonist: soft auburn hair in twin braids, soft rose-brown eyes, a thoughtful face with gently angled features; an independent explorer of remote waters and wild places, wearing a weather-ready expedition coat, layered travel clothes, and practical boots with deep ocean blue accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene."
+  "character_description": "The same young adult man anime protagonist throughout the full music video: dark teal hair floating in soft layers, bright turquoise eyes, with a distinct consistent face and adult proportions. Their role is a marine rescue diver exploring submerged reefs and shipwrecks. Fixed signature outfit: a streamlined deep-blue wetsuit with aqua panels, compact oxygen rig, and fin boots. Defining personal item: a waterproof rescue beacon with a glowing coral marker. Preserve the exact face, hair shape and color, eye color, body proportions, outfit silhouette, and defining item in every scene."
 }
