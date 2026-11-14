@@ -92,12 +92,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "The same young adult male anime protagonist: midnight-blue hair cut just below the shoulders, clear amber eyes, a composed expression and strong brows; a resilient field naturalist and wanderer, wearing a practical layered field outfit with a distinctive scarf, fitted jacket, and durable boots with cloud grey accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene.",
+      "description": "The same young adult man anime protagonist in every shot: wind-brushed sandy hair, soft silver eyes, with a recognizable consistent face and adult body proportions. They are a solitary ranch hand watching the moon rise over the endless pampas. Fixed costume: a weathered brown gaucho poncho, cream shirt, dark riding trousers, and tall boots. Signature tool or keepsake: a small silver mate gourd with a leather strap. Maintain the exact same face, hairstyle, hair color, eye color, proportions, costume silhouette, and signature object across the complete music video.",
       "consistency_rules": [
-        "Use this exact protagonist identity in every scene; do not redesign, replace, or randomly reinterpret the character.",
-        "Preserve the same face, hairstyle, hair color, eye color, age impression, and body proportions.",
-        "Keep the signature outfit silhouette, defining accessories, and main color accents consistent across the entire music video.",
-        "Do not introduce another protagonist unless the lyrics or scene explicitly require one."
+        "One clearly defined protagonist leads this theme from beginning to end.",
+        "Keep the same face, hairstyle, hair color, eye color, adult age impression, and body proportions in every scene.",
+        "Preserve the signature outfit, its color identity, and the defining tool or keepsake.",
+        "Do not redesign, replace, or multiply the lead character unless the lyrics explicitly require another person."
       ]
     },
     "visual_language": {
@@ -128,5 +128,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "The same young adult male anime protagonist: midnight-blue hair cut just below the shoulders, clear amber eyes, a composed expression and strong brows; a resilient field naturalist and wanderer, wearing a practical layered field outfit with a distinctive scarf, fitted jacket, and durable boots with cloud grey accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene."
+  "character_description": "The same young adult man anime protagonist in every shot: wind-brushed sandy hair, soft silver eyes, with a recognizable consistent face and adult body proportions. They are a solitary ranch hand watching the moon rise over the endless pampas. Fixed costume: a weathered brown gaucho poncho, cream shirt, dark riding trousers, and tall boots. Signature tool or keepsake: a small silver mate gourd with a leather strap. Maintain the exact same face, hairstyle, hair color, eye color, proportions, costume silhouette, and signature object across the complete music video."
 }
