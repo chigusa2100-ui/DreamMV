@@ -139,12 +139,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "The same young adult male anime protagonist: deep teal hair in a swept-back style, turquoise eyes, a confident gaze and a small, knowing smile; a poised performer and expressive storyteller, wearing a sharply recognizable performance outfit with a clean silhouette and restrained decorative details with bright gold accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene.",
+      "description": "The same young adult man anime protagonist in every scene: short dark hair brushed neatly back, bright brown eyes, with a recognizable consistent face and adult proportions. They are a parade marshal coordinating a joyful homecoming celebration. Their fixed signature outfit is a crisp ivory uniform jacket with deep blue piping, red sash, tailored trousers, and polished boots. Their defining personal object is a small ceremonial pennant bearing the town crest. Keep face, hairstyle, hair color, eye color, body proportions, costume silhouette, and personal object unchanged throughout the entire music video.",
       "consistency_rules": [
-        "Use this exact protagonist identity in every scene; do not redesign, replace, or randomly reinterpret the character.",
-        "Preserve the same face, hairstyle, hair color, eye color, age impression, and body proportions.",
-        "Keep the signature outfit silhouette, defining accessories, and main color accents consistent across the entire music video.",
-        "Do not introduce another protagonist unless the lyrics or scene explicitly require one."
+        "Use this one fixed protagonist identity throughout the theme's entire video.",
+        "Preserve the same facial features, hairstyle, hair color, eye color, age impression, and body proportions.",
+        "Keep the signature outfit, silhouette, colors, and defining personal object consistent in every scene.",
+        "Do not replace the lead or add another protagonist unless the lyrics explicitly require one."
       ]
     },
     "visual_language": {
@@ -176,5 +176,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "The same young adult male anime protagonist: deep teal hair in a swept-back style, turquoise eyes, a confident gaze and a small, knowing smile; a poised performer and expressive storyteller, wearing a sharply recognizable performance outfit with a clean silhouette and restrained decorative details with bright gold accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene."
+  "character_description": "The same young adult man anime protagonist in every scene: short dark hair brushed neatly back, bright brown eyes, with a recognizable consistent face and adult proportions. They are a parade marshal coordinating a joyful homecoming celebration. Their fixed signature outfit is a crisp ivory uniform jacket with deep blue piping, red sash, tailored trousers, and polished boots. Their defining personal object is a small ceremonial pennant bearing the town crest. Keep face, hairstyle, hair color, eye color, body proportions, costume silhouette, and personal object unchanged throughout the entire music video."
 }

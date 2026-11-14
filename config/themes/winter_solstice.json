@@ -141,12 +141,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "The same young adult male anime protagonist: dark brown hair in a half-up style, ice-blue eyes, a composed expression and strong brows; a thoughtful everyday traveler with a keen eye for small moments, wearing a recognizable contemporary outfit with a signature jacket, simple accessories, and comfortable shoes with snow white accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene.",
+      "description": "The same young adult woman anime protagonist in every scene: long silver-brown hair in a loose braid, deep evergreen eyes, with a recognizable consistent face and adult proportions. They are a keeper of the winter solstice fire who welcomes the returning light. Their fixed signature outfit is a dark evergreen wool dress with a warm ivory mantle, braided belt, and fur-lined boots. Their defining personal object is a small candle lantern with a carved sun-wheel handle. Keep face, hairstyle, hair color, eye color, body proportions, costume silhouette, and personal object unchanged throughout the entire music video.",
       "consistency_rules": [
-        "Use this exact protagonist identity in every scene; do not redesign, replace, or randomly reinterpret the character.",
-        "Preserve the same face, hairstyle, hair color, eye color, age impression, and body proportions.",
-        "Keep the signature outfit silhouette, defining accessories, and main color accents consistent across the entire music video.",
-        "Do not introduce another protagonist unless the lyrics or scene explicitly require one."
+        "Use this one fixed protagonist identity throughout the theme's entire video.",
+        "Preserve the same facial features, hairstyle, hair color, eye color, age impression, and body proportions.",
+        "Keep the signature outfit, silhouette, colors, and defining personal object consistent in every scene.",
+        "Do not replace the lead or add another protagonist unless the lyrics explicitly require one."
       ]
     },
     "visual_language": {
@@ -178,5 +178,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "The same young adult male anime protagonist: dark brown hair in a half-up style, ice-blue eyes, a composed expression and strong brows; a thoughtful everyday traveler with a keen eye for small moments, wearing a recognizable contemporary outfit with a signature jacket, simple accessories, and comfortable shoes with snow white accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene."
+  "character_description": "The same young adult woman anime protagonist in every scene: long silver-brown hair in a loose braid, deep evergreen eyes, with a recognizable consistent face and adult proportions. They are a keeper of the winter solstice fire who welcomes the returning light. Their fixed signature outfit is a dark evergreen wool dress with a warm ivory mantle, braided belt, and fur-lined boots. Their defining personal object is a small candle lantern with a carved sun-wheel handle. Keep face, hairstyle, hair color, eye color, body proportions, costume silhouette, and personal object unchanged throughout the entire music video."
 }

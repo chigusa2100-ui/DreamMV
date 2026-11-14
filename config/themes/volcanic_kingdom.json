@@ -139,12 +139,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "The same young adult female anime protagonist: midnight-blue hair cut just below the shoulders, deep brown eyes, a thoughtful face with gently angled features; a resilient field naturalist and wanderer, wearing a practical layered field outfit with a distinctive scarf, fitted jacket, and durable boots with obsidian black accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene.",
+      "description": "The same young adult man anime protagonist in every scene: black hair with ember-red tips tied high, molten amber eyes, with a recognizable consistent face and adult proportions. They are a volcanic forge apprentice who protects the mountain kingdom's ancient fire. Their fixed signature outfit is a dark basalt-colored smith's coat with copper fasteners, heatproof gloves, and reinforced boots. Their defining personal object is a small hammer forged from cooled volcanic glass. Keep face, hairstyle, hair color, eye color, body proportions, costume silhouette, and personal object unchanged throughout the entire music video.",
       "consistency_rules": [
-        "Use this exact protagonist identity in every scene; do not redesign, replace, or randomly reinterpret the character.",
-        "Preserve the same face, hairstyle, hair color, eye color, age impression, and body proportions.",
-        "Keep the signature outfit silhouette, defining accessories, and main color accents consistent across the entire music video.",
-        "Do not introduce another protagonist unless the lyrics or scene explicitly require one."
+        "Use this one fixed protagonist identity throughout the theme's entire video.",
+        "Preserve the same facial features, hairstyle, hair color, eye color, age impression, and body proportions.",
+        "Keep the signature outfit, silhouette, colors, and defining personal object consistent in every scene.",
+        "Do not replace the lead or add another protagonist unless the lyrics explicitly require one."
       ]
     },
     "visual_language": {
@@ -176,5 +176,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "The same young adult female anime protagonist: midnight-blue hair cut just below the shoulders, deep brown eyes, a thoughtful face with gently angled features; a resilient field naturalist and wanderer, wearing a practical layered field outfit with a distinctive scarf, fitted jacket, and durable boots with obsidian black accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene."
+  "character_description": "The same young adult man anime protagonist in every scene: black hair with ember-red tips tied high, molten amber eyes, with a recognizable consistent face and adult proportions. They are a volcanic forge apprentice who protects the mountain kingdom's ancient fire. Their fixed signature outfit is a dark basalt-colored smith's coat with copper fasteners, heatproof gloves, and reinforced boots. Their defining personal object is a small hammer forged from cooled volcanic glass. Keep face, hairstyle, hair color, eye color, body proportions, costume silhouette, and personal object unchanged throughout the entire music video."
 }

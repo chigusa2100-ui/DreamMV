@@ -139,12 +139,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "The same young adult female anime protagonist: platinum-blonde hair in a neat long braid, jade-green eyes, a calm, observant face; a poised performer and expressive storyteller, wearing a sharply recognizable performance outfit with a clean silhouette and restrained decorative details with blush pink accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene.",
+      "description": "The same young adult woman anime protagonist in every scene: soft honey-blonde hair in an elegant low chignon, warm rose-brown eyes, with a recognizable consistent face and adult proportions. They are a florist arranging the first flowers for a sunrise wedding. Their fixed signature outfit is a flowing ivory dress with a pale sage wrap, delicate floral embroidery, and simple heels. Their defining personal object is a tiny bouquet tied with a ribbon from her mother's wedding. Keep face, hairstyle, hair color, eye color, body proportions, costume silhouette, and personal object unchanged throughout the entire music video.",
       "consistency_rules": [
-        "Use this exact protagonist identity in every scene; do not redesign, replace, or randomly reinterpret the character.",
-        "Preserve the same face, hairstyle, hair color, eye color, age impression, and body proportions.",
-        "Keep the signature outfit silhouette, defining accessories, and main color accents consistent across the entire music video.",
-        "Do not introduce another protagonist unless the lyrics or scene explicitly require one."
+        "Use this one fixed protagonist identity throughout the theme's entire video.",
+        "Preserve the same facial features, hairstyle, hair color, eye color, age impression, and body proportions.",
+        "Keep the signature outfit, silhouette, colors, and defining personal object consistent in every scene.",
+        "Do not replace the lead or add another protagonist unless the lyrics explicitly require one."
       ]
     },
     "visual_language": {
@@ -176,5 +176,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "The same young adult female anime protagonist: platinum-blonde hair in a neat long braid, jade-green eyes, a calm, observant face; a poised performer and expressive storyteller, wearing a sharply recognizable performance outfit with a clean silhouette and restrained decorative details with blush pink accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene."
+  "character_description": "The same young adult woman anime protagonist in every scene: soft honey-blonde hair in an elegant low chignon, warm rose-brown eyes, with a recognizable consistent face and adult proportions. They are a florist arranging the first flowers for a sunrise wedding. Their fixed signature outfit is a flowing ivory dress with a pale sage wrap, delicate floral embroidery, and simple heels. Their defining personal object is a tiny bouquet tied with a ribbon from her mother's wedding. Keep face, hairstyle, hair color, eye color, body proportions, costume silhouette, and personal object unchanged throughout the entire music video."
 }
