@@ -89,12 +89,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "The same young adult male anime protagonist: copper-red hair in a short layered bob, turquoise eyes, a gentle face with focused eyes; a quiet dimensional wayfinder, wearing a distinctive layered silhouette with a fitted inner garment and a flowing, environment-ready outer layer with twin-sun orange accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene.",
+      "description": "The same young adult nonbinary explorer anime protagonist in every scene: deep teal hair in a high braided knot, luminous amber-green eyes, with a distinctive, recognizable face and consistent adult proportions. Character identity: an exobiologist mapping bioluminescent forests beneath twin suns. Signature costume: a lightweight teal exploration suit with translucent leaf-pattern mantle and sealed field boots. Defining personal item: a wrist-mounted xenoflora scanner with softly glowing spores. Keep the exact face, hair shape and color, eye color, body proportions, costume silhouette, and signature item unchanged throughout the entire music video.",
       "consistency_rules": [
-        "Use this exact protagonist identity in every scene; do not redesign, replace, or randomly reinterpret the character.",
-        "Preserve the same face, hairstyle, hair color, eye color, age impression, and body proportions.",
-        "Keep the signature outfit silhouette, defining accessories, and main color accents consistent across the entire music video.",
-        "Do not introduce another protagonist unless the lyrics or scene explicitly require one."
+        "This theme has one fixed protagonist: preserve the exact character identity in every scene.",
+        "Keep the same face, age impression, hairstyle, hair color, eye color, and body proportions.",
+        "Keep the signature costume silhouette, materials, colors, and defining personal item consistent; do not randomly redesign the outfit.",
+        "Do not replace the protagonist or introduce another lead character unless the lyrics explicitly require it."
       ]
     },
     "visual_language": {
@@ -125,5 +125,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "The same young adult male anime protagonist: copper-red hair in a short layered bob, turquoise eyes, a gentle face with focused eyes; a quiet dimensional wayfinder, wearing a distinctive layered silhouette with a fitted inner garment and a flowing, environment-ready outer layer with twin-sun orange accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene."
+  "character_description": "The same young adult nonbinary explorer anime protagonist in every scene: deep teal hair in a high braided knot, luminous amber-green eyes, with a distinctive, recognizable face and consistent adult proportions. Character identity: an exobiologist mapping bioluminescent forests beneath twin suns. Signature costume: a lightweight teal exploration suit with translucent leaf-pattern mantle and sealed field boots. Defining personal item: a wrist-mounted xenoflora scanner with softly glowing spores. Keep the exact face, hair shape and color, eye color, body proportions, costume silhouette, and signature item unchanged throughout the entire music video."
 }

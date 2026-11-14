@@ -90,12 +90,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "The same young adult female anime protagonist: copper-red hair in a short layered bob, deep brown eyes, a confident gaze and a small, knowing smile; a curious young wanderer, wearing a distinctive travel outfit with a fitted jacket, a clear silhouette, and practical footwear with concrete grey accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene.",
+      "description": "The same young adult man anime protagonist in every scene: close-cropped ash-brown hair, cool grey eyes, with a distinctive, recognizable face and consistent adult proportions. Character identity: a solitary urban surveyor documenting monumental concrete spaces at sunrise. Signature costume: a minimal slate-grey long coat, architectural utility harness, and clean black boots. Defining personal item: a folded blueprint case marked with a single vermilion line. Keep the exact face, hair shape and color, eye color, body proportions, costume silhouette, and signature item unchanged throughout the entire music video.",
       "consistency_rules": [
-        "Use this exact protagonist identity in every scene; do not redesign, replace, or randomly reinterpret the character.",
-        "Preserve the same face, hairstyle, hair color, eye color, age impression, and body proportions.",
-        "Keep the signature outfit silhouette, defining accessories, and main color accents consistent across the entire music video.",
-        "Do not introduce another protagonist unless the lyrics or scene explicitly require one."
+        "This theme has one fixed protagonist: preserve the exact character identity in every scene.",
+        "Keep the same face, age impression, hairstyle, hair color, eye color, and body proportions.",
+        "Keep the signature costume silhouette, materials, colors, and defining personal item consistent; do not randomly redesign the outfit.",
+        "Do not replace the protagonist or introduce another lead character unless the lyrics explicitly require it."
       ]
     },
     "visual_language": {
@@ -126,5 +126,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "The same young adult female anime protagonist: copper-red hair in a short layered bob, deep brown eyes, a confident gaze and a small, knowing smile; a curious young wanderer, wearing a distinctive travel outfit with a fitted jacket, a clear silhouette, and practical footwear with concrete grey accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene."
+  "character_description": "The same young adult man anime protagonist in every scene: close-cropped ash-brown hair, cool grey eyes, with a distinctive, recognizable face and consistent adult proportions. Character identity: a solitary urban surveyor documenting monumental concrete spaces at sunrise. Signature costume: a minimal slate-grey long coat, architectural utility harness, and clean black boots. Defining personal item: a folded blueprint case marked with a single vermilion line. Keep the exact face, hair shape and color, eye color, body proportions, costume silhouette, and signature item unchanged throughout the entire music video."
 }
