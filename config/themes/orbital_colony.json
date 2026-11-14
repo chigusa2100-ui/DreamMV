@@ -142,12 +142,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "the same recurring anime protagonist in the orbital colony world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "description": "The same young adult male anime protagonist: deep teal hair in a swept-back style, turquoise eyes, a thoughtful face with gently angled features; a field-tested futuristic courier, wearing a sleek technical jacket with luminous piping, fitted utility trousers, and compact gear with earth blue accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene.",
       "consistency_rules": [
-        "keep the same face and hairstyle across scenes",
-        "keep outfit design and color identity consistent unless the story explicitly changes them",
-        "keep age impression, body proportions, and character identity stable",
-        "do not introduce additional protagonists unless the lyrics or scene require them"
+        "Use this exact protagonist identity in every scene; do not redesign, replace, or randomly reinterpret the character.",
+        "Preserve the same face, hairstyle, hair color, eye color, age impression, and body proportions.",
+        "Keep the signature outfit silhouette, defining accessories, and main color accents consistent across the entire music video.",
+        "Do not introduce another protagonist unless the lyrics or scene explicitly require one."
       ]
     },
     "visual_language": {
@@ -179,5 +179,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "the same recurring anime protagonist in the orbital colony world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
+  "character_description": "The same young adult male anime protagonist: deep teal hair in a swept-back style, turquoise eyes, a thoughtful face with gently angled features; a field-tested futuristic courier, wearing a sleek technical jacket with luminous piping, fitted utility trousers, and compact gear with earth blue accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene."
 }
