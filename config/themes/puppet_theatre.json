@@ -140,12 +140,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "the same recurring anime protagonist in the puppet theatre world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "description": "The same young adult woman anime protagonist in every scene: dark plum hair in a neat low bun, soft amber eyes, with a distinct recognizable face and stable adult proportions. Their role in this world: a puppeteer who repairs antique marionettes and gives them new stories. Signature outfit: a burgundy velvet waistcoat over an ivory blouse, long dark skirt, and lace-up stage boots. Defining personal object: a tiny wooden marionette shaped like a fox. Preserve the same face, hair shape and color, eye color, body proportions, costume silhouette, and personal object throughout the entire music video.",
       "consistency_rules": [
-        "keep the same face and hairstyle across scenes",
-        "keep outfit design and color identity consistent unless the story explicitly changes them",
-        "keep age impression, body proportions, and character identity stable",
-        "do not introduce additional protagonists unless the lyrics or scene require them"
+        "Use this exact protagonist as the sole lead throughout this theme.",
+        "Maintain consistent facial features, hairstyle, hair color, eye color, adult age impression, and body proportions.",
+        "Keep the signature costume and defining object visually identical from scene to scene.",
+        "Do not replace the lead or add another protagonist unless explicitly demanded by the lyrics."
       ]
     },
     "visual_language": {
@@ -177,5 +177,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "the same recurring anime protagonist in the puppet theatre world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
+  "character_description": "The same young adult woman anime protagonist in every scene: dark plum hair in a neat low bun, soft amber eyes, with a distinct recognizable face and stable adult proportions. Their role in this world: a puppeteer who repairs antique marionettes and gives them new stories. Signature outfit: a burgundy velvet waistcoat over an ivory blouse, long dark skirt, and lace-up stage boots. Defining personal object: a tiny wooden marionette shaped like a fox. Preserve the same face, hair shape and color, eye color, body proportions, costume silhouette, and personal object throughout the entire music video."
 }

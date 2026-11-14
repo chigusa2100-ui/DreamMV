@@ -140,12 +140,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "the same recurring anime protagonist in the retro arcade world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "description": "The same young adult man anime protagonist in every scene: dark hair with a bright magenta streak, electric-blue eyes, with a distinct recognizable face and stable adult proportions. Their role in this world: a champion arcade technician who repairs cabinets and competes after closing time. Signature outfit: a retro varsity jacket with cyan and magenta stripes, graphic tee, relaxed jeans, and high-top sneakers. Defining personal object: a translucent game token on a chain. Preserve the same face, hair shape and color, eye color, body proportions, costume silhouette, and personal object throughout the entire music video.",
       "consistency_rules": [
-        "keep the same face and hairstyle across scenes",
-        "keep outfit design and color identity consistent unless the story explicitly changes them",
-        "keep age impression, body proportions, and character identity stable",
-        "do not introduce additional protagonists unless the lyrics or scene require them"
+        "Use this exact protagonist as the sole lead throughout this theme.",
+        "Maintain consistent facial features, hairstyle, hair color, eye color, adult age impression, and body proportions.",
+        "Keep the signature costume and defining object visually identical from scene to scene.",
+        "Do not replace the lead or add another protagonist unless explicitly demanded by the lyrics."
       ]
     },
     "visual_language": {
@@ -177,5 +177,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "the same recurring anime protagonist in the retro arcade world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
+  "character_description": "The same young adult man anime protagonist in every scene: dark hair with a bright magenta streak, electric-blue eyes, with a distinct recognizable face and stable adult proportions. Their role in this world: a champion arcade technician who repairs cabinets and competes after closing time. Signature outfit: a retro varsity jacket with cyan and magenta stripes, graphic tee, relaxed jeans, and high-top sneakers. Defining personal object: a translucent game token on a chain. Preserve the same face, hair shape and color, eye color, body proportions, costume silhouette, and personal object throughout the entire music video."
 }

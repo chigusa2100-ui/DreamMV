@@ -86,12 +86,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "the same recurring anime protagonist in the spring bloom world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "description": "The same young adult woman anime protagonist in every shot: soft pink-brown hair in a loose braid, fresh green eyes, with a stable distinctive face and adult proportions. They are a young gardener tending the first blossoms in a public park. Their signature costume is a pale cream cardigan over a light green dress, floral scarf, and comfortable shoes. Their defining personal object is a small pruning shears tied with a cherry-blossom ribbon. Keep face, hairstyle, hair color, eye color, body proportions, outfit silhouette, and defining object consistent across every scene.",
       "consistency_rules": [
-        "keep the same face and hairstyle across scenes",
-        "keep outfit design and color identity consistent unless the story explicitly changes them",
-        "keep age impression, body proportions, and character identity stable",
-        "do not introduce additional protagonists unless the lyrics or scene require them"
+        "Maintain one fixed lead character for the full theme video.",
+        "Keep the same face, hairstyle, hair color, eye color, age impression, and body proportions.",
+        "Preserve the signature outfit design and the same personal item or tool in all scenes.",
+        "Do not change the protagonist or add a second lead unless the lyrics explicitly require one."
       ]
     },
     "visual_language": {
@@ -122,5 +122,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "the same recurring anime protagonist in the spring bloom world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
+  "character_description": "The same young adult woman anime protagonist in every shot: soft pink-brown hair in a loose braid, fresh green eyes, with a stable distinctive face and adult proportions. They are a young gardener tending the first blossoms in a public park. Their signature costume is a pale cream cardigan over a light green dress, floral scarf, and comfortable shoes. Their defining personal object is a small pruning shears tied with a cherry-blossom ribbon. Keep face, hairstyle, hair color, eye color, body proportions, outfit silhouette, and defining object consistent across every scene."
 }

@@ -139,12 +139,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "the same recurring anime protagonist in the solarpunk harvest world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "description": "The same young adult woman anime protagonist in every shot: sun-gold hair in a thick practical braid, bright leaf-green eyes, with a stable distinctive face and adult proportions. They are a community agronomist cultivating food gardens on a sustainable rooftop farm. Their signature costume is a cream utility shirt with green canvas overalls, seed pockets, and sturdy garden boots. Their defining personal object is a hand-built solar seed timer clipped to her belt. Keep face, hairstyle, hair color, eye color, body proportions, outfit silhouette, and defining object consistent across every scene.",
       "consistency_rules": [
-        "keep the same face and hairstyle across scenes",
-        "keep outfit design and color identity consistent unless the story explicitly changes them",
-        "keep age impression, body proportions, and character identity stable",
-        "do not introduce additional protagonists unless the lyrics or scene require them"
+        "Maintain one fixed lead character for the full theme video.",
+        "Keep the same face, hairstyle, hair color, eye color, age impression, and body proportions.",
+        "Preserve the signature outfit design and the same personal item or tool in all scenes.",
+        "Do not change the protagonist or add a second lead unless the lyrics explicitly require one."
       ]
     },
     "visual_language": {
@@ -176,5 +176,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "the same recurring anime protagonist in the solarpunk harvest world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
+  "character_description": "The same young adult woman anime protagonist in every shot: sun-gold hair in a thick practical braid, bright leaf-green eyes, with a stable distinctive face and adult proportions. They are a community agronomist cultivating food gardens on a sustainable rooftop farm. Their signature costume is a cream utility shirt with green canvas overalls, seed pockets, and sturdy garden boots. Their defining personal object is a hand-built solar seed timer clipped to her belt. Keep face, hairstyle, hair color, eye color, body proportions, outfit silhouette, and defining object consistent across every scene."
 }

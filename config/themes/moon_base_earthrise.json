@@ -89,12 +89,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "the same recurring anime protagonist in the moon base earthrise world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "description": "The same young adult man anime protagonist throughout every scene: short ash-silver hair, dark brown eyes, with a distinctive stable face and consistent adult proportions. They are a lunar greenhouse technician who watches Earth rise above the horizon. Their fixed signature outfit is a white and graphite EVA work suit with blue mission piping and magnetic boots. Their defining personal object is a small pressed leaf sealed inside a transparent helmet charm. Preserve this exact face, hair, eyes, body proportions, clothing silhouette, and personal object across the full music video.",
       "consistency_rules": [
-        "keep the same face and hairstyle across scenes",
-        "keep outfit design and color identity consistent unless the story explicitly changes them",
-        "keep age impression, body proportions, and character identity stable",
-        "do not introduce additional protagonists unless the lyrics or scene require them"
+        "Maintain this exact protagonist as the sole lead throughout the theme.",
+        "Keep face, hair shape and color, eye color, adult age impression, and body proportions stable in every scene.",
+        "Preserve the signature costume design and its identifying accessory or personal object.",
+        "Do not change the lead's identity or introduce a second protagonist unless the lyrics explicitly require it."
       ]
     },
     "visual_language": {
@@ -125,5 +125,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "the same recurring anime protagonist in the moon base earthrise world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
+  "character_description": "The same young adult man anime protagonist throughout every scene: short ash-silver hair, dark brown eyes, with a distinctive stable face and consistent adult proportions. They are a lunar greenhouse technician who watches Earth rise above the horizon. Their fixed signature outfit is a white and graphite EVA work suit with blue mission piping and magnetic boots. Their defining personal object is a small pressed leaf sealed inside a transparent helmet charm. Preserve this exact face, hair, eyes, body proportions, clothing silhouette, and personal object across the full music video."
 }

@@ -91,12 +91,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "the same recurring anime protagonist in the space world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "description": "The same young adult man anime protagonist in every shot: short midnight-blue hair, silver-grey eyes, with a stable distinctive face and adult proportions. They are an independent deep-space pilot charting quiet routes between distant stations. Their signature costume is a dark navy flight suit with white mission piping, compact life-support harness, and magnetic boots. Their defining personal object is a star-navigation wrist console with a scratched glass face. Keep face, hairstyle, hair color, eye color, body proportions, outfit silhouette, and defining object consistent across every scene.",
       "consistency_rules": [
-        "keep the same face and hairstyle across scenes",
-        "keep outfit design and color identity consistent unless the story explicitly changes them",
-        "keep age impression, body proportions, and character identity stable",
-        "do not introduce additional protagonists unless the lyrics or scene require them"
+        "Maintain one fixed lead character for the full theme video.",
+        "Keep the same face, hairstyle, hair color, eye color, age impression, and body proportions.",
+        "Preserve the signature outfit design and the same personal item or tool in all scenes.",
+        "Do not change the protagonist or add a second lead unless the lyrics explicitly require one."
       ]
     },
     "visual_language": {
@@ -127,5 +127,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "the same recurring anime protagonist in the space world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
+  "character_description": "The same young adult man anime protagonist in every shot: short midnight-blue hair, silver-grey eyes, with a stable distinctive face and adult proportions. They are an independent deep-space pilot charting quiet routes between distant stations. Their signature costume is a dark navy flight suit with white mission piping, compact life-support harness, and magnetic boots. Their defining personal object is a star-navigation wrist console with a scratched glass face. Keep face, hairstyle, hair color, eye color, body proportions, outfit silhouette, and defining object consistent across every scene."
 }

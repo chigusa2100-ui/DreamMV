@@ -140,12 +140,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "the same recurring anime protagonist in the inner universe world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "description": "The same young adult woman anime protagonist in every scene: deep indigo hair cut in a smooth chin-length bob, star-bright violet eyes, with a clearly recognizable face and stable adult proportions. They are a contemplative dream cartographer exploring the constellations of her own inner world. Signature clothing: a flowing midnight-blue coat-dress with subtle silver lining and a fitted high collar. Defining personal object: a tiny star globe suspended inside a glass pendant. Keep the same facial structure, hairstyle, hair and eye colors, body proportions, clothing silhouette, and personal object throughout the entire music video.",
       "consistency_rules": [
-        "keep the same face and hairstyle across scenes",
-        "keep outfit design and color identity consistent unless the story explicitly changes them",
-        "keep age impression, body proportions, and character identity stable",
-        "do not introduce additional protagonists unless the lyrics or scene require them"
+        "Use one fixed protagonist identity throughout this theme's entire music video.",
+        "Preserve the same recognizable face, hairstyle, hair color, eye color, age impression, and body proportions.",
+        "Keep the signature outfit silhouette, key materials, colors, and defining personal object unchanged.",
+        "Do not replace the protagonist or add another lead unless the lyrics explicitly call for one."
       ]
     },
     "visual_language": {
@@ -177,5 +177,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "the same recurring anime protagonist in the inner universe world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
+  "character_description": "The same young adult woman anime protagonist in every scene: deep indigo hair cut in a smooth chin-length bob, star-bright violet eyes, with a clearly recognizable face and stable adult proportions. They are a contemplative dream cartographer exploring the constellations of her own inner world. Signature clothing: a flowing midnight-blue coat-dress with subtle silver lining and a fitted high collar. Defining personal object: a tiny star globe suspended inside a glass pendant. Keep the same facial structure, hairstyle, hair and eye colors, body proportions, clothing silhouette, and personal object throughout the entire music video."
 }

@@ -140,12 +140,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "the same recurring anime protagonist in the summer festival world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "description": "The same young adult woman anime protagonist in every scene: glossy dark-brown hair in a high festival ponytail tied with a vermilion ribbon, bright amber eyes, a lively recognizable face, and consistent adult proportions. She is a summer festival dance leader who teaches neighborhood children the traditional bon-odori steps. Her fixed signature outfit is a deep indigo yukata with small white fireworks, a vivid coral obi, and practical geta sandals. Her defining personal object is a small uchiwa fan painted with a goldfish and summer stars. Preserve her exact face, hairstyle, hair color, eye color, body proportions, yukata pattern, obi, and fan throughout the entire music video.",
       "consistency_rules": [
-        "keep the same face and hairstyle across scenes",
-        "keep outfit design and color identity consistent unless the story explicitly changes them",
-        "keep age impression, body proportions, and character identity stable",
-        "do not introduce additional protagonists unless the lyrics or scene require them"
+        "Keep this exact summer-festival protagonist as the single lead throughout the theme.",
+        "Preserve her face, hairstyle, hair color, eye color, adult age impression, and body proportions.",
+        "Keep the indigo fireworks yukata, coral obi, and goldfish uchiwa fan consistent in every scene.",
+        "Do not replace the protagonist or introduce another lead unless the lyrics explicitly require one."
       ]
     },
     "visual_language": {
@@ -177,5 +177,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "the same recurring anime protagonist in the summer festival world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
+  "character_description": "The same young adult woman anime protagonist in every scene: glossy dark-brown hair in a high festival ponytail tied with a vermilion ribbon, bright amber eyes, a lively recognizable face, and consistent adult proportions. She is a summer festival dance leader who teaches neighborhood children the traditional bon-odori steps. Her fixed signature outfit is a deep indigo yukata with small white fireworks, a vivid coral obi, and practical geta sandals. Her defining personal object is a small uchiwa fan painted with a goldfish and summer stars. Preserve her exact face, hairstyle, hair color, eye color, body proportions, yukata pattern, obi, and fan throughout the entire music video."
 }

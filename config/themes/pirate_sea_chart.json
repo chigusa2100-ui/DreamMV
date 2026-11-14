@@ -93,12 +93,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "the same recurring anime protagonist in the pirate sea chart world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "description": "The same young adult woman anime protagonist in every shot: dark auburn hair in a high braided ponytail, bright sea-green eyes, with a recognizable consistent face and adult body proportions. They are a daring navigator charting hidden currents and forgotten pirate routes. Fixed costume: a weathered navy captain's coat over a white shirt, red sash, fitted trousers, and deck boots. Signature tool or keepsake: a brass dividers compass attached to a salt-stained map case. Maintain the exact same face, hairstyle, hair color, eye color, proportions, costume silhouette, and signature object across the complete music video.",
       "consistency_rules": [
-        "keep the same face and hairstyle across scenes",
-        "keep outfit design and color identity consistent unless the story explicitly changes them",
-        "keep age impression, body proportions, and character identity stable",
-        "do not introduce additional protagonists unless the lyrics or scene require them"
+        "One clearly defined protagonist leads this theme from beginning to end.",
+        "Keep the same face, hairstyle, hair color, eye color, adult age impression, and body proportions in every scene.",
+        "Preserve the signature outfit, its color identity, and the defining tool or keepsake.",
+        "Do not redesign, replace, or multiply the lead character unless the lyrics explicitly require another person."
       ]
     },
     "visual_language": {
@@ -129,5 +129,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "the same recurring anime protagonist in the pirate sea chart world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
+  "character_description": "The same young adult woman anime protagonist in every shot: dark auburn hair in a high braided ponytail, bright sea-green eyes, with a recognizable consistent face and adult body proportions. They are a daring navigator charting hidden currents and forgotten pirate routes. Fixed costume: a weathered navy captain's coat over a white shirt, red sash, fitted trousers, and deck boots. Signature tool or keepsake: a brass dividers compass attached to a salt-stained map case. Maintain the exact same face, hairstyle, hair color, eye color, proportions, costume silhouette, and signature object across the complete music video."
 }

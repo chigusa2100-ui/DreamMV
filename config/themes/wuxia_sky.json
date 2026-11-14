@@ -139,12 +139,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "the same recurring anime protagonist in the wuxia sky world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "description": "The same young adult man anime protagonist in every scene: long black hair tied in a high flowing martial knot, clear jade eyes, with a recognizable consistent face and adult proportions. They are a wandering wuxia swordsman who protects mountain villages without seeking fame. Their fixed signature outfit is a pale grey cross-collar robe with deep teal sash, light bracers, and cloth martial boots. Their defining personal object is a simple jade sword tassel from his former master. Keep face, hairstyle, hair color, eye color, body proportions, costume silhouette, and personal object unchanged throughout the entire music video.",
       "consistency_rules": [
-        "keep the same face and hairstyle across scenes",
-        "keep outfit design and color identity consistent unless the story explicitly changes them",
-        "keep age impression, body proportions, and character identity stable",
-        "do not introduce additional protagonists unless the lyrics or scene require them"
+        "Use this one fixed protagonist identity throughout the theme's entire video.",
+        "Preserve the same facial features, hairstyle, hair color, eye color, age impression, and body proportions.",
+        "Keep the signature outfit, silhouette, colors, and defining personal object consistent in every scene.",
+        "Do not replace the lead or add another protagonist unless the lyrics explicitly require one."
       ]
     },
     "visual_language": {
@@ -176,5 +176,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "the same recurring anime protagonist in the wuxia sky world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
+  "character_description": "The same young adult man anime protagonist in every scene: long black hair tied in a high flowing martial knot, clear jade eyes, with a recognizable consistent face and adult proportions. They are a wandering wuxia swordsman who protects mountain villages without seeking fame. Their fixed signature outfit is a pale grey cross-collar robe with deep teal sash, light bracers, and cloth martial boots. Their defining personal object is a simple jade sword tassel from his former master. Keep face, hairstyle, hair color, eye color, body proportions, costume silhouette, and personal object unchanged throughout the entire music video."
 }

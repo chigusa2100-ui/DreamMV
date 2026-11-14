@@ -90,12 +90,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "the same recurring anime protagonist in the sixties mod pop world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "description": "The same young adult woman anime protagonist in every shot: geometric dark-brown bob with blunt bangs, bright hazel eyes, with a stable distinctive face and adult proportions. They are a 1960s mod fashion illustrator who rides her scooter between music clubs. Their signature costume is a tailored cream mini-dress with bold geometric trim, cropped jacket, and knee-high boots. Their defining personal object is a pair of oversized round sunglasses with amber lenses. Keep face, hairstyle, hair color, eye color, body proportions, outfit silhouette, and defining object consistent across every scene.",
       "consistency_rules": [
-        "keep the same face and hairstyle across scenes",
-        "keep outfit design and color identity consistent unless the story explicitly changes them",
-        "keep age impression, body proportions, and character identity stable",
-        "do not introduce additional protagonists unless the lyrics or scene require them"
+        "Maintain one fixed lead character for the full theme video.",
+        "Keep the same face, hairstyle, hair color, eye color, age impression, and body proportions.",
+        "Preserve the signature outfit design and the same personal item or tool in all scenes.",
+        "Do not change the protagonist or add a second lead unless the lyrics explicitly require one."
       ]
     },
     "visual_language": {
@@ -126,5 +126,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "the same recurring anime protagonist in the sixties mod pop world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
+  "character_description": "The same young adult woman anime protagonist in every shot: geometric dark-brown bob with blunt bangs, bright hazel eyes, with a stable distinctive face and adult proportions. They are a 1960s mod fashion illustrator who rides her scooter between music clubs. Their signature costume is a tailored cream mini-dress with bold geometric trim, cropped jacket, and knee-high boots. Their defining personal object is a pair of oversized round sunglasses with amber lenses. Keep face, hairstyle, hair color, eye color, body proportions, outfit silhouette, and defining object consistent across every scene."
 }

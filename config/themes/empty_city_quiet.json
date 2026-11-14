@@ -91,12 +91,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "the same recurring anime protagonist in the empty city quiet world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video",
+      "description": "The same young adult man anime protagonist throughout this theme's entire music video: soft ash-brown hair falling over his forehead, muted blue-grey eyes, with a distinct recognizable face and consistent adult proportions. They are a solitary night-shift caretaker keeping the lights on in an abandoned city. Signature outfit: a faded charcoal parka, simple knit layers, dark trousers, and worn sneakers. Unique personal keepsake or tool: a small brass key ring holding the key to an empty apartment. Preserve the exact facial features, hairstyle, hair color, eye color, body proportions, outfit silhouette, and defining item in every scene.",
       "consistency_rules": [
-        "keep the same face and hairstyle across scenes",
-        "keep outfit design and color identity consistent unless the story explicitly changes them",
-        "keep age impression, body proportions, and character identity stable",
-        "do not introduce additional protagonists unless the lyrics or scene require them"
+        "Keep this theme's named visual identity as one fixed protagonist across every scene.",
+        "Preserve the exact face, hairstyle, hair color, eye color, age impression, and body proportions.",
+        "Maintain the signature costume, distinctive accessories, and defining personal item without random redesign.",
+        "Do not replace the lead or add another protagonist unless the lyrics explicitly require it."
       ]
     },
     "visual_language": {
@@ -127,5 +127,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "the same recurring anime protagonist in the empty city quiet world, with consistent face, hairstyle, outfit silhouette, age impression, and body proportions throughout the entire music video"
+  "character_description": "The same young adult man anime protagonist throughout this theme's entire music video: soft ash-brown hair falling over his forehead, muted blue-grey eyes, with a distinct recognizable face and consistent adult proportions. They are a solitary night-shift caretaker keeping the lights on in an abandoned city. Signature outfit: a faded charcoal parka, simple knit layers, dark trousers, and worn sneakers. Unique personal keepsake or tool: a small brass key ring holding the key to an empty apartment. Preserve the exact facial features, hairstyle, hair color, eye color, body proportions, outfit silhouette, and defining item in every scene."
 }
