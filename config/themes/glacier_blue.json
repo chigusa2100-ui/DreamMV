@@ -91,12 +91,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "The same young adult male anime protagonist: midnight-blue hair cut just below the shoulders, clear amber eyes, a thoughtful face with gently angled features; an independent explorer of remote waters and wild places, wearing a weather-ready expedition coat, layered travel clothes, and practical boots with deep cyan accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene.",
+      "description": "The same young adult man anime protagonist in every scene: pale ice-blond hair in a short wind-swept cut, clear arctic-blue eyes, with a clearly recognizable face and stable adult proportions. They are a glacier ecologist studying ancient blue ice and its hidden air bubbles. Signature clothing: a cobalt insulated expedition shell, grey thermal layers, and crampon-ready boots. Defining personal object: a frost-resistant sample case with a blue crystal marker. Keep the same facial structure, hairstyle, hair and eye colors, body proportions, clothing silhouette, and personal object throughout the entire music video.",
       "consistency_rules": [
-        "Use this exact protagonist identity in every scene; do not redesign, replace, or randomly reinterpret the character.",
-        "Preserve the same face, hairstyle, hair color, eye color, age impression, and body proportions.",
-        "Keep the signature outfit silhouette, defining accessories, and main color accents consistent across the entire music video.",
-        "Do not introduce another protagonist unless the lyrics or scene explicitly require one."
+        "Use one fixed protagonist identity throughout this theme's entire music video.",
+        "Preserve the same recognizable face, hairstyle, hair color, eye color, age impression, and body proportions.",
+        "Keep the signature outfit silhouette, key materials, colors, and defining personal object unchanged.",
+        "Do not replace the protagonist or add another lead unless the lyrics explicitly call for one."
       ]
     },
     "visual_language": {
@@ -127,5 +127,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "The same young adult male anime protagonist: midnight-blue hair cut just below the shoulders, clear amber eyes, a thoughtful face with gently angled features; an independent explorer of remote waters and wild places, wearing a weather-ready expedition coat, layered travel clothes, and practical boots with deep cyan accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene."
+  "character_description": "The same young adult man anime protagonist in every scene: pale ice-blond hair in a short wind-swept cut, clear arctic-blue eyes, with a clearly recognizable face and stable adult proportions. They are a glacier ecologist studying ancient blue ice and its hidden air bubbles. Signature clothing: a cobalt insulated expedition shell, grey thermal layers, and crampon-ready boots. Defining personal object: a frost-resistant sample case with a blue crystal marker. Keep the same facial structure, hairstyle, hair and eye colors, body proportions, clothing silhouette, and personal object throughout the entire music video."
 }
