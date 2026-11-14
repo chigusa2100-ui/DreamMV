@@ -91,12 +91,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "The same young adult female anime protagonist: platinum-blonde hair in a neat long braid, violet eyes, a thoughtful face with gently angled features; a thoughtful everyday traveler with a keen eye for small moments, wearing a recognizable contemporary outfit with a signature jacket, simple accessories, and comfortable shoes with tube green accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene.",
+      "description": "The same young adult woman anime protagonist in every shot: dark chestnut hair in a neat retro bob, warm brown eyes, with a stable distinctive face and adult proportions. They are a family stationery shop apprentice greeting customers on the old shopping street. Their signature costume is a cream blouse with a rust-red knit vest, pleated skirt, and simple loafers. Their defining personal object is a vintage paper shopping bag stamped with the store's name. Keep face, hairstyle, hair color, eye color, body proportions, outfit silhouette, and defining object consistent across every scene.",
       "consistency_rules": [
-        "Use this exact protagonist identity in every scene; do not redesign, replace, or randomly reinterpret the character.",
-        "Preserve the same face, hairstyle, hair color, eye color, age impression, and body proportions.",
-        "Keep the signature outfit silhouette, defining accessories, and main color accents consistent across the entire music video.",
-        "Do not introduce another protagonist unless the lyrics or scene explicitly require one."
+        "Maintain one fixed lead character for the full theme video.",
+        "Keep the same face, hairstyle, hair color, eye color, age impression, and body proportions.",
+        "Preserve the signature outfit design and the same personal item or tool in all scenes.",
+        "Do not change the protagonist or add a second lead unless the lyrics explicitly require one."
       ]
     },
     "visual_language": {
@@ -127,5 +127,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "The same young adult female anime protagonist: platinum-blonde hair in a neat long braid, violet eyes, a thoughtful face with gently angled features; a thoughtful everyday traveler with a keen eye for small moments, wearing a recognizable contemporary outfit with a signature jacket, simple accessories, and comfortable shoes with tube green accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene."
+  "character_description": "The same young adult woman anime protagonist in every shot: dark chestnut hair in a neat retro bob, warm brown eyes, with a stable distinctive face and adult proportions. They are a family stationery shop apprentice greeting customers on the old shopping street. Their signature costume is a cream blouse with a rust-red knit vest, pleated skirt, and simple loafers. Their defining personal object is a vintage paper shopping bag stamped with the store's name. Keep face, hairstyle, hair color, eye color, body proportions, outfit silhouette, and defining object consistent across every scene."
 }

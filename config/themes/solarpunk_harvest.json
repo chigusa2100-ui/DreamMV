@@ -139,12 +139,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "The same young adult female anime protagonist: ink-black shoulder-length waves, golden eyes, a confident gaze and a small, knowing smile; a resilient field naturalist and wanderer, wearing a practical layered field outfit with a distinctive scarf, fitted jacket, and durable boots with sun yellow accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene.",
+      "description": "The same young adult woman anime protagonist in every shot: sun-gold hair in a thick practical braid, bright leaf-green eyes, with a stable distinctive face and adult proportions. They are a community agronomist cultivating food gardens on a sustainable rooftop farm. Their signature costume is a cream utility shirt with green canvas overalls, seed pockets, and sturdy garden boots. Their defining personal object is a hand-built solar seed timer clipped to her belt. Keep face, hairstyle, hair color, eye color, body proportions, outfit silhouette, and defining object consistent across every scene.",
       "consistency_rules": [
-        "Use this exact protagonist identity in every scene; do not redesign, replace, or randomly reinterpret the character.",
-        "Preserve the same face, hairstyle, hair color, eye color, age impression, and body proportions.",
-        "Keep the signature outfit silhouette, defining accessories, and main color accents consistent across the entire music video.",
-        "Do not introduce another protagonist unless the lyrics or scene explicitly require one."
+        "Maintain one fixed lead character for the full theme video.",
+        "Keep the same face, hairstyle, hair color, eye color, age impression, and body proportions.",
+        "Preserve the signature outfit design and the same personal item or tool in all scenes.",
+        "Do not change the protagonist or add a second lead unless the lyrics explicitly require one."
       ]
     },
     "visual_language": {
@@ -176,5 +176,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "The same young adult female anime protagonist: ink-black shoulder-length waves, golden eyes, a confident gaze and a small, knowing smile; a resilient field naturalist and wanderer, wearing a practical layered field outfit with a distinctive scarf, fitted jacket, and durable boots with sun yellow accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene."
+  "character_description": "The same young adult woman anime protagonist in every shot: sun-gold hair in a thick practical braid, bright leaf-green eyes, with a stable distinctive face and adult proportions. They are a community agronomist cultivating food gardens on a sustainable rooftop farm. Their signature costume is a cream utility shirt with green canvas overalls, seed pockets, and sturdy garden boots. Their defining personal object is a hand-built solar seed timer clipped to her belt. Keep face, hairstyle, hair color, eye color, body proportions, outfit silhouette, and defining object consistent across every scene."
 }
