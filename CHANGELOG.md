@@ -1,7 +1,40 @@
 # Changelog
 
-All notable changes to DreamMV are documented here.
-DreamMV の主な変更履歴を記録しています。
+## [2.1.0] - 2026-11-15
+
+### 日本語 / Japanese
+
+#### 主な変更 / Added
+
+- 139種類のテーマに、それぞれの世界観に合った固有の主人公設定を追加。
+- 主人公ごとに役割、髪型・髪色、瞳の色、衣装、特徴的な持ち物を定義し、シーン間の一貫性を強化。
+- 各テーマの `character_description` と `director.character.description` を同期。
+- Directorのキャラクター一貫性ルールを強化。
+- LTX-2.5向けプロンプト構築を改善し、Directorの演出指示を反映。
+- インストーラーにAnimagine XL 4.0およびLTX-2.5モデルの任意ダウンロード機能を追加。
+- Animagine XL 4.0のモデル読み込みをローカル専用にし、モデル未導入時に手順を案内するエラーを追加。
+- `hope.json` の既存主人公設定は変更せず維持。
+
+#### Tests
+
+- 212 tests passed.
+
+### English
+
+#### Added
+
+- Added world-specific protagonist profiles to 139 themes.
+- Defined each protagonist's role, hairstyle and hair color, eye color, signature outfit, and distinctive personal item to improve continuity between scenes.
+- Synchronized `character_description` and `director.character.description` across the updated themes.
+- Strengthened Director character-consistency rules.
+- Improved LTX-2.5 prompt construction and incorporated Director guidance.
+- Added optional Animagine XL 4.0 and LTX-2.5 model downloads to the installer.
+- Made Animagine XL 4.0 model loading local-only and added an actionable error when model files are missing.
+- Preserved the existing protagonist configuration in `hope.json`.
+
+#### Tests
+
+- 212 tests passed.
 
 ## [2.0.1] - 2026-11-12
 
