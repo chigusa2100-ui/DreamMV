@@ -139,12 +139,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "The same young adult female anime protagonist: warm chestnut hair in a high ponytail, deep brown eyes, a thoughtful face with gently angled features; a field-tested futuristic courier, wearing a sleek technical jacket with luminous piping, fitted utility trousers, and compact gear with silver accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene.",
+      "description": "The same young adult man anime protagonist in every scene: white hair with a sharp cobalt streak, bright cyan eyes, with a distinct recognizable face and stable adult proportions. Their role in this world: a quantum systems researcher navigating a maze of branching realities. Signature outfit: a fitted graphite lab suit with cobalt circuit seams, compact gloves, and magnetic boots. Defining personal object: a translucent cube containing a shifting miniature maze. Preserve the same face, hair shape and color, eye color, body proportions, costume silhouette, and personal object throughout the entire music video.",
       "consistency_rules": [
-        "Use this exact protagonist identity in every scene; do not redesign, replace, or randomly reinterpret the character.",
-        "Preserve the same face, hairstyle, hair color, eye color, age impression, and body proportions.",
-        "Keep the signature outfit silhouette, defining accessories, and main color accents consistent across the entire music video.",
-        "Do not introduce another protagonist unless the lyrics or scene explicitly require one."
+        "Use this exact protagonist as the sole lead throughout this theme.",
+        "Maintain consistent facial features, hairstyle, hair color, eye color, adult age impression, and body proportions.",
+        "Keep the signature costume and defining object visually identical from scene to scene.",
+        "Do not replace the lead or add another protagonist unless explicitly demanded by the lyrics."
       ]
     },
     "visual_language": {
@@ -176,5 +176,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "The same young adult female anime protagonist: warm chestnut hair in a high ponytail, deep brown eyes, a thoughtful face with gently angled features; a field-tested futuristic courier, wearing a sleek technical jacket with luminous piping, fitted utility trousers, and compact gear with silver accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene."
+  "character_description": "The same young adult man anime protagonist in every scene: white hair with a sharp cobalt streak, bright cyan eyes, with a distinct recognizable face and stable adult proportions. Their role in this world: a quantum systems researcher navigating a maze of branching realities. Signature outfit: a fitted graphite lab suit with cobalt circuit seams, compact gloves, and magnetic boots. Defining personal object: a translucent cube containing a shifting miniature maze. Preserve the same face, hair shape and color, eye color, body proportions, costume silhouette, and personal object throughout the entire music video."
 }

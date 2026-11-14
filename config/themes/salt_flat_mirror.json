@@ -88,12 +88,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "The same young adult male anime protagonist: silver-grey hair in a cropped, feathered cut, turquoise eyes, a confident gaze and a small, knowing smile; a quiet dimensional wayfinder, wearing a distinctive layered silhouette with a fitted inner garment and a flowing, environment-ready outer layer with sunrise pink accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene.",
+      "description": "The same young adult woman anime protagonist in every scene: pale silver hair in a long straight cut, reflective pale-blue eyes, with a distinct recognizable face and stable adult proportions. Their role in this world: a remote landscape photographer searching for perfect reflections across the salt flats. Signature outfit: a sand-white windbreaker, pale grey layered travel clothes, and sun-protective boots. Defining personal object: a compact mirrorless camera with a mirrored lens cap. Preserve the same face, hair shape and color, eye color, body proportions, costume silhouette, and personal object throughout the entire music video.",
       "consistency_rules": [
-        "Use this exact protagonist identity in every scene; do not redesign, replace, or randomly reinterpret the character.",
-        "Preserve the same face, hairstyle, hair color, eye color, age impression, and body proportions.",
-        "Keep the signature outfit silhouette, defining accessories, and main color accents consistent across the entire music video.",
-        "Do not introduce another protagonist unless the lyrics or scene explicitly require one."
+        "Use this exact protagonist as the sole lead throughout this theme.",
+        "Maintain consistent facial features, hairstyle, hair color, eye color, adult age impression, and body proportions.",
+        "Keep the signature costume and defining object visually identical from scene to scene.",
+        "Do not replace the lead or add another protagonist unless explicitly demanded by the lyrics."
       ]
     },
     "visual_language": {
@@ -124,5 +124,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "The same young adult male anime protagonist: silver-grey hair in a cropped, feathered cut, turquoise eyes, a confident gaze and a small, knowing smile; a quiet dimensional wayfinder, wearing a distinctive layered silhouette with a fitted inner garment and a flowing, environment-ready outer layer with sunrise pink accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene."
+  "character_description": "The same young adult woman anime protagonist in every scene: pale silver hair in a long straight cut, reflective pale-blue eyes, with a distinct recognizable face and stable adult proportions. Their role in this world: a remote landscape photographer searching for perfect reflections across the salt flats. Signature outfit: a sand-white windbreaker, pale grey layered travel clothes, and sun-protective boots. Defining personal object: a compact mirrorless camera with a mirrored lens cap. Preserve the same face, hair shape and color, eye color, body proportions, costume silhouette, and personal object throughout the entire music video."
 }

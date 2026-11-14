@@ -91,12 +91,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "The same young adult male anime protagonist: ash-lavender hair in a loose low bun, soft rose-brown eyes, a thoughtful face with gently angled features; an independent explorer of remote waters and wild places, wearing a weather-ready expedition coat, layered travel clothes, and practical boots with acacia green accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene.",
+      "description": "The same young adult man anime protagonist in every scene: short dark hair with sun-bleached tips, warm amber eyes, with a distinct recognizable face and stable adult proportions. Their role in this world: a wildlife conservation ranger tracking herds across the open savanna. Signature outfit: a khaki field shirt with rolled sleeves, rust-red neck scarf, utility trousers, and boots. Defining personal object: a weathered field binocular with a leather strap. Preserve the same face, hair shape and color, eye color, body proportions, costume silhouette, and personal object throughout the entire music video.",
       "consistency_rules": [
-        "Use this exact protagonist identity in every scene; do not redesign, replace, or randomly reinterpret the character.",
-        "Preserve the same face, hairstyle, hair color, eye color, age impression, and body proportions.",
-        "Keep the signature outfit silhouette, defining accessories, and main color accents consistent across the entire music video.",
-        "Do not introduce another protagonist unless the lyrics or scene explicitly require one."
+        "Use this exact protagonist as the sole lead throughout this theme.",
+        "Maintain consistent facial features, hairstyle, hair color, eye color, adult age impression, and body proportions.",
+        "Keep the signature costume and defining object visually identical from scene to scene.",
+        "Do not replace the lead or add another protagonist unless explicitly demanded by the lyrics."
       ]
     },
     "visual_language": {
@@ -127,5 +127,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "The same young adult male anime protagonist: ash-lavender hair in a loose low bun, soft rose-brown eyes, a thoughtful face with gently angled features; an independent explorer of remote waters and wild places, wearing a weather-ready expedition coat, layered travel clothes, and practical boots with acacia green accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene."
+  "character_description": "The same young adult man anime protagonist in every scene: short dark hair with sun-bleached tips, warm amber eyes, with a distinct recognizable face and stable adult proportions. Their role in this world: a wildlife conservation ranger tracking herds across the open savanna. Signature outfit: a khaki field shirt with rolled sleeves, rust-red neck scarf, utility trousers, and boots. Defining personal object: a weathered field binocular with a leather strap. Preserve the same face, hair shape and color, eye color, body proportions, costume silhouette, and personal object throughout the entire music video."
 }

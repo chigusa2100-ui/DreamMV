@@ -91,12 +91,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "The same young adult female anime protagonist: ash-lavender hair in a loose low bun, jade-green eyes, a composed expression and strong brows; a curious young wanderer, wearing a distinctive travel outfit with a fitted jacket, a clear silhouette, and practical footwear with sky reflection blue accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene.",
+      "description": "The same young adult man anime protagonist in every scene: black hair tied in a practical short knot, deep brown eyes, with a distinct recognizable face and stable adult proportions. Their role in this world: a mountain-village irrigation keeper caring for the ancestral rice terraces. Signature outfit: a dark indigo work jacket, rolled linen trousers, woven sash, and straw sandals. Defining personal object: a small wooden water-level gauge carved by his grandfather. Preserve the same face, hair shape and color, eye color, body proportions, costume silhouette, and personal object throughout the entire music video.",
       "consistency_rules": [
-        "Use this exact protagonist identity in every scene; do not redesign, replace, or randomly reinterpret the character.",
-        "Preserve the same face, hairstyle, hair color, eye color, age impression, and body proportions.",
-        "Keep the signature outfit silhouette, defining accessories, and main color accents consistent across the entire music video.",
-        "Do not introduce another protagonist unless the lyrics or scene explicitly require one."
+        "Use this exact protagonist as the sole lead throughout this theme.",
+        "Maintain consistent facial features, hairstyle, hair color, eye color, adult age impression, and body proportions.",
+        "Keep the signature costume and defining object visually identical from scene to scene.",
+        "Do not replace the lead or add another protagonist unless explicitly demanded by the lyrics."
       ]
     },
     "visual_language": {
@@ -127,5 +127,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "The same young adult female anime protagonist: ash-lavender hair in a loose low bun, jade-green eyes, a composed expression and strong brows; a curious young wanderer, wearing a distinctive travel outfit with a fitted jacket, a clear silhouette, and practical footwear with sky reflection blue accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene."
+  "character_description": "The same young adult man anime protagonist in every scene: black hair tied in a practical short knot, deep brown eyes, with a distinct recognizable face and stable adult proportions. Their role in this world: a mountain-village irrigation keeper caring for the ancestral rice terraces. Signature outfit: a dark indigo work jacket, rolled linen trousers, woven sash, and straw sandals. Defining personal object: a small wooden water-level gauge carved by his grandfather. Preserve the same face, hair shape and color, eye color, body proportions, costume silhouette, and personal object throughout the entire music video."
 }

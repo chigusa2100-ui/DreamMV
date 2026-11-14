@@ -140,12 +140,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "The same young adult male anime protagonist: deep teal hair in a swept-back style, warm hazel eyes, a gentle face with focused eyes; a thoughtful everyday traveler with a keen eye for small moments, wearing a recognizable contemporary outfit with a signature jacket, simple accessories, and comfortable shoes with asphalt gray accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene.",
+      "description": "The same young adult woman anime protagonist in every scene: sunlit copper hair in a messy ponytail, bright green eyes, with a distinct recognizable face and stable adult proportions. Their role in this world: a freelance photographer crossing the country in a well-loved van. Signature outfit: a faded denim jacket over a white tee, cargo shorts, and worn travel sneakers. Defining personal object: a vintage instant camera covered in destination stickers. Preserve the same face, hair shape and color, eye color, body proportions, costume silhouette, and personal object throughout the entire music video.",
       "consistency_rules": [
-        "Use this exact protagonist identity in every scene; do not redesign, replace, or randomly reinterpret the character.",
-        "Preserve the same face, hairstyle, hair color, eye color, age impression, and body proportions.",
-        "Keep the signature outfit silhouette, defining accessories, and main color accents consistent across the entire music video.",
-        "Do not introduce another protagonist unless the lyrics or scene explicitly require one."
+        "Use this exact protagonist as the sole lead throughout this theme.",
+        "Maintain consistent facial features, hairstyle, hair color, eye color, adult age impression, and body proportions.",
+        "Keep the signature costume and defining object visually identical from scene to scene.",
+        "Do not replace the lead or add another protagonist unless explicitly demanded by the lyrics."
       ]
     },
     "visual_language": {
@@ -177,5 +177,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "The same young adult male anime protagonist: deep teal hair in a swept-back style, warm hazel eyes, a gentle face with focused eyes; a thoughtful everyday traveler with a keen eye for small moments, wearing a recognizable contemporary outfit with a signature jacket, simple accessories, and comfortable shoes with asphalt gray accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene."
+  "character_description": "The same young adult woman anime protagonist in every scene: sunlit copper hair in a messy ponytail, bright green eyes, with a distinct recognizable face and stable adult proportions. Their role in this world: a freelance photographer crossing the country in a well-loved van. Signature outfit: a faded denim jacket over a white tee, cargo shorts, and worn travel sneakers. Defining personal object: a vintage instant camera covered in destination stickers. Preserve the same face, hair shape and color, eye color, body proportions, costume silhouette, and personal object throughout the entire music video."
 }
