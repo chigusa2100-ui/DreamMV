@@ -36,12 +36,6 @@
 
 - 212 tests passed.
 
----
-
-
-All notable changes to DreamMV are documented here.
-DreamMV の主な変更履歴を記録しています。
-
 ## [2.0.1] - 2026-11-12
 
 ### 日本語 / Japanese
