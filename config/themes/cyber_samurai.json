@@ -141,12 +141,12 @@
   "director": {
     "schema_version": 1,
     "character": {
-      "description": "The same young adult male anime protagonist: deep teal hair in a swept-back style, soft rose-brown eyes, a confident gaze and a small, knowing smile; a field-tested futuristic courier, wearing a sleek technical jacket with luminous piping, fitted utility trousers, and compact gear with black steel accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene.",
+      "description": "The same young adult man anime protagonist throughout this theme's entire music video: long black hair tied in a high samurai knot, sharp crimson eyes, with a distinct recognizable face and consistent adult proportions. They are a ronin security specialist protecting the last quiet district of a megacity. Signature outfit: a modern black armored haori with red seam lines, a flexible under-suit, and split-toe boots. Unique personal keepsake or tool: a sheathed energy katana with a simple red guard. Preserve the exact facial features, hairstyle, hair color, eye color, body proportions, outfit silhouette, and defining item in every scene.",
       "consistency_rules": [
-        "Use this exact protagonist identity in every scene; do not redesign, replace, or randomly reinterpret the character.",
-        "Preserve the same face, hairstyle, hair color, eye color, age impression, and body proportions.",
-        "Keep the signature outfit silhouette, defining accessories, and main color accents consistent across the entire music video.",
-        "Do not introduce another protagonist unless the lyrics or scene explicitly require one."
+        "Keep this theme's named visual identity as one fixed protagonist across every scene.",
+        "Preserve the exact face, hairstyle, hair color, eye color, age impression, and body proportions.",
+        "Maintain the signature costume, distinctive accessories, and defining personal item without random redesign.",
+        "Do not replace the lead or add another protagonist unless the lyrics explicitly require it."
       ]
     },
     "visual_language": {
@@ -178,5 +178,5 @@
       "principle": "vary shot scale and viewpoint to support the scene; avoid repeating identical framing in consecutive scenes"
     }
   },
-  "character_description": "The same young adult male anime protagonist: deep teal hair in a swept-back style, soft rose-brown eyes, a confident gaze and a small, knowing smile; a field-tested futuristic courier, wearing a sleek technical jacket with luminous piping, fitted utility trousers, and compact gear with black steel accents. Keep this exact face, hair, eyes, body proportions, and signature outfit in every scene."
+  "character_description": "The same young adult man anime protagonist throughout this theme's entire music video: long black hair tied in a high samurai knot, sharp crimson eyes, with a distinct recognizable face and consistent adult proportions. They are a ronin security specialist protecting the last quiet district of a megacity. Signature outfit: a modern black armored haori with red seam lines, a flexible under-suit, and split-toe boots. Unique personal keepsake or tool: a sheathed energy katana with a simple red guard. Preserve the exact facial features, hairstyle, hair color, eye color, body proportions, outfit silhouette, and defining item in every scene."
 }
